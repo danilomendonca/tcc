@@ -1,0 +1,148 @@
+\chapter{Detecção Óptica Coerente}\label{sistema}
+
+Este trabalho tem como foco o componente de recuperação de portadora do receptor coerente. Para a análise do receptor coerente deve-se compreender o funcionamento de um sistema óptico de comunicação com modulação DQPSK, multiplexação de polarização (POLMUX DQPSK) e receptor coerente. A Figura \ref{fig:sistema} exemplifica o funcionamento de um sistema com multiplexação de polarização e um receptor homódino \cite{garcia}.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.70\textwidth]{figs/sistema.eps}
+	\caption{Sistema de multiplexação de polarização e receptor homódino.}
+	\label{fig:sistema}
+\end{figure}
+
+Na figura, $s_k^V$ e $s_k^H$ (Eq. \ref{eq:array}) são os sinais elétricos DQPSK que vão modular a portadora óptica. Utiliza-se para isto dois moduladores Mach-Zehnder I+Q (I+Q MZM). Os sinais ópticos são polarizados ortogonalmente e combinados pelo PBC (\textit{polarization beam combiner}) gerando o sinal óptico POLMUX DQPSK. O sinal POLMUX DQPSK óptico é então lançado na fibra e passa por um amplificador óptico do tipo à fibra dopada com erbio (\textit{erbium doped fiber amplifier} EDFA).
+
+\begin{eqnarray}
+ \textbf{s}_k &=& \left[ \begin{array}{l}
+                     s_k^V\\
+                     s_k^H
+                     \end{array}  \right],
+\label{eq:array}
+\end{eqnarray}
+
+O EDFA é o componente que insere o ruído de emissão espontânea amplificada (ASE), $\textbf{n}_k$, do tipo aditivo Gaussiano branco complexo (AWGN), com média nula e variância $\sigma_w^2 = N_0$ em cada polarização.
+
+\section{Receiver Front-end e Ruído de Fase}
+
+No \textit{front-end} óptico o sinal óptico recebido é misturado a cada uma das polarizações do oscilador local (LO) pelas híbridas de $90^o$. Os sinais ópticos são convertidos para o domínio eletrônico, filtrados e amostrados. Observa-se que a referência de polarização do sinal é perdida durante a transmissão e que quando o sinal é misturado ao LO obtém-se componentes das polarizações em cada saída do receptor, o LO insere ainda ruído de fase no sistema. Ambas referência de fase e de polarização devem ser recuperadas com processamento digital do sinal apresentado no capítulo \ref{dsp}.
+
+Então o sinal recebido $\textbf{r}_k$ aparece como:
+
+\begin{equation}
+\textbf{r}_k=\textbf{H}\textbf{s}_ke^{(j\theta_k)}+\textbf{n}_k,
+\label{eq:rk}
+\end{equation}
+em que, $\textbf{H}$ é um matriz transmissão de atenuação dependente da polarização (PDL) e $\theta_k$ o descasamento de fase do oscilador local e do laser transmissor:
+
+\begin{eqnarray}
+\textbf{H} = \left[ \begin{array}{cc}
+                     \cos\alpha &   -\sin\alpha\\
+                     \sin\alpha &   \cos\alpha
+                     \end{array}  \right]
+                     \left[ \begin{array}{cc}
+                     \sqrt{1-\gamma} & 0\\
+                     0 &\sqrt{1+\gamma}
+                     \end{array}  \right]
+                     \left[ \begin{array}{cc}
+                     \cos\beta & -\sin\beta\\
+                     \sin\beta & \cos\beta
+                     \end{array}  \right],
+\end{eqnarray}
+a primeira e a última matriz são rotações do elemento gerador de PDL, e a matriz central o elemento gerador do desbalanceamento das polarizações ortogonais. Após a recepção coerente os sinais podem ser então equalizados.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+O ruído de fase em um sistema óptico com recepção coerente é causado pela largura espectral do laser transmissor e do oscilador local (Local Oscillator - LO). O ruído dos lasers é caracterizado pelo processo discreto de Wiener \cite{wiener}.
+
+O desvio de fase $\theta_k$ para cada símbolo $k$ pode ser escrito da seguinte maneira:
+
+\begin{equation}
+\label{wiener1}
+\theta_k=\theta_{k-1}+\Delta_k=\sum_{m=0}^{k-1} \Delta_m,
+\end{equation}
+
+\begin{equation}
+\label{wiener2}
+\theta_{k-i}=\theta_{k}+\sum_{m=0}^{i-1} \Delta_m,
+\end{equation}
+em que $\Delta_m$ é uma variável aleatória com distribuição gaussiana de média nula e variância $\sigma_{\Delta}^2=2\pi\Delta\nu T_s$. A expressão $\Delta\nu T_s$ pode ser chamada de taxa de ruído de fase e corresponde ao produto da banda do processo ruidoso $\Delta\nu$ e o período do símbolo modulado $T_s$. Note que $\Delta\nu$ é a banda dos lasers utilizados e corresponde à soma da de largura de linha do laser transmissor e do LO. A Figura \ref{fig:wiener} ilustra a realização de um processo discreto de Wiener.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.50]{./figs/wiener.eps}
+	\caption{Processo discreto de Wiener para largura de linha do laser $\Delta\nu=1 MHz$.}
+	\label{fig:wiener}
+\end{figure}
+
+Quando o ruído de fase está presente, o sinal recebido $r_k$ sofre uma rotação de fase $\theta_k$:
+\begin{eqnarray}
+r_k &=& s_ke^{j\theta_k}+w_k,
+\end{eqnarray}
+em que $s_k$ é o sinal enviado, $\theta_k$ o desvio de fase inseridos pelo laser do transmissor e pelo LO. O termo $w_k$ é o ruído aditivo gaussiano de média nula e variância $\sigma_w^2 = N_0$ inserido na passagem pelo canal. A Figura \ref{fig:cons} exemplifica o efeito do ruído de fase em um esquema de modulação QPSK.
+
+\begin{figure}[h]
+\centering
+\subfloat[Constelação QPSK.] % caption for subfigure a
+{
+    \label{cons}
+    \includegraphics[scale=0.4]{./figs/cons.eps}
+}
+
+\subfloat[Constelação com ruído de fase e 5k símbolos.] % caption for subfigure b
+{
+    \label{consrot}
+    \includegraphics[scale=0.3]{./figs/consrot.eps}
+}
+\subfloat[Constelação com ruído de fase e 10k símbolos.] % caption for subfigure b
+{
+    \label{consrott}
+    \includegraphics[scale=0.3]{./figs/consrott.eps}
+}
+
+\subfloat[] % caption for subfigure b
+{
+    \label{cons3d}
+    \includegraphics[scale=0.4]{./figs/cons3d.eps}
+}
+\centering
+\caption{Efeito do ruído de fase em uma constelação QPSK}
+\label{fig:cons} % caption for the whole figure
+\end{figure}
+\clearpage
+
+Observa-se que a referência de fase é perdida completamente após a transmissão de uma sequência de 10k símbolos. A natureza aleatória do processo discreto de Wiener aplicado à constelação de esquema QPSK faz a constelação girar, que aos poucos deixa a região de correta decisão. Durante a transmissão a constelação se perde por completo tornando impossível a decisão correta dos símbolos.
+Este efeito não pode deixar de ser abordado no projeto de um sistema de comunicação óptica, pois claramente leva a uma grande degradação do desempenho geral do sistema.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% Receptor coerente%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Processamento Digital de Sinais} \label{dsp}
+
+O processamento digital de sinais (Fig. \ref{fig:coerente}) é responsável pela compensação de distorções ocorridas na transmissão,
+demultiplexação de polarização, recuperação da portadora do sinal e decisão dos símbolos. Assumimos a conversão opto-elétrica e amostragem perfeitas no \textit{front-end} óptico.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.70\textwidth]{figs/coerente.eps}
+	\caption{Diagrama de blocos do Receptor.}
+	\label{fig:coerente}
+\end{figure}
+
+Cada um dos componentes do receptor coerente utiliza um conjunto de algoritmos que podem ser implementados com um processador digital. O primeiro bloco é o equalizador, componente responsável por demultiplexar as  polarizações $s_k^V$ e $s_k^H$ e a compensar efeitos lineares ocorridos na transmissão. Durante a transmissão óptica em uma SSMF a referência de polarização é perdida e os sinais recebidos são uma mistura das duas polarizações.
+
+As distorções lineares como a dispersão cromática (CD) e dispersão nos modos de polarização (PMD) são efeitos importantes em comunicações ópticas a altas taxas de transmissão e em longas distâncias. A CD é uma propriedade intrínseca da fibra óptica e faz com que diferentes frequências se propaguem em diferentes velocidades causando interferência intersimbólica. A PMD é causada pela birrefringência da fibra óptica fazendo com que as polarizações se propaguem com diferentes velocidades. Neste modelo assume-se a existência da matriz $\textbf{W}$ \cite{garcia}, que é capaz de compensar perfeitamente o descasamento de polarização do sinal recebido e do oscilador local.
+
+Após a equalização $\textbf{r}_k$ pode ser reescrito como:
+
+\begin{eqnarray}
+\textbf{r}_k=\textbf{W}\textbf{r}_k&=&\textbf{W}\left[\textbf{H}\textbf{s}_k \exp(j\theta_{k}) + \textbf{n}_k\right] = \textbf{W}\textbf{H}\textbf{s}_k \exp(j\theta_{k}) + \textbf{Wn}_k,\nonumber \\
+&\approx& \textbf{s}_k \exp(j\theta_{k}) + \textbf{w}_k,
+\end{eqnarray}
+em que $ \textbf{w}_k=\textbf{Wn}_k$ sem perda de generalidade. De maneira alternativa o sinal recebido $\textbf{r}_k$ pode ser escrito para ambas polarizações:
+
+\begin{equation}
+\label{bothpol}
+r_k^{V/H}=s_k^{V/H} e^{j\theta_{k}} + w_k^{V/H},
+\end{equation}
+em que $\sigma_w^{V}$ pode ser diferente de $\sigma_w^{H}$, mas o deslocamento de fase $\theta_{k}$ é o mesmo para qualquer polarização.
+
+O recuperador de portadora é o foco deste trabalho. Ele é responsável por compensar a excursão aleatória dos lasers transmissor e LO, e é fundamental para o desempenho geral do sistema.
+
+

@@ -1,0 +1,241 @@
+%TCIDATA{LaTeXparent=0;0;relatorio.tex}
+\chapter{Implementação}\label{implementação}
+%Complementar
+%%Perguntar a genaina sobre este tópico
+Na implementação deste trabalho, põe-se em prática os conceitos apresentados no capítulo Embasamento Teórico, principalmente no que é relativo ao Facebook. Este aplicativo, como dito no capítulo Motivação, é de forma geral um coletor e analisador de dados da rede social online Facebook. As vantagens de se coletar dados utilizando uma API e os motivos da escolha da rede social online Facebook foram abordados no capítulo Motivação. Neste capítulo apresentar-se-á o aplicativo desenvolvido e serão abordados os principais temas relacionados ao aplicativo. Este capítulo está dividido em seis seções, abordadas na seguinte ordem: Descrição Geral da Implementação; Tecnologias Utilizadas; Regras de Negócio, Análise de Requisitos e Metodologias; Metodologias e Testes do Projeto; Estratégias para Atingir Público Alvo. Neste capítulo são também referenciados todos os anexos deste trabalho.
+
+%%citar aqui todas as seções
+	
+\section{Descrição Geral da Implementação}
+%Em embasamento teorico
+%-explicar o conceito de página 
+%-explicar o conceito de perfil
+%-explicar o funcionamento de um aplicativo
+%-explicar as características de um página do Facebook, falando inclusive sobre a presença de uma aba dentro desta página com link para o aplicativo
+%-explicar tecnologias da Facebook Platform para construção do aplicativo
+%-explicar características da Facebook Plataform, FQL, Legacy, SDK
+
+%Em introdução
+%-criar o acrônimo rede social online RSV (http://pt.wikipedia.org/wiki/Rede_social_online)
+
+%neste capítulo
+%-simular fíguras
+A implementação deste trabalho é um software coletor e analisador de informações de estudantes da UnB presentes na RSO Facebook. Trata-se de um aplicativo da Facebook que se enquadra na categoria de aplicativos de utilidade social. Entende-se por "estudantes da Universidade de Brasília presentes na rede social online Facebook" usuários da rede social online Facebook que tem a página da Universidade de Brasília adicionada na parte de educação do seu perfil. Por conveniência, chamaremos de agora em diante este grupo de Rede UnB Facebook.
+O aplicativo funciona da seguinte maneira. As informações da Rede UnB Facebook são coletadas e salvas em um banco de dados. As informações salvas são analisadas de forma a identificar padrões através de um método de categorização (mineração de dados). Estas informações são coletadas do perfil do DCE-UnB no Facebook. As informações são coletadas por meio de um aplicativo do Facebook após devida autorização do usuário. Por final, as informações analisadas são apresentadas para o usuário final.
+
+%Começar aqui a descrição do infográfico
+%incluir figura com as abas do aplicativo e mostrando os dois infográficos gerados
+
+%incluir aqui figura do diálogo de permissão do facebook
+
+%incluir figura mostrando este infográfico
+%possibilidadede complementar mais alguma coisa
+
+\section{Tecnologias utilizadas}
+%ler tudo antes de separar os tópicos...
+O software foi desenvolvido com tecnologias atuais e agéis que eram dominadas pelo desenvolvedor do software, autor deste trabalho. Dessa maneira, buscou-se obter a melhor perfomance na coleta e análise das informações, aumentar o tempo de vida e a escalabilidade do software. As tecnlogias abordadas a seguir são dividas em Tecnologias do Facebook e Tecnologias Gerais.
+
+\subsection{Tecnologias do Facebook}
+No capítulo Embasamento Teórico, mostrou-se que o Facebook está em processo de mudança de tecnologias antigas, mas ainda funcionais, para tecnologias atuais e compatíveis com o resto da web. As tecnologias escolhidas para o desenvolvimento da implementação deste trabalho foram todas atuais: GRAPH API, FQL, Javascript SDK com OAuth 2.0, PHP SDK v3.0.1. O FQL foi implementado utilizando as funções "FB.Data.query" e "query.wait", providas pela Javascript SDK e que fazem consultas via Graph API. Estas funções juntamente com a função FB.api, também provida pela Javascript SDK, foram as responsáveis pela coleta dos dados.
+
+Durante o desenvolvimento do aplicativo; foram realizados alguns testes utilizando o Console de Teste FQL.query e a ferramenta Graph API Explorer; ambos presentes no portal de desenvolvedores do Facebook. Na subseção Testes, apresentar-se-á mais detalhes sobre a fase de testes do aplicativo.
+%%especificar seção e subseção
+%linkado com a parte de testes.O teste de validação consistiu em checar se os dados obtidos dos usuários que acessaram o aplicativo e foram gravados no banco de dados da aplicação eram os mesmos  consequente entrega o software de acordo com o que o usuário deseja 
+%complementar depois
+
+\subsection{Tecnologias Gerais: Linguagens de Programação, Bibliotecas e IDEs}
+%No capítulo Embasamento Teórico
+O aplicativo do Facebook foi desenvolvido utilizando um misto de três linguagens de programação diferentes. As linguagens foram escolhidas levando em consideração três pré-requisitos estabelecidos pelo desenvolvedor do aplicativo. Os pré-requisitos foram o domínio das linguagens a serem escolhidas pelo desenvolvedor do software (autor deste trabalho) e a clareza e a quantidade de informações úteis disponíveis na documentação oficial de desenvolvedores do Facebook e na web relacionadas as linguagens a serem escolhidas. Além da existência de um SDK, relacionado as linguagens a serem escolhidas, que facilitasse a construção do aplicativo. Após serem analisados os requisitos, foram escolhidas as seguintes linguagens de programação: PHP, Javascript e Actionscript. A escolha das duas primeiras linguagens citadas são justificados pelo fato do desenvolvedor ter domínio sobre estas, a documentação das mesmas para a construção de aplicativos no Facebook é clara e a maior existente. Além disso, estas linguagens tem SDKs que agilizam a construção de aplicativos, tornam a aplicação mais escalável e fácil de ser configurada. A escolha do ActionScript, linguagem proprietária da empresa Adobe, é justificada principalmente pela capacidade de se fazer interfaces gráficas de usuários ricas de forma rápida. Esta linguagem foi utilizada junto ao IDE Flash Professional CS5.5 Tiral para desenvolver os infográficos. Nota-se que nenhuma das linguagens sozinhas atende plenamente as necessidades de desenvolvimento do aplicativo sozinhas, por isso a necessidade das três.
+
+A linguagem de programação PHP foi utilizada na estruturação do aplicativo, gravação dos dados coletados no banco de dados, para prover autenticação do aplicativo, cobrar permissões do usuário, para acessar as informações de \textit{signed request} do usuário entre outras utilidades.
+
+A linguagem de programação Javascript foi utilizada em diversas frentes do software: Interface Gráfica do Usuário, Chamada de Requisições POST e algumas funções intrínsecas da API do Facebook. A Interface Gráfica do Usuário relativa  as duas abas onde serão apresentados os infográficos foi criada utilizando-se a biblioteca javascript JQuery conhecida como jquery-ui.min.js (v1.8). As chamadas de requisições POST foram feitas utilizando a biblioteca javascript JQuery conhecida como jquery.min.js (v1.4). 
+%colocar referencia http://jquery.com/
+As funções intrínsecas da API do Facebook se referem a coleta de dados dos usuários, utilização de cookies e autenticação OAuth 2.0.
+
+Durante o processo de codificação do aplicativo foi utilizado o IDE Zend Studio Trial (v8.0.1). Este IDE foi escolhido, pois foi premiado pela Infoworld 2011 como Melhor IDE PHP.
+
+%colocar referência da InfoWorld
+%http://en.wikipedia.org/wiki/InfoWorld
+%colocar referência do prêmio melhor IDE PHP http://www.infoworld.com/d/infoworld/infoworlds-2011-technology-the-year-award-winners-285&current=18&last=21F  slideshowTop
+%referência de onde ele é melhor 
+%colocar referência http://www.zend.com/products/studio/
+
+%falar da configuração do aplicativo no Facebook e depois como inseri-lo com tab de uma página
+As tecnologias utilizadas pouparam tempo de desenvolvimento do software. Mais detalhes das linguagens de programação PHP e JavaScript estão no capítulo Embasamento Teórico.\linebreak
+A estrutura de arquivos do projeto implementado e a descrição das formas de acesso e configuração do aplicativo no Facebook está disponível no anexo I e II, respectivamente. 
+
+\subsection{Servidor de Hospedagem e de Domínio}
+
+O aplicativo está rodando em servidor de hospedagem configurado com Apache Web Server (v2.2+);  PHP (v5.3.6+) e PostgreSQL (v9.0.4+). Trata-se de um servidor de hospedagem alugado pela empresa Locaweb. O domínio do aplicativo é www.adsum.com.br/facebook/pedro3/ está registrado junto a FAPESP (Fundação de Amparo à Pesquisa do Estado de São Paulo) por intermédio da empresa RegistroBR, que realiza registros de domínios para Internet no Brasil.
+%colocar referência do http://registro.br
+%modificar depois
+%checar dados na locaweb
+%inserir referência locaweb
+
+
+\section{Regras de Negócio, Análise de Requisitos e Metologias}
+%Capítulo Motivação
+
+%pesquisa
+Após a realização de uma pesquisa sobre os principais métodos de coleta e análise de dados em redes sociais abordados no capítulo Embasamento Teórico, optou-se dentre várias opções pela construção de um aplicativo para a rede social online Facebook. A tomada desta decisão levou a realização de mais uma pesquisa sobre como desenvolver aplicativos para o Facebook que resultaram nas seguintes decisões: utilização das Tecnologias do Facebook, Linguagens de Programação, Bibliotecas, IDEs e Servidor de Hospedagem com as características citados na seção passada deste capítulo.
+
+%%%%
+
+\subsection{Elaboração da Regra de Negócio e Análise de Requisitos}
+Após a realização da primeira pesquisa citada na subseção anterior foi definida uma parte da regra de negócio do aplicativo que está descrita na seção Descrição Geral da Implementação. Logo após, foi realizada uma segunda pesquisa, também descrita na subseção anterior, que definiu alguns requisitos do projeto. Esta pesquisa foi orientada aos pré-requisitos definidos pelo desenvolvedor. A análise de requisitos foi realizada de forma bastante intuitiva. 
+%começa do tempo verbal "ia"
+Sabia-se que seriam usadas as \textit{APIs} do Facebook. Portanto, decidiu-se fazer uso das Tecnologias do Facebook mais atuais. Sabia-se que o aplicativo coletaria e analisaria alguns dados de usuários do Facebook pertencentes ao grupo Rede UnB Facebook, porém não se sabia de forma detalhada quais dados seriam estes e quais seriam as análises feitas com base nos mesmos. 
+%mudança do tempo verbal
+Neste momento, o processo de análise de requisitos parou e o processo de desenvolvimento das regras de negócio recomeçou. Os dados  e as análises foram definidos para complementar as regras de negócio. Esta parte das regras de negócio se encontram na subseção seguinte. Logo após a complementação das regras de negócio recomeçou-se a análise de requisitos da mesma maneira. 
+%voltou tempo verbal
+Sabia-se que o ambiente de funcionamento do aplicativo desenvolvido é a web; portanto foram escolhidas Linguagens de Programação, Bibliotecas e IDEs para este ambiente de acordo com os pré-requisitos do desenvolvedor. Sabia-se que para coletar dados de usuários do Facebook são necessárias permissões, descritas no capítulo Embasamento Teórico, portanto foram listados as permissões necessárias para a coleta dos dados necesários. 
+%mudança do tempo verbal
+E assim por diante todo o escopo do processo de análise de requisitos e das regras de negócio foi definido.
+%%se referir somente uma única vez ao Facebook como rede social online Facebook
+%não mais partir da introdução
+Foram demandadas cerca de 30 horas para a análise de requisitos; 100 horas para a elaboração das regras de negócio e 250 horas de codificação, num total de 380 horas. 
+%As horas dedicadas ao projeto foram registradas em um relatório mostrado no Anexo II. 
+%%Colocar relatório de desenvolvimento em anexo
+Neste relatório continham as datas e os horários que as atividades relativas ao desenvolvimento do software começavam e terminavam. Estas eram separadas em três sessões: análise de requisitos, regras de negócio e codificação.
+Uma observação importante é que o processo de análise de requisitos demandou apenas 8\% do total de horas dedicadas ao projeto.
+Acredita-se que isto tenha acontecido, porque as regras de negócio do aplicativo e os pré-requisitos do desenvolvedor foram bastante específicos, deixando o espaço amostral de possíveis requisitos pequeno. Outra observação importante é que no processo de desenvolvimento deste software as análises de requisitos não dependeram do fato de as regras de negócio estarem totalmente concluídas. Notou-se assim um desenvolvimento de software iterativo.
+
+%começar aqui...
+\subsection{Regras de Negócio: Coletar e Analisar o que?}
+%onde falar o que poderia ser feito e que será feito???
+%permissões será abordada no capítulo Embasamento Teórico
+%pode se tratar de um tema que está envolvido dentro da coleta de dados
+Como dito anteriormente; a implementação deste trabalho é um aplicativo que coleta e analisa alguns dados de usuários da Rede UnB Facebook. Nesta subseção são descritos de forma detalhada quais os dados que o aplicativo coleta e analisa e assim as regras de negócio do aplicativo são totalmente abordadas.
+
+%colocar o pra que na descrição geral, nem que seja descobri padrões
+%pensar em sbudividir este capitulo
+
+
+%%%possibilidade de descobrir o que???
+%%processo de 
+%%%Colocar no capítulo embasamento teorico
+%http://pt.wikipedia.org/wiki/Mineracao_de_dados
+%http://pt.wikipedia.org/wiki/Planejamento
+%http://pt.wikipedia.org/wiki/Inteligencia_empresarial
+%mineração de dados vs inteligencia empresarial
+%tatico             vs  organizacional
+
+%%%abordar este tema no embasamento teorico
+
+Nesta primeira versão do aplicativo, versão beta, coletar-se-á somente os dados relativos as informações do perfil dos amigos dos usuários. Estes dados não incluem o conteúdo gerado por estes usuários nem os dados do próprio perfil dos amigos destes usuários. \linebreak 
+É importante saber que somente os dados disponíveis serão coletados, ou seja, aqueles existentes no perfil do usuário. Os dados que serão coletados são descritos abaixo e estão classificados em quatro camadas.
+
+%%pensar em uma maneira mais bonita de apresentar este dados
+%name, uid, education, birthday, work_history , hometown_location, current_location, sex, email, political, religion, relationship_status, website, music, movies, tv, books
+\begin{itemize}
+    \item Principal
+			\begin{itemize}
+				\item nome; uid; quantidade de amigos (grau); gênero sexual; data de nascimento; naturalidade; localidade da moradia atual; email; visão política; religião; estado civil; website;
+			\end{itemize}
+    \item Trabalho
+			\begin{itemize}
+				\item nome(s) da(s) instituição(ões) que trabalha ou que trabalhou; localidade(s) da(s) respectiva(s) instituição(ões); cargo(s) que trabalha ou que trabalhou na(s) respectiva(s) instituição(ões); data de entrada e data de saída na(s) respectiva(s) instituição(ões); instituição que está trabalhando atualmente e desde quando
+			\end{itemize}
+    \item Educação
+			\begin{itemize}
+				\item nome(s) da(s) instituição(ões) que estuda ou que estudou;tipo da(s) instituição(ões),por exemplo, ensino superior; Ano de entrada na(s) respectiva(s) instituição(ões)
+área de concentração na(s) respectiva(s) instituição(ões)
+			\end{itemize}
+	 \item Páginas "curtidas"
+			\begin{itemize}
+				\item nome(s) da(s) seguinte(s) categoria(s) página(s) curtidas: filmes, músicas, livros e show televisivos.
+			\end{itemize}
+\end{itemize}
+
+Como abordado no capítulo Embasamento Teórico, as páginas representam os gostos do usuário e as categorias de páginas mais populares são relacionadas filmes e livros.\linebreak
+É importante notar nesta subseção como os dados do perfil de um usuário no Facebook são bem organizados, justificando mais uma vez a escolha desta rede social online para a coleta de dados.
+
+Na análise de dados, descrita abaixo nesta subseção, são mostrados os tratamentos que serão feitos com os dados coletados. As conclusões alcançadas a partir destes tratamentos serão abordadas no capítulo seguinte chamado Resultados Obtidos. 
+
+Serão feitos os seguintes tratamentos de dados: \linebreak
+%1. Medir-se-á a porcentagem de usuários da Rede UnB Facebook que não curtiram a página da Universidade de Brasília no Facebook, mas que tem esta informação adicionada na parte de educação do seu perfil. \linebreak
+%2. Fazer-se-á uma estimativa da porcentagem de alunos e ex-alunos da Universidade de Brasília pertencentes a Rede UnB Facebook, assim descobrindo-se a presença online da UnB nesta rede social online.\linebreak\
+Descobrir-se-á padrões de usuários da Rede UnB Facebook categorizando estes padrões segundo o método de categorização explicado no capítulo Embasamento Teórico. Assim, a partir das  informações salvas descobriremos várias "subredes" de acordo com os dados do perfil do usuário. Logo, existiram várias "subredes", como por exemplo, a "subrede" de organização educacional de ensino médio, a "subrede" de organização de trabalho, "subrede" de gênero sexual, "subrede" idade e assim por diante. É importante abordar aqui que também haverá a subrede de dados não preenchidos pelo perfil da pessoa, ou seja, dados que foram salvos como uma \textit{string} sem caracteres ou nulos.
+%se for mais de um dado colocar aqui...
+%3.1 Informações Gerais \linebreak
+%Nesta categoria são mostradas todas as informações que serão analisadas:
+%iade, gênero sexual, quantidade de amigos, naturalidade, estado civil, línguas faladas, localidade da moradia %atual, domínio de email, visão política e religiosa, website, organização de trabalho, escola de ensino médio, ano da turma da Universidade de Brasília, área de concentração, categoria de página "curtida", nome da página "curtida", nome da página "curtida" dentro de uma determinada categoria, campos vazios.\linebreak
+%Os campos vazios referem-se a dados que não estão preenchidos no pefil dos usuários da Rede UnB Facebook.
+%Classificar-se-á percentualmente, de forma descrescente e independente as informações pessoais descritas acima, de acordo com a quantidade de usuários da Rede UnB Facebook que tiverem estas informações setadas nas devidas partes de seu perfil.\linebreak
+%3.2 "SubRedes" \linebreak
+%Filtrar-se-á os dados classificados acima por eventos, organizações de trabalho e escola de ensino médio. Em seguida, fazer-se-á uma nova classificação de usuários destas "subredes" resultantes das respectivas filtragens. Esta classificação ocorrerá da mesma maneira de 3.1, com a ressalva de não se considerar as informações já utilizadas para nas respectivas filtragens.\linebreak
+%manter o padrão de falar somente organizaçãoes educacionais
+%%falar no final, as informações que não foram preenchidas na parte de educação do pefil de um usuário da Rede UnB Facebook 
+% páginas "curtidas"
+% eventos
+%esta margem pode ser usada também para mostrar se um usuário é ou não experiente os recursos na rede unb facebook
+
+%\subsection{Mineração de dados}
+%A maneira de como a análise
+
+\subsection{Principais Requisito para Coleta e Análise}
+A partir das regras de negócio descritas na subseção passada foram pesquisados os requisitos para continuar a construção do aplicativo. Abordar-se-á nesta subseção estes requisitos: a escolha das permissões para a coleta dos dados e alguns detalhes de tratamento destes dados. 
+Para a escolha das permissões, fez-se uma simples associação de quais permissões seriam necessárias para coletar todas informações. Esta associação foi feita com base na tabela de permissões presente no portal de desenvolvedores do Facebook. Abaixo são apresentadas as 17 permissões necessárias para a coleta de dados que pretendida pelo aplicativo:
+\begin{itemize}
+    \item user\_about\_me, friends\_about\_me, friends\_likes, friends\_online\_presence, friends\_relationships, friends\_work\_history, friends\_activities, friends\_education\_history, friends\_hometown, friends\_location, friends\_photo\_video\_tags, friends\_videos, friends\_birthday, friends\_events, friends\_interests, friends\_photos, friends\_religion\_politics, friends\_website, email
+\end{itemize}
+%%
+Todas as permissões citadas acima referem-se a dados exclusivos do usuário.
+Contudo, o aplicativo desenvolvido para este trabalho pede ao usuário mais permissões. Isto é feito para que seja possível em versões futuras do aplicativo a coleta de outros dados do usuário, sem que haja necessidade de pedir estas informações para os usuários novamente. O resto das permissões pedidas são mostradas abaixo de forma categorizada:
+\begin{itemize}
+    \item Permissões para Coleta do próprio usuário:
+		\begin{itemize}
+		\item user\_about\_me, user\_likes, user\_online\_presence, user\_relationships, user\_work\_history, user\_activities, user\_education\_history, user\_hometown, user\_location, user\_photo\_video\_tags, user\_videos, user\_birthday, user\_events, user\_interests, user\_photos, user\_religion\_politics, user\_website
+		\end{itemize}
+	\item Permissões extendidas
+		\begin{itemize}
+    	\item read\_stream, off-line\_access, online\_presence, publish\_stream
+		\end{itemize}
+\end{itemize}
+Estas permissões garantem a coleta dos seguintes dados do usuário: todos os dados citados na subseção anterior, mudando apenas o fato de que agora estes são relacionados aos amigos do usuário analisado; o conteúdo gerado pelo usuário (CGU) em tempo real; a presença online. Além disso, a permissão off-line\_access permite que o aplicativo acesse os dados a qualquer hora do dia e a permissão publish\_stream garante que o aplicativo gere qualquer tipo conteúdo como se fosse o usuário.
+%%%citar tudo isto no embasamento teórico
+
+Os detalhes relativos ao tratamento dos dados são abordados nas seguintes situações. Deve-se extrair do dado coletado email apenas o domínio deste email, já que será apenas este o objeto a ser analisado. Outro caso que se enquadra neste requisito é quando um dado coletado não está preenchido no perfil de um usuário, ou seja, não existe. Este dado tem valor nulo ou indefinido. Se um dado com valor nulo ou indefinido for acessado pelo aplicativo ocorre um erro e o aplicativo para de funcionar. Dessa maneira, não é continuada a coleta e os demais dados já coletados não são gravados no banco de dados. Daí, a necessidade de verificação em todos os dados colhidos se estes existem.
+
+%%falar que existem permissões que estão sendo pedidas, mas serão utilizadas  apenas em outras versões do aplicativo.
+%%
+%%
+
+%%Análise
+%descobertas de padrões, modelagem comportamental dos usuários
+
+%%escrever as conclusões que se pode chegar com os resultados obtidos
+%mas manter nesta seçã de análise apenas o tratamento a ser feito com os dados
+
+%não utilizam o recurso "curtir" uma página do Facebook : FALSO pois este usuários provavelmente terão curtido outras páginas
+%% foco deste trabalho. Os outros requisitos para construção do O principal requisitos para a construção do aplicativo
+
+\section{Mineração de Dados}
+O processo de Mineração de Dados, em inglês \textit{Data Mining}, consiste em explorar grandes quantidades de dados à procura de padrões consistentes, como regras de associação ou sequências temporais, para detectar relacionamentos sistemáticos entre variáveis, detectando assim novos subconjuntos de dados. Dessa forma, 
+obter a partir dos dados operativos brutos, informação útil para subsidiar a tomada de decisão nos escalões médios e altos da empresa. O método de categorização consiste em agrupar perfis, dentre todos já salvos, de acordo com uma ou mais informações colhidas. Por exemplo: onde a maioria dos alunos da Rede UnB Facebook estudou no ensino médio. Os dados categorizadas e o conhecimento gerado a partir destes dados que serão apresentados no próximo capítulo, Resultados.
+%colocar referência: http://www.dmoz.org/Computers/Software/Databases/Data_Mining/
+
+%metodologia de desenvolvimento
+\section{Metodologias, Padrões e Testes do Projeto}
+O aplicativo desenvolvido não seguiu nenhum \textit{Design Pattern}(Padrões de Projetos) como o modelo \textit{MVC}(\textit{Model View Controller}) e  nenhuma Metodologia de Desenvolvimento de Software como \textit{RUP} (\textit{Rational Unified Process}) ou utilização de  Diagramas \textit{UML}, (\textit{Unified Modeling Language}). Além disso, não foram utilizadas Metodologias de Gerenciamento de Projetos de Software como \textit{SCRUM} ou \textit{XP} ou Metodologias de Testes. Dessa maneira, a construção deste aplicativo não faz uso de metodologias comuns em projetos de Software atuais e que são consideradas boas práticas da Engenharia de Software. 
+%justificativa para uso de nenhuma metodologia
+O projeto foi feito dessa maneira; pois a parte de codificação do software não é complexa nem extensa. Além disso, o software foi desenvolvido por apenas uma pessoa. Dessa maneira, não houve a necessidade de seguir metodologias comuns do desenvolvimento de software e nem houveram dificuldades de desenvolvimento resultantes desta decisão.
+%descrição da estrutura de arquivos do projeto e organizações de onde está concentrado as funções JavaScript, PHP e HTML
+Os testes foram feitos em paralelo ao desenvolvimento do projeto e realizados pelo próprio desenvolvedor. Como o software não tinha muitos pontos de função e realizava apenas duas tarefas complexas que são a análise e a coleta de dados. Nesta fase de desenvolvimento do projeto, não houveram grandes dificuldades nem necessidade de grandes correções ou modificações de fluxos a partir da detecção de erros.
+%referência: http://pt.wikipedia.org/wiki/An%C3%A1lise_de_pontos_de_fun%C3%A7%C3%A3o
+
+
+\section{Estratégias para atingir público alvo}
+O público alvo do projeto (alunos e ex-alunos da UnB que tem perfil na RSO Facebook) foi atingido por meio da coleta de dados de amigos do perfil do DCE-UNB, mostrado na figura 1.8, que conta com 3490 "amigos", sendo que a maioria destes "amigos" alunos e ex-alunos da UnB como será mostrado no próximo capítulo, Resultados. Foi assinado um termo de contrato entre o autor deste trabalho e o DCE-UNB afirmando que os dados não seriam vendidos ou cedidas a outros projetos que não fossem também aprovados pela instituição. Outra clásula acorda que os dados serviriam somente para identificar padrões no público alvo do projeto e nada além disso. Os dados de todo público alvo do projeto seria viável através do acesso a conta da página da Universidade de Brasília, mostrada na figura 1.7. Isto porque toda vez que alguém adiciona a Universidade de Brasília na parte de educação do seu perfil, esta marcação (/textit{metadados}) é notificada no perfil desta página. Assim, através do número de notificações recebidas sabe-se extamente quantas pessoas fizeram a ação descrita anteriormente. Estima-se que existam mais de 36.000 alunos da UnB representados por perfis no Facebook. Esta estimativa é baseada na quantidade de membros da comunidade da "UnB - Universidade de Brasília" no Orkut, mostrada na figura 1.4, em que a maioria dos membros era aluno ou ex-aluno da UnB. A partir dessa base, leva-se em conta que como dito no capítulo Introdução hoje o número de usuários e acessos ao Facebook são maioress do orkut portanto notou-se uma forte migração de usuários da primeira RSO	citada para a segunda, ainda mais considerando os alunos da Universidade de Brasília que são mais "elitizados digitalmente".
+%pretensões futuras colocar este aplicativo na página da UnB
+
+
+%falar teste de validação
+%teste após a conclusão do aplicativo
+%coloca algum livro foda de referência
+%descrever possíveis limitações do software
+%\section{Limitações do software}
+%Escalabilidade muita demanda\linebreak
+%Fase de testes mal feita\linebreak
+%Não aceitação do aplicativo pelos usuários\linebreak

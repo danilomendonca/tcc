@@ -1,0 +1,316 @@
+\chapter{Recuperação de Portadora}\label{portadora}
+
+
+A recuperação de portadora é o componente do detector coerente responsável por recuperar a referência de fase do sistema. Esta seção modela e apresenta formas de recuperação de portadora para uma única polarização \textit{non-data aided} (NDA), ou seja, recuperação de portadora sem auxílio dos dados. Um esquema NDA é capaz de recuperar a portadora sem a necessidade de saber qual foi a informação transmitida.
+
+Assumindo que a sequência recebida $r_{k}$ esteja corrompida pelo ruído ASE e pelo ruído de fase, temos:
+
+\begin{equation}
+\label{eq:received} r_k=s_{k}\exp(j\theta_k)+w_k,
+\end{equation}
+
+em que $w_k$ é um processo aleatório AWGN com média nula e variância $\sigma_w^2=N_0$, $s_k$ é o símbolo transmitido no instante $k$ e $\theta_{k}$ obedece o processo discreto de Wiener, em que o elemento no instante $k$ é resultado da soma do ruído no instante $k-1$ mais uma variável aleatória de média nula $\Delta_k$:
+
+\begin{equation}
+\label{wiener1}
+\theta_k=\theta_{k-1}+\Delta_k=\sum_{m=0}^{k-1} \Delta_m,
+\end{equation}
+
+\begin{equation}
+\label{wiener2}
+\theta_{k-i}=\theta_{k}+\sum_{m=0}^{i-1} \Delta_m,
+\end{equation}
+
+$\Delta_m$, é uma variável aleatória com distribuição gaussiana de média nula e variância $\sigma_{\Delta}^2=2\pi\Delta\nu T_s$, $\Delta\nu$ é a soma da largura de linha, dos LASERs do transmissor e do Oscilador Local (LO) e $T_s$ é o período de símbolo.
+
+Então o sinal recebido pode ser escrito:
+
+\begin{equation}
+\label{eq:wienerrecebido}
+r_{k-i}=s_{k-i}e^{j(\theta_k+\sum_{m=0}^{i-1} \Delta_m)}+w_{k-i}.
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% FEEDFORWARD%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Feedforward Carrier Recovery (FFCR)}
+
+
+A técnica FFCR foi proposta por Viterbi e Viterbi em \cite{viterbi} e aparece na figura \ref{fig:singleff}. O primeiro passo do algoritmo é remover a dependência dos dados. Em sistemas $M$-PSK, isso pode ser obtido elevando o sinal complexo à $M$-ésima potência. Depois disso, a sequência é filtrada para minimizar o efeito do ruído aditivo. Em seguida, toma-se o argumento desse sinal dividido por $M$. Segue-se, então, um dispositivo de \textit{phase unwrapping} (PU)\cite{ipkahn07} para permitir que a fase estimada possa excursionar de $-\infty$ a $+\infty$ já que a função $arg$ só permite os limites $-\pi/M$ a $+\pi/M$:
+
+\begin{equation}
+PU(\cdot) = (\cdot) + \left(\left\lfloor \frac{1}{2}+
+\frac{\hat{\theta}_{k-1}-(\cdot)}{2\pi/M}\right\rfloor \right)\frac{2\pi}{M}.
+\end{equation}
+
+A Figura. \ref{fig:PU} compara a estimativa feita pelo FFCR sem PU e com PU, na estimativa sem PU pode-se observar descontinuidades na fase, estas descontinuidades são detectadas e corrigidas pelo \textit{phase unwrapper} (PU).
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.50]{./figs/singleff.eps}
+	\caption{Recuperação de portadora do tipo \textit{feedforward}}
+	\label{fig:singleff}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.50\textwidth]{figs/PU.eps}
+	\caption{Descontinuidade de Fase corrigida pelo PU}
+	\label{fig:PU}
+\end{figure}
+
+O vetor com as amostras recebidas, após o primeiro bloco do diagrama da Fig. \ref{fig:singleff}, $r_{k}^M$, pode ser representado em função de suas amostras passadas. Essas amostras, $r_{k-i}^M$, podem ser escritas como \cite{erik,garcia}:
+
+\begin{eqnarray}
+\label{eq:aprox}
+r_{k-i}^M &=&\{s_{k-i}e^{j(\theta_{k}+\sum_{m=0}^{i-1} \Delta_m)}+w_{k-i}\}^M; \nonumber \\
+          &\approx&s_{k-i}^M e^{jM(\theta_{k}+\sum_{m=0}^{i-1} \Delta_m)}+z_{k-i},
+\end{eqnarray}
+
+em que $z_{k-i}$ é uma variável aleatória (VA) gaussiana com média nula e variância
+$\sigma_z^2=M^2E_s^{M-1}\sigma_w^2$, e $E_s=|s_k|^2$. Assumindo que o desvio de fase durante um símbolo seja pequeno, pode-se escrever:
+
+\begin{equation}
+r_{k-i}^M \approx
+E_s^{M/2}\exp(jM\theta_k)\left(1+jM\sum_{m=0}^{i-1}\Delta_m\right)+z_{k-i}.
+\end{equation}
+
+De forma análoga, os símbolos futuros podem ser escritos como:
+
+\begin{eqnarray} \label{eq:simbolo_futuro}
+r_{k+i}^M \approx E_s^{M/2}\exp(jM\theta_k)\left(1+jM\sum_{m=0}^{i-1} \mu_m\right)+z_{k+i},
+\end{eqnarray}
+
+em que $\mu_m$ é uma variável aleatória de média nula e variância $\sigma_\mu^2=\sigma_\Delta^2$.
+
+Deseja-se obter a estimativa de máxima verossimilhança (ML) de $\theta_{k}$. A função densidade de probabilidade do vetor recebido $\textbf{r}=[r_{k-N}^M,...,r_{k-1}^M,r_{k}^M,r_{k+1}^M,...,r_{k+N}^M]^T$, que agrega amostras passadas e futuras para um dado $\theta_{k}$, pode ser escrita como:
+
+\begin{eqnarray}
+\label{eq:pdfffcr}
+f_{\textbf{r}|\theta_k}(\textbf{r}|\theta_k) =\frac{1}{(\pi)^{L/2} (det\textbf{C}^{1/2})}\exp\left[-(\textbf{r}-\textbf{m}_{\textbf{r}})^H\textbf{C}^{-1}(\textbf{r}-\textbf{m}_{\textbf{r} })\right],
+\end{eqnarray}
+
+em que $\textbf{m}_{\textbf{r}} = E\{\textbf{r}\} =
+E_s^{M/2}\exp(jM\theta_k)\textbf{1}$, e $\textbf{C}$ é a matriz de covariância.
+
+\begin{equation}
+\textbf{C}=E_s^M M^2\textbf{K}\sigma_{\Delta}^2+E_s^{M-1} M^2\textbf{K}_n.
+\label{eq:corr_matrix}
+\end{equation}
+
+Para a matriz $\textbf{C}$, $\textbf{K}_n=\sigma_w^2\textbf{I}_{L \times L}$ para um filtro de comprimento $L=2N+1$ mesmo comprimento de $\textbf{r}$, e
+$\textbf{K}$ dado por:
+
+\begin{equation}\textbf{K}= \left[
+\begin{array}{ccccccccc}
+N & \cdots & 2 & 1 & 0 & 0 & 0 & \cdots & 0 \\
+\vdots & \ddots & \vdots & \vdots & \vdots & \vdots & \vdots & \iddots & \vdots \\
+2      & \cdots      & 2 & 1 & 0 & 0 & 0 & \cdots & 0 \\
+1      & \cdots      & 1 & 1 & 0 & 0 & 0 & \cdots & 0 \\
+0      & \cdots      & 0 & 0 & 0 & 0 & 0 & \cdots & 0 \\
+0      & \cdots      & 0 & 0 & 0 & 1 & 1 & \cdots      & 1\\
+0      & \cdots      & 0 & 0 & 0 & 1 & 2 & \cdots      & 2\\
+\vdots      & \iddots      & \vdots & \vdots & \vdots & \vdots & \vdots & \ddots & \vdots\\
+0      & \cdots      & 0 & 0 & 0 & 1 & 2 & \cdots & N\\
+\end{array}\right].
+\end{equation}
+
+A partir da Eq. \ref{eq:pdfffcr} é possível derivar a função de verossimilhança:
+
+\begin{eqnarray}\label{eq:loglikelihood}
+\Lambda_{\ln}=\ln\left(\frac{1}{(\pi)^{L/2} (\det\textbf{C})^{1/2}}\right)
+(\textbf{r}-\textbf{m}_{\textbf{r}})^H\textbf{C}^{-1}(\textbf{r}-\textbf{m}_{\textbf{r}}),
+\end{eqnarray}
+que é maximizada quando:
+
+\begin{equation}
+\tilde\theta_{k}=\frac{1}{M}\arctan\frac{\Im\{\textbf{1}^T\textbf{C}^{-1}\cdot
+\textbf{r}\}}{\Re\{\textbf{1}^T\textbf{C}^{-1}\cdot\textbf{r}\}}.
+\end{equation}
+
+Levando em conta o esquema de FFCR da Fig. \ref{fig:singleff},
+$\hat{\theta_k}$ é dado por:
+
+\begin{equation}
+\hat{\theta}_k=PU \left\{ \frac{1}{M}\arg\left(\textbf{1}^T\textbf{C}^{-1}\cdot
+\textbf{r}\right) \right\}.
+\end{equation}
+
+O vetor de coeficientes $\alpha$ pode ser definido como:
+
+\begin{equation}
+\alpha = \textbf{1}^T\textbf{C}^{-1}.
+\end{equation}
+
+O vetor de coeficientes $\alpha$ age como um filtro, ponderando os elementos do vetor $\textbf{r}$ e otimizando a estimativa de $\theta_k$. Os coeficientes do vetor  $\alpha$ dependem da interação entre a intensidade do ruído AWGN e do ruído de fase. Na figura \ref{fig:alphasff} vê-se o comportamento de $\alpha$ em diferente cenários.
+
+\begin{figure}[htb]
+\centering
+\subfloat[] % caption for subfigure a
+{
+    \label{alpha2ff}
+    \includegraphics[scale=0.3]{./figs/alpha2ff.eps}
+}
+\subfloat[] % caption for subfigure b
+{
+    \label{alpha1ff}
+    \includegraphics[scale=0.3]{./figs/alpha1ff.eps}
+}
+\centering
+\caption{(a) Vetor de coeficientes $\alpha$ com Ruído de fase fixo $\nu Ts=4\times10^{-5}$ (b) Vetor de coeficientes $\alpha$ com variância do ruído AWGN fixa $N0=0,05$.}
+\label{fig:alphasff} % caption for the whole figure
+\end{figure}
+
+É interessante perceber que quanto maior a variância do ruído AWNG, maior precisa ser $N$. Já para variância do ruído de fase crescente, menor pode ser $N$, já que amostras muito anteriores terão pouca relação com as recentes.
+
+A técnica de recuperação de portadora FFCR é muito simples de implementar, a solução apresentada para remoção de dependência da informação deve funcionar bem para SNRs altas, já em baixa SNRs as aproximações feitas na equação \ref{eq:aprox} não são mais válidas e o estimador não deve obter desempenho satisfatório nessas condições. Repare também que no FFCR o vetor $\alpha$ pode ponderar amostras passadas e futuras de $\theta_k$, veremos que isto não é possível no recuperador de portadora por decisão direta (DD).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%% DECISAO DIRETA%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Recuperação de Portadora Direcionada a Decisão (DD)}
+
+ A estimativa direcionada a decisão (DD) utiliza $N$ decisões de símbolos anteriormente recebidos para realizar a estimativa do ruído de fase para um dado símbolo $k$, e assim decidir o próximo símbolo. Esse símbolo $k$ decidido acaba por realimentar o estimador para a próxima iteração. Os símbolos estimados são utilizados para remover a dependência da informação do estimador de fase.\\
+A Figura \ref{fig:DD} apresenta o diagrama de blocos do estimador de fase direcionado a decisão.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.80\textwidth]{figs/DD.eps}
+	\caption{Diagrama do recuperador de portadora direcionado a decisão (DD).}
+	\label{fig:DD}
+\end{figure}
+
+A dependência da informação transmitida é removida multiplicando a equação \ref{eq:wienerrecebido} pelo complexo conjugado do sinal decidido no instante $k-i$, $\hat{s}_{k-i}^*$ \cite{erik}. Então:
+
+\begin{eqnarray}
+\dot{r}_{k-i}&=& (\hat{s}_{k-i}e^{j(\theta_k+\sum_{m=0}^{i-1} \Delta_m)}+w_{k-i})\hat{s}_{k-i}^*, \nonumber \\
+             &=& E_se^{j(\theta_k+\sum_{m=0}^{i-1} \Delta_m)}+\underbrace{w_{k-i}\hat{s}_{k-i}^*}_{\dot{w}_{k-i}},
+             \label{eq:rponto}
+\end{eqnarray}
+
+em que $\sigma_{\dot{w}}^2 = E_s\sigma_w^2$. Então o estimador pode estimar $\theta_{k-1}$ a partir do vetor:
+
+\begin{equation}
+\dot{\textbf{r}}= [\dot{r}_{k-N},...,\dot{r}_{k-2},\dot{r}_{k-1}].
+\label{eq:vetorrponto}
+\end{equation}
+
+Assumindo que $\sum_{m=0}^{i-1} \Delta_m <<1$ a equação \ref{eq:rponto} pode ser descrita como:
+
+\begin{equation}
+\dot{r}_{k-i} \approx E_se^{j\theta_k}(1+j\sum_{m=0}^{i-1} \Delta_m)+\dot{w}_{k-i}.
+\label{eq:rponto2}
+\end{equation}
+
+Deseja-se obter a estimativa de máxima verossimilhança (ML) de $\theta_{k-1}$. A função densidade de probabilidade do vetor recebido $\dot{\textbf{r}}= [\dot{r}_{k-N},...,\dot{r}_{k-2},\dot{r}_{k-1}]$, para um dado $\theta_{k-1}$, pode ser escrita como:
+
+\begin{equation}\label{eq:pdf}
+f_{\dot{\textbf{r}}}|\theta_{k-1}(\dot{\textbf{r}}|\theta_{k-1}) =\frac{1}{(\pi)^{L/2} (det\textbf{C})^{1/2}}\exp\left[(\dot{\textbf{r}}-\textbf{m}_{\dot{\textbf{r}}})^H\textbf{C}^{-1}(\dot{\textbf{r}}-\textbf{m}_{\dot{\textbf{r}} })\right],
+\end{equation}
+
+em que $\textbf{m}_{\dot{\textbf{r}}} = E\{\dot{\textbf{r}}\} =
+E_s^{M/2}\exp(jM\theta_{k-1})\textbf{1}$, e $\textbf{C}$ é a matriz de covariância:
+
+\begin{equation}
+\textbf{C}=E_s^2\textbf{K}\sigma_{\Delta}^2+E_s\textbf{K}_n.
+\label{eq:corr_matrix}
+\end{equation}
+
+Para a matriz $\textbf{C}$, $\textbf{K}_n=\sigma_w^2\textbf{I}_{L \times L}$ para um filtro de comprimento $L=N$ mesmo comprimento de $\dot{\textbf{r}}$, e
+$\textbf{K}$ dado por:
+
+
+\begin{equation}\textbf{K}= \left[
+\begin{array}{ccccccccc}
+0 & 0 & 0 & \cdots & 0 \\
+0 & 1 & 1 & \cdots      & 1\\
+0 & 1 & 2 & \cdots      & 2\\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+0 & 1 & 2 & \cdots & N-1\\\end{array}\right].
+\end{equation}
+
+A partir da Eq. \ref{eq:pdf} é possível derivar a função de verossimilhança:
+
+\begin{eqnarray}\label{eq:loglikelihood}
+\Lambda_{\ln}=\ln\left(\frac{1}{(\pi)^{L} \det\textbf{C}}\right)
+-(\dot{\textbf{r}}-\textbf{m}_{\dot{\textbf{r}}})^H\textbf{C}^{-1}({\dot{\textbf{r}}}-\textbf{m}_{\dot{\textbf{r}}}).
+\end{eqnarray}
+A solução da equação é:
+\begin{eqnarray}
+\theta_{ML}=arg\left\{\frac{\textbf{1}^T\textbf{C}^{-1}\cdot
+\dot{\textbf{r}}} {\textbf{1}^T\textbf{C}^{-1}\cdot\dot{\textbf{r}}}\right\},\\
+\\
+\theta_{ML}=\arctan\frac{\Im\{\textbf{1}^T\textbf{C}^{-1}\cdot
+\dot{\textbf{r}}\}}{\Re\{\textbf{1}^T\textbf{C}^{-1}\cdot\dot{\textbf{r}}\}}.
+\end{eqnarray}
+
+Desta forma o vetor de coeficientes $\alpha$ pode ser definido:
+
+\begin{equation}
+\alpha = \textbf{1}^T\textbf{C}^{-1}.
+\end{equation}
+
+Então pode-se definir o estimador DD simplesmente como:
+
+\begin{equation}
+\hat{\theta}_{k-1}= \theta_{ML}=\arctan \frac {\Im\left\{\sum^{N}_{i=1}\alpha_{i} \hat{s}^{*}_{k-i} r_{k-i}\right\}} {\Re\left\{\sum^{N}_{i=1}\alpha_{i} \hat{s}^{*}_{k-i} r_{k-i}\right\}}.
+\label{eq:dd}
+\end{equation}
+
+
+O vetor de coeficientes $\alpha$ age como um filtro, ponderando os elementos do vetor $\dot{\textbf{r}}$ e refinando a estimativa de $\theta$. Os coeficientes de $\alpha$ dependem da interação entre a intensidade do ruído AWGN e do ruído de fase. Na figura \ref{fig:alphas} vemos o comportamento de $\alpha$ em diferente cenários.
+
+\begin{figure}[htb]
+\centering
+\subfloat[] % caption for subfigure a
+{
+    \label{alpha1}
+    \includegraphics[scale=0.3]{./figs/alpha1.eps}
+}
+\subfloat[] % caption for subfigure b
+{
+    \label{alpha2}
+    \includegraphics[scale=0.3]{./figs/alpha2.eps}
+}
+\centering
+\caption{(a) Vetor de coeficientes $\alpha$ com Ruído de fase fixo $\nu Ts=4\times10^{-5}$ (b) Vetor de coeficientes $\alpha$ com variância do ruído AWGN fixa $N0=0,05$.}
+\label{fig:alphas} % caption for the whole figure
+\end{figure}
+
+É interessante perceber que quanto maior a variância do ruído AWNG, maior precisa ser $N$. Já para variância do ruído de fase crescente, menor pode ser $N$, já que amostras muito anteriores terão pouca relação com as recentes.
+
+Na figura \ref{fig:peDD} é possível ver em detalhes as operações realizadas pelo DD mostradas na Eq. \ref{eq:dd}.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.70\textwidth]{figs/peDD.eps}
+	\caption{Estimador de Fase DD em Detalhes}
+	\label{fig:peDD}
+\end{figure}
+
+
+Percebe-se que o estimador DD é altamente dependente da relação sinal ruído (SNR) observada pelo sistema, já que uma decisão errada gerará uma estimativa de fase incorreta que poderá corromper a decisão correta do próximo símbolo, provocando um efeito em cascata. Dessa forma, o desempenho do sistema pode ficar comprometido. No entanto, se a SNR for suficientemente alta, a maioria das decisões podem ser assumidas corretas e então teremos uma estimativa razoável do ruído de fase.
+
+A técnica de estimativa direcionada a decisão assume que o ruído de fase seja relativamente baixo durante o tempo de um símbolo, pois utiliza a estimativa do ruído de fase em $k-1$ para recuperação do símbolo $k$. Veja que se o desvio de fase for alto o suficiente durante o período do símbolo, o erro de predição inserido pelo estimador será muito alto e o sistema fica comprometido (Fig. \ref{fig:wienerDD}).
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=0.70\textwidth]{figs/wienerDD.eps}
+	\caption{Técnica de Estimativa DD para Filtro de Tamanho $N=10$}
+	\label{fig:wienerDD}
+\end{figure}
+
+\section{Simulações}\label{desempenho}
+
+Formulou-se um sistema de comunicação óptico que utiliza modulação DQPSK com multiplexação por polarização e detecção coerente. Os símbolos gerados são corrompidos por ruído aditivo do tipo ASE e ruído de fase modelado pelo processo discreto de Wiener. Considerou-se perfeitas a demultiplexação de polarização e a amostragem do sinal. Os esquemas de recupeção de portadora foram implementados em MATLAB e o desempenho do sistema foi medido utilizando processos de Monte Carlo.
+
+A Figura \ref{fig:penalidade} mostra o impacto do ruído de fase com taxa $\Delta\nu T_s$ em cada algoritmo para uma taxa de erro de bit (BER) de $10^{-3}$. Uma BER de pelo menos $10^{-3}$ é requerida pois é a taxa mínima requerida pelos algoritmos corretores de erros (\textit{forward error correction} - FEC) utilizados no padrão \textit{Ethernet}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.80\textwidth]{figs/penalidade.eps}
+	\caption{Curvas de penalidade em dB para taxa de erro BER de $10^{-3}$.}
+	\label{fig:penalidade}
+\end{figure}
+
+O desempenho do esquema DD mostra-se o pior. Ele é mais sensível ao ruído de fase, requerendo uma maior SNR para a mesma taxa de erro que seu concorrente. Em um enlace POLMUX DQPSK com taxa de 28 Gbaud (112 Gb/s) e lasers com largura de linha de 1 MHz, $\Delta\nu T_s=4,45\times10^{-4}$ o DD oferece uma penalidade de aproximadamente 0,7 dB por exemplo. 

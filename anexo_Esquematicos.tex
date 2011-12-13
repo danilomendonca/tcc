@@ -1,0 +1,23 @@
+\chapter{Estrutura de Arquivos do Projeto Implementado}\label{anexo_esquematicos}
+
+\section{Estrutura de Arquivos do Projeto de Software}
+O projeto não segue um padrão de projeto, mas tem uma estrutura de arquivos bem particular. Todos arquivos do projeto são do tipo ".php" e estão em uma única pasta. Dentro desta pasta, existem três arquivos do SDK PHP (v3.0.1). O "base\_facebook.php" e "facebook.php" são arquivos responsáveis por facilitar e padronizar diversas funções do aplicativo intrínsecas do Facebook como login, checar se o usuário está logado, capturar textit{access\_token} do usuário, setar parâmetros do módulo CURL do PHP responsável por capturar informações de uma página, etc. O arquivo "fb\_ca\_chain\_bundle.crt" é um certificado digital e portanto garante autenticidade, integridade e não repúdio. Mudanças no valor das variáveis dos arquivos do SDK PHP não alteram a integridade do SDK. Sabendo disso foram feitas modificações nas opções da função PHP CURL, para evitar erros de \textit{timeout}. Há mais quatro arquivos no projeto. Entre estes o "config.php" que é responsável por setar as principais variáveis do aplicativo como appid (Identificador do Aplicativo), api (Nome do Aplicativo), Secret (Segredo do Aplicativo), baseUrl (URL externa do aplicativo), appBaseUrl (URL da página do aplicativo no Facebook), pageUrl (URL da página da UnB no Facebook) e appPageUrl(URL da aba do aplicativo na página da UnB no Facebook). Outro arquivo é o "home.php" que é responsável pela estilização do aplicativo, fazendo uso da linguagem de estilo \textit{CSS}(\textit{Cascading Style Sheets}). Este arquivo também organiza a estrutura do aplicativo em seções e listas não ordenadas, utilizando as marcações (\textit{tags} ) \textit{HTML}(\textit{HyperText Markup Language}) <\textit{div}>, <\textit{ul}> e <\textit{li}>. Além disso, o arquivo em questão faz chamadas das funções javascript, por exemplo a função de coleta de dados e a função que verifica se o perfil do usuário está preenchido com a página da UnB na parte de educação, presentes no arquivo "template.php". O arquivo "template.php" desempenha as seguintes funções dentro do programa: seta o título da página para "Aplicativo Infográfico UnB"; transforma a estrutura organizada no arquivo "home.php" em uma interface gráfica para usuário com as abas "Meu Infográfico" e "infográfico Rede UnB"; verifica se o perfil do usuário está preenchido com a página da UnB na parte de educação; coleta e trata os dados capturadas na rede social virtual Facebook; Encaminha os dados capturadas via requisição post para index.php. Neste arquivo são importadas as bibliotecas \textit{javascript jquery.min.js}(v1.4) e \textit{jquery-ui.min.js}(v1.8), o arquivo \textit{CSS jquery-ui.css} e é estabelecido o uso de \textit{fbml}(\textit{Facebook Modelinig Language}) no parâmetro \textit{xmlns}(\textit{Extensible Modeling language Namespace}) da marcação <\textit{html}>. O arquivo "fbmain.php" realiza a parte de autenticação e autorização do aplicativo, além de receber dados \textit{signed\_request} do usuário. O arquivo "index.php" é arquivo que centraliza todas as funções do aplicativo por meio da função PHP \textit{include\_once}. Isto é feito pois por  padrão os arquivos nomeados index.php, index.html e index.htm são lidos automaticamente pelos servidores Apache. Dessa maneira, todos os arquivos do aplicativo tem que estar centralizados no arquivo "index.php" ou pelo menos ter alguma relação com este arquivo.
+%escrever nome das funções e falar sobre a parte de verificação do usuário
+Abaixo temos estrutura de arquivos do aplicativo visualizada no IDE Zend Studio:
+\begin{figure}[htbp]
+	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/aplicativo_estrutura_arquivos_zend.eps}
+	\caption{Configurações Básicas Aplicativo do Facebook}	
+	\label{fig:estrutura_arquivos_projeto_zend}
+\end{figure}
+
+%checar se "other.php" é necessário para o funcionamento do programa
+%será que é melhor falar do SDK PHP aqui e não no embasamento teórico?
+
+%colocar referência aqui sobre certificação digital
+%http://pt.wikipedia.org/wiki/Certificado_digital
+%pesquisar o que é não repúdio???
+
+%completar mais esta parte...
+%descrever outros arquivos do projeto e
+%organograma da estrutura do programa mostrando a IDE ZEND
+%falar da mudança destes parâmetros para os que estão no aplicativo

@@ -1,0 +1,751 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  12 DEC 2011 21:13
+entering extended mode
+ %&-line parsing enabled.
+**relatorio.tex
+(./relatorio.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, czech, slovak, finnish, french, basque, polish, portuguese, swedish
+, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/bk11.clo
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/var/lib/texmf/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@brazilian = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+)
+(/usr/share/texmf-texlive/tex/generic/babel/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+\epsfxsize=\dimen106
+\epsfysize=\dimen107
+) (./subfig.sty
+\@stfigure=\toks15
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen108
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen109
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen110
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks18
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks19
+\eqnshift@=\dimen111
+\alignsep@=\dimen112
+\tagshift@=\dimen113
+\tagwidth@=\dimen114
+\totwidth@=\dimen115
+\lineht@=\dimen116
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(/usr/share/texmf-texlive/tex/latex/ntheorem/ntheorem.sty
+Style `ntheorem', Version 1.25 <2005/07/07>
+Package: ntheorem 2005/07/07 1.25
+\theorem@style=\toks22
+\theorem@@style=\toks23
+\theorembodyfont=\toks24
+\theoremnumbering=\toks25
+\theorempreskipamount=\skip46
+\theorempostskipamount=\skip47
+\theoremindent=\dimen117
+\theorem@indent=\dimen118
+\theoremheaderfont=\toks26
+\theoremseparator=\toks27
+\theoremprework=\toks28
+\theorempostwork=\toks29
+\theoremsymbol=\toks30
+\qedsymbol=\toks31
+\theoremkeyword=\toks32
+\qedsymbol=\toks33
+\thm@topsepadd=\skip48
+Package ntheorem Info: Option `thmmarks' loaded on input line 1029.
+\c@endNonectr=\count101
+\c@currNonectr=\count102
+\mysavskip=\skip49
+Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
+ line 1029.
+\thm@amstmpdepth=\dimen119
+) (/usr/share/texmf-texlive/tex/latex/ltxmisc/boxedminipage.sty)
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
+\Gm@bindingoffset=\dimen120
+\Gm@wd@mp=\dimen121
+\Gm@odd@mp=\dimen122
+\Gm@even@mp=\dimen123
+\Gm@dimlist=\toks34
+
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+(/usr/share/texmf-texlive/tex/latex/tools/theorem.sty)
+(/usr/share/texmf-texlive/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2000/09/19 1.3
+
+Style option: `fancybox' v1.3 <2000/09/19> (tvz)
+\@fancybox=\box28
+\shadowsize=\dimen124
+\@Sbox=\box29
+\do@VerbBox=\toks35
+\the@fancyput=\toks36
+\this@fancyput=\toks37
+\EndVerbatimTokens=\toks38
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texmf-texlive/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks39
+\AP@partial=\box30
+\AP@footins=\box31
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf-texlive/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen125
+\extrarowheight=\dimen126
+\NC@list=\toks40
+\extratabsurround=\skip50
+\backup@length=\skip51
+)
+\everycr=\toks41
+\minrowclearance=\skip52
+)
+(/usr/share/texmf-texlive/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count106
+\rotFPtop=\skip53
+\rotFPbot=\skip54
+\rot@float@box=\box32
+\rot@mess@toks=\toks42
+)
+(/usr/share/texmf-texlive/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texmf-texlive/tex/latex/mfnfss/oldgerm.sty
+Package: oldgerm 1998/06/07 v2.1j LaTeX2e package for Old German fonts
+)
+(/usr/share/texmf-texlive/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+) (./tgredesunb.sty
+Package: tgredesunb 2006/03/19 v1.0
+
+(/usr/share/texmf-texlive/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2006/07/14 v1.1d eso-pic (RN)
+
+(/usr/share/texmf-texlive/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)))
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/generic/mathdots/mathdots.sty
+Package: mathdots 2006/03/16 v0.8 Improve and add various macros for dots in ma
+th.
+\MD@unit=\dimen127
+LaTeX Info: Redefining \ddots on input line 62.
+LaTeX Info: Redefining \vdots on input line 66.
+\MD@dotsbox=\box33
+\MD@prekern=\muskip12
+\MD@postkern=\muskip13
+\MD@dotkern=\muskip14
+LaTeX Info: Redefining \dddot on input line 87.
+LaTeX Info: Redefining \ddddot on input line 87.
+)
+(/usr/share/texmf-texlive/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2005/10/04 v3.9 algorithms environments
+\c@AlgoLine=\count107
+
+(/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
+)
+********************************************************
+Package `algorithm2e' Release 3.9 -- october 04 2005 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (fiorio@lirmm.fr)
+********************************************************
+\skiptotal=\skip55
+\skiprule=\skip56
+\skiphlne=\skip57
+\skiptext=\skip58
+\skiplength=\skip59
+\algomargin=\skip60
+\skipalgocfslide=\skip61
+\algowidth=\dimen128
+\inoutsize=\dimen129
+\inoutline=\dimen130
+\algocf@inoutbox=\box34
+\algocf@inputbox=\box35
+\AlCapSkip=\skip62
+\AlCapHSkip=\skip63
+\algocf@capbox=\box36
+\c@algocfline=\count108
+\c@algocf=\count109
+\algocf@algoframe=\box37
+\algocf@algobox=\box38
+)
+\c@currtheoremctr=\count110
+\c@endtheoremctr=\count111
+\c@theorem=\count112
+\c@currdefinitionctr=\count113
+\c@enddefinitionctr=\count114
+\c@currclaimctr=\count115
+\c@endclaimctr=\count116
+\c@currlemmactr=\count117
+\c@endlemmactr=\count118
+\c@currcorollaryctr=\count119
+\c@endcorollaryctr=\count120
+\c@currpropositionctr=\count121
+\c@endpropositionctr=\count122
+\c@currassumptionctr=\count123
+\c@endassumptionctr=\count124
+\c@currprotocolctr=\count125
+\c@endprotocolctr=\count126
+\@indexfile=\write4
+\openout4 = `relatorio.idx'.
+
+
+Writing index file relatorio.idx
+(./relatorio.aux (./folha_catalografica.aux) (./resumos.aux) (./simbolos.aux)
+(./introducao.aux
+
+LaTeX Warning: Label `fig:top_10_sites_alexa' multiply defined.
+
+) (./embasamento.aux) (./implementacao.aux) (./resultados.aux) (./conclusao.aux
+) (./anexos.aux) (./anexo_esquematicos.aux) (./anexo_cd.aux) (./cd_projeto.aux)
+)
+\openout1 = `relatorio.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 125.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+*geometry auto-detecting driver*
+*geometry detected driver: dvips*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 66.57935pt, 464.34918pt, 66.57935pt
+v-parts: 56.9055pt, 702.7831pt, 85.35825pt
+hmarginratio: 1:1
+vmarginratio: 2:3
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: dvips
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  464.34918pt
+\textheight 702.7831pt
+\oddsidemargin  -5.69046pt
+\evensidemargin -5.69046pt
+\topmargin  -41.81825pt
+\headheight 12.0pt
+\headsep    14.45377pt
+\footskip   50.58878pt
+\marginparwidth 53.0pt
+\marginparsep   7.0pt
+\columnsep  10.0pt
+\skip\footins  10.0pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 181.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 181.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 181.
+
+(/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for T1+phv on input line 181.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 181.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 181.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 181.
+File: figs/capa_fundo2.eps Graphic file (type eps)
+ <figs/capa_fundo2.eps>
+[1
+
+
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 182.
+
+Underfull \hbox (badness 1057) in paragraph at lines 182--182
+[]|\T1/phv/m/n/10 Profa. Dra. Ge-naína Nu-nes Ro-dri-gues ,
+ []
+
+[1
+
+]
+\openout2 = `folha_catalografica.aux'.
+
+ (./folha_catalografica.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3.
+) [1
+
+] [1
+
+
+
+] [1
+
+]
+\openout2 = `resumos.aux'.
+
+ (./resumos.tex) [1
+
+] [2]
+LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/sc' tried instead on input line 225.
+LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/sc' tried instead on input line 225.
+
+(./relatorio.toc)
+\tf@toc=\write5
+\openout5 = `relatorio.toc'.
+
+ [3
+
+
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 226.
+ (./relatorio.lof)
+\tf@lof=\write6
+\openout6 = `relatorio.lof'.
+
+ [4
+
+]
+\openout2 = `simbolos.aux'.
+
+ (./simbolos.tex) [5
+
+
+]
+\openout2 = `introducao.aux'.
+
+
+(./introducao.tex
+Cap\'{\i }tulo 1.
+[1
+
+
+
+
+]
+File: figs/ppmendes/ranking_OSN_country.eps Graphic file (type eps)
+ <figs/ppmendes/ranking_OSN_country.eps>
+File: figs/ppmendes/top_10_sites_alexa.eps Graphic file (type eps)
+
+<figs/ppmendes/top_10_sites_alexa.eps>
+File: figs/ppmendes/top_10_sites_brasil_alexa.eps Graphic file (type eps)
+
+<figs/ppmendes/top_10_sites_brasil_alexa.eps> [2] [3] [4]
+File: figs/ppmendes/comunidade_unb_orkut.eps Graphic file (type eps)
+
+<figs/ppmendes/comunidade_unb_orkut.eps>
+File: figs/ppmendes/comunidade_avaliacao_professores_unb.eps Graphic file (type
+ eps)
+
+<figs/ppmendes/comunidade_avaliacao_professores_unb.eps>
+File: figs/ppmendes/perfil_unb_facebook.eps Graphic file (type eps)
+
+<figs/ppmendes/perfil_unb_facebook.eps>
+Overfull \hbox (118.16243pt too wide) in paragraph at lines 72--79
+\T1/ptm/m/n/10.95 conta com 4.998 ami-gos, dos quais a mai-o-ria tem a pá-gina 
+da Uni-ver-si-dade de Bra-sí-lia (http://www.facebook.com/pages/Universidade-
+ []
+
+File: figs/ppmendes/pagina_unb_facebook.eps Graphic file (type eps)
+<figs/ppmendes/pagina_unb_facebook.eps>
+File: figs/ppmendes/perfil_dceunb_facebook.eps Graphic file (type eps)
+
+<figs/ppmendes/perfil_dceunb_facebook.eps>
+File: figs/ppmendes/perfil_dceunb_facebook_entidades.eps Graphic file (type eps
+)
+
+<figs/ppmendes/perfil_dceunb_facebook_entidades.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 113--142
+\T1/ptm/m/n/10.95 UFOP [].
+ []
+
+[5] [6] [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 145--179
+\T1/ptm/m/n/10.95 rão apre-sen-ta-dos a se-guir tra-ba-lhos re-la-ci-o-na-dos a
+ este tema.
+ []
+
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 180--185
+[]\T1/ptm/m/n/10.95 Nesta se-ção são apre-sen-ta-dos os ob-je-ti-vos ge-rais e 
+es-pe-cí-fi-cos do tra-ba-lho.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--185
+\T1/ptm/m/n/10.95 ca-ci-o-nais, \T1/ptm/m/it/10.95 Bu-si-ness In-tel-li-gence \
+T1/ptm/m/n/10.95 etc.
+ []
+
+[11]) [12]
+\openout2 = `embasamento.aux'.
+
+ (./embasamento.tex
+Cap\'{\i }tulo 2.
+File: figs/ppmendes/redes_sociais_categorizadas.eps Graphic file (type eps)
+<figs/ppmendes/redes_sociais_categorizadas.eps> [13
+
+
+
+]
+File: figs/ppmendes/similaridade_rso_redes_complexas.eps Graphic file (type eps
+)
+
+<figs/ppmendes/similaridade_rso_redes_complexas.eps> [14] [15]
+File: figs/ppmendes/agregador_rso.eps Graphic file (type eps)
+
+<figs/ppmendes/agregador_rso.eps> [16]
+File: figs/ppmendes/user_pages_connection_properties.eps Graphic file (type eps
+)
+
+<figs/ppmendes/user_pages_connection_properties.eps> [17]
+File: figs/ppmendes/facebook_home.eps Graphic file (type eps)
+
+<figs/ppmendes/facebook_home.eps>
+File: figs/ppmendes/user_page_facebook.eps Graphic file (type eps)
+ <figs/ppmendes/user_page_facebook.eps>
+[18] [19]
+File: figs/ppmendes/social_graph_objects.eps Graphic file (type eps)
+ <figs/ppmendes/social_graph_objects.eps> [20]
+File: figs/ppmendes/facebook_platform_overview.eps Graphic file (type eps)
+
+<figs/ppmendes/facebook_platform_overview.eps>
+File: figs/ppmendes/facebook_social_plugins_folhasp.eps Graphic file (type eps)
+
+
+<figs/ppmendes/facebook_social_plugins_folhasp.eps>
+File: figs/ppmendes/oauth_dialog2.eps Graphic file (type eps)
+
+<figs/ppmendes/oauth_dialog2.eps>
+File: figs/ppmendes/permissoes_usuario_amigos.eps Graphic file (type eps)
+
+<figs/ppmendes/permissoes_usuario_amigos.eps> [21] [22] [23]
+File: figs/ppmendes/permissoes_extendidas.eps Graphic file (type eps)
+
+<figs/ppmendes/permissoes_extendidas.eps>
+File: figs/ppmendes/fluxo_app.eps Graphic file (type eps)
+ <figs/ppmendes/fluxo_app.eps>
+File: figs/ppmendes/graph_api_response.eps Graphic file (type eps)
+
+<figs/ppmendes/graph_api_response.eps> [24] [25] [26]) [27]
+\openout2 = `implementacao.aux'.
+
+
+(./implementacao.tex
+Cap\'{\i }tulo 3.
+[28
+
+
+
+] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
+\T1/ptm/m/n/10.95 gens de pro-gra-ma-ção PHP e Ja-vaS-cript es-tão no ca-pí-tul
+o Em-ba-sa-mento Teó-rico.
+ []
+
+[30] [31]
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+\T1/ptm/m/n/10.95 dos do pró-prio per-fil dos ami-gos des-tes usuá-rios.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+\T1/ptm/m/n/10.95 ca-te-go-rias de pá-gi-nas mais po-pu-la-res são re-la-ci-o-n
+a-das fil-mes e li-vros.
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 156--173
+[]\T1/ptm/m/n/10.95 Serão fei-tos os se-guin-tes tra-ta-men-tos de da-dos:
+ []
+
+
+Overfull \hbox (3.06834pt too wide) in paragraph at lines 181--182
+[]\T1/ptm/m/n/10.95 user_about_me, fri-ends_about_me, fri-ends_likes, fri-ends_
+online_presence, fri-ends_relationships, fri-
+ []
+
+
+Overfull \hbox (10.47075pt too wide) in paragraph at lines 181--182
+\T1/ptm/m/n/10.95 ends_work_history, fri-ends_activities, fri-ends_education_hi
+story, fri-ends_hometown, fri-ends_location,
+ []
+
+[33]
+Overfull \hbox (44.62335pt too wide) in paragraph at lines 189--190
+[]\T1/ptm/m/n/10.95 user_about_me, user_likes, user_online_presence, user_relat
+ionships, user_work_history, user_activities,
+ []
+
+[34] [35]) [36]
+\openout2 = `resultados.aux'.
+
+ (./resultados.tex
+Cap\'{\i }tulo 4.
+[37
+
+
+
+] [38]) [39]
+\openout2 = `conclusao.aux'.
+
+ (./conclusao.tex
+Cap\'{\i }tulo 5.
+[40
+
+
+
+]) [41] (./relatorio.bbl) [42
+
+
+]
+\openout2 = `anexos.aux'.
+
+ (./anexos.tex
+Cap\'{\i }tulo 6.
+) [43
+
+
+]
+\c@noAnexo=\count127
+ [44
+
+
+]
+\openout2 = `anexo_esquematicos.aux'.
+
+
+No file anexo_esquematicos.tex.
+\openout2 = `anexo_cd.aux'.
+
+No file anexo_cd.tex.
+\openout2 = `cd_projeto.aux'.
+
+No file cd_projeto.tex.
+\tf@thm=\write7
+\openout7 = `relatorio.thm'.
+
+(./relatorio.aux (./folha_catalografica.aux) (./resumos.aux) (./simbolos.aux)
+(./introducao.aux) (./embasamento.aux) (./implementacao.aux) (./resultados.aux)
+(./conclusao.aux) (./anexos.aux) (./anexo_esquematicos.aux) (./anexo_cd.aux)
+(./cd_projeto.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 248 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 5139 strings out of 494910
+ 66684 string characters out of 1177227
+ 165439 words of memory out of 3000000
+ 8105 multiletter control sequences out of 15000+50000
+ 56331 words of font info for 68 fonts, out of 3000000 for 9000
+ 68 hyphenation exceptions out of 8191
+ 34i,15n,25p,1766b,376s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on relatorio.dvi (54 pages, 156964 bytes).

@@ -1,0 +1,135 @@
+\chapter{Estudo de Caso}\label{casodeuso}
+
+Este capítulo apresenta um caso da utilização dos recuperadores de portadora FFCR e DD. Tivemos acesso a uma sequência de 91910 símbolos POLMUX DQPSK obtidos em um sistema óptico experimental real trabalhando a 112 Gb/s. Recebemos informações apenas do funcionamento do sistema e da geração dos dados transmitidos. Nosso esforço concentrou-se na recuperação livre de erros da sequência recebida, utilizando nosso simulador para o processamento de sinais. 
+
+Foi gerada uma sequência binária Pseudo-Aleatória (PRBS) a uma taxa de 28 Gb/s para geração dos dados I em fase e Q em quadratura de cada uma das polarizações, totalizando uma taxa bruta de 112 Gb/s. O sinal foi transmitido e recebido por um receptor homódino. São assumidas conversão opto-elétrica, amostragem, demultiplexação de polarização, perfeitas.
+
+A sequência de símbolos DQPSK a ser transmitida foi gerada da seguinte maneira:\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.60\textwidth]{figs/1pol.eps}
+	\caption{Diagrama de geração de sequência DQPSK para uma polarização.}
+	\label{fig:1pol}
+\end{figure}
+
+O esquema da Figura \ref{fig:1pol} mostra a geração da sequência DQPSK. Utilizou-se um gerador de sequência binária pseudo-aleatória (PRBS). A sequência gerada é combinada com a mesma sequência atrasada para a geração de símbolos DQPSK. Este atraso funciona de maneira que a sequência I em fase e Q em quadradura fiquem descorrelacionadas. Para a geração dos canais nas duas polarizações, esta sequência é atrasada já no domínio óptico, e então as duas sequências obtidas são polarizadas ortogonalmente e combinadas.
+
+Para a geração da PRBS utilizou-se um \textit{Linear feedback shift register} (LFRS) de Fibonacci de polinômio $g(x) = x^{11} + x^9 + 1$ e sequêcia semente $10000000000$ a uma taxa de 28 Gb/s.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.80\textwidth]{figs/lfsr.eps}
+	\caption{LFSR $g(x) = x^{11} + x^9 + 1$ e semente $10000000000$.}
+	\label{fig:lfsr}
+\end{figure}
+
+Um LFSR de $11$ posições é capaz de gerar uma sequência aleatória de $2^{11}-1 = 2047$ Bits. Neste caso utilizou-se uma sequência de $45995$ bits para cada componente, I em fase e Q em quadratura. Na Figura \ref{fig:autocorr} pode-se ver a função de auto-correlação da sequência gerada pelo LSFR e depois a função de auto-correlação da sequência repetida.
+
+\begin{figure}[ht]
+\centering
+\subfloat[] % caption for subfigure a
+{
+    \label{autocorr1}
+    \includegraphics[scale=0.3]{./figs/autocorr.eps}
+}
+\subfloat[] % caption for subfigure b
+{
+    \label{autocorr2}
+    \includegraphics[scale=0.3]{./figs/autocorr2.eps}
+}
+\centering
+\caption{(a) Função de auto-correlação da sequência gerada por um LFSR. (b) Função de auto-correlação PRBS.}
+\label{fig:autocorr} % caption for the whole figure
+\end{figure}
+
+As duas sequêcias DQPSK multiplexadas em polarização são então transmitidas pela fibra óptica a uma taxa de 28 Gbaud. A seguir passam por um amplificador óptico que insere o ruído ASE para então ser detectada e recebida pelo receptor coerente (Fig. \ref{fig:sistema}). Assumimos a conversão opto-elétrica ideal, assim como a recuperação de polarização e a equalização do sinal.
+
+Tem-se então duas sequências de símbolos correspondentes a duas polarizações. As duas sequências corrompidas pelo ruído ASE e pelo ruído de fase  deverão ser processadas para sua recuperação.
+
+Na transmissão e recepção utilizaram-se lasers do tipo \textit{distributed feedback} (DFB) com largura de linha de 1 MHz cada um, e desvio de frequência entre eles de 155 MHz. Como podemos ver na figura \ref{fig:Xrecebido} o sistema perdeu completamente sua referência de fase. Este sinal deve agora passar pela recuperação de portadora para então os símbolos serem decididos e comparados aos originais.
+
+\begin{figure}[ht]
+\centering
+\subfloat[] % caption for subfigure a
+{
+    \label{X1}
+    \includegraphics[scale=0.3]{./figs/X1.eps}
+}
+\subfloat[] % caption for subfigure b
+{
+    \label{X2}
+    \includegraphics[scale=0.3]{./figs/X2.eps}
+}
+\centering
+\caption{(a) Símbolos recebidos na polarização X. (b) Símbolos recebidos na polarização Y.}
+\label{fig:Xrecebido} % caption for the whole figure
+\end{figure}
+
+O ruído de fase observado pode ser modelado por um processo de Wiener e a variância $\sigma_\Delta^2$ pode ser calculada como $\sigma_\Delta^2=2\pi\Delta\nu Ts$, em que $\Delta\nu$ é a soma da largura de linha do laser transmissor e do receptor igual a $2 MHz$ e $Ts$ o tempo de símbolo. Para a taxa de 28 Gbaud é de 35,71 ps, logo $\sigma_\Delta^2 \approx 4,48\times10^{-4}$.
+
+Deve-se então estimar a variância do ruído ASE $\sigma_W^2$ e a energia de símbolo $E_s$, para a implementação do filtro $\alpha$ utilizado pelos estimadores FFCR e DD.
+
+A variância do ruído ASE $\sigma_W^2$ e a energia de símbolo $E_s$ podem ser estimadas com \cite{sigmaw}:
+
+\begin{equation}
+\hat{\sigma}_W^2 = \overline{\left|r_x\right|^2}-E_s,
+\end{equation}
+em que $r_x$ é o sinal recebido e $E_s$ é a energia de símbolo que também deve ser estimada \cite{sigmaw},
+
+\begin{equation}
+\hat{E}_s = \sqrt{2\overline{\left|r_x\right|^2}^2-\overline{\left|r_x\right|^4}}.
+\end{equation}
+
+Pode-se então estimar a SNR observada pelo estimador de fase. Obtivemos para cada polarização SNR=10,18 dB. Nessas condições os recuperadores FFCR e DD devem funcionar satisfatoriamente.
+
+A partir dos parâmetros estimados pode-se calcular os coeficientes do vetor $\alpha$ Fig. \ref{fig:alphasx}:
+
+\begin{figure}[ht]
+\centering
+\subfloat[] % caption for subfigure a
+{
+    \label{alphadd}
+    \includegraphics[scale=0.3]{./figs/alphadd.eps}
+}
+\subfloat[] % caption for subfigure b
+{
+    \label{alphaml}
+    \includegraphics[scale=0.3]{./figs/alphaml.eps}
+}
+\centering
+\caption{(a) Vetor de coeficientes $\alpha$ para o estimador DD (b) Vetor de coeficientes $\alpha$ para o estimador FFCR.}
+\label{fig:alphasx} % caption for the whole figure
+\end{figure}
+
+Vale lembrar ainda que os lasers utilizados no transmissor e no receptor possuem um descasamento de frequência $\Delta_f=155 MHz$. Este desvio de frequência causa um desvio de fase muito intenso mas constante de $\Delta_\theta=2\pi\Delta_fTs$ entre símbolos adjacentes, por ser constante este desvio é facilmente compensado.
+
+Depois de compensado o desvio constante de fase $\Delta_\theta$, os algoritmos estão aptos para a estimativa do ruído de fase e a recuperação da portadora dos sinais recebidos.
+A figura \ref{fig:desviofase} mostra o ruído de fase estimado:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.60\textwidth]{figs/desviofase.eps}
+	\caption{Ruído de fase estimado para ambas polarizações.}
+	\label{fig:desviofase}
+\end{figure}
+
+Observa-se uma diferença entre o ruído de fase estimado para as Polarizações X e Y. Isso se deve ao atraso feito no domínio óptico entre as sequências geradoras das polarizações. Com a estimativa do ruído de fase os algoritmos são capazes de recuperar a portadora do sinal (Fig. \ref{fig:Xrecuperado}). Ambos recuperadores (FFCR e DD) de portadora foram capazes de recuperar todos os 183980 bits da sequência recebida corretamente, a uma taxa de transmissão total de 112 Gb/s em um canal de 50 GHz, e SNR de 10,18 dB.
+
+\begin{figure}[h]
+\centering
+\subfloat[] % caption for subfigure a
+{
+    \label{recuperado1}
+    \includegraphics[scale=0.3]{./figs/recuperado1.eps}
+}
+\subfloat[] % caption for subfigure b
+{
+    \label{recuperado2}
+    \includegraphics[scale=0.3]{./figs/recuperado2.eps}
+}
+\centering
+\caption{(a) Constelação recuperada para polarização X. (b) Constelação recuperada para polarização Y.}
+\label{fig:Xrecuperado} % caption for the whole figure
+\end{figure}
+

@@ -1,0 +1,96 @@
+\chapter{Ruído de Fase}\label{ruidodefase}
+
+O ruído de fase em um sistema óptico com recepção coerente é causado principalmente pela largura espectral do laser transmissor e do oscilador local (Local Oscillator - LO), tal ruído é um processo aleatório que podemos assumir de variação lenta e constante durante o tempo de símbolo, isto caracteriza um processo discreto de Wiener-Lévy \cite{wiener}.
+
+O desvio de fase $\theta_k$ para cada símbolo $k$ pode ser escrito da seguinte maneira:
+
+\begin{equation}
+\label{wiener1}
+\theta_k=\theta_{k-1}+\Delta_k=\sum_{m=0}^{k-1} \Delta_m,
+\end{equation}
+
+\begin{equation}
+\label{wiener2}
+\theta_{k-i}=\theta_{k}+\sum_{m=0}^{i-1} \Delta_m,
+\end{equation}
+em que $\Delta_m$ é uma variável aleatória com distribuição gaussiana de média nula e variância $\sigma_{\Delta}^2=2\pi\Delta\nu T_s$. A expressão $\Delta\nu T_s$ pode ser chamado de taxa de ruído de fase e corresponde ao produto da banda do processo ruidoso $\Delta\nu$ e o período do símbolo modulado $T_s$, $\Delta\nu$ é a banda dos lasers utilizados e corresponde a soma da de largura de linha do laser transmissor e do OL.
+
+A Figura \ref{fig:wiener} ilustra a realização de um processo discreto de Wiener.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.50]{./figs/wiener.eps}
+	\caption{Processo discreto de Wiener para largura de linha do laser $\Delta\nu=1MHz$.}
+	\label{fig:wiener}
+\end{figure}
+
+\begin{figure}[hb]
+\centering
+\subfloat[Constelação QPSK.] % caption for subfigure a
+{
+    \label{cons}
+    \includegraphics[scale=0.3]{./figs/cons.eps}
+}
+
+
+\subfloat[Constelação com ruído de fase e 5k símbolos.] % caption for subfigure b
+{
+    \label{consrot}
+    \includegraphics[scale=0.3]{./figs/consrot.eps}
+}
+\subfloat[Constelação com ruído de fase e 10k símbolos.] % caption for subfigure b
+{
+    \label{consrott}
+    \includegraphics[scale=0.3]{./figs/consrott.eps}
+}
+
+\subfloat[] % caption for subfigure b
+{
+    \label{cons3d}
+    \includegraphics[scale=0.4]{./figs/cons3d.eps}
+}
+\centering
+\caption{Efeito do ruído de fase em uma constelação QPSK}
+\label{fig:cons} % caption for the whole figure
+\end{figure}
+
+Quando o ruído de fase está presente, o sinal recebido $r_k$ sofre uma rotação de fase $\theta_k$:
+
+\begin{eqnarray}
+r_k &=& \left(s_ke^{j\theta_k^{(1)}}+w_k\right)e^{j\theta_k^{(2)}}, \nonumber \\
+r_k &=& s_ke^{j\theta_k}+w_k,
+\end{eqnarray}
+em que $s_k$ é o sinal enviado, $\theta_k^{(1)}$ e $\theta_k^{(2)}$ são os desvios de fase inseridos pelo laser do transmissor e pelo LO respectivamente, e $w_k$ é o ruído aditivo gaussiano de média nula e variância $\sigma_w^2 = N_0$ inserido na passagem pelo canal.
+
+%\begin{figure}[htb]
+%\centering
+%\subfloat[Constelação QPSK.] % caption for subfigure a
+%{
+%    \label{cons}
+%    \includegraphics[scale=0.3]{./figs/cons.eps}
+%}
+%
+%
+%\subfloat[Constelação com ruído de fase e 5k símbolos.] % caption for subfigure b
+%{
+%    \label{consrot}
+%    \includegraphics[scale=0.3]{./figs/consrot.eps}
+%}
+%\subfloat[Constelação com ruído de fase e 10k símbolos.] % caption for subfigure b
+%{
+%    \label{consrott}
+%    \includegraphics[scale=0.3]{./figs/consrott.eps}
+%}
+%
+%\subfloat[] % caption for subfigure b
+%{
+%    \label{cons3d}
+%    \includegraphics[scale=0.4]{./figs/cons3d.eps}
+%}
+%\centering
+%\caption{Efeito do ruído de fase em uma constelação QPSK}
+%\label{fig:cons} % caption for the whole figure
+%\end{figure}
+
+A Figura \ref{fig:cons} exemplifica o efeito do ruído de fase em um esquema de modulação QPSK. Observa-se que a referência de fase é perdida completamente após a transmissão de uma sequência de 10k símbolos. A natureza aleatória do processo discreto de Wiener aplicado a constelação de esquema QPSK, faz a constelação girar que aos poucos deixa a região de correta decisão. Depois de vários símbolos, dependendo da taxa do ruído de fase, a constelação se perde por completo tornando impossível a decisão correta dos símbolos.
+Este efeito não pode deixar de ser abordado no projeto de um sistema de comunicação óptica, pois claramente leva a uma grande degradação do desempenho geral do sistema. 

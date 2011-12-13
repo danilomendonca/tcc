@@ -1,0 +1,306 @@
+
+% Classe default, de acordo com o modelo:
+\documentclass[11pt,a4paper,openright,titlepage,oneside]{book}
+
+% Classe alternativa, apropriada para impressão frente-verso. Inclui páginas em branco
+% de forma que capítulos sempre tenham início na página à direita:
+% \documentclass[11pt,a4paper,openright,titlepage]{book}
+
+%------------------------------------------------------------------------
+%mettre de pr\'{e}f\'{e}rence french en dernier de la liste des packages
+
+\newcommand{\fsc}[1]{\scshape#1}
+\usepackage[T1]{fontenc}
+%\usepackage[brazilian]{babel}
+\usepackage[brazilian,portuges]{babel}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[thmmarks,amsmath]{ntheorem}
+%\usepackage{amsthm}
+\usepackage{boxedminipage}
+\usepackage{geometry}
+\usepackage{theorem}
+\usepackage{fancybox}%------------------------------------------------------------------------
+
+\usepackage{url}
+\usepackage{afterpage}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{makeidx}
+\usepackage{geometry}
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{oldgerm}
+\usepackage{mathrsfs}
+%\usepackage{soul}
+\usepackage{tgredesunb}
+\usepackage{setspace}
+\usepackage{mathdots}
+%\usepackage{natbib}
+%\usepackage[chapter]{algorithm}
+%\floatname{algorithm}{Algoritmo}
+%\usepackage{algorithmic}
+
+\usepackage[english, ruled, algochapter, linesnumbered]{algorithm2e}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\labelitemi}{$-$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ambiente de Teoremas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{protocol}[theorem]{Protocol}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\cancel}[1]{}
+
+\newcommand{\al}{\alpha}
+\newcommand{\be}{\beta}
+\newcommand{\ga}{\gamma}
+\newcommand{\de}{\delta}
+\newcommand{\De}{\Delta}
+\newcommand{\ka}{\kappa}
+\newcommand{\lm}{\lambda}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\eps}{\epsilon}
+\newcommand{\ph}{\varphi}
+
+\newcommand{\CA}{{\cal A}}
+\newcommand{\CB}{{\cal B}}
+\newcommand{\CC}{{\cal C}}
+\newcommand{\CF}{{\cal G}}
+\newcommand{\CE}{{\cal E}}
+\newcommand{\CG}{{\cal G}}
+\newcommand{\CM}{{\cal M}}
+\newcommand{\CW}{{\cal W}}
+\newcommand{\CX}{{\cal X}}
+\newcommand{\CY}{{\cal Y}}
+
+\newcommand{\NN}{\mathbb{N}}
+
+\newcommand{\bG}{\mathbf{G}}
+\newcommand{\bP}{\mathbf{P}}
+
+\newcommand{\ti}[1]{\widetilde{#1}}
+
+\newcommand{\la}{\leftarrow}
+\newcommand{\lf}{\lfloor}
+\newcommand{\rf}{\rfloor}
+\newcommand{\lc}{\lceil}
+\newcommand{\rc}{\rceil}
+\newcommand{\lan}{\langle}
+\newcommand{\ran}{\rangle}
+\newcommand{\bool}{\{0,1\}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeindex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compilações parciais: com o comando abaixo, selecione apenas os capitulos
+% que deseja compilar.
+% \includeonly{resumos,cap_Experimentos}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Documento principal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\setcounter{secnumdepth}{3} % numeração de seções até nível 3
+\setcounter{tocdepth}{2} % numeração de seções no sumário até nível 2
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Capa e contra-capa
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Os comandos a seguir servem para definir o título do trabalho. Para evitar
+% que o latex defina automaticamente a quebra de linha, foram definidos um comando por linha.
+% Desta forma o autor define como quer que o título seja dividio em várias linhas.
+% O exemplo abaixo é para um título que ocupa três linhas. Observe que mesmo com a linha
+% 4 não sendo utilizada, o comando \titulolinhaiv é chamado.
+\titulolinhai{A Systematic Mapping Study:}
+\titulolinhaii{Qualidade de Serviço}
+\titulolinhaiii{em Computação Orientada a Serviços}
+\titulolinhaiv{}
+
+
+% Os nomes dos autores são definidos pelos comandos \autori (autor 1) e \autorii (autor 2).
+% Para trabalhos com apenas um autor, deve-se usar \autorii{} para que não apareça
+% um nome para segundo autor.
+\autori{Danilo Filgueira Mendonça}
+\autorii{} % descomente esta linha se não houver segundo autor.
+
+% Para página catalográfica - título em letras minúsculas e nome dos autores em maiúsculo, com último sobrenome primeiro
+\titulominusculoi{A Systematic Mapping Study: }
+\titulominusculoii{QOS em Computação Orientada a Serviços}
+\refautori{MENDONCA, D. F.}
+\refautorii{}
+\numpaginastexto{52p}
+\numpaginaspreliminares{v}
+
+% Os nomes dos membros da banca são definidos a seguir. Pode-se ter até 5 membros da banca,
+% numerados de i a v (algarismos romanos).
+% Para trabalhos com apenas um autor, deve-se usar \autorii{} para que não apareça
+% um nome para segundo autor. É incubência do usuário definir no argumento dos comandos a
+% afiliação do membro da banca, assim como sua posição (se for orientador ou co-orientador).
+% Os nomes definidos pelos comandos abaixo aparecem na ordem de i a v.
+\membrodabancai{Profa. Dra. Genaína Nunes Rodrigues , CIC/UnB \newline(Orientadora)}
+
+\membrodabancaii{}
+
+\membrodabancaiii{}
+
+\membrodabancaiv{}
+
+\membrodabancav{}
+
+% data de defesa: mês e ano.
+\mes{Março}
+\ano{2012}
+
+% Comandos para criar a capa e a página de assinaturas.
+\capaprincipal
+\capaassinaturas
+
+%% Folha Catalográfica
+\include{folha_catalografica}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dedicatória
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+% Texto de dedicatória do primeiro autor
+\dedicatoriaautori{Às manhãs de meu avô.}
+
+% Texto de dedicatória do segundo autor. Caso não tenha um segundo autor, este texto não
+% será mostrado
+%\dedicatoriaautorii{Dedico este trabalho aos meus pais que sempre me deram apoio e acreditaram no meu esforço para que eu concluísse meu curso de graduação}
+
+% Comando para criar a página de dedicatória
+\dedicatoria
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Agradecimentos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Texto de agradecimentos do primeiro autor
+\agradecimentosautori{}
+
+% Texto de agradecimentos do segundo autor. Caso não tenha um segundo autor, este texto não
+% será mostrado
+%\agradecimentosautorii{Agradeço a todos meus amigos que entraram comigo no curso em especial ao Roberto Braga que comigo fez este trabalho de conclusão de curso. A todos com quem trabalhei no TCU, principal ao Geraldo Magela, que me deu a oportunidade de estagiar no SIRED e ao Alfram Albuquerque que propôs este projeto e foi de fundamental importância para o andamento e conclusão do projeto.
+%Ao meu orientador, Rafael Timóteo, por aceitar o tema do projeto e acreditar na conclusão deste trabalho. }
+
+% Comando para criar a página de agradecimentos
+\agradecimentos
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Resumo: arquivo resumo.tex editável no Scientific Word
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{1} \pagenumbering{roman} \pagestyle{plain}
+\include{resumos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Listas de conteúdo, figuras e tabelas.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sumario
+\listadefiguras
+%\listadetabelas
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lista de simbolos.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{simbolos}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Muda a língua, para que as divisões automáticas do Latex, tais como
+% figure no início do título de cada figura, fiquem em inglês
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\selectlanguage{brazilian}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Corpo principal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+\setcounter{page}{1} \pagenumbering{arabic} \pagestyle{plain}
+
+
+\doublespace
+% *** Capítulo 1 - Introducao ***
+\include{introducao}
+
+% *** Capítulo 2 - Objetivos ***
+%\include{objetivos}
+
+% *** Capítulo 3 - Motivação ***
+%\include{motivacao}
+
+% *** Capítulo 3 - Embasamento teórico ***
+\include{embasamento}
+
+% *** Capítulo 4 - Estudo de caso ***
+\include{implementacao}
+
+\include{resultados}
+
+\include{conclusao}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Referências bibliográficas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\include{referencia}
+\renewcommand{\bibname}{REFERÊNCIAS}
+\addcontentsline{toc}{chapter}{REFERÊNCIAS}
+\bibliographystyle{abnt-num} % use este estilo para ABNT numérico
+%\bibliographystyle{abnt-alf} % use este estilo para ABNT alfa-numérico
+\bibliography{relatorio}
+
+\include{anexos}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Anexos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\anexos
+\makeatletter % não retirar estes comandos
+\renewcommand{\@makechapterhead}[1]{%
+  {\parindent \z@ \raggedleft \setfontarial\bfseries
+        \LARGE \thechapter. \space\space
+    \uppercase{#1}\par
+    \vskip 40\p@
+  }
+}
+\makeatother
+% *** Anexo I: Diagramas esquemáticos ***
+\include{anexo_esquematicos}
+\refstepcounter{noAnexo}
+% *** Anexo II: Descrição do CD ***
+\include{anexo_cd}
+\refstepcounter{noAnexo}
+
+\include{cd_projeto}
+\refstepcounter{noAnexo}
+
+
+% Acrescente mais anexos conforme julgar necessário.
+\end{document}

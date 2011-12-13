@@ -1,0 +1,14 @@
+\chapter{Simulações}\label{desempenho}
+
+Foi simulado um sistema de comunicação óptico que utiliza modulação DQPSK com multiplexação por polarização e detecção coerente. Os símbolos gerados são corrompidos por ruído do tipo ASE e ruído de fase modelado pelo processo discreto de Wiener. Os esquemas de recupeção de portadora foram implementados em MATLAB e o desempenho do sistema foi medido utilizando processos de Monte Carlo. 
+
+A Figura \ref{fig:penalidade} mostra o impacto do ruído de fase $\Delta\nu T_s$ em cada algoritmo para uma taxa de erro de bit (BER) de $10^{-3}$.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.80\textwidth]{figs/penalidade.eps}
+	\caption{Curvas de penalidade em dB para taxa de erro BER de $10^{-3}$.}
+	\label{fig:penalidade}
+\end{figure}
+
+O desempenho do esquema DD mostra-se o pior. Ele é mais sensível ao ruído de fase, requerendo uma maior SNR para a mesma taxa de erro que seu concorrente. Em um enlace POLMUX DQPSK com taxa de 28 Gbaud (112 Gb/s) e lasers com largura de linha de 1 MHz, $\Delta\nu T_s=4.45\times10^{-4}$ o DD oferece uma penalidade de aproximadamente 0,7 dB por exemplo.
