@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  12 DEC 2011 21:13
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  20 DEC 2011 19:20
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -485,7 +485,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 
  (./resumos.tex) [1
 
-] [2]
+]
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/sc' tried instead on input line 225.
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <17.28> not available
@@ -495,7 +495,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <17.28> not available
 \tf@toc=\write5
 \openout5 = `relatorio.toc'.
 
- [3
+ [2
 
 
 ]
@@ -505,12 +505,12 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 \tf@lof=\write6
 \openout6 = `relatorio.lof'.
 
- [4
+ [3
 
 ]
 \openout2 = `simbolos.aux'.
 
- (./simbolos.tex) [5
+ (./simbolos.tex) [4
 
 
 ]
@@ -532,7 +532,7 @@ File: figs/ppmendes/top_10_sites_alexa.eps Graphic file (type eps)
 <figs/ppmendes/top_10_sites_alexa.eps>
 File: figs/ppmendes/top_10_sites_brasil_alexa.eps Graphic file (type eps)
 
-<figs/ppmendes/top_10_sites_brasil_alexa.eps> [2] [3] [4]
+<figs/ppmendes/top_10_sites_brasil_alexa.eps> [2] [3]
 File: figs/ppmendes/comunidade_unb_orkut.eps Graphic file (type eps)
 
 <figs/ppmendes/comunidade_unb_orkut.eps>
@@ -543,13 +543,14 @@ File: figs/ppmendes/comunidade_avaliacao_professores_unb.eps Graphic file (type
 File: figs/ppmendes/perfil_unb_facebook.eps Graphic file (type eps)
 
 <figs/ppmendes/perfil_unb_facebook.eps>
-Overfull \hbox (118.16243pt too wide) in paragraph at lines 72--79
+Overfull \hbox (118.16243pt too wide) in paragraph at lines 81--88
 \T1/ptm/m/n/10.95 conta com 4.998 ami-gos, dos quais a mai-o-ria tem a pá-gina 
 da Uni-ver-si-dade de Bra-sí-lia (http://www.facebook.com/pages/Universidade-
  []
 
+[4] [5]
 File: figs/ppmendes/pagina_unb_facebook.eps Graphic file (type eps)
-<figs/ppmendes/pagina_unb_facebook.eps>
+ <figs/ppmendes/pagina_unb_facebook.eps>
 File: figs/ppmendes/perfil_dceunb_facebook.eps Graphic file (type eps)
 
 <figs/ppmendes/perfil_dceunb_facebook.eps>
@@ -557,24 +558,24 @@ File: figs/ppmendes/perfil_dceunb_facebook_entidades.eps Graphic file (type eps
 )
 
 <figs/ppmendes/perfil_dceunb_facebook_entidades.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 113--142
+Underfull \hbox (badness 10000) in paragraph at lines 122--151
 \T1/ptm/m/n/10.95 UFOP [].
  []
 
-[5] [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 145--179
+[6] [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 154--188
 \T1/ptm/m/n/10.95 rão apre-sen-ta-dos a se-guir tra-ba-lhos re-la-ci-o-na-dos a
  este tema.
  []
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 180--185
+Underfull \hbox (badness 10000) in paragraph at lines 189--194
 []\T1/ptm/m/n/10.95 Nesta se-ção são apre-sen-ta-dos os ob-je-ti-vos ge-rais e 
 es-pe-cí-fi-cos do tra-ba-lho.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--185
+Underfull \hbox (badness 10000) in paragraph at lines 189--194
 \T1/ptm/m/n/10.95 ca-ci-o-nais, \T1/ptm/m/it/10.95 Bu-si-ness In-tel-li-gence \
 T1/ptm/m/n/10.95 etc.
  []
@@ -742,10 +743,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5139 strings out of 494910
  66684 string characters out of 1177227
- 165439 words of memory out of 3000000
+ 164439 words of memory out of 3000000
  8105 multiletter control sequences out of 15000+50000
  56331 words of font info for 68 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
  34i,15n,25p,1766b,376s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (54 pages, 156964 bytes).
+Output written on relatorio.dvi (53 pages, 158616 bytes).
