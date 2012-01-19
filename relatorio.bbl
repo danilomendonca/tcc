@@ -5,11 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.42.2.1 }
 
-\bibitem{cobit1}
-\abntrefinfo{AUDIT e ISACAF}{AUDIT; ISACAF}{2000a}
-{AUDIT, I.~S.; ISACAF, C.~F. \emph{Control Objectives}. [S.l.]:
-  http://www.isaca.org, 2000a.}
-
 \bibitem{bene1}
 \abntrefinfo{Benevenuto}{BENEVENUTO}{2001a}
 {BENEVENUTO, J. M. A. e. A. S.~S. F. Curso - explorando redes sociais online:
@@ -24,11 +19,10 @@ ISSN 0104-530X.}
 \emph{SBRC}, scielo, v.~8, p. 160 -- 179, 08 2001.
 ISSN 0104-530X.}
 
-\bibitem{bene3}
-\abntrefinfo{Benevenuto Tiago~Rodrigues}{BENEVENUTO TIAGO~RODRIGUES}{2001}
-{BENEVENUTO TIAGO~RODRIGUES, M. C. e. V.~A. F. Characterizing user behavior in
-  online social networks.
-\emph{SBRC}, scielo, v.~8, p. 160 -- 179, 08 2001.
-ISSN 0104-530X.}
+\bibitem{soamanifesto}
+\abntrefinfo{Varios}{VARIOS}{2012}
+{VARIOS. \emph{Soa Manifesto}. 2012.
+[Online; accessed 12-December-2011].
+Dispon{\'\i}vel em: $<$http://www.soa-manifesto.org/$>$.}
 
 \end{thebibliography}
