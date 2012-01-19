@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  16 JAN 2012 19:43
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  19 JAN 2012 21:02
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -525,12 +525,17 @@ File: figs/danilo/SOC_strategic_goals.eps Graphic file (type eps)
 
 
 
-] [2]
-File: figs/ppmendes/ranking_OSN_country.eps Graphic file (type eps)
+]
 
-<figs/ppmendes/ranking_OSN_country.eps>
+LaTeX Warning: Citation `O'Brien:2007:QAS:1270235.1270300' on page 2 undefined 
+on input line 36.
+
+[2]
+File: figs/ppmendes/ranking_OSN_country.eps Graphic file (type eps)
+ <figs/ppmendes/ranking_OSN_country.eps>
 File: figs/ppmendes/top_10_sites_alexa.eps Graphic file (type eps)
- <figs/ppmendes/top_10_sites_alexa.eps>
+
+<figs/ppmendes/top_10_sites_alexa.eps>
 File: figs/ppmendes/top_10_sites_brasil_alexa.eps Graphic file (type eps)
 
 <figs/ppmendes/top_10_sites_brasil_alexa.eps>
@@ -544,7 +549,7 @@ File: figs/ppmendes/comunidade_avaliacao_professores_unb.eps Graphic file (type
 File: figs/ppmendes/perfil_unb_facebook.eps Graphic file (type eps)
 
 <figs/ppmendes/perfil_unb_facebook.eps>
-Overfull \hbox (118.16243pt too wide) in paragraph at lines 88--95
+Overfull \hbox (118.16243pt too wide) in paragraph at lines 99--106
 \T1/ptm/m/n/10.95 conta com 4.998 ami-gos, dos quais a mai-o-ria tem a pá-gina 
 da Uni-ver-si-dade de Bra-sí-lia (http://www.facebook.com/pages/Universidade-
  []
@@ -559,24 +564,24 @@ File: figs/ppmendes/perfil_dceunb_facebook_entidades.eps Graphic file (type eps
 )
 
 <figs/ppmendes/perfil_dceunb_facebook_entidades.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 129--158
+Underfull \hbox (badness 10000) in paragraph at lines 140--169
 \T1/ptm/m/n/10.95 UFOP [].
  []
 
 [7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 161--195
+Underfull \hbox (badness 10000) in paragraph at lines 172--206
 \T1/ptm/m/n/10.95 rão apre-sen-ta-dos a se-guir tra-ba-lhos re-la-ci-o-na-dos a
  este tema.
  []
 
 [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 196--201
+Underfull \hbox (badness 10000) in paragraph at lines 207--212
 []\T1/ptm/m/n/10.95 Nesta se-ção são apre-sen-ta-dos os ob-je-ti-vos ge-rais e 
 es-pe-cí-fi-cos do tra-ba-lho.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--201
+Underfull \hbox (badness 10000) in paragraph at lines 207--212
 \T1/ptm/m/n/10.95 ca-ci-o-nais, \T1/ptm/m/it/10.95 Bu-si-ness In-tel-li-gence \
 T1/ptm/m/n/10.95 etc.
  []
@@ -586,9 +591,6 @@ T1/ptm/m/n/10.95 etc.
 
  (./embasamento.tex
 Cap\'{\i }tulo 2.
-
-LaTeX Warning: Citation `bene3' on page 14 undefined on input line 4.
-
 File: figs/ppmendes/redes_sociais_categorizadas.eps Graphic file (type eps)
 <figs/ppmendes/redes_sociais_categorizadas.eps> [14
 
@@ -703,7 +705,7 @@ Cap\'{\i }tulo 5.
 
 
 ]) [42] (./relatorio.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 24--27
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
 []\T1/ptm/m/n/10.95 VARIOS. \T1/ptm/m/it/10.95 Soa Ma-ni-festo\T1/ptm/m/n/10.95
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
@@ -754,12 +756,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5143 strings out of 494910
- 66785 string characters out of 1177227
- 165447 words of memory out of 3000000
- 8107 multiletter control sequences out of 15000+50000
+ 5144 strings out of 494910
+ 66819 string characters out of 1177227
+ 164451 words of memory out of 3000000
+ 8108 multiletter control sequences out of 15000+50000
  56331 words of font info for 68 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
  34i,15n,25p,1766b,376s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (54 pages, 159884 bytes).
+Output written on relatorio.dvi (54 pages, 160576 bytes).

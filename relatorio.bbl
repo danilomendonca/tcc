@@ -5,6 +5,21 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.42.2.1 }
 
+\bibitem{soamanifesto}
+\abntrefinfo{Varios}{VARIOS}{2012}
+{VARIOS. \emph{Soa Manifesto}. 2012.
+[Online; accessed 12-December-2011].
+Dispon{\'\i}vel em: $<$http://www.soa-manifesto.org/$>$.}
+
+\bibitem{O'Brien:2007:QAS:1270235.1270300}
+\abntrefinfo{O'Brien, Merson e Bass}{O'BRIEN; MERSON; BASS}{2007}
+{O'BRIEN, L.; MERSON, P.; BASS, L. Quality attributes for service-oriented
+  architectures. In:  \emph{Proceedings of the International Workshop on
+  Systems Development in SOA Environments}. Washington, DC, USA: IEEE Computer
+  Society, 2007.  (SDSOA '07), p.~3--.
+ISBN 0-7695-2960-7. Dispon{\'\i}vel em:
+  $<$http://dx.doi.org/10.1109/SDSOA.2007.10$>$.}
+
 \bibitem{bene1}
 \abntrefinfo{Benevenuto}{BENEVENUTO}{2001a}
 {BENEVENUTO, J. M. A. e. A. S.~S. F. Curso - explorando redes sociais online:
@@ -19,10 +34,11 @@ ISSN 0104-530X.}
 \emph{SBRC}, scielo, v.~8, p. 160 -- 179, 08 2001.
 ISSN 0104-530X.}
 
-\bibitem{soamanifesto}
-\abntrefinfo{Varios}{VARIOS}{2012}
-{VARIOS. \emph{Soa Manifesto}. 2012.
-[Online; accessed 12-December-2011].
-Dispon{\'\i}vel em: $<$http://www.soa-manifesto.org/$>$.}
+\bibitem{bene3}
+\abntrefinfo{Benevenuto Tiago~Rodrigues}{BENEVENUTO TIAGO~RODRIGUES}{2001}
+{BENEVENUTO TIAGO~RODRIGUES, M. C. e. V.~A. F. Characterizing user behavior in
+  online social networks baby.
+\emph{SBRC}, scielo, v.~8, p. 160 -- 179, 08 2001.
+ISSN 0104-530X.}
 
 \end{thebibliography}
