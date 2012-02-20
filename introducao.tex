@@ -2,13 +2,39 @@
 \chapter{Introdução}\label{introducao}
 %introdução da introdução
 
-A tecnologia da informação já se consolidou como ferramenta essencial para as instituições, afetando rotinas, ações, estruturas e modelos de nogócios. Os alto custos associados ao consumo e provimento de recursos de TI e a necessidade de uma maior agilidade para responder às mudanças casam-se às propostas da computação orientada a serviços, ou SOC, cujo paradigma de design é composto por princípios que, quando absorvidos, criam condições para o cumprimento dos objetivos da computação orientada a serviços, entre eles o aumento do retorno de investimento, da agilidade, da reusabilidade e da interoperabilidade, assim como um maior alinhamento entre TI e modelo de negócios. 
+
+
+A tecnologia da informação já se consolidou como ferramenta essencial para as instituições, afetando rotinas, ações, estruturas e modelos de negócios. Os alto custos associados ao consumo e provimento de recursos de TI e a necessidade de uma maior agilidade para responder às mudanças casam-se às propostas da computação orientada a serviços, ou SOC, cujo paradigma de design é composto por princípios que, quando absorvidos, criam condições para o cumprimento dos objetivos e benefícios por ela almejados, entre eles o aumento do retorno de investimento, da agilidade, da reusabilidade e da interoperabilidade, assim como um maior alinhamento entre TI e modelo de negócios. 
 %OK 1.1.2!
 
+
+
+%figura(s) com obrigações e benefícios do SOC (4 obrigações e 3 benefícios)
+\begin{figure}[htbp]
+	\centering	\includegraphics[width=0.60\textwidth]{figs/danilo/SOC_strategic_goals.eps}
+	\caption{Princípios relacionados ao SOA e seus benefícios}	
+	\label{fig:SOC_strategic_goals}
+\end{figure} 
+
 %definição de SO, SOD, SOC e SOA
-O paradigma de orientação a serviços, tal qual outros paradigmas, possui um design próprio que norteia a configuração do suprimento e consumo dos recursos de TI. Apesar do sucesso de outros paradigmas, por exemplo a orientação a objetos, nota-se que problemas de ordem superior, ou seja, da eficiência, agilidade e retorno de investimento na composição de aplicações, permaneceram. Assim, aplicações silos carecem de interoperabilidade, sendo difícil ou inviável seu reuso, o que aumenta o custo de desenvolvimento de novas aplicações a longo prazo  e reduz drasticamente a agilidade ou tempo de resposta às novas demandas, sobretudo quando os modelos de negócio exigem maior flexibilidade. Dessa forma, os benefícios idealizados pelo SOC fizeram desse paradigma um foco de estudos em diversos centros acadêmicos no mundo, sobretudo à partir do surgimento da arquitetura orientada a serviços, ou SOA. Também é notável a adesão de grandes vendedores da indústria de TI à comercialização de SOA. Esses foram responsáveis pela difusão, porém também pela vulgarização do conceito de SOA, ao ponto do mesmo ter se tornado ambíguo e com significados diversos. 
+
+
+O paradigma de orientação a serviços possui um design próprio que norteia a configuração do suprimento e consumo dos recursos de TI. Apesar do sucesso de outros paradigmas na computação, por exemplo a orientação a objetos, nota-se que problemas de ordem superior, ou seja, da eficiência, agilidade e retorno de investimento na composição de aplicações, permaneceram carentes de avanços. Assim, aplicações silos carecem de interoperabilidade, sendo difícil ou inviável seu reuso, o que aumenta o custo de desenvolvimento de novas aplicações a longo prazo  e reduz drasticamente a agilidade ou tempo de resposta às novas demandas, sobretudo quando os modelos de negócio exigem maior flexibilidade. Dessa forma, os benefícios idealizados pelo SOC fizeram desse paradigma um foco de estudos em diversos centros acadêmicos no mundo, sobretudo à partir do surgimento da arquitetura orientada a serviços, ou SOA. Também é notável a adesão de grandes vendedores da indústria de TI a essa tecnologia, fomentando tanto pesquisa quanto sua adoção em corporações. 
+
+Historicamente, o paradigma de orientação a serviços tem como base diversos outros paradigmas e designs. Entre os mais importantes está a arquitetura baseada em componentes. Com ela, a orientação a serviços compartilha visões, uma vez que ambas se sustentam sobre o conceito de unidades lógicas auto-contidas, auto-descritas, modulares, encapsuladas, que fazem uso de interfaces, contratos e especificações com possibilidade de composição com outras unidades.
+
+No entanto, serviços diferenciam-se fundamentalmente de componentes. Enquanto componentes variam entre modelos \textit{white box, gray box ou black box}, de acordo com o nível de customização possível, os serviços são sempre hermeticamente encapsulados e distribuídos em forma de \textit{black boxes}. Nos primeiros, foca-se na especificação técnica do conjunto de funcionalidades que desempenham, permitindo o uso das mesmas nos códigos que as invocam uma vez que os componentes tenham sido devidamente importados ou ligados à aplicação. Para os últimos,  contratos são estabelecidos em conjunto à descrição das funcionalidades expostas por meio das interfaces do serviço. De fato, em muitos casos um serviço irá fazer uso de componentes em sua implementação, que por conceito independe de sua descrição, desde que mantenha a funcionalidade por ela exposta. Já a especificação de componentes pode incluir também uma definição abstrata de sua estrutura interna. \cite{Breivold:2007:CSS:1302497.1302990}. A composição dos serviços é feita de forma dinâmica em tempo de execução, enquanto a composição de componentes é feita na fase de design. Isso relaciona-se ao tipo de acoplamento entre provedor e consumidor, havendo um contraste entre ambos. Nos componentes é frequente um alto acoplamento, de forma que um grau mais elevado de cumplicidade entre provedor e consumidor é exigida de acordo com o tipo de interação usada. Já em serviços o baixo acoplamento entre ambos é um princípio a ser seguido e um de maior importância no paradigma de orientação a serviços. Assim, o provedor irá desfrutar de liberdade e flexibilidade para a escolha do design e implementação, assim como o contratante irá somente se ater, funcionalmente, às descrições do serviço. Esse desacoplamento é viabilizado pela descrição dos serviços que possibilitam sua interação usando parâmetros pré-estabelecidos \cite{Crnkovic:2006:CDP:1193212.1193814}.
+
+Mesmo com modelos que definem a distribuição de componentes, i.e. J2EE e CORBA, os resultados obtidos são de naturezas distintas. O processo de integração remota previsto pela distribuição de componentes mantém o aspecto citado para a sua especificação, uma vez que irá, de forma refinada, distribuir modelos de objetos, seus estados e propriedades, enquanto os serviços estão num patamar menos elaborado de integração, fornecendo funcionalidades em alto nível. Portanto, tais modelos se situam em domínios diferentes, assim como os problemas por ele enfrentados \cite{soaworld-ws-components}.
+
+
+
+%vulgarização do SOA
+Esses mesmos agentes responsáveis pela comercialização de SOA, também  pela vulgarização do conceito de SOA, ao ponto do mesmo ter se tornado ambíguo e com significados diversos. 
 
 %meso! falta desenvolver um pouco mais 1.1.0
+
+Because of the increasing agreement on the implementation and management of the functional aspects of those services, such as the adoption of WSDL for service description, SOAP for Web service messaging, or WS-BPEL for Web service composition, the interests of researchers is shifting toward the ?non-functional? or quality aspects of web-enabled software services \cite{Papazoglou:2007:SOA:1265289.1265298}.
 
 
 %definição de serviços - importante
@@ -16,18 +42,13 @@ O princípio fundamental do design estabelecido pelo SOC está na criação de unida
 
 %ok! 1.1.0 
 
-%figura(s) com obrigações e benefícios do SOC (4 obrigações e 3 benefícios)
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.60\textwidth]{figs/danilo/SOC_strategic_goals.eps}
-	\caption{Princípios relacionados ao SOA e seus benefícios}	
-	\label{fig:SOC_strategic_goals}
-\end{figure}
+
 
 %SOC & SOA misleading information
 
 
 %definição de SOA
-Com base nos princípios de SOC, criou-se uma arquitetura responsável por guiar o processo de adoção desse paradigma. O SOA, ou \textit{Service Oriented Architecture}, define uma série de processos, papéis, regras, modelos e camadas, entre outros componentes da arquitetura, propondo tranformações importantes no modus operandi no setor de tecnologia da informação. Dada sua abrangência e complexidade de fundamentos, o SOA é protagonista no avanço do SOC, tendo seu conceito se difundido de forma mais ampla que o primeiro, haja vista que recebeu grande atenção do meio acadêmico, como ilustra nosso mapeamento de estudos, além de ter sido um produto de destaque para grandes vendedores da indústria de TI. Entre as prioridades do SOA apontada pelo \textit{SOA Manifesto} estão: o valor de negócio sobre a estratégia técnica adotada, os objetivos estratégicos sobre os benefícios específicos de projeto, a interoperabilidade intrínceta sobre as integrações customizadas, os serviços compartilhados sobre implementações com propósito específico, a flexibilidade sobre optimização e o refinamento evolutivo sobre a perfeição inicial \cite{soamanifesto}.
+Com base nos princípios de SOC, criou-se uma arquitetura responsável por guiar o processo de adoção desse paradigma. O SOA, ou \textit{Service Oriented Architecture}, define uma série de processos, papéis, regras, modelos e camadas, entre outros componentes da arquitetura, propondo transformações importantes no modus operandi no setor de tecnologia da informação. Dada sua abrangência e complexidade de fundamentos, o SOA é protagonista no avanço do SOC, tendo seu conceito se difundido de forma mais ampla que o primeiro, haja vista que recebeu grande atenção do meio acadêmico, como ilustra nosso mapeamento de estudos, além de ter sido um produto de destaque para grandes vendedores da indústria de TI. Entre as prioridades do SOA apontada pelo \textit{SOA Manifesto} estão: o valor de negócio sobre a estratégia técnica adotada, os objetivos estratégicos sobre os benefícios específicos de projeto, a interoperabilidade intrínseca sobre as integrações customizadas, os serviços compartilhados sobre implementações com propósito específico, a flexibilidade sobre optimização e o refinamento evolutivo sobre a perfeição inicial \cite{soamanifesto}.
 %ok! 1.1.0
 
 %definição de QOS
@@ -36,24 +57,27 @@ Por qualidade de serviço ou QOS de um sistema entendem-se seus atributos ou requ
 
 %FIGURA COM TODAS OU PRINCIPAIS ATRIBUTOS DE QOS
 
-A performance está diretamente relacionada ao tempo, seja pelo tempo de resposta, pela quantidade de requisições por unidade de tempo ou pela capacidade de atender à requisição numa quantidade de tempo determinada\cite{O'Brien:2007:QAS:1270235.1270300}.
+A performance está diretamente relacionada ao tempo, seja pelo tempo de resposta, pela quantidade de requisições por unidade de tempo ou pela capacidade de atender à requisição numa quantidade de tempo determinada\cite{O'Brien:2007:QAS:1270235.1270300}. Nesse sentido, o uso de serviços distribuídos acarreta prejuízos à performance inerentes à rede utilizada, além de processamento extra devido ao tratamento e encaminhamento das mensagens entre serviços, especialmente quando trata-se de formatos baseados em texto, como o XML, que possuem tamanho maior que sua representação binária. Também irá prejudicar a performance o processo de descobrimento e alocação de serviços na situações em que esse processo não é pré-estabelecido. 
 
-O ambiente proposto pelas arquiteturas orientadas a 
-serviço está sujeito a condições particulares diferentes daquelas já estudadas e conhecidas em outros paradigmas. Por exemplo, o ambiente em que se compõe uma aplicação a partir de serviços distribuidos tem variáveis que dificultam a análise de desempenho e disponibilidade, entre outros parâmetros de qualidade. 
+A interoperabilidade relaciona-se à capacidade dos componentes de compartilharem informação e operarem de forma acordada\cite{O'Brien:2007:QAS:1270235.1270300}.  Dado que o ambiente SOC pressupõe a criação de serviços e, especificamente em SOA, serviços implementados com diversas tecnologias sem prejuízo à intercomunicação, verifica-se que um dos principais benefícios trazidos por essa arquitetura é para a interoperabilidade.
 
-Assim, a adoção de SOA rumo à orientação a serviços é uma decisão que requer planejamento, análise de riscos e de atributos diversos conforme o modelo de negócios atendido.  
+A segurança, como um atributo de QOS, possui alguns princípios. A autenticidade trata da capacidade do sistema em identificar a autoria da informação enviada.  A integridade irá resguardar a informação tal qual foi enviada, sem alterações. A confidencialidade garante que somente atores ou entidades autorizadas tenham acesso às informações. O paradigma SOC tem desafios nesses critérios de qualidade à medida em que os serviços são distribuídos em ambientes internos restritos ou na própria internet. É imediata a percepção de que a troca de informações entre as unidades lógicas do sistema pode acarretar sérios riscos à segurança, estando os esforços disponíveis para garanti-la limitados pela necessidade de se manter a interoperabilidade e a performance no ambiente SOC, já que requerem a adoção adicional de especificações, protocolos e consequentemente uma maior redundância de informação e processamento.
 
+A disponibilidade define o tempo em que o sistema estará operacional e portanto respondendo a requisições. Tratando-se de serviços, cada um irá possuir uma disponibilidade que irá influenciar diretamente na disponibilidade dos sistemas que dependem desses serviços, portanto o ambiente SOC possui o desafio de manter-se operacional diante de suas unidades com particularidades próprias. Como possíveis estratégias para mitigar os problemas causados por serviços inoperantes estão a replicação e o balanceamento de carga, além da troca do provedor do serviço. Nesse sentido, o monitoramento, a gerência e a seleção de serviços são processos importantes em SOC e sua automação um dos maiores desafios.
 
-Nesse sentido, o presente estudo visa mapear publicações cujo foco é QOS em SOC, de forma a reduzir a incerteza quanto ao estado dessa tecnologia e quanto aos desafios e avanços já conquistados.
+A confiabilidade é um atributo relacionado à disponibilidade e trata da capacidade do sistema em operar sem erros. Mais uma vez, no ambiente distribuído essa capacidade irá depender da confiabilidade dos serviços que compõe o sistema, mas também das mensagens enviadas e recebidas. Dessa forma, um sistema SOC confiável deverá utilizar especificações e protocolos que garantam a confiabilidade das mensagens ou fazer uso de ferramentas e implementações que cuidem desse processo. 
 
+A modificabilidade mesura a capacidade do sistema de sofrer modificações com menores custos e maior velocidade \cite{ClementsKazmanKlein01}. 
+
+O ambiente proposto pelas arquiteturas orientadas a serviço está sujeito a condições particulares diferentes daquelas já estudadas e conhecidas em outros paradigmas, havendo variáveis que elevam a complexidade da análise de parâmetros de qualidade, tanto na fase de planejamento quanto em fase de execução por meio do monitoramento e da gerência dos serviços, sendo esse um obstáculo sólido à adoção de arquiteturas como o SOA. Nesse sentido, o presente estudo visa mapear publicações cujo foco está na qualidade de serviços em SOC, contemplando cenários com ou sem o uso de SOA, proporcionando uma redução da incerteza quanto ao atual estado de desenvolvimento da ciência contribuinte ao tema abordado e quanto aos desafios e avanços já conquistados.
 
 
 %definição de SMS
 Conforme será apresentado posteriormente nesse trabalho, o número de publicações que trazem como foco de estudo o SOC cresceu sensivelmente, sobretudo à partir de 2005 (REFERÊNCIA), gerando um cenário pouco claro a respeito dos avanços e principais desafios relacionados a esse paradigma. Portanto, um trabalho de mapeamento permite organizar e classificar as publicações a partir de determinadas facetas, gerando embasamento a quem deseja iniciar ou avançar nos estudos da área mapeada.
 
-O \textit{Systematic Mapping Study} propõem uma abordagem que preza pela amplitude em detrimento da profundidade de análise. Com isso, é possível incluir um número mais significativo de publicações e um escopo de estudos mais amplo que aquele obtido pelo \textit{Systematic Literature Review}, tendo esse último uma abordagem que difere-se pela maior precisão e riqueza de detalhes em sua classificação, podendo ser aplicado num possível trabalho futuro, cujo enfoque seriam subáreas de interesse identificadas pelo primeiro processo de mapeamento aqui apresentado. 
+O \textit{Systematic Mapping Study} propõem uma abordagem que preza pela amplitude em detrimento da profundidade de análise. Com isso, é possível incluir um número mais significativo de publicações e um escopo de estudos mais amplo que aquele obtido pelo \textit{Systematic Literature Review}, tendo esse último uma abordagem que difere-se pela maior precisão e riqueza de detalhes em sua classificação, podendo ser aplicado num possível trabalho futuro, cujo enfoque seriam subáreas de interesse identificadas pelo primeiro processo de mapeamento aqui apresentado
 
-
+\cite{Petersen_Feldt_Mujtaba_Mattsson_2007}
 
 \begin{figure}[htbp]
 	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/ranking_OSN_country.eps}

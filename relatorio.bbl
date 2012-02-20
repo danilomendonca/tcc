@@ -5,6 +5,40 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.42.2.1 }
 
+\bibitem{Breivold:2007:CSS:1302497.1302990}
+\abntrefinfo{Breivold e Larsson}{BREIVOLD; LARSSON}{2007}
+{BREIVOLD, H.~P.; LARSSON, M. Component-based and service-oriented software
+  engineering: Key concepts and principles. In:  \emph{Proceedings of the 33rd
+  EUROMICRO Conference on Software Engineering and Advanced Applications}.
+  Washington, DC, USA: IEEE Computer Society, 2007. p. 13--20.
+ISBN 0-7695-2977-1. Dispon{\'\i}vel em:
+  $<$http://dl.acm.org/citation.cfm?id=1302497.1302990$>$.}
+
+\bibitem{Crnkovic:2006:CDP:1193212.1193814}
+\abntrefinfo{Crnkovic, Chaudron e Larsson}{CRNKOVIC; CHAUDRON; LARSSON}{2006}
+{CRNKOVIC, I.; CHAUDRON, M.; LARSSON, S. Component-based development process
+  and component lifecycle. In:  \emph{Proceedings of the International
+  Conference on Software Engineering Advances}. Washington, DC, USA: IEEE
+  Computer Society, 2006. p.~44--.
+ISBN 0-7695-2703-5. Dispon{\'\i}vel em:
+  $<$http://dl.acm.org/citation.cfm?id=1193212.1193814$>$.}
+
+\bibitem{soaworld-ws-components}
+\abntrefinfo{PATIL}{PATIL}{2003}
+{PATIL, S. \emph{Integration Approaches: Web Services vs Distributed Component
+  Models PART II}. 2003.
+[Online; accessed 20-February-2012].
+Dispon{\'\i}vel em: $<$http://soa.sys-con.com/node/39754$>$.}
+
+\bibitem{Papazoglou:2007:SOA:1265289.1265298}
+\abntrefinfo{Papazoglou e Heuvel}{PAPAZOGLOU; HEUVEL}{2007}
+{PAPAZOGLOU, M.~P.; HEUVEL, W.-J. Service oriented architectures: approaches,
+  technologies and research issues.
+\emph{The VLDB Journal}, Springer-Verlag New York, Inc., Secaucus, NJ, USA,
+  v.~16, p. 389--415, July 2007.
+ISSN 1066-8888.
+Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1007/s00778-007-0044-3$>$.}
+
 \bibitem{soamanifesto}
 \abntrefinfo{Varios}{VARIOS}{2012}
 {VARIOS. \emph{Soa Manifesto}. 2012.
@@ -19,6 +53,18 @@ Dispon{\'\i}vel em: $<$http://www.soa-manifesto.org/$>$.}
   Society, 2007.  (SDSOA '07), p.~3--.
 ISBN 0-7695-2960-7. Dispon{\'\i}vel em:
   $<$http://dx.doi.org/10.1109/SDSOA.2007.10$>$.}
+
+\bibitem{ClementsKazmanKlein01}
+\abntrefinfo{Clements, Kazman e Klein}{CLEMENTS; KAZMAN; KLEIN}{2001}
+{CLEMENTS, P.; KAZMAN, R.; KLEIN, M. \emph{Evaluating Software Architectures:
+  Methods and Case Studies}. [S.l.]: Addison-Wesley, 2001.
+ISBN 978-0-201-70482-2.}
+
+\bibitem{Petersen_Feldt_Mujtaba_Mattsson_2007}
+\abntrefinfo{Petersen et al.}{PETERSEN et al.}{2007}
+{PETERSEN, K. et al. Systematic mapping studies in software engineering.
+\emph{12th International Conference on Evaluation and Assessment in Software
+  Engineering}, v.~17, n.~1, p. 1--10, 2007.}
 
 \bibitem{bene1}
 \abntrefinfo{Benevenuto}{BENEVENUTO}{2001a}

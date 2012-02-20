@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  19 JAN 2012 21:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  20 FEB 2012 18:22
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -525,20 +525,15 @@ File: figs/danilo/SOC_strategic_goals.eps Graphic file (type eps)
 
 
 
-]
-
-LaTeX Warning: Citation `O'Brien:2007:QAS:1270235.1270300' on page 2 undefined 
-on input line 36.
-
-[2]
+] [2] [3] [4]
 File: figs/ppmendes/ranking_OSN_country.eps Graphic file (type eps)
- <figs/ppmendes/ranking_OSN_country.eps>
-File: figs/ppmendes/top_10_sites_alexa.eps Graphic file (type eps)
 
-<figs/ppmendes/top_10_sites_alexa.eps>
+<figs/ppmendes/ranking_OSN_country.eps>
+File: figs/ppmendes/top_10_sites_alexa.eps Graphic file (type eps)
+ <figs/ppmendes/top_10_sites_alexa.eps>
 File: figs/ppmendes/top_10_sites_brasil_alexa.eps Graphic file (type eps)
 
-<figs/ppmendes/top_10_sites_brasil_alexa.eps>
+<figs/ppmendes/top_10_sites_brasil_alexa.eps> [5] [6] [7]
 File: figs/ppmendes/comunidade_unb_orkut.eps Graphic file (type eps)
 
 <figs/ppmendes/comunidade_unb_orkut.eps>
@@ -549,14 +544,13 @@ File: figs/ppmendes/comunidade_avaliacao_professores_unb.eps Graphic file (type
 File: figs/ppmendes/perfil_unb_facebook.eps Graphic file (type eps)
 
 <figs/ppmendes/perfil_unb_facebook.eps>
-Overfull \hbox (118.16243pt too wide) in paragraph at lines 99--106
+Overfull \hbox (118.16243pt too wide) in paragraph at lines 132--139
 \T1/ptm/m/n/10.95 conta com 4.998 ami-gos, dos quais a mai-o-ria tem a pá-gina 
 da Uni-ver-si-dade de Bra-sí-lia (http://www.facebook.com/pages/Universidade-
  []
 
-[3] [4] [5] [6]
 File: figs/ppmendes/pagina_unb_facebook.eps Graphic file (type eps)
- <figs/ppmendes/pagina_unb_facebook.eps>
+<figs/ppmendes/pagina_unb_facebook.eps>
 File: figs/ppmendes/perfil_dceunb_facebook.eps Graphic file (type eps)
 
 <figs/ppmendes/perfil_dceunb_facebook.eps>
@@ -564,35 +558,35 @@ File: figs/ppmendes/perfil_dceunb_facebook_entidades.eps Graphic file (type eps
 )
 
 <figs/ppmendes/perfil_dceunb_facebook_entidades.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 140--169
+Underfull \hbox (badness 10000) in paragraph at lines 173--202
 \T1/ptm/m/n/10.95 UFOP [].
  []
 
-[7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 172--206
+[8] [9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 205--239
 \T1/ptm/m/n/10.95 rão apre-sen-ta-dos a se-guir tra-ba-lhos re-la-ci-o-na-dos a
  este tema.
  []
 
-[10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 207--212
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 240--245
 []\T1/ptm/m/n/10.95 Nesta se-ção são apre-sen-ta-dos os ob-je-ti-vos ge-rais e 
 es-pe-cí-fi-cos do tra-ba-lho.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--212
+Underfull \hbox (badness 10000) in paragraph at lines 240--245
 \T1/ptm/m/n/10.95 ca-ci-o-nais, \T1/ptm/m/it/10.95 Bu-si-ness In-tel-li-gence \
 T1/ptm/m/n/10.95 etc.
  []
 
-[12]) [13]
+[14]) [15]
 \openout2 = `embasamento.aux'.
 
  (./embasamento.tex
 Cap\'{\i }tulo 2.
 File: figs/ppmendes/redes_sociais_categorizadas.eps Graphic file (type eps)
-<figs/ppmendes/redes_sociais_categorizadas.eps> [14
+<figs/ppmendes/redes_sociais_categorizadas.eps> [16
 
 
 
@@ -600,22 +594,22 @@ File: figs/ppmendes/redes_sociais_categorizadas.eps Graphic file (type eps)
 File: figs/ppmendes/similaridade_rso_redes_complexas.eps Graphic file (type eps
 )
 
-<figs/ppmendes/similaridade_rso_redes_complexas.eps> [15] [16]
+<figs/ppmendes/similaridade_rso_redes_complexas.eps> [17] [18]
 File: figs/ppmendes/agregador_rso.eps Graphic file (type eps)
 
-<figs/ppmendes/agregador_rso.eps> [17]
+<figs/ppmendes/agregador_rso.eps> [19]
 File: figs/ppmendes/user_pages_connection_properties.eps Graphic file (type eps
 )
 
-<figs/ppmendes/user_pages_connection_properties.eps> [18]
+<figs/ppmendes/user_pages_connection_properties.eps> [20]
 File: figs/ppmendes/facebook_home.eps Graphic file (type eps)
 
 <figs/ppmendes/facebook_home.eps>
 File: figs/ppmendes/user_page_facebook.eps Graphic file (type eps)
  <figs/ppmendes/user_page_facebook.eps>
-[19] [20]
+[21] [22]
 File: figs/ppmendes/social_graph_objects.eps Graphic file (type eps)
- <figs/ppmendes/social_graph_objects.eps> [21]
+ <figs/ppmendes/social_graph_objects.eps> [23]
 File: figs/ppmendes/facebook_platform_overview.eps Graphic file (type eps)
 
 <figs/ppmendes/facebook_platform_overview.eps>
@@ -628,7 +622,7 @@ File: figs/ppmendes/oauth_dialog2.eps Graphic file (type eps)
 <figs/ppmendes/oauth_dialog2.eps>
 File: figs/ppmendes/permissoes_usuario_amigos.eps Graphic file (type eps)
 
-<figs/ppmendes/permissoes_usuario_amigos.eps> [22] [23] [24]
+<figs/ppmendes/permissoes_usuario_amigos.eps> [24] [25] [26]
 File: figs/ppmendes/permissoes_extendidas.eps Graphic file (type eps)
 
 <figs/ppmendes/permissoes_extendidas.eps>
@@ -636,23 +630,23 @@ File: figs/ppmendes/fluxo_app.eps Graphic file (type eps)
  <figs/ppmendes/fluxo_app.eps>
 File: figs/ppmendes/graph_api_response.eps Graphic file (type eps)
 
-<figs/ppmendes/graph_api_response.eps> [25] [26] [27]) [28]
+<figs/ppmendes/graph_api_response.eps> [27] [28] [29]) [30]
 \openout2 = `implementacao.aux'.
 
 
 (./implementacao.tex
 Cap\'{\i }tulo 3.
-[29
+[31
 
 
 
-] [30]
+] [32]
 Underfull \hbox (badness 10000) in paragraph at lines 65--67
 \T1/ptm/m/n/10.95 gens de pro-gra-ma-ção PHP e Ja-vaS-cript es-tão no ca-pí-tul
 o Em-ba-sa-mento Teó-rico.
  []
 
-[31] [32]
+[33] [34]
 Underfull \hbox (badness 10000) in paragraph at lines 126--128
 \T1/ptm/m/n/10.95 dos do pró-prio per-fil dos ami-gos des-tes usuá-rios.
  []
@@ -663,7 +657,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 a-das fil-mes e li-vros.
  []
 
-[33]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 156--173
 []\T1/ptm/m/n/10.95 Serão fei-tos os se-guin-tes tra-ta-men-tos de da-dos:
  []
@@ -680,50 +674,50 @@ Overfull \hbox (10.47075pt too wide) in paragraph at lines 181--182
 story, fri-ends_hometown, fri-ends_location,
  []
 
-[34]
+[36]
 Overfull \hbox (44.62335pt too wide) in paragraph at lines 189--190
 []\T1/ptm/m/n/10.95 user_about_me, user_likes, user_online_presence, user_relat
 ionships, user_work_history, user_activities,
  []
 
-[35] [36]) [37]
+[37] [38]) [39]
 \openout2 = `resultados.aux'.
 
  (./resultados.tex
 Cap\'{\i }tulo 4.
-[38
+[40
 
 
 
-] [39]) [40]
+] [41]) [42]
 \openout2 = `conclusao.aux'.
 
  (./conclusao.tex
 Cap\'{\i }tulo 5.
-[41
+[43
 
 
 
-]) [42] (./relatorio.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 10--13
+]) [44] (./relatorio.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
 []\T1/ptm/m/n/10.95 VARIOS. \T1/ptm/m/it/10.95 Soa Ma-ni-festo\T1/ptm/m/n/10.95
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [43
+[45
 
 
-]
+]) [46]
 \openout2 = `anexos.aux'.
 
  (./anexos.tex
 Cap\'{\i }tulo 6.
-) [44
+) [47
 
 
 ]
 \c@noAnexo=\count127
- [45
+ [48
 
 
 ]
@@ -745,9 +739,6 @@ No file cd_projeto.tex.
 (./conclusao.aux) (./anexos.aux) (./anexo_esquematicos.aux) (./anexo_cd.aux)
 (./cd_projeto.aux))
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  )
@@ -756,12 +747,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5144 strings out of 494910
- 66819 string characters out of 1177227
- 164451 words of memory out of 3000000
- 8108 multiletter control sequences out of 15000+50000
+ 5150 strings out of 494910
+ 67011 string characters out of 1177227
+ 165488 words of memory out of 3000000
+ 8114 multiletter control sequences out of 15000+50000
  56331 words of font info for 68 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
- 34i,15n,25p,1766b,376s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,25p,1999b,376s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (54 pages, 160576 bytes).
+Output written on relatorio.dvi (57 pages, 172356 bytes).

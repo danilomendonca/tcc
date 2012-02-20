@@ -4,12 +4,18 @@ QOS Facet
 
 - Security: Confiabilidade, autenticidade, integrabilidade. Riscos na transmissão, armazenamento de dados. Inventório de serviços deve estar atualizado e conter somente serviços autenticados por autoridades. Afeta negativamente a performance, a modificabilidade e a interoperabilidade.
 
-- Reliability: Message and service reliability
+- Reliability: 
+
+Message and service reliability
 
 - Availability: Are the services on-line? How to deal with contingency and ways of garantee a better availability, as replication.
 
 - Modifiability: With SOA, it is easier to change the service implementation, but it's complicated to determinate the consequences of an interface modification. New services can be added and it will depend on the service extensibility mechanism to cause the need of service user modification due to a service extension with interface change.
 
+- Testing: 
 
+- Usability:
+
+- Scalability: 
 
 
