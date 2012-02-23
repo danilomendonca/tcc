@@ -1,36 +1,42 @@
 \select@language {portuges}
 \contentsline {chapter}{\numberline {1}Introdução}{1}
-\contentsline {section}{\numberline {1.1}Motivação}{10}
-\contentsline {section}{\numberline {1.2}Trabalhos Relacionados}{12}
-\contentsline {section}{\numberline {1.3}Objetivos}{14}
+\contentsline {section}{\numberline {1.1}Motivação}{1}
+\contentsline {section}{\numberline {1.2}Motivação do Frango}{11}
+\contentsline {section}{\numberline {1.3}Trabalhos Relacionados}{13}
 \contentsline {section}{\numberline {1.4}Organização do trabalho}{15}
 \select@language {brazilian}
-\contentsline {chapter}{\numberline {2}Embasamento Teórico}{16}
-\contentsline {section}{\numberline {2.1}Redes Sociais}{16}
-\contentsline {section}{\numberline {2.2}Redes Complexas}{17}
-\contentsline {section}{\numberline {2.3}Técnicas de Coleta e Análise de Dados}{19}
-\contentsline {section}{\numberline {2.4}Facebook}{20}
-\contentsline {section}{\numberline {2.5}Facebook Developer Platform}{24}
-\contentsline {chapter}{\numberline {3}Implementação}{31}
-\contentsline {section}{\numberline {3.1}Descrição Geral da Implementação}{31}
-\contentsline {section}{\numberline {3.2}Tecnologias utilizadas}{31}
-\contentsline {subsection}{\numberline {3.2.1}Tecnologias do Facebook}{32}
-\contentsline {subsection}{\numberline {3.2.2}Tecnologias Gerais: Linguagens de Programação, Bibliotecas e IDEs}{32}
-\contentsline {subsection}{\numberline {3.2.3}Servidor de Hospedagem e de Domínio}{33}
-\contentsline {section}{\numberline {3.3}Regras de Negócio, Análise de Requisitos e Metologias}{33}
-\contentsline {subsection}{\numberline {3.3.1}Elaboração da Regra de Negócio e Análise de Requisitos}{34}
-\contentsline {subsection}{\numberline {3.3.2}Regras de Negócio: Coletar e Analisar o que?}{35}
-\contentsline {subsection}{\numberline {3.3.3}Principais Requisito para Coleta e Análise}{36}
-\contentsline {section}{\numberline {3.4}Mineração de Dados}{37}
-\contentsline {section}{\numberline {3.5}Metodologias, Padrões e Testes do Projeto}{38}
-\contentsline {section}{\numberline {3.6}Estratégias para atingir público alvo}{38}
-\contentsline {chapter}{\numberline {4}Estudo de Caso}{40}
-\contentsline {section}{\numberline {4.1}Discussão de Resultados}{40}
-\contentsline {chapter}{\numberline {5}Conclusão}{43}
-\contentsline {section}{\numberline {5.1}Sugestão de melhorias}{44}
-\contentsline {chapter}{REFERÊNCIAS}{45}
-\contentsline {chapter}{\numberline {6}Anexos}{47}
-\contentsline {section}{\numberline {6.1}Anexo I - Estrutura de Arquivos do Projeto Implementado}{47}
-\contentsline {section}{\numberline {6.2}Anexo II - Formas de Acesso e Configuração do Aplicativo no Facebook}{47}
-\contentsline {section}{\numberline {6.3}Anexo III - CD com arquivos do projeto implementado}{47}
-\contentsline {chapter}{{Anexos}}{48}
+\contentsline {chapter}{\numberline {2}Objetivos}{16}
+\contentsline {section}{\numberline {2.1}Objetivos gerais}{16}
+\contentsline {section}{\numberline {2.2}Objetivos específicos}{16}
+\contentsline {chapter}{\numberline {3}Motivação}{17}
+\contentsline {section}{\numberline {3.1}Por que estudar Redes Sociais?}{17}
+\contentsline {section}{\numberline {3.2}Por que desenvolver aplicativo para o Facebook?}{17}
+\contentsline {chapter}{\numberline {4}Embasamento Teórico}{18}
+\contentsline {section}{\numberline {4.1}Redes Sociais}{18}
+\contentsline {section}{\numberline {4.2}Redes Complexas}{19}
+\contentsline {section}{\numberline {4.3}Técnicas de Coleta e Análise de Dados}{21}
+\contentsline {section}{\numberline {4.4}Facebook}{22}
+\contentsline {section}{\numberline {4.5}Facebook Developer Platform}{26}
+\contentsline {chapter}{\numberline {5}Implementação}{33}
+\contentsline {section}{\numberline {5.1}Descrição Geral da Implementação}{33}
+\contentsline {section}{\numberline {5.2}Tecnologias utilizadas}{33}
+\contentsline {subsection}{\numberline {5.2.1}Tecnologias do Facebook}{34}
+\contentsline {subsection}{\numberline {5.2.2}Tecnologias Gerais: Linguagens de Programação, Bibliotecas e IDEs}{34}
+\contentsline {subsection}{\numberline {5.2.3}Servidor de Hospedagem e de Domínio}{35}
+\contentsline {section}{\numberline {5.3}Regras de Negócio, Análise de Requisitos e Metologias}{35}
+\contentsline {subsection}{\numberline {5.3.1}Elaboração da Regra de Negócio e Análise de Requisitos}{36}
+\contentsline {subsection}{\numberline {5.3.2}Regras de Negócio: Coletar e Analisar o que?}{37}
+\contentsline {subsection}{\numberline {5.3.3}Principais Requisito para Coleta e Análise}{38}
+\contentsline {section}{\numberline {5.4}Mineração de Dados}{39}
+\contentsline {section}{\numberline {5.5}Metodologias, Padrões e Testes do Projeto}{40}
+\contentsline {section}{\numberline {5.6}Estratégias para atingir público alvo}{40}
+\contentsline {chapter}{\numberline {6}Estudo de Caso}{42}
+\contentsline {section}{\numberline {6.1}Discussão de Resultados}{42}
+\contentsline {chapter}{\numberline {7}Conclusão}{45}
+\contentsline {section}{\numberline {7.1}Sugestão de melhorias}{46}
+\contentsline {chapter}{REFERÊNCIAS}{47}
+\contentsline {chapter}{\numberline {8}Anexos}{49}
+\contentsline {section}{\numberline {8.1}Anexo I - Estrutura de Arquivos do Projeto Implementado}{49}
+\contentsline {section}{\numberline {8.2}Anexo II - Formas de Acesso e Configuração do Aplicativo no Facebook}{49}
+\contentsline {section}{\numberline {8.3}Anexo III - CD com arquivos do projeto implementado}{49}
+\contentsline {chapter}{{Anexos}}{50}

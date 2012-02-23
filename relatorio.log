@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  21 FEB 2012 12:37
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  23 FEB 2012 17:39
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -358,9 +358,9 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 
 Writing index file relatorio.idx
 (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux) (./simbolos.aux)
-(./introducao.aux) (./embasamento.aux) (./implementacao.aux) (./resultados.aux)
-(./conclusao.aux) (./anexos.aux) (./anexo_esquematicos.aux) (./anexo_cd.aux)
-(./cd_projeto.aux))
+(./introducao.aux) (./objetivos.aux) (./motivacao.aux) (./embasamento.aux)
+(./implementacao.aux) (./resultados.aux) (./conclusao.aux) (./anexos.aux)
+(./anexo_esquematicos.aux) (./anexo_cd.aux) (./cd_projeto.aux))
 \openout1 = `relatorio.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
@@ -376,7 +376,8 @@ LaTeX Font Info:    ... okay on input line 125.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
 LaTeX Font Info:    ... okay on input line 125.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 125.
- (/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry auto-detecting driver*
@@ -487,26 +488,26 @@ LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/sc' tried instead on input line 225.
 
-(./relatorio.toc)
+(./relatorio.toc [2
+
+
+])
 \tf@toc=\write5
 \openout5 = `relatorio.toc'.
 
- [2
-
-
-]
+ [3]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 226.
  (./relatorio.lof)
 \tf@lof=\write6
 \openout6 = `relatorio.lof'.
 
- [3
+ [4
 
 ]
 \openout2 = `simbolos.aux'.
 
- (./simbolos.tex) [4
+ (./simbolos.tex) [5
 
 
 ]
@@ -524,19 +525,20 @@ File: figs/danilo/SOC_strategic_goals.eps Graphic file (type eps)
 ]
 File: figs/danilo/Component_vs_Services.eps Graphic file (type eps)
 
-<figs/danilo/Component_vs_Services.eps> [2] [3] [4]
+<figs/danilo/Component_vs_Services.eps> [2] [3] [4] [5]
 File: figs/ppmendes/ranking_OSN_country.eps Graphic file (type eps)
 
-<figs/ppmendes/ranking_OSN_country.eps> [5]
+<figs/ppmendes/ranking_OSN_country.eps>
 File: figs/ppmendes/top_10_sites_brasil_alexa.eps Graphic file (type eps)
 
 <figs/ppmendes/top_10_sites_brasil_alexa.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 106--113
+Underfull \hbox (badness 10000) in paragraph at lines 103--110
 \T1/ptm/m/n/10.95 au-di-ên-cia.
  []
 
+[6] [7]
 File: figs/ppmendes/comunidade_unb_orkut.eps Graphic file (type eps)
-<figs/ppmendes/comunidade_unb_orkut.eps>
+ <figs/ppmendes/comunidade_unb_orkut.eps>
 File: figs/ppmendes/comunidade_avaliacao_professores_unb.eps Graphic file (type
  eps)
 
@@ -544,13 +546,13 @@ File: figs/ppmendes/comunidade_avaliacao_professores_unb.eps Graphic file (type
 File: figs/ppmendes/perfil_unb_facebook.eps Graphic file (type eps)
 
 <figs/ppmendes/perfil_unb_facebook.eps>
-Overfull \hbox (118.16243pt too wide) in paragraph at lines 137--144
+Overfull \hbox (118.16243pt too wide) in paragraph at lines 134--141
 \T1/ptm/m/n/10.95 conta com 4.998 ami-gos, dos quais a mai-o-ria tem a pá-gina 
 da Uni-ver-si-dade de Bra-sí-lia (http://www.facebook.com/pages/Universidade-
  []
 
 File: figs/ppmendes/pagina_unb_facebook.eps Graphic file (type eps)
-<figs/ppmendes/pagina_unb_facebook.eps> [6] [7] [8] [9]
+<figs/ppmendes/pagina_unb_facebook.eps> [8] [9] [10]
 File: figs/ppmendes/perfil_dceunb_facebook.eps Graphic file (type eps)
 
 <figs/ppmendes/perfil_dceunb_facebook.eps>
@@ -558,35 +560,41 @@ File: figs/ppmendes/perfil_dceunb_facebook_entidades.eps Graphic file (type eps
 )
 
 <figs/ppmendes/perfil_dceunb_facebook_entidades.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 178--207
+Underfull \hbox (badness 10000) in paragraph at lines 175--204
 \T1/ptm/m/n/10.95 UFOP [].
  []
 
-[10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 210--244
+[11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 207--240
 \T1/ptm/m/n/10.95 rão apre-sen-ta-dos a se-guir tra-ba-lhos re-la-ci-o-na-dos a
  este tema.
  []
 
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 245--250
-[]\T1/ptm/m/n/10.95 Nesta se-ção são apre-sen-ta-dos os ob-je-ti-vos ge-rais e 
-es-pe-cí-fi-cos do tra-ba-lho.
- []
+[13] [14]) [15]
+\openout2 = `objetivos.aux'.
+
+ (./objetivos.tex
+Cap\'{\i }tulo 2.
+) [16
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--250
-\T1/ptm/m/n/10.95 ca-ci-o-nais, \T1/ptm/m/it/10.95 Bu-si-ness In-tel-li-gence \
-T1/ptm/m/n/10.95 etc.
- []
 
-[14]) [15]
+]
+\openout2 = `motivacao.aux'.
+
+ (./motivacao.tex
+Cap\'{\i }tulo 3.
+) [17
+
+
+
+]
 \openout2 = `embasamento.aux'.
 
  (./embasamento.tex
-Cap\'{\i }tulo 2.
+Cap\'{\i }tulo 4.
 File: figs/ppmendes/redes_sociais_categorizadas.eps Graphic file (type eps)
-<figs/ppmendes/redes_sociais_categorizadas.eps> [16
+<figs/ppmendes/redes_sociais_categorizadas.eps> [18
 
 
 
@@ -594,22 +602,22 @@ File: figs/ppmendes/redes_sociais_categorizadas.eps Graphic file (type eps)
 File: figs/ppmendes/similaridade_rso_redes_complexas.eps Graphic file (type eps
 )
 
-<figs/ppmendes/similaridade_rso_redes_complexas.eps> [17] [18]
+<figs/ppmendes/similaridade_rso_redes_complexas.eps> [19] [20]
 File: figs/ppmendes/agregador_rso.eps Graphic file (type eps)
 
-<figs/ppmendes/agregador_rso.eps> [19]
+<figs/ppmendes/agregador_rso.eps> [21]
 File: figs/ppmendes/user_pages_connection_properties.eps Graphic file (type eps
 )
 
-<figs/ppmendes/user_pages_connection_properties.eps> [20]
+<figs/ppmendes/user_pages_connection_properties.eps> [22]
 File: figs/ppmendes/facebook_home.eps Graphic file (type eps)
 
 <figs/ppmendes/facebook_home.eps>
 File: figs/ppmendes/user_page_facebook.eps Graphic file (type eps)
  <figs/ppmendes/user_page_facebook.eps>
-[21] [22]
+[23] [24]
 File: figs/ppmendes/social_graph_objects.eps Graphic file (type eps)
- <figs/ppmendes/social_graph_objects.eps> [23]
+ <figs/ppmendes/social_graph_objects.eps> [25]
 File: figs/ppmendes/facebook_platform_overview.eps Graphic file (type eps)
 
 <figs/ppmendes/facebook_platform_overview.eps>
@@ -622,7 +630,7 @@ File: figs/ppmendes/oauth_dialog2.eps Graphic file (type eps)
 <figs/ppmendes/oauth_dialog2.eps>
 File: figs/ppmendes/permissoes_usuario_amigos.eps Graphic file (type eps)
 
-<figs/ppmendes/permissoes_usuario_amigos.eps> [24] [25] [26]
+<figs/ppmendes/permissoes_usuario_amigos.eps> [26] [27] [28]
 File: figs/ppmendes/permissoes_extendidas.eps Graphic file (type eps)
 
 <figs/ppmendes/permissoes_extendidas.eps>
@@ -630,23 +638,23 @@ File: figs/ppmendes/fluxo_app.eps Graphic file (type eps)
  <figs/ppmendes/fluxo_app.eps>
 File: figs/ppmendes/graph_api_response.eps Graphic file (type eps)
 
-<figs/ppmendes/graph_api_response.eps> [27] [28] [29]) [30]
+<figs/ppmendes/graph_api_response.eps> [29] [30] [31]) [32]
 \openout2 = `implementacao.aux'.
 
 
 (./implementacao.tex
-Cap\'{\i }tulo 3.
-[31
+Cap\'{\i }tulo 5.
+[33
 
 
 
-] [32]
+] [34]
 Underfull \hbox (badness 10000) in paragraph at lines 65--67
 \T1/ptm/m/n/10.95 gens de pro-gra-ma-ção PHP e Ja-vaS-cript es-tão no ca-pí-tul
 o Em-ba-sa-mento Teó-rico.
  []
 
-[33] [34]
+[35] [36]
 Underfull \hbox (badness 10000) in paragraph at lines 126--128
 \T1/ptm/m/n/10.95 dos do pró-prio per-fil dos ami-gos des-tes usuá-rios.
  []
@@ -657,7 +665,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 a-das fil-mes e li-vros.
  []
 
-[35]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 156--173
 []\T1/ptm/m/n/10.95 Serão fei-tos os se-guin-tes tra-ta-men-tos de da-dos:
  []
@@ -674,50 +682,50 @@ Overfull \hbox (10.47075pt too wide) in paragraph at lines 181--182
 story, fri-ends_hometown, fri-ends_location,
  []
 
-[36]
+[38]
 Overfull \hbox (44.62335pt too wide) in paragraph at lines 189--190
 []\T1/ptm/m/n/10.95 user_about_me, user_likes, user_online_presence, user_relat
 ionships, user_work_history, user_activities,
  []
 
-[37] [38]) [39]
+[39] [40]) [41]
 \openout2 = `resultados.aux'.
 
  (./resultados.tex
-Cap\'{\i }tulo 4.
-[40
+Cap\'{\i }tulo 6.
+[42
 
 
 
-] [41]) [42]
+] [43]) [44]
 \openout2 = `conclusao.aux'.
 
  (./conclusao.tex
-Cap\'{\i }tulo 5.
-[43
+Cap\'{\i }tulo 7.
+[45
 
 
 
-]) [44] (./relatorio.bbl
+]) [46] (./relatorio.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 44--47
 []\T1/ptm/m/n/10.95 VARIOS. \T1/ptm/m/it/10.95 Soa Ma-ni-festo\T1/ptm/m/n/10.95
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-[45
+[47
 
 
-]) [46]
+]) [48]
 \openout2 = `anexos.aux'.
 
  (./anexos.tex
-Cap\'{\i }tulo 6.
-) [47
+Cap\'{\i }tulo 8.
+) [49
 
 
 ]
 \c@noAnexo=\count127
- [48
+ [50
 
 
 ]
@@ -735,20 +743,24 @@ No file cd_projeto.tex.
 \openout7 = `relatorio.thm'.
 
 (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux) (./simbolos.aux)
-(./introducao.aux) (./embasamento.aux) (./implementacao.aux) (./resultados.aux)
-(./conclusao.aux) (./anexos.aux) (./anexo_esquematicos.aux) (./anexo_cd.aux)
-(./cd_projeto.aux)) )
+(./introducao.aux) (./objetivos.aux) (./motivacao.aux) (./embasamento.aux)
+(./implementacao.aux) (./resultados.aux) (./conclusao.aux) (./anexos.aux)
+(./anexo_esquematicos.aux) (./anexo_cd.aux) (./cd_projeto.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5151 strings out of 494910
- 67042 string characters out of 1177227
- 163458 words of memory out of 3000000
- 8115 multiletter control sequences out of 15000+50000
+ 5170 strings out of 494910
+ 67290 string characters out of 1177227
+ 163927 words of memory out of 3000000
+ 8120 multiletter control sequences out of 15000+50000
  56331 words of font info for 68 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
- 34i,15n,25p,1766b,376s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,25p,1766b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (57 pages, 172228 bytes).
+Output written on relatorio.dvi (60 pages, 180484 bytes).

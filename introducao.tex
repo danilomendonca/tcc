@@ -2,9 +2,12 @@
 \chapter{Introdução}\label{introducao}
 %introdução da introdução
 
+\section{Motivação}
+
+Services, SOA, Web Services, SOAP, REST, Service Orientation, Cloud, SaaS. Nos últimos anos esses acrônimos tornaram-se frequentes na tecnologia da informação. O surgimento de um novo paradigma, impulsionado pelo amadurecimento da internet e pela proximidade crescente entre negócios e TI, criou novos caminhos e oportunidades para trabalhos de desenvolvimento e pesquisa. Nesse sentido, um grande número de estudos foram e vem sendo conduzidos com foco nos diversos aspectos da computação orientada a serviços, tais quais arquitetura, modelos, métodos e processos. Ferramentas diversas, frameworks, métricas, problemas solucionados e ainda vigentes. Dessa forma, a intenção daqueles interessados em iniciar suas atividades na área fica comprometida pela dificuldade em obter informações claras sobre o atual estado da arte, os desafios, os temas mais abordados e aqueles com deficit em pesquisas. Esses dados são cruciais para que esforços sejam bem direcionados e para que a ciência caminhe de forma eficiente e cooperativa.
 
 
-A tecnologia da informação já se consolidou como ferramenta essencial para as instituições, afetando rotinas, ações, estruturas e modelos de negócios. Os alto custos associados ao consumo e provimento de recursos de TI e a necessidade de uma maior agilidade para responder às mudanças casam-se às propostas da computação orientada a serviços, ou SOC, cujo paradigma de design é composto por princípios que, quando absorvidos, criam condições para o cumprimento dos objetivos e benefícios por ela almejados, entre eles o aumento do retorno de investimento, da agilidade, da reusabilidade e da interoperabilidade, assim como um maior alinhamento entre TI e modelo de negócios. 
+A tecnologia da informação já se consolidou como ferramenta essencial para as instituições, afetando rotinas, ações, estruturas e modelos de negócios. Os alto custos associados ao consumo e provimento de recursos de TI e a necessidade de uma maior agilidade para responder às mudanças casam-se às propostas da computação orientada a serviços, ou SOC, cujo paradigma de design é composto por princípios que, quando absorvidos, criam condições para o cumprimento dos objetivos e benefícios por ele almejados, entre eles o aumento do retorno de investimento, da agilidade, da reusabilidade e da interoperabilidade, assim como um maior alinhamento entre TI e modelo de negócios. 
 %OK 1.1.2!
 
 
@@ -20,24 +23,20 @@ A tecnologia da informação já se consolidou como ferramenta essencial para as in
 
 O paradigma de orientação a serviços possui um design próprio que norteia a configuração do suprimento e consumo dos recursos de TI. Apesar do sucesso de outros paradigmas na computação, por exemplo a orientação a objetos, nota-se que problemas de ordem superior, ou seja, da eficiência, agilidade e retorno de investimento na composição de aplicações, permaneceram carentes de avanços. Assim, aplicações silos carecem de interoperabilidade, sendo difícil ou inviável seu reuso, o que aumenta o custo de desenvolvimento de novas aplicações a longo prazo  e reduz drasticamente a agilidade ou tempo de resposta às novas demandas, sobretudo quando os modelos de negócio exigem maior flexibilidade. Dessa forma, os benefícios idealizados pelo SOC fizeram desse paradigma um foco de estudos em diversos centros acadêmicos no mundo, sobretudo à partir do surgimento da arquitetura orientada a serviços, ou SOA. Também é notável a adesão de grandes vendedores da indústria de TI a essa tecnologia, fomentando tanto pesquisa quanto sua adoção em corporações. 
 
-Historicamente, o paradigma de orientação a serviços tem como base diversos outros paradigmas e designs. Entre os mais importantes está a arquitetura baseada em componentes. Com ela, a orientação a serviços compartilha visões, uma vez que ambas se sustentam sobre o conceito de unidades lógicas auto-contidas, auto-descritas, modulares, encapsuladas, que fazem uso de interfaces, contratos e especificações com possibilidade de composição com outras unidades.
+Historicamente, o paradigma de orientação a serviços tem como base diversos outros paradigmas e designs. Entre os mais importantes está a arquitetura baseada em componentes. Com ela, a orientação a serviços compartilha visões, uma vez que ambas se sustentam sobre os conceitos de unidades lógicas auto-contidas, auto-descritas, modulares, encapsuladas, que fazem uso de interfaces, contratos e especificações com possibilidade de composição com outras unidades.
 
-No entanto, serviços diferenciam-se fundamentalmente de componentes. Enquanto componentes variam entre modelos \textit{white box, gray box ou black box}, de acordo com o nível de customização possível, os serviços são sempre hermeticamente encapsulados e distribuídos em forma de \textit{black boxes}. Nos primeiros, foca-se na especificação técnica do conjunto de funcionalidades que desempenham, permitindo o uso das mesmas nos códigos que as invocam uma vez que os componentes tenham sido devidamente importados ou ligados à aplicação. Para os últimos,  contratos são estabelecidos em conjunto à descrição das funcionalidades expostas por meio das interfaces do serviço. De fato, em muitos casos um serviço irá fazer uso de componentes em sua implementação, que por conceito independe de sua descrição, desde que mantenha a funcionalidade por ela exposta. Já a especificação de componentes pode incluir também uma definição abstrata de sua estrutura interna. \cite{Breivold:2007:CSS:1302497.1302990}. 
-
-A composição dos serviços é feita de forma dinâmica em tempo de execução, enquanto a composição de componentes é feita na fase de design ou em tempo de execução. Isso relaciona-se ao tipo de acoplamento entre provedor e consumidor, havendo um contraste entre ambos. Nos componentes é frequente um alto acoplamento, de forma que um grau mais elevado de cumplicidade entre provedor e consumidor é exigida de acordo com o tipo de interação usada. Já em serviços o baixo acoplamento entre ambos é um princípio a ser seguido e um de maior importância no paradigma de orientação a serviços. Assim, o provedor irá desfrutar de liberdade e flexibilidade para a escolha do design e implementação, assim como o contratante irá somente se ater, funcionalmente, às descrições do serviço. Esse desacoplamento é viabilizado pela descrição dos serviços que possibilitam sua interação usando parâmetros pré-estabelecidos \cite{Crnkovic:2006:CDP:1193212.1193814}. Para componentes, é possível uma optimização da performance em detrimento da flexibilidade por meio da composição na fase de design.
-
-
+No entanto, serviços diferenciam-se fundamentalmente de componentes. Enquanto componentes variam entre modelos \textit{white box, gray box ou black box}, de acordo com o nível de customização possível, os serviços são sempre hermeticamente encapsulados e distribuídos em forma de \textit{black boxes}. Nos primeiros, foca-se na especificação técnica do conjunto de funcionalidades que desempenham, permitindo o uso das mesmas nos códigos que as invocam uma vez que os componentes tenham sido devidamente importados ou ligados à aplicação. Para os últimos,  contratos são estabelecidos em conjunto às descrições das funcionalidades expostas por meio das interfaces do serviço. De fato, em muitos casos um serviço irá fazer uso de componentes em sua implementação, que por conceito independe de sua descrição, desde que mantenha a funcionalidade por ela exposta. Já a especificação de componentes pode incluir também uma definição abstrata de sua estrutura interna. \cite{Breivold:2007:CSS:1302497.1302990}. 
 
 %figura(s) com obrigações e benefícios do SOC (4 obrigações e 3 benefícios)
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.60\textwidth]{figs/danilo/Component_vs_Services.eps}
+\begin{figure}[hbtp]
+	\centering	\includegraphics[width=1.0\textwidth]{figs/danilo/Component_vs_Services.eps}
 	\caption{Comparação entre atividades típicas de componentes e serviços}	
 	\label{fig:Component_vs_Services}
 \end{figure} 
 
-Mesmo com modelos que definem a distribuição de componentes, i.e. J2EE e CORBA, os resultados obtidos são de naturezas distintas. O processo de integração remota previsto pela distribuição de componentes mantém o aspecto citado para a sua especificação, uma vez que irá, de forma refinada, distribuir modelos de objetos, seus estados e propriedades, enquanto os serviços estão num patamar menos elaborado de integração, fornecendo funcionalidades em alto nível. Portanto, tais modelos se situam em domínios diferentes, assim como os problemas por eles enfrentados \cite{soaworld-ws-components}.
+A composição dos serviços é feita de forma dinâmica em tempo de execução, enquanto a composição de componentes é feita na fase de design ou em tempo de execução. Isso relaciona-se ao tipo de acoplamento entre provedor e consumidor, havendo diferença entre ambos. Nos componentes é frequente um alto acoplamento, de forma que um grau mais elevado de cumplicidade entre provedor e consumidor é exigida de acordo com o tipo de interação e modelo de componentes usado. Em contraste, nos serviços o baixo acoplamento entre provedor e consumidor é um princípio a ser seguido e um de maior importância no paradigma de orientação a serviços, havendo transparência no processo de troca de mensagens. Dessa forma, o provedor irá desfrutar de liberdade e flexibilidade para a escolha do design e da tecnologia para implementação, assim como o contratante irá somente se ater, funcionalmente, às descrições do serviço e também leva tais vantagens. O baixo acoplamento é viabilizado pela descrição dos serviços que possibilitam sua interação usando parâmetros pré-estabelecidos \cite{Crnkovic:2006:CDP:1193212.1193814}. Para componentes, é possível uma optimização da performance em detrimento da flexibilidade por meio da composição na fase de design.
 
-
+Mesmo com modelos que definem a distribuição de componentes, i.e. J2EE e CORBA, os resultados obtidos são de naturezas distintas. O processo de integração remota previsto pela distribuição de componentes mantém o aspecto citado para a sua especificação, uma vez que irá, de forma refinada, distribuir modelos de objetos, seus estados e suas propriedades, enquanto os serviços estão num patamar menos elaborado de integração, fornecendo funcionalidades coesas em alto nível no padrão requisição e resposta. Portanto, componentes e serviços se situam em domínios diferentes, assim como os problemas por eles enfrentados e as necessidades atendidas \cite{soaworld-ws-components}.
 
 %vulgarização do SOA
 Esses mesmos agentes responsáveis pela comercialização de SOA, também  pela vulgarização do conceito de SOA, ao ponto do mesmo ter se tornado ambíguo e com significados diversos. 
@@ -52,10 +51,7 @@ O princípio fundamental do design estabelecido pelo SOC está na criação de unida
 
 %ok! 1.1.0 
 
-
-
 %SOC & SOA misleading information
-
 
 %definição de SOA
 Com base nos princípios de SOC, criou-se uma arquitetura responsável por guiar o processo de adoção desse paradigma. O SOA, ou \textit{Service Oriented Architecture}, define uma série de processos, papéis, regras, modelos e camadas, entre outros componentes da arquitetura, propondo transformações importantes no modus operandi no setor de tecnologia da informação. Dada sua abrangência e complexidade de fundamentos, o SOA é protagonista no avanço do SOC, tendo seu conceito se difundido de forma mais ampla que o primeiro, haja vista que recebeu grande atenção do meio acadêmico, como ilustra nosso mapeamento de estudos, além de ter sido um produto de destaque para grandes vendedores da indústria de TI. Entre as prioridades do SOA apontada pelo \textit{SOA Manifesto} estão: o valor de negócio sobre a estratégia técnica adotada, os objetivos estratégicos sobre os benefícios específicos de projeto, a interoperabilidade intrínseca sobre as integrações customizadas, os serviços compartilhados sobre implementações com propósito específico, a flexibilidade sobre optimização e o refinamento evolutivo sobre a perfeição inicial \cite{soamanifesto}.
@@ -175,7 +171,7 @@ E Mais: O perfil do Diretório Central dos Estudantes da UnB (http://www.facebook
 %%motivações
 %%motivações
 %%motivações
-\section{Motivação}
+\section{Motivação do Frango}
 De acordo com as estatísticas apresentadas acima, nota-se a grande relevância de RSOs ao redor do mundo e na organização educacional do autor deste trabalho: a Universidade de Brasília. Apesar de tanta relevância os estudos sobre RSOs ainda estão na sua infância, segundo Fabrício Benevuto professor da UFOP []. \linebreak
 %%motivações gerais
 %%motivações gerais
@@ -241,15 +237,7 @@ Amanda L. Traud et al. examinam o gráfico social de usuários da RSO Facebook que
 No artigo \textit{Tastes, ties, and time: A new social network dataset using Facebook.com}, 
 Kevin Lewi et al. fazem uma análise de dados públicos de estudantes da RSO Facebook classificando-os em subgrupos definidos por gênero sexual, raça/etnia, atividade online e \textit{status} socioeconômico.
 As conclusões do trabalho mostram potenciais científicos e pedagógicos desta RSO e provê uma base para futuras análises. 
-%quais os objetivos do trabalho
-\section{Objetivos}
-Nesta seção são apresentados os objetivos gerais e específicos do trabalho.\linebreak
-%Objetivos gerais: aproximadamente 2 páginas
-O principal objetivo deste trabalho é mostrar as utilidades e vantagens de métodos de coleta e análise de dados em RSOs. A utilidade destes métodos é comprovada através da análise dos dados coletados (\textit{Data Mining}). As vantagens destes métodos em RSO são relacionadas a facilidade da coleta de grandes quantidades de dados. Este objetivo será alcançado por meio da implementação deste trabalho, um aplicativo descrito anteriormente na seção Motivação deste capítulo. Espera-se também, que a teoria, a implementação e os resultados deste trabalho incentivem os estudantes e professores da Universidade de Brasília a iniciar estudos sobre redes sociais nas suas respectivas áreas de interesse, como por exemplo marketing, ferramentas educacionais, \textit{Business Intelligence} etc.\linebreak
-Um dos objetivos específicos deste trabalho é  %Objetivos específicos: aproximadamente 1 página
-mostrar alguns detalhes da construção de aplicativos de coleta e análise de dados em RSOs, com foco no Facebook. Outro objetivo específico a longo prazo é mapear de forma plena a presença online da UnB na RSO Facebook. Estes objetivos serão atingidos seguindo a estrutura do trabalho abordada na próxima seção.
 
-%%link
 %%Apresentar o trabalho%%%
 \section{Organização do trabalho}
 Neste trabalho descreveremos características de RSO em geral e da RSO Facebok em específico, apresentaremos conceitos de redes complexas, sumarizaremos as principais técnicas de coleta e análise de dados em RSOs entre outros no próximo capítulo, Embasamento Teórico. Logo após no capítulo Implementação, descreveremos o Aplicativo Desenvolvido, Tecnologias Utilizadas, Metodologia de Desenvolvimento e Gerenciamento, Estratégias para atingir o Público Alvo No aplicativo no capítulo Implementação. Seguido pelo capítulo Resultados. Enfim, chegamos a uma conclusão e propomos algumas melhorias para este trabalho, no capítulo conclusão.
