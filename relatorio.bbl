@@ -5,6 +5,19 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.42.2.1 }
 
+\bibitem{Petersen_Feldt_Mujtaba_Mattsson_2007}
+\abntrefinfo{Petersen et al.}{PETERSEN et al.}{2007}
+{PETERSEN, K. et al. Systematic mapping studies in software engineering.
+\emph{12th International Conference on Evaluation and Assessment in Software
+  Engineering}, v.~17, n.~1, p. 1--10, 2007.}
+
+\bibitem{Erl:2007:SPS:1296147}
+\abntrefinfo{Erl}{ERL}{2007}
+{ERL, T. \emph{SOA Principles of Service Design (The Prentice Hall
+  Service-Oriented Computing Series from Thomas Erl)}. Upper Saddle River, NJ,
+  USA: Prentice Hall PTR, 2007.
+ISBN 0132344823.}
+
 \bibitem{Breivold:2007:CSS:1302497.1302990}
 \abntrefinfo{Breivold e Larsson}{BREIVOLD; LARSSON}{2007}
 {BREIVOLD, H.~P.; LARSSON, M. Component-based and service-oriented software
@@ -30,6 +43,12 @@ ISBN 0-7695-2703-5. Dispon{\'\i}vel em:
 [Online; accessed 20-February-2012].
 Dispon{\'\i}vel em: $<$http://soa.sys-con.com/node/39754$>$.}
 
+\bibitem{soamanifesto}
+\abntrefinfo{Varios}{VARIOS}{2012}
+{VARIOS. \emph{Soa Manifesto}. 2012.
+[Online; accessed 12-December-2011].
+Dispon{\'\i}vel em: $<$http://www.soa-manifesto.org/$>$.}
+
 \bibitem{Papazoglou:2007:SOA:1265289.1265298}
 \abntrefinfo{Papazoglou e Heuvel}{PAPAZOGLOU; HEUVEL}{2007}
 {PAPAZOGLOU, M.~P.; HEUVEL, W.-J. Service oriented architectures: approaches,
@@ -38,12 +57,6 @@ Dispon{\'\i}vel em: $<$http://soa.sys-con.com/node/39754$>$.}
   v.~16, p. 389--415, July 2007.
 ISSN 1066-8888.
 Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1007/s00778-007-0044-3$>$.}
-
-\bibitem{soamanifesto}
-\abntrefinfo{Varios}{VARIOS}{2012}
-{VARIOS. \emph{Soa Manifesto}. 2012.
-[Online; accessed 12-December-2011].
-Dispon{\'\i}vel em: $<$http://www.soa-manifesto.org/$>$.}
 
 \bibitem{O'Brien:2007:QAS:1270235.1270300}
 \abntrefinfo{O'Brien, Merson e Bass}{O'BRIEN; MERSON; BASS}{2007}
@@ -59,32 +72,5 @@ ISBN 0-7695-2960-7. Dispon{\'\i}vel em:
 {CLEMENTS, P.; KAZMAN, R.; KLEIN, M. \emph{Evaluating Software Architectures:
   Methods and Case Studies}. [S.l.]: Addison-Wesley, 2001.
 ISBN 978-0-201-70482-2.}
-
-\bibitem{Petersen_Feldt_Mujtaba_Mattsson_2007}
-\abntrefinfo{Petersen et al.}{PETERSEN et al.}{2007}
-{PETERSEN, K. et al. Systematic mapping studies in software engineering.
-\emph{12th International Conference on Evaluation and Assessment in Software
-  Engineering}, v.~17, n.~1, p. 1--10, 2007.}
-
-\bibitem{bene1}
-\abntrefinfo{Benevenuto}{BENEVENUTO}{2001a}
-{BENEVENUTO, J. M. A. e. A. S.~S. F. Curso - explorando redes sociais online:
-  Da coleta e análise de grandes bases de dados às aplicações.
-\emph{SBRC}, scielo, v.~8, p. 160 -- 179, 08 2001.
-ISSN 0104-530X.}
-
-\bibitem{bene2}
-\abntrefinfo{Benevenuto}{BENEVENUTO}{2001b}
-{BENEVENUTO, J. M. A. e. A. S.~S. F. Talk - explorando redes sociais online: Da
-  coleta e análise de grandes bases de dados às aplicações.
-\emph{SBRC}, scielo, v.~8, p. 160 -- 179, 08 2001.
-ISSN 0104-530X.}
-
-\bibitem{bene3}
-\abntrefinfo{Benevenuto Tiago~Rodrigues}{BENEVENUTO TIAGO~RODRIGUES}{2001}
-{BENEVENUTO TIAGO~RODRIGUES, M. C. e. V.~A. F. Characterizing user behavior in
-  online social networks baby.
-\emph{SBRC}, scielo, v.~8, p. 160 -- 179, 08 2001.
-ISSN 0104-530X.}
 
 \end{thebibliography}

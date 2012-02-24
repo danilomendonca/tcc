@@ -1,230 +1,86 @@
 %TCIDATA{LaTeXparent=0,0,relatorio.tex}
 \chapter{Embasamento Teórico}\label{embasamento}
-Aqui serão apresentados conceitos sobre a rede social facebook, facebook platform detalhes da API facebook.
-Os conceitos apresentados aqui são relacionados com os trabalho de Benevenuto \cite{bene1} \cite{bene2} \cite{bene3}.
-\section{Redes Sociais}
-%Falar de redes Sociais reais depois OSN
-O termo original de redes sociais é ligado a área da sociologia: "conjunto de relações sociais entre um conjunto de atores e também entre os próprios atores. Designa ainda os movimentos pouco institucionalizados, reunindo indivíduos ou grupos numa associação cujos limites são variáveis e sujeitos a reinterpretações" (COLONOMOS, 1995). 
-%http://www.uel.br/revistas/uel/index.php/informacao/article/viewFile/1784/1520
-Atualmente, o termo redes sociais é articulado a tecnologia de informação em referência as redes sociais online (RSO). As RSO também são chamadas de redes sociais virtuais. Em inglês, dois termos bastantes utilizados são SNS \textit{(Social Networking Sites)} e \textit{ OSN (Online Social Networks)}. Adotaremos o seguinte conceito de RSO: um serviço web que dá a um indíviduo a possibilidade de construir um perfil público ou semi-público; articular uma lista de conexão com outros usuários com os quais este indivíduo compartilha conexões; visualizar e percorrer suas listas de conexões, assim como as listas de conexões de outros usuários que o indivíduo esteja conectado ou do sistema, caso estas listas de conexões sejam públicas. []
-%adicionado se estas forem públicas porque não se é possível checar os amigos de uma pessoa se a permissão de privada
-%D. Boyd and N. Ellison. Social network sites: Definition, history, and scholarship. Journal of Computer-Mediated Communication, 13(1-2), 2007
-%abordar de forma mais detalhado falando dos elementos terminar falando do facebook
-%2.2 Benevuto
-Existem várias categorias de redes sociais. Na figura XX, são apresentadas algumas das principais RSO de acordo com sua categoria.
+
+
+%definindo SOC
+\section{Service Oriented Computing}
+
+A tecnologia da informação já se consolidou como ferramenta essencial para as instituições, afetando rotinas, ações, estruturas e modelos de negócios. Os alto custos associados ao consumo e provimento de recursos de TI e a necessidade de uma maior agilidade para responder às mudanças casam-se às propostas da computação orientada a serviços, ou SOC, cujo paradigma de design é composto por princípios que, quando absorvidos, criam condições para o cumprimento dos objetivos e benefícios almejados pela orientação a serviços, entre eles o aumento do retorno de investimento, da agilidade, da reusabilidade e da interoperabilidade, assim como um maior alinhamento entre TI e modelo de negócios. 
+%OK 1.1.2!
+
+%figura(s) com obrigações e benefícios do SOC (4 obrigações e 3 benefícios) 
+%!!substituir figura por uma em português
 \begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/redes_sociais_categorizadas.eps}
-	\caption{Algumas das principais RSO categorizadas}	
-	\label{fig:redes_sociais_categorizadas}
-\end{figure}
-%adicionar delicious e foursquare com rede social com foco em locais
-Segundo Benevuto, as funcionalidades mais relevantes oferecidas pelas principais RSO atuais são as seguintes
-%colocar referência ao talk
-\begin{itemize}
-    \item Perfis de Usuários: contêm informações como nome, idade, gênero sexual, localização e uma foto de perfil.
-    \item Atualizações: formas efetivas de ajudar usuários a descobrir conteúdo compartilhado por outros usuários na RSO. Dessa maneira, o usuário não vai atrás da informação, é a informação que vai até ele de forma personalizada.
-    \item Comentários: como o próprio nome diz são comentários que podem ser feitos relacionados ao conteúdo compartilhado por outros usuários na RSO.
-    \item Avaliações: formas de avaliar o conteúdo compartilhado por outros usuários. Tem diferentes níveis de granulidade e formas dependendo da RSO. Como exemplos, na Facebook tem-se o botão "curtir" e na Youtube tem-se um sistema de avaliação binária "gostei deste" e "não gostei deste"
-    \item Lista de favoritos: maneira de organizar o objetos sociais (todos tipo de conteúdo compartilhável da web). São úteis para recomendações sociais. Na Facebook tem-se "fan pages", na Youtube e no Flickr tem-se vídeos e fotos favoritas, respectivamente.
-    \item Lista de mais populares: lista de conteúdos, objetos sociais, usuários mais populares da RSO.
-    \item Metadados: elementos essenciais para identificação de conteúdo, objetos sociais, usuários. O uso de metadados mais comum é relativo a marcações de usuários na Facebook ou em um comentário.
-\end{itemize}
+	\centering	\includegraphics[width=0.80\textwidth]{figs/danilo/SOC_strategic_goals.eps}
+	\caption{Princípios relacionados ao SOA e seus benefícios}	
+	\label{fig:SOC_strategic_goals}
+\end{figure} 
 
-%tentar fazer paralelo com facebook já aqui
-%e tlz até tirar as outras
+O paradigma de design da orientação a serviços norteia a configuração do suprimento e consumo dos recursos de TI, em especial as soluções lógicas ou softwares. Apesar do sucesso de outros paradigmas na computação, por exemplo a orientação a objetos, nota-se que problemas distintos, ou seja, da eficiência, agilidade e retorno de investimento na composição de aplicações, ainda deveriam ser atacados. Assim, as aplicações silos com pouca interoperabilidade e sem reuso passaram a ser vistas como um modelo ineficiente, visto que aumentam o custo de desenvolvimento de novas aplicações a longo prazo  e reduzem drasticamente a agilidade ou tempo de resposta às novas demandas, sobretudo quando os modelos de negócio exigem maior flexibilidade. Dessa forma, os benefícios idealizados pelo SOC fizeram desse paradigma um foco de estudos em diversos centros acadêmicos no mundo, sobretudo à partir do surgimento da arquitetura orientada a serviços, ou SOA. Também é notável a adesão de grandes vendedores da indústria de TI a essa tecnologia, fomentando tanto pesquisa quanto sua adoção em instituições públicas e privadas.
 
-%%checar benevuto para fazer um referência única a este
-%falei em algum lugar atrás que redes sociais 
-\section{Redes Complexas}
-A base para o entendimento de RSOs no que diz respeito a identificação de padrões e mensuração de dados está presente na Teoria de Redes Complexas. Esta teoria provê uma forma de modelar a natureza onde as propriedades de um elemento são resumidas às conexões que ele estabelece com outros elementos do mesmo sistema. 
-%wikipedia: http://pt.wikipedia.org/wiki/Rede_complexa
-De acordo com esta teoria, uma rede é um conjunto de elementos que são chamados de nós ou vértices e das conexões entre estes elementos, chamados de arestas. Assim, a estrutura de uma rede pode ser modelado por um grafo, como mostrado na figura XX.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/similaridade_rso_redes_complexas.eps}
-	\caption{Similaridades entre Redes e Grafos}
-	\label{fig:similaridade_rso_redes_complexas}
-\end{figure}
-Este grafo pode ser caracterizado a partir de diversas métricas. A seguir, são apresentadas as propriedades estatísticas e métricas em redes complexas. Estas são utilizadas para analisar e classificar redes complexas.
-\begin{itemize}
-    \item Grau dos vértices: quantidade de ligações que apontam para um dado nó. Em RSO, representam o número de amigos ou seguidores de uma pessoa. Uma característica importante de uma rede é a distribuição dos graus dos nós desta.
-    \item Coeficiente de agrupamento: também chamado de coeficiente de aglomeração ou \textit{clusterizing}, é a razão entre a quantidade de arestas existentes entre os vizinhos de um nó e número máximo de arestas possíveis entre estes vizinhos. O coeficiente de agrupamento global de uma rede é a soma de dos coeficientes de agrupamento de cada nó.
-    \item Componentes: um conjunto de nodos em grafo, onde cada nodo possui um caminho para todos os outros nodos deste conjunto. Um componente é chamado de fortemente conectado (\textit{SCC - Strongly Connect Component}, em inglês) quando cada nó dentro do componente pode ser alcançado de outro nó do componente seguindo arestas orientadas. Um componente é chamado de fracamente conectado (\textit{WCC - Weakly connected components}) quando cada nó pode ser alcançado a partir de qualquer outro nó seguindo arestas em qualquer direção.
-    \item Distância Média: é o número médio de arestas em todos os caminhos mínimos existentes entre todos os pares de nodos do grafo. Entende-se por caminhos mínimos a menor distância entre dois nós.
-    \item Diâmetro: a distância do maior caminho mínimo existente ou a maior distância geodésica no grafo.
-    \item Propriedades Assortivas: típicas de redes mensuradas pela tendência que nós com um certa quantidade de graus de uma rede tende a se conectar outros nodos com certa quantidade de nós. Geralmente, esta propriedade é estimada a partir da função knn(k) que é a média do grau dos vizinhos dos nós de grau k.
-    \item \textit{betweenness}: grau de centralidade entre nodos ou arestas definido como o número de caminhos mínimos entre todos os pares de nodos em um grafo que passam por estes nodos ou arestas.
-    \item Reciprocidade: de forma simples, é a porcentagem dos nodos apontados por i que apontam para este.
-    \item PageRank: é basicamente um algoritmo interativo que assinala um peso numérico para cada nodo com o propósito de estimar sua importância relativa no grafo.
-\end{itemize}
-Tipos de Redes
-\begin{itemize}
-    \item Small-World: se esta tiver duas propriedades básicas que são coeficientes de agrupamento alto e diâmetro pequeno.
-    \item Power-Law: redes cujas as distribuições dos graus dos nodos seguem uma lei de potência.
-    \item Livre Escala: uma classe de redes que seguem leis de potência caracterizadas pela seguinte propriedade: nodos de grau alto tendem a se conectar a outros nodos de grau alto, ou seja, apresentam propriedades assortivas.
-\end{itemize}
-%abordar os conceitos
-%propriedades estatísticas e métricas que serão abordados no capítulo Embasamento teórico.
-%abordar os conceitos
-%propriedades estatísticas e métricas que serão abordados no capítulo Embasamento teórico.
-%abordar os conceitos
-%propriedades estatísticas e métricas que serão abordados no capítulo Embasamento teórico.
-\section{Técnicas de Coleta e Análise de Dados}
-É possível se obter dados de usuário em rede sociais de três maneiras. Uma das maneiras é via agregadores de tráfego, ou seja, proxies ou websites centralizadores de redes sociais. No primeiro caso, coletam-se os dados que passam por um provedor de serviços Internet (ISP) e filtrar as requisições que correspondem a acessos às
-rede sociais online. Aqui pode-se obter características do tráfego como volume gerado, das sessões dos usuários, os tipos de conteúdo transferido em cada sessão e o comportamento de usuários em redes sociais, a partir dos dados de navegação dos usuários.
-%link com trabalho de benevuto
-No segundo caso, coletam-se os dados que por meio de websites centralizadores (agregadores) de redes sociais. Este websites são sistemas que auxiliam usuários a gerenciar contas de diversas redes sociais. Dessa maneira, ao se conectar a estes sistema um usuário pode acessar suas contas através de uma única interface, assim não precisando se conectar em todos os sites de redes sociais separadamente[]. Na figura XX, temos o esquema de um agregador de RSOs.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/agregador_rso.eps}
-	\caption{Esquema de um Agregador de RSOs em que Usuário se Conecta a Múltiplas RSO Simultaneamente}
-	\label{fig:agregador_rso}
-\end{figure}
-Utilizando este método obtém-se os mesmos tipos de dados que utilizando um servidor proxy.
-%%outro método
-%%outro método
-Obtém-se os dados de usuários diretamente por meio de redes sociais online, quando estes dados são públicos, portanto passíveis de coleta ou quando estes são fornecidos de forma anonimizada por uma rede social. O segundo caso é raro, servidores de RSO dificilmente disponibilizam seus dados. Logo, recorre-se aos \textit{crawlers} ou \textit{robots} que são ferramentas automáticas que coletam informações públicas de usuários de forma sistemática. Dificilmente coleta-se os dados de todos usuários da RSO. Isto ocorre devido a lentidão no processamento e armazenamento destes dados e na dificuldade de varrer toda a rede, ou seja, encontrar todos os usuários da rede. Então realiza-se coletas por amostragem. Como dito, anteriormente este tipo de coleta exige grande quantidade de processamento e espaço de armazenamento. Daí, tem-se a necessidade de utilizar coletores distribuídos em diferentes máquinas. Este tipo de utilização evita que as redes sociais interpretem a coleta de dados públicos como um ataque a seus servidores.\linebreak
-Os dados públicos em redes sociais são atualizados assim que usuários publicam estes dados, portanto os dados em redes sociais são passíveis de serem coletados em tempo real. O Twitter por exemplo disponibiliza inclusive uma API que facilita a coleta de \textit{tweets} públicos.
-%%dados de aplicações de terceiros
-%%dados de aplicações de terceiros
-%%dados de aplicações de terceiros
-A coleta de dados também pode se dar com o uso de aplicações de terceiros, ou seja, dados que foram coletados via aplicativos de RSOs. Estes aplicativos geralmente utilizam alguma API provida pela RSO que exige que o usuário autorize a coleta. Abordaremos mais sobre aplicativos de terceiros na seção Facebook Platform.\linebreak
-Depois da coleta dos dados estes devem ser tratados para se realizar várias análises diferentes em cima destes. As principais análises podem ser categorizadas em identificação de padrões nos dados do perfil usuários, identificação em cima do conteúdo que o usuário gera na RSO e identificação de padrões de comportamento dos usuários. Estas análises consistem basicamente na filtragem dos dados coletados. Neste trabalho fazer-se-á análises com foco na identificação de padrões nos dados do pefil de usuários da RSO Facebook utilizando um aplicações de terceiros.
+O termo SOC representa um aglomerado de conceitos relacionados à orientação a serviços \cite{Erl:2007:SPS:1296147}. Além de um paradigma de design, engloba princípios, padrões e arquitetura, notavelmente o SOA. Nesse trabalho, o termo SOC poderá ser usado para se referir de forma genérica à orientação a objetos como um todo.
 
-%tecnicas de coleta e depois técnicas de análise
-%metodos e ferramentas
-%problemas de coleta
-%ler implementação para complementar esta parte...
+%definição de serviços - importante
+O princípio fundamental do design estabelecido pelo orientação está na criação de unidades lógicas coesas e granulares, denominadas serviços. Assim, em vez de aplicações isoladas que trazem consigo todas as funcionalidades, são criadas unidades coesas, abstratas e de baixo acoplamento cujo acesso é feito por uma interface que encapsula a lógica e cujo funcionamento é definido num contrato. Com isso, é possível realizar uma composição que irá servir uma ou, idealmente, várias aplicações por meio da orquestração dos serviços.
+%ok! 1.1.0 
 
-\section{Facebook}
-A Facebook é a maior RSO do mundo com presença em todos os continentes contando com mais de 750.000.000 de usuários ativos. Todos usuários passam cerca de 700 bilhôes de minutos por mês no Facebook, estão conectadoas 900 milhões de objetos sociais (páginas, eventos, grupos, comunidades) e compartilham mais de 30 bilhões de partes de conteúdo (links, notíciais, blogs, anotações, álbuns etc). Cada usuário tem cerca de 130 amigos, está conectado a 80 pges (página, grupo ou evento), cria 90 "pedaços de conteúdo" ("curtidas", comentários, compartilhamento de conteúdo, etc).
-%http://www.socialbakers.com/countries/continents
-A Facebook é composta por objetos sociais que são nodos que representam páginas, usuários, conteúdo compartilhado, fotos, álbuns etc. Os dois primeiros objetos sociais citados são os principais pois representam pessoas e objetos do mundo real. Estes dois objetos sociais contém propriedades e conexões que são apresentadas na figura XX.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/user_pages_connection_properties.eps}
-	\caption{Propriedades e conexões de Usuários e Páginas}
-	\label{fig:user_pages_connection_properties}
-\end{figure}
-As propriedades são informações presentes no perfil de um usuário ou página. As conexões são relativas ao conteúdo que estes interagem. A partir das propriedades e conexões citadas na figura, nota-se que usuários geralmente representam pessoas reais e páginas geralmente são objetos do mundo real, como filmes e livros. Uma página do Facebook pode representar um gosto do usuário, como uma música ou show televisivo, a universidade que ele frequenta, os aplicativos que ele tem instalado, o time que ele torce, um interesse ou hobby do usuário etc. Tudo isto é classificado de acordo com a categoria da página. É a partir desta categorização e das conexões que um usuário tem com estas páginas que chegam aos usuários propagandas segmentadas.
 
-Depois que um usuário se cadastra e se loga na Facebook, ele é redirecionado para a tela inicial, cuja a URL é www.facebook.com, que é mostrada na figura XX.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/facebook_home.eps}
-	\caption{Página Inicial da RSO Facebook}
-	\label{fig:facebook_home}
-\end{figure}
-O \textit{layout} da página inicial é dividido em áreas que permitem compartilhar conteúdo, visualizar todos os seus amigos, seus grupos, seus amigos aniversariantes do dia, o que seus amigos compartilham, etc. A parte que mostra os pedaços de conteúdo compartilhado por seus amigos é chamada de mural.
+%história
+\section{Service Orientation History}
 
-Na página do usuário, cuja a URL é http://www.facebook.com/ppmendes, que é mostrada na figura XX.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/user_page_facebook.eps}
-	\caption{Página Inicial da RSO Facebook}
-	\label{fig:user_page_facebook}
-\end{figure}
-Nota-se um layout parecido com o da página inicial, uma vez que toda estrutura da Facebook segue um modelo( \textit{template}) padrão. Nesta página o usuário é capaz de visualizar e organizar o conteúdo do seu próprio perfil, como suas fotos, todos os pedaços de conteúdos mais populares da  que este compartilhou ou que amigos compartilharam no seu mural. A parte que contém todos os pedaços de conteúdo do usuário
-Os tipos de conteúdo que um usuário pode compartillhar se resume a caracteres, links, fotos e vídeos.
-Pedaços de conteúdo podem ser compartilhados através dos canais de comunicação que são o mural, mural de amigos, mensagens privadas, páginas e grupos. Outro canal de comunicação é relativo as interações entre o conteúdo compartilhado, ou seja, "curtidas" e comentários em cima do conteúdo.
-Nota-se na figura XX, que a Facebook se encaixa na categoria "redes sociais de amigos".
-A Facebook tem todas as funcionalidades relevantes oferecidas pelas principais RSO atuais, citadas anteriormente na seção Redes Sociais, com exceção de Lista dos mais populares.
-A seguir complementar-se-á a descrição destas funcionalidades com foco no Facebook.
-\begin{itemize}
-    \item Perfis de Usuários: localização da moradia atual, localização de nascimento (naturalidade), breve descrição sobre o usuário ("sobre mim), línguas que falam, informações relativas ao trabalho e educação, estado civil, família, visão política e religiosa, músicas, livros, filmes, shows televisos, esportes e atividades e interesses.
-	\item Atualizações: se resumem basicamente ao mural e as notificações do usuário. O mural é dividido em pedaços de conteúdo compartilhados mais populares e mais recentes. As notificações são três basicamente: solicitação(ões) de amizade(s), messagen(s) privada(s) recebida(s) e notificações gerais. As notificações gerais são relacionadas a eventos que o usuário foi convidado, a conteúdo publicado com marcações do usuário, a conteúdo publicada em um grupo que o usuário participa e a conteúdo publicado no seu mural.
-	\item Comentários: são opções presentes em todos os conteúdos compartilhadas que o usuário tem a permissão de comentar.
-	\item Avaliações: o botão "curtir" ou "recomendar" são formas de um usuário avaliar o conteúdo compartilhado dentro da Facebook ou compartilhar um conteúdo disponível na web de forma já avaliada para dentro da Facebook.
-    \item Lista de favoritos: é relacionada principalmente as páginas do facebook que geralmente representam objetos reais. Quando um usuário avalia uma página da Facebook clicando no botão "curtir" este vira fã da página e esta passa a fazer parte do perfil deste usuário. As páginas da Facebook geralmente representam os principais gostos do usuário, atividades e interesses, organizações de trabalho ou educacionais. Assim, a lista de favoritos do usuário diz muito sobre sua vida.
-    \item Metadados: são chamadas de marcações (\textit{tags}, em inglês) na Facebook. O uso mais comum de metadados é relativo a marcações dos usuários em conteúdos compartilhados, como comentários, publicações e principalmente fotos.
-\end{itemize}
-%captura de informações a um hop de distância
-Outro conceito importante relacionado ao Facebook é o \textit{social graph}(gráfico social). O gráfico social é a base do Facebook que é composto por pessoas e todas as conexões que elas tem com tudo que elas se importam, ou seja, as propriedades e conexões de usuários e páginas como mostrado na figura 2.3. Neste gráfico os usuários e objetos sociais como fotos, publicações, páginas entre outros estão representandos por pontos (nós) na figura XX.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/social_graph_objects.eps}
-	\caption{Gráfico Social do Facebook}
-	\label{fig:social_graph_objects}
-\end{figure}
-Outro conceito interessante também é de Open Graph Protocol que permite ao usuário integrar um conteúdo web ao seu gráfico social. Este protocolo foi feito para páginas web que representam perfis de coisas do mundo real, como filmes, esportes, músicas, restaurantes, etc. Assim, quando um usuário clica no botão "curtir" de um conteúdo web, uma conexão é feita entre o conteúdo clicado e o usuário. Logo em seguida, este conteúdo web aparecerá nas informações do usuário no seu perfil do Facebook.
+Historicamente, o paradigma de orientação a serviços tem como base diversos outros paradigmas e designs. Entre os mais importantes está a arquitetura baseada em componentes. Com ela, a orientação a serviços compartilha visões, uma vez que ambas se sustentam sobre os conceitos de unidades lógicas auto-contidas, auto-descritas, modulares, encapsuladas, que fazem uso de interfaces, contratos e especificações com possibilidade de composição com outras unidades.
 
-Para quem ainda não conhece a RSO Facebook, um guia geral para iniciantes ou pra quem quer fazer melhor uso da ferramenta pode ser encontrado no portal da Ig[].
+No entanto, serviços diferenciam-se fundamentalmente de componentes. Enquanto componentes variam entre modelos \textit{white box, gray box ou black box}, de acordo com o nível de customização possível, os serviços são sempre hermeticamente encapsulados e distribuídos em forma de \textit{black boxes}. Nos primeiros, foca-se na especificação técnica do conjunto de funcionalidades que desempenham, permitindo o uso das mesmas nos códigos que as invocam uma vez que os componentes tenham sido devidamente importados ou ligados à aplicação. Para os últimos,  contratos são estabelecidos em conjunto às descrições das funcionalidades expostas por meio das interfaces do serviço. De fato, em muitos casos um serviço irá fazer uso de componentes em sua implementação, que por conceito independe de sua descrição, desde que mantenha a funcionalidade por ela exposta. Já a especificação de componentes pode incluir também uma definição abstrata de sua estrutura interna. \cite{Breivold:2007:CSS:1302497.1302990}. 
 
-%%http://tecnologia.ig.com.br/dicas/internet/facebook+o+guia+completo/n1597113326848.html
+%figura(s) com obrigações e benefícios do SOC (4 obrigações e 3 benefícios)
+\begin{figure}[hbtp]
+	\centering	\includegraphics[width=1.0\textwidth]{figs/danilo/Component_vs_Services.eps}
+	\caption{Comparação entre atividades típicas de componentes e serviços}	
+	\label{fig:Component_vs_Services}
+\end{figure} 
 
-%http://developers.facebook.com/docs/reference/api/
-%referência  http://en.wikipedia.org/wiki/Social_graph
-%traduzir
-%%referencias:
-%http://developers.facebook.com/attachment/Welcome.pdf
-%fazer similaridade entre redes sociais e redes complexas
-%http://www.socialbakers.com/countries/continents
-%Em embasamento teorico
-%-explicar o conceito de página 
-%-explicar o conceito de perfil
-%-explicar o funcionamento de um aplicativo
-%-explicar as características de um página do Facebook, falando inclusive sobre a presença de uma aba dentro desta página com link para o aplicativo
-\section{Facebook Developer Platform}
-%Introdução a Facebook Platform
-%
-Segundo o site de desenvolvedores do Facebook (http://developer.facebook.com), a \textit{Facebook Platform}(Plataforma do Facebook, em português) é uma extensão do Facebook que tem como missão dar as pessoas o poder para compartilhar e fazer o mundo mais aberto e conectado. Uma definição que lembra uma das principais aplicações da web semântica (extensão da Web atual que permitirá aos computadores e humanos trabalharem em cooperação) que é a integração dos diversos e independentes "depósitos de dados" da internet numa aplicação coerente. Existem empreendedores e desenvolvedores espalhados por 190 países utilizando a Facebook Platform. A \textit{Facebook Platform} está toda documentada no site de desenvolvedores do Facebook e tem três frentes que são websites, dispositivos móveis e aplicativos, sendo o último o foco deste trabalho. Esta plataforma pode ser resumida conforme mostrado na figura XX.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/facebook_platform_overview.eps}
-	\caption{Resumo da Plataforma do Facebook}
-	\label{fig:facebook_platform_overview}
-\end{figure}
-A frente de websites é a reponsável por tornar um pedaço de conteúdo web, por exemplo um website, mais social integrando-o com o Facebook por meio de \textit{plugins} sociais como botão "curtir", botão enviar, botão de login, plugin de registro entre outros. Existem 250 milhões de usuários ao redor do mundo que interagem por meio de plugins sociais com websites externos (ao Facebook), através do \textit{Open Graph Protocol}. Existem mais de 2,5 milhões de sites integrados com o Facebook desde Abril de 2010 quando estes plugins foram lançados. Na figura abaixo são mostrados dois plugins do site da Folha de São Paulo []
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/facebook_social_plugins_folhasp.eps}
-	\caption{Plugins Sociais da Folha de São Paulo}
-	\label{fig:facebook_social_plugins_folhasp}
-\end{figure}
-%referencia figura: http://www1.folha.uol.com.br/cotidiano/971593-patrulhamento-e-reforcado-em-toda-a-regiao-do-alemao-no-rio.shtml
-A frente de dispositivos móveis provê funcionalidades do Facebook em dispositivos móveis. A \textit{Facebook Platform} provê documentação para o desenvolvimento em iOS, Android e \textit{mobile web}(acessada em navegadores de dispositivos móveis). Mais de 200 milhões de usuários acessam o Facebook todo mês através dos seus dispositivos móveis.
-%aplicativos
-A frente de aplicativos como o próprio nome diz é relacionada a construção de aplicativos para o Facebook. Os aplicativos são componentes importantes do Facebook pois permitem a implementação de várias funcionalidades. Atualmente, existem 200 milhões de usuários mensais de aplicativos. A definição de aplicativo remete a softwares desenvolvidos para realizar tarefas específicas. Os aplicativos do Facebook permitem a integração com os objetos sociais do Facebook. Os aplicativos com maior número de usuários mensais são jogos (\textit{gaming}). Existem também os aplicativos de utilidade social como por exemplo o aplicativo Friendmatrix (www.friendmatrix.co) que análisa o perfil de um usuário e gera uma foto formada pelo conjunto de fotos de perfis dos amigos deste usuários, sendo que os amigos que o usuário mais interagi, chamados de melhores amigos, ocupam maiores espaços na foto gerada.
-%%todos aplicativos coletam dados do perfil de usuários
-%%todos aplicativos coletam dados do perfil de usuários
-Todos os aplicativos coletam dados do perfil de usuários para gerar algum tipo de experiência social. Todavia, é necessário que o usuário permita que o aplicativo colete suas informações a partir de um diálogo de autorização (\textit{oauth dialog}, em inglês) que é mostrado na figura XX, como exemplo. A especificação de quais permissões serão requisitadas ao usuário no diálogo de autorização são setadas no código do aplicativo. Neste diálogo são mostrados todos os dados do usuário que o aplicativo da Facebook pode coletar do usuário, ou seja, são setados no código do aplicativo todas as setenta permissões existentes. Após aceitar a coleta de dados, o aplicativo é instalado.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/oauth_dialog2.eps}
-	\caption{Diálogo de Autorização}
-	\label{fig:oauth_dialog}
-\end{figure}
-As permissões necessárias para a coleta de dados dos usuários podem ser divididas em três categorias: permissões do usuário, permissões de amigos e permissões extendidas. As permissões do usuário permitem que um aplicativo colete as informações relativas ao usuário que o instalou. As permissões de amigos permitem que um aplicativo colete informações relativas aos amigos do usuário que instalou o aplicativo. As permissões extendidas permitem a implementação de funcionalidades como leitura da caixa de entrada (\textit{mailbox}), publicação de conteúdo, integração com bate-papo, gerenciamento de páginas etc.
-As principais permissões do usuário e de amigos são resumidas na figura 2.10 e as principais permissões extendidas são resumidas na figura 2.11.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/permissoes_usuario_amigos.eps}
-	\caption{Permissões do usuário e de amigos}
-	\label{fig:permissoes_usuario_amigos}
-\end{figure}
+A composição dos serviços é feita de forma dinâmica em tempo de execução, enquanto a composição de componentes é feita na fase de design ou em tempo de execução. Isso relaciona-se ao tipo de acoplamento entre provedor e consumidor, havendo diferença entre ambos. Nos componentes é frequente um alto acoplamento, de forma que um grau mais elevado de cumplicidade entre provedor e consumidor é exigida de acordo com o tipo de interação e modelo de componentes usado. Em contraste, nos serviços o baixo acoplamento entre provedor e consumidor é um princípio a ser seguido e um de maior importância no paradigma de orientação a serviços, havendo transparência no processo de troca de mensagens. Dessa forma, o provedor irá desfrutar de liberdade e flexibilidade para a escolha do design e da tecnologia para implementação, assim como o contratante irá somente se ater, funcionalmente, às descrições do serviço e também leva tais vantagens. O baixo acoplamento é viabilizado pela descrição dos serviços que possibilitam sua interação usando parâmetros pré-estabelecidos \cite{Crnkovic:2006:CDP:1193212.1193814}. Para componentes, é possível uma optimização da performance em detrimento da flexibilidade por meio da composição na fase de design.
 
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/permissoes_extendidas.eps}
-	\caption{Permissões do usuário e de amigos}
-	\label{fig:permissoes_extendidas}
-\end{figure}
+Mesmo com modelos que definem a distribuição de componentes, i.e. J2EE e CORBA, os resultados obtidos são de naturezas distintas. O processo de integração remota previsto pela distribuição de componentes mantém o aspecto citado para a sua especificação, uma vez que irá, de forma refinada, distribuir modelos de objetos, seus estados e suas propriedades, enquanto os serviços estão num patamar menos elaborado de integração, fornecendo funcionalidades coesas em alto nível no padrão requisição e resposta. Portanto, componentes e serviços se situam em domínios diferentes, assim como os problemas por eles enfrentados e as necessidades atendidas \cite{soaworld-ws-components}.
 
-Um detalhe do mecanismo de autorização é que para um aplicativo acessar as informações do usuário no servidor do Facebook, este precisa de um código chamado de \textit{access\_token} que especifica quais dados o aplicativo pode capturar e por quanto tempo. Este mecanismo de autorização é um padrão aberto chamado de OAuth que também é utilizado nos aplicativos da RSO Twitter. O fluxo para coleta de dados no facebook é mostrado na figura 2.11.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/fluxo_app.eps}
-	\caption{Fluxo de Coleta de Informações de Usuários do Facebook}
-	\label{fig:fluxo_app}
-\end{figure}
-%referência http://developers.facebook.com/docs/reference/dialogs/oauth/
-Para realizar a coleta de dados o aplicativo faz uso da Graph API. Uma API(\textit{Application programming interface}) é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades por aplicativos que não pretendem envolver-se em detalhes da implementação do software, mas apenas usar seus serviços. No contexto de desenvolvimento web, as APIs são tipicamente um conjunto de
-tipos de requisições HTTP juntamente com suas respectivas definições de resposta e no caso do Facebook não é diferente. Portanto, a Graph API apresenta uma maneira simples e consistente de coletar propriedades e conexões de objetos sociais. Esta API faz isto representando uniformente os objetos sociais contido no gráfico social. É importante ressaltar ainda que cada objeto tem um ID único. As informações são coletadas a partir de requisições que utilizam a URL http://graph.facebook.com/ID\_OBJETO, sendo ID\_OBJETO o identificador do objeto requirido. Após a requisição são retornados os dados do objeto pedido no formato \textit{JSON}(JavaScript Object Name), conforme mostrado na figura 2.13.
-\begin{figure}[htbp]
-	\centering	\includegraphics[width=0.70\textwidth]{figs/ppmendes/graph_api_response.eps}
-	\caption{Exemplo de Resposta de Requisição da Graph API}
-	\label{fig:graph_api_response}
-\end{figure}
-A utilização da Graph API é dispendiosa. Ocorre disperdício de banda e lentidão no processo de coleta, já que algumas vezes são necessárias várias requisições HTTP para coletar todas as informações necessárias. Além de exigir maior processamento na análise dos dados coletados, uma vez que estes dados não estão filtrados. Ameniza-se estes problemas fazendo uso da \textit{Facebook Query Language}(FQL) que permite o uso de uma interface de estilo SQL para coletar e filtrar as informações expostas pela GRAPH API. Esta interface permite o processamento de várias consultas aos dados que se prentede coletar em uma única requisição. Assim os dados já retornam filtrados e sem necessidades de outras requisições.
-%referência: http://pt.wikipediaorg/wiki/Web_sem%C3%A2ntica
-Para facilitar e orientar o desenvolvimento de aplicativos são providos SDKs. SDK é o acrônimo de Software Development Kit que normalmente são disponibilizados por empresas para que programadores externos tenham uma melhor integração com o software proposto. Atualmente, estão disponíveis quatro SDKs. O javascript SDK que permite o acesso, do lado do cliente, a todas as características da Graph API e diálogos via JavaScript. O PHP SDK que contém bibliotecas que auxiliam na implementação de \textit{login/logout} e suporte a GRAPH API. As outras duas SDKs auxiliam no desenvolvimento de aplicativos para dispositivos móveis: iOS SDK (iPhone \& iPad) e Android SDK. São também providas as ferramentas que são usadas para desenvolver, testar e monitorar os aplicativos como a \textit{Developer App} e a Graph API Explorer. A ferramenta \textit{Developer App}, mostrada na figura XX, é usada para criar e gerenciar uma aplicação. A ferramenta Graph API Explorer testa a quais dados são coletados, a partir de quais requisições e com quais permissões. Outra ferramenta de tecnologia antiga REST API, mas que é de muita serventia é o console de teste fql.query, muito útil para testar consultas as tabelas FQL.
-%referencia: https://developers.facebook.com/docs/reference/rest/fql.query/
+%definindo SOA 
+\section{Service Oriented Architecture}
 
-Expôs-se nesta seção apenas tecnologias atuais do Facebook. As tecnologias antigas serão substituídas por estas que foram expostas aqui anteriormente. Como exemplo de tecnlogias antigas temos a Old REST API, a Legacy JavaScript SDK, FBML e FBJS.
+Os mesmos agentes responsáveis pela comercialização de SOA, também são responsáveis pela vulgarização do termo, ao ponto do mesmo ter se tornado ambíguo e com significados diversos. 
+%meso! falta desenvolver um pouco mais 1.1.0
 
-Antes de se começar a fazer um aplicativo do Facebook é importante verificar se as intenções desse aplicativo são compatíveis com as Políticas de desenvolvimento de aplicativos para o Facebook [].
-%https://developers.facebook.com/policy/
+Com base nos princípios de SOC, criou-se uma arquitetura responsável por guiar o processo de adoção desse paradigma. O SOA, ou \textit{Service Oriented Architecture}, define uma série de processos, papéis, regras, modelos e camadas, entre outros componentes da arquitetura, propondo transformações importantes no modus operandi no setor de tecnologia da informação. Dada sua abrangência e complexidade de fundamentos, o SOA é protagonista no avanço do SOC, tendo seu conceito se difundido de forma mais ampla que o primeiro, haja vista que recebeu grande atenção do meio acadêmico, como ilustra nosso mapeamento de estudos, além de ter sido um produto de destaque para grandes vendedores da indústria de TI. Entre as prioridades do SOA apontada pelo \textit{SOA Manifesto} estão: o valor de negócio sobre a estratégia técnica adotada, os objetivos estratégicos sobre os benefícios específicos de projeto, a interoperabilidade intrínseca sobre as integrações customizadas, os serviços compartilhados sobre implementações com propósito específico, a flexibilidade sobre optimização e o refinamento evolutivo sobre a perfeição inicial \cite{soamanifesto}.
+%ok! 1.1.0
 
-No próximo capítulo utilizaremos os conceitos descritos aqui para apresentar a implementação deste trabalho. 
 
-%tentar fechar com as tecnologias escolhidas que estão no começo do capitulo de implemtação
-%\section{Tecnologias utilizadas na implementação}
-%%definir o que é IDE; colocar o conceito presente neste link http://www.zend.com/products/studio
+
+
+%definição de QOS
+
+Because of the increasing agreement on the implementation and management of the functional aspects of those services, such as the adoption of WSDL for service description, SOAP for Web service messaging, or WS-BPEL for Web service composition, the interests of researchers is shifting toward the ?non-functional? or quality aspects of web-enabled software services \cite{Papazoglou:2007:SOA:1265289.1265298}.
+
+Por qualidade de serviço ou QOS de um sistema entendem-se seus atributos ou requisitos não funcionais. Ou seja, são aspectos qualitativos de estado e não definições de funcionamento, podem ser citados a performance, a segurança, a disponibilidade, a modificabilidade, a escalabilidade, etc. Com o amadurecimento e evolução da engenharia de software, tais atributos tornaram-se cruciais para a gerência de riscos e também de custos das aplicações, participando ativamente na definição da arquitetura do sistema com peso maior que os próprios requisitos funcionais.
+
+%FIGURA COM TODAS OU PRINCIPAIS ATRIBUTOS DE QOS
+
+A performance está diretamente relacionada ao tempo, seja pelo tempo de resposta, pela quantidade de requisições por unidade de tempo ou pela capacidade de atender à requisição numa quantidade de tempo determinada\cite{O'Brien:2007:QAS:1270235.1270300}. Nesse sentido, o uso de serviços distribuídos acarreta prejuízos à performance inerentes à rede utilizada, além de processamento extra devido ao tratamento e encaminhamento das mensagens entre serviços, especialmente quando trata-se de formatos baseados em texto, como o XML, que possuem tamanho maior que sua representação binária. Também irá prejudicar a performance o processo de descobrimento e alocação de serviços na situações em que esse processo não é pré-estabelecido. 
+
+A interoperabilidade relaciona-se à capacidade dos componentes de compartilharem informação e operarem de forma acordada\cite{O'Brien:2007:QAS:1270235.1270300}.  Dado que o ambiente SOC pressupõe a criação de serviços e, especificamente em SOA, serviços implementados com diversas tecnologias sem prejuízo à intercomunicação, verifica-se que um dos principais benefícios trazidos por essa arquitetura é para a interoperabilidade.
+
+A segurança, como um atributo de QOS, possui alguns princípios. A autenticidade trata da capacidade do sistema em identificar a autoria da informação enviada.  A integridade irá resguardar a informação tal qual foi enviada, sem alterações. A confidencialidade garante que somente atores ou entidades autorizadas tenham acesso às informações. O paradigma SOC tem desafios nesses critérios de qualidade à medida em que os serviços são distribuídos em ambientes internos restritos ou na própria internet. É imediata a percepção de que a troca de informações entre as unidades lógicas do sistema pode acarretar sérios riscos à segurança, estando os esforços disponíveis para garanti-la limitados pela necessidade de se manter a interoperabilidade e a performance no ambiente SOC, já que requerem a adoção adicional de especificações, protocolos e consequentemente uma maior redundância de informação e processamento.
+
+A disponibilidade define o tempo em que o sistema estará operacional e portanto respondendo a requisições. Tratando-se de serviços, cada um irá possuir uma disponibilidade que irá influenciar diretamente na disponibilidade dos sistemas que dependem desses serviços, portanto o ambiente SOC possui o desafio de manter-se operacional diante de suas unidades com particularidades próprias. Como possíveis estratégias para mitigar os problemas causados por serviços inoperantes estão a replicação e o balanceamento de carga, além da troca do provedor do serviço. Nesse sentido, o monitoramento, a gerência e a seleção de serviços são processos importantes em SOC e sua automação um dos maiores desafios.
+
+A confiabilidade é um atributo relacionado à disponibilidade e trata da capacidade do sistema em operar sem erros. Mais uma vez, no ambiente distribuído essa capacidade irá depender da confiabilidade dos serviços que compõe o sistema, mas também das mensagens enviadas e recebidas. Dessa forma, um sistema SOC confiável deverá utilizar especificações e protocolos que garantam a confiabilidade das mensagens ou fazer uso de ferramentas e implementações que cuidem desse processo. 
+
+A modificabilidade mesura a capacidade do sistema de sofrer modificações com menores custos e maior velocidade \cite{ClementsKazmanKlein01}. 
+
+O ambiente proposto pelas arquiteturas orientadas a serviço está sujeito a condições particulares diferentes daquelas já estudadas e conhecidas em outros paradigmas, havendo variáveis que elevam a complexidade da análise de parâmetros de qualidade, tanto na fase de planejamento quanto em fase de execução por meio do monitoramento e da gerência dos serviços, sendo esse um obstáculo sólido à adoção de arquiteturas como o SOA. Nesse sentido, o presente estudo visa mapear publicações cujo foco está na qualidade de serviços em SOC, contemplando cenários com ou sem o uso de SOA, proporcionando uma redução da incerteza quanto ao atual estado de desenvolvimento da ciência contribuinte ao tema abordado e quanto aos desafios e avanços já conquistados.
+
+
+%definição de SMS
+Conforme será apresentado posteriormente nesse trabalho, o número de publicações que trazem como foco de estudo o SOC cresceu sensivelmente, sobretudo à partir de 2005 (REFERÊNCIA), gerando um cenário pouco claro a respeito dos avanços e principais desafios relacionados a esse paradigma. Portanto, um trabalho de mapeamento permite organizar e classificar as publicações a partir de determinadas facetas, gerando embasamento a quem deseja iniciar ou avançar nos estudos da área mapeada.
+
+O \textit{Systematic Mapping Study} propõem uma abordagem que preza pela amplitude em detrimento da profundidade de análise. Com isso, é possível incluir um número mais significativo de publicações e um escopo de estudos mais amplo que aquele obtido pelo \textit{Systematic Literature Review}, tendo esse último uma abordagem que difere-se pela maior precisão e riqueza de detalhes em sua classificação, podendo ser aplicado num possível trabalho futuro, cujo enfoque seriam subáreas de interesse identificadas pelo primeiro processo de mapeamento aqui apresentado
+
+\cite{Petersen_Feldt_Mujtaba_Mattsson_2007}
