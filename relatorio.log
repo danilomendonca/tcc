@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  26 FEB 2012 10:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  27 FEB 2012 20:21
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -580,23 +580,23 @@ File: figs/danilo/Component_vs_Services.eps Graphic file (type eps)
 <figs/danilo/Component_vs_Services.eps> [13] [14]
 File: figs/danilo/Object_vs_Services.eps Graphic file (type eps)
 
-<figs/danilo/Object_vs_Services.eps> [15] [16] [17] [18]) [19]
+<figs/danilo/Object_vs_Services.eps> [15] [16] [17] [18] [19]) [20]
 \openout2 = `implementacao.aux'.
 
 
 (./implementacao.tex
 Cap\'{\i }tulo 3.
-[20
+[21
 
 
 
-] [21]
+] [22]
 Underfull \hbox (badness 10000) in paragraph at lines 65--67
 \T1/ptm/m/n/10.95 gens de pro-gra-ma-ção PHP e Ja-vaS-cript es-tão no ca-pí-tul
 o Em-ba-sa-mento Teó-rico.
  []
 
-[22] [23]
+[23] [24]
 Underfull \hbox (badness 10000) in paragraph at lines 126--128
 \T1/ptm/m/n/10.95 dos do pró-prio per-fil dos ami-gos des-tes usuá-rios.
  []
@@ -607,7 +607,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 a-das fil-mes e li-vros.
  []
 
-[24]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 156--173
 []\T1/ptm/m/n/10.95 Serão fei-tos os se-guin-tes tra-ta-men-tos de da-dos:
  []
@@ -624,37 +624,37 @@ Overfull \hbox (10.47075pt too wide) in paragraph at lines 181--182
 story, fri-ends_hometown, fri-ends_location,
  []
 
-[25]
+[26]
 Overfull \hbox (44.62335pt too wide) in paragraph at lines 189--190
 []\T1/ptm/m/n/10.95 user_about_me, user_likes, user_online_presence, user_relat
 ionships, user_work_history, user_activities,
  []
 
-[26] [27]) [28]
+[27] [28]) [29]
 \openout2 = `resultados.aux'.
 
  (./resultados.tex
 Cap\'{\i }tulo 4.
-[29
+[30
 
 
 
-] [30]) [31]
+] [31]) [32]
 \openout2 = `conclusao.aux'.
 
  (./conclusao.tex
 Cap\'{\i }tulo 5.
-[32
+[33
 
 
 
-]) [33] (./relatorio.bbl
+]) [34] (./relatorio.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 48--51
 []\T1/ptm/m/n/10.95 VARIOS. \T1/ptm/m/it/10.95 Soa Ma-ni-festo\T1/ptm/m/n/10.95
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [34
+) [35
 
 
 ]
@@ -662,12 +662,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  (./anexos.tex
 Cap\'{\i }tulo 6.
-) [35
+) [36
 
 
 ]
 \c@noAnexo=\count127
- [36
+ [37
 
 
 ]
@@ -705,4 +705,4 @@ Here is how much of TeX's memory you used:
  68 hyphenation exceptions out of 8191
  34i,15n,25p,1766b,362s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (45 pages, 132984 bytes).
+Output written on relatorio.dvi (46 pages, 136984 bytes).
