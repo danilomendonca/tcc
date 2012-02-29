@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  27 FEB 2012 20:21
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  28 FEB 2012 23:58
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -575,28 +575,34 @@ File: figs/danilo/SOC_strategic_goals.eps Graphic file (type eps)
 
 
 ]
+File: figs/danilo/Origins_SOC.eps Graphic file (type eps)
+ <figs/danilo/Origins_SOC.eps>
+[13]
 File: figs/danilo/Component_vs_Services.eps Graphic file (type eps)
-
-<figs/danilo/Component_vs_Services.eps> [13] [14]
+ <figs/danilo/Component_vs_Services.eps> [14] [15]
 File: figs/danilo/Object_vs_Services.eps Graphic file (type eps)
 
-<figs/danilo/Object_vs_Services.eps> [15] [16] [17] [18] [19]) [20]
+<figs/danilo/Object_vs_Services.eps> [16] [17]
+
+LaTeX Warning: Citation `Pautasso:2008:RWS:1367497.1367606' on page 18 undefine
+d on input line 80.
+
+[18] [19] [20]) [21]
 \openout2 = `implementacao.aux'.
 
-
-(./implementacao.tex
+ (./implementacao.tex
 Cap\'{\i }tulo 3.
-[21
+[22
 
 
 
-] [22]
+] [23]
 Underfull \hbox (badness 10000) in paragraph at lines 65--67
 \T1/ptm/m/n/10.95 gens de pro-gra-ma-ção PHP e Ja-vaS-cript es-tão no ca-pí-tul
 o Em-ba-sa-mento Teó-rico.
  []
 
-[23] [24]
+[24] [25]
 Underfull \hbox (badness 10000) in paragraph at lines 126--128
 \T1/ptm/m/n/10.95 dos do pró-prio per-fil dos ami-gos des-tes usuá-rios.
  []
@@ -607,7 +613,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 a-das fil-mes e li-vros.
  []
 
-[25]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 156--173
 []\T1/ptm/m/n/10.95 Serão fei-tos os se-guin-tes tra-ta-men-tos de da-dos:
  []
@@ -624,37 +630,37 @@ Overfull \hbox (10.47075pt too wide) in paragraph at lines 181--182
 story, fri-ends_hometown, fri-ends_location,
  []
 
-[26]
+[27]
 Overfull \hbox (44.62335pt too wide) in paragraph at lines 189--190
 []\T1/ptm/m/n/10.95 user_about_me, user_likes, user_online_presence, user_relat
 ionships, user_work_history, user_activities,
  []
 
-[27] [28]) [29]
+[28] [29]) [30]
 \openout2 = `resultados.aux'.
 
  (./resultados.tex
 Cap\'{\i }tulo 4.
-[30
+[31
 
 
 
-] [31]) [32]
+] [32]) [33]
 \openout2 = `conclusao.aux'.
 
  (./conclusao.tex
 Cap\'{\i }tulo 5.
-[33
+[34
 
 
 
-]) [34] (./relatorio.bbl
+]) [35] (./relatorio.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 48--51
 []\T1/ptm/m/n/10.95 VARIOS. \T1/ptm/m/it/10.95 Soa Ma-ni-festo\T1/ptm/m/n/10.95
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [35
+) [36
 
 
 ]
@@ -662,12 +668,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  (./anexos.tex
 Cap\'{\i }tulo 6.
-) [36
+) [37
 
 
 ]
 \c@noAnexo=\count127
- [37
+ [38
 
 
 ]
@@ -689,7 +695,7 @@ No file cd_projeto.tex.
 (./conclusao.aux) (./anexos.aux) (./anexo_esquematicos.aux) (./anexo_cd.aux)
 (./cd_projeto.aux))
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
  )
 (\end occurred inside a group at level 1)
@@ -697,12 +703,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5101 strings out of 494910
- 65711 string characters out of 1177227
- 165292 words of memory out of 3000000
- 8078 multiletter control sequences out of 15000+50000
+ 5105 strings out of 494910
+ 65805 string characters out of 1177227
+ 165303 words of memory out of 3000000
+ 8081 multiletter control sequences out of 15000+50000
  56331 words of font info for 68 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
- 34i,15n,25p,1766b,362s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,25p,1958b,362s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (46 pages, 136984 bytes).
+Output written on relatorio.dvi (47 pages, 143252 bytes).
