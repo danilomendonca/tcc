@@ -80,15 +80,6 @@ Dispon{\'\i}vel em:
 [Online; accessed 12-December-2011].
 Dispon{\'\i}vel em: $<$http://www.soa-manifesto.org/$>$.}
 
-\bibitem{Papazoglou:2007:SOA:1265289.1265298}
-\abntrefinfo{Papazoglou e Heuvel}{PAPAZOGLOU; HEUVEL}{2007}
-{PAPAZOGLOU, M.~P.; HEUVEL, W.-J. Service oriented architectures: approaches,
-  technologies and research issues.
-\emph{The VLDB Journal}, Springer-Verlag New York, Inc., Secaucus, NJ, USA,
-  v.~16, p. 389--415, July 2007.
-ISSN 1066-8888.
-Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1007/s00778-007-0044-3$>$.}
-
 \bibitem{O'Brien:2007:QAS:1270235.1270300}
 \abntrefinfo{O'Brien, Merson e Bass}{O'BRIEN; MERSON; BASS}{2007}
 {O'BRIEN, L.; MERSON, P.; BASS, L. Quality attributes for service-oriented
@@ -103,5 +94,20 @@ ISBN 0-7695-2960-7. Dispon{\'\i}vel em:
 {CLEMENTS, P.; KAZMAN, R.; KLEIN, M. \emph{Evaluating Software Architectures:
   Methods and Case Studies}. [S.l.]: Addison-Wesley, 2001.
 ISBN 978-0-201-70482-2.}
+
+\bibitem{Kitchenham_Charters_2007}
+\abntrefinfo{Kitchenham e Charters}{KITCHENHAM; CHARTERS}{2007}
+{KITCHENHAM, B.; CHARTERS, S. Guidelines for performing systematic literature
+  reviews in software engineering.
+\emph{Version}, v.~2, n. EBSE 2007-001, p. 2007?01, 2007.}
+
+\bibitem{Papazoglou:2007:SOA:1265289.1265298}
+\abntrefinfo{Papazoglou e Heuvel}{PAPAZOGLOU; HEUVEL}{2007}
+{PAPAZOGLOU, M.~P.; HEUVEL, W.-J. Service oriented architectures: approaches,
+  technologies and research issues.
+\emph{The VLDB Journal}, Springer-Verlag New York, Inc., Secaucus, NJ, USA,
+  v.~16, p. 389--415, July 2007.
+ISSN 1066-8888.
+Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1007/s00778-007-0044-3$>$.}
 
 \end{thebibliography}
