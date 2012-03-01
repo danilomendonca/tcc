@@ -29,12 +29,12 @@ Historicamente, o paradigma de orientação a serviços tem como base diversos outr
 %figura com origens do SO
 %!!substituir figura por uma em português
 \begin{figure}[htbp]
-	\centering	\includegraphics[width=1\textwidth]{figs/danilo/Origins_SOC.eps}
+	\centering	\includegraphics[width=0.9\textwidth]{figs/danilo/Origins_SOC.eps}
 	\caption{Origens da Orientação a Serviço}	
 	\label{fig:Origins_SOC}
 \end{figure} 
 
-\section{Component Based Architecture} 
+\subsection{Component Based Architecture} 
 
 Entre as mais importantes influências está a arquitetura baseada em componentes. Com ela, a orientação a serviços compartilha visões, uma vez que ambas se sustentam sobre os conceitos de unidades lógicas auto-contidas, auto-descritas, modulares, encapsuladas, que fazem uso de interfaces, contratos e especificações com possibilidade de composição com outras unidades. 
 
@@ -53,7 +53,7 @@ A composição dos serviços é feita de forma dinâmica em tempo de execução, enquan
 
 Mesmo com modelos que definem a distribuição de componentes, i.e. J2EE e CORBA, os resultados obtidos são de naturezas distintas. O processo de integração remota previsto pela distribuição de componentes mantém o aspecto citado para a sua especificação, uma vez que irá, de forma refinada, distribuir modelos de objetos, seus estados e suas propriedades, enquanto os serviços estão num patamar menos elaborado de integração, fornecendo funcionalidades coesas em alto nível no padrão requisição e resposta. De fato, há casos em que um serviço irá fazer uso de componentes em sua implementação, que por conceito independe de sua descrição, desde que mantenha a funcionalidade por ela exposta. Portanto, componentes e serviços se situam em domínios diferentes, assim como as necessidades atendidas e os problemas por eles enfrentados \cite{soaworld-ws-components}. Em suma, os maiores ganhos dos serviços em relação aos componentes estão na maior interoperabilidade, na maior gama de possibilidades para composições, uma vez que permite integração com com serviços de terceiros e por fim no menor acoplamento entre provedor e consumidor.
 
-\section{Object Orientation}
+\subsection{Object Orientation}
 
 A orientação a objetos também teve grande influência na orientação a serviços. Muitos conceitos por ela reforçados tem precedência nesse paradigma, entre eles o alinhamento do modelo de negócio e da TI, visto que as classes são moldadas à partir de conceitos e objetos reais, muitas vezes representações do próprio negócio. O aumento da robustez, uma vez que a orientação a objetos mantém um forte processo de design da solução com uso de diagramas UML e possui um complexo modelo para exceções e rotinas de teste. Da extensibilidade, haja vista a característica modular das classes e as diversas possibilidades de herança, polimorfismo e associações capazes de estender o escopo da solução. Da flexibilidade, dado o uso de encapsulamento e abstração, sendo possível a adaptação do funcionamento a novas realidades. Por fim, da reusabilidade e da produtividade, dada a existência de classes abstratas e de códigos genéricos e reutilizáveis \cite{Erl:2007:SPS:1296147}.
 
@@ -68,7 +68,7 @@ Uma diferença entre os dois paradigmas está no escopo onde atuam. A orientação a
 
 Outro importante modelo arquitetural influente no SOC é a o EAI ou Enterprise Application Integration. Esse conjunto de princípios arquiteturais foca na integração de soluções heterogêneas de uma empresa. Seu principal componente é denominado \textit{middleware}, ou aplicação intermediária, e tem a função de transportar mensagens entre as aplicações de maneira transparente e irrestrita. O motivo pelo qual essa arquitetura influenciou o surgimento da orientação a serviços está em seu caráter distribuído e integrador, possibilitando que unidades funcionais de lógica troquem mensagem e cooperem formando novas aplicações e dando vazão às demandas de negócios com maior agilidade. No entanto, é visível que mesmo havendo uma integração, as aplicações envolvidas ainda se situam num modelo de aplicações silos e com pouco potencial de reuso e de serem compostas de maneiras diversas e flexíveis. Assim, visionando as possibilidades trazidas por um inventário de soluções coesas, abstratas e de fácil composição, o SOC inovou com os princípios de design em que se baseia para criação e mantenimento de serviços, forma como passaram a ser denominadas as unidades lógicas disponíveis e integradas pela camada intermediária.
 
-\section{Web Services}
+\subsection{Web Services}
 
 Seria imprescindível, na tarefa de descrever as origens da computação orientada a serviços, deixar de citar a importante contribuição dos Web Services. Mais que uma influência, os Web Services estão na raiz do funcionamento da arquitetura SOA, mesmo sendo essa agnóstica à tecnologia usada na implementação de seus serviços. 
 
@@ -77,20 +77,37 @@ Web Services surgiram anteriormente ao SOC, oferecendo uma integração transparen
 
 A segunda geração de Web Services trouxe avanços em segurança, transações entre serviços e garantias na troca de mensagens, entre outros \cite{Erl:2007:SPS:1296147}. Essas tecnologias e especificações relacionadas seguem a nomeclatura WS-* e tem a característica de serem passíveis de composição entre si e fornecerem um rico conjunto de ferramentas para o ambiente de Web Services. Entretanto, críticas quanto à complexidade e enrijecimento da arquitetura como consequência ao uso destes padrões levaram ao fortalecimento de outros modelos. O REST, ou Representational State Transfer, trata exatamente da transferência de representações de recursos usando um conjunto restrito de ações, denominadas verbos, usualmente por meio do protocolo HTTP e permite a criação de RESTfull Web Services. Nesses há uma liberdade de diversas decisões arquiteturais, ou \textit{fredom-from-choice}, mantendo-se a premissa de requisições \textit{stateless}, um vez que toda informação necessária ao processamento da requisição está nela contido. Em REST, cada recurso irá possuir uma única identificação URI, por meio da qual operações, i.e. GET, POST, PUT e DELETE, serão realizadas com os recursos. Entre os problemas encontrados com o uso dessa arquitetura está a ausência de suporte a vários atributos QoS. A segurança, por exemplo, fica a cargo do protocolo de transporte, que na prática é limitado ao HTTPS. Não há garantias para as mensagens, salvo em implementações próprias, e a composição é feita por meio de \textit{mashups}, termo proveniente da Web 2.0 e que define uma combinação de funcionalidades entre fontes diversas e heterogêneas de maneira livre e sem especificações, ou seja, caberá ao usuário dos serviços elaborar seu modelo de composição ou simplesmente não utilizar nenhum modelo, algo mais propício ao ambiente de aplicações de sítios da internet que ao ambiente controlado de empresas.
 
-Atualmente o debate entre ambas tecnologias para implementação de Web Services aponta para a contextualização de seu uso: cenários mais simples e ad-hoc tendem a obter melhor eficiência com RESTFull Web Services. Em casos de maior complexidade acompanhadas de transações, segurança, garantias e outros aspectos de QoS oferecidos pelos WS-* com mantenimento da interoperabilidade, sobretudo em ambientes corporativos, o uso de Big Services mostra-se mais viável, especialmente a longo prazo \cite{Pautasso:2008:RWS:1367497.1367606}. Em relação à orientação a serviços e em específico à arquitetura SOA,  
+Atualmente o debate entre ambas tecnologias para implementação de Web Services aponta para a contextualização de seu uso: cenários mais simples e ad-hoc tendem a obter melhor eficiência com RESTFull Web Services. Em casos de maior complexidade acompanhadas de transações, segurança, garantias e outros aspectos de QoS oferecidos pelos WS-* com mantenimento da interoperabilidade, sobretudo em ambientes corporativos, o uso de Big Services mostra-se mais viável, especialmente a longo prazo \cite{Pautasso:2008:RWS:1367497.1367606}. 
 
+\subsection{Business Process Model}
 
-\section{Service Oriented Design}
+Por BPM entende-se a disciplina composta por técnicas e métodos voltados ao design, gerenciamento, aperfeiçoamento e controle de processos de negócio, ou Business Process, com intuito de atingir os objetivos de uma organização \cite{jeston2008business}. Um BP é caracterizado pelo conjunto de práticas e atividades encarregadas de produzirem um produto ou serviço. É comum representa-los em gráficos com sequências de atividades, que se iniciam no objetivo e finalizam em seu cumprimento. O grande foco do BPM está na otimização dos resultados obtidos pelos BPs e no alinhamento da TI com os objetivos estratégicos da organização. É, em essência, uma extensão ou amadurecimento de práticas já conhecidas pela administração desde que surgiram os conceitos relacionados ao processo produtivo, mas o grande salto qualitativo se deu com o uso da TI para a automação da gestão de BPs, sendo a primeira experiência conhecida desenvolvida para General Electric em 1954 \cite{bpm-accenture}.
+
+Uma das atividades centrais do BPM é o modelamento, ou Business Process Modeling, que realiza o descobrimento e modelagem de BPs numa organização, além de melhorias a processos já existentes. A representação é feita pelo padrão BPMN com o uso de diagramas gráficos que se assemelham aos diagramas de atividade da linguagem UML \cite{White_Corp_1999}.  
+
+%Figura com escopo da orientação a objetos e a serviços
+\begin{figure}[hbtp]
+	\centering	\includegraphics[width=0.9\textwidth]{figs/danilo/BPMN.eps}
+	\caption{Modelagem de um BP por meio de um diagrama BPMN}	
+	\label{fig:BPMN.eps}
+\end{figure}
+
+Outra importante atividade está no monitoramento de processos, ou BAM, em geral mais completa e detalhada que o monitoramento obtido com ferramentas do Business Process Management Suit, o BPMS. Assim, o rastreamento de informações acerca do serviço oferece estatísticas sobre sua performance e estado. 
+
+Um dos princípios da orientação a serviços está no alinhamento entre modelo de negócios e tecnologia da informação. Como propósito, o BPM possibilita que processos desse modelo estejam mais visíveis e eficientes, oferecendo ferramentas para o mapeamento entre requisitos de negócios e recursos da TI, o que provê alinhamento entre os dois mundos e um maior valor agregado às soluções. O BPM ocupa o papel de organizar uma abstração de alto nível dos processos de negócio, enquanto o SOA irá se adequar no suporte a esses processos com características de agilidade, flexibilidade e eficiência que serão passadas ao negócio e consequentemente à organização. Dessa forma, a orientação a serviços por meio do SOA e de seus princípios de design surgiu num contexto que já se mostrava apto a recebe-la e não como uma revolução daquilo que já existia.
+
+\subsection{Service Oriented Design}
 
 
 %definição de serviços - importante
-O principal resultado da aplicação do design estabelecido pelo SOC está na criação de unidades lógicas denominadas serviços.  Assim, em vez de aplicações isoladas que trazem consigo todas as funcionalidades, são criadas unidades coesas, granulares, abstratas e de baixo acoplamento cujo acesso é feito por uma interface que encapsula a lógica e cujo funcionamento é bem descrito e garantido por um contrato. Com isso, é possível realizar uma composição ágil que irá servir uma ou, idealmente, várias aplicações por meio do reuso e da orquestração dos serviços. 
+O principal resultado da aplicação do design estabelecido pelo SOC está na criação de unidades lógicas denominadas serviços.  Assim, ao invés de aplicações isoladas que trazem consigo todas as funcionalidades, são criadas unidades coesas, granulares, abstratas e de baixo acoplamento e alta interoperabilidade cujo acesso é feito por uma interface que encapsula sua lógica e cujo funcionamento é bem descrito e garantido por um contrato. Com isso, é possível realizar uma composição ágil que irá servir uma ou, idealmente, várias aplicações por meio do reuso e da orquestração de serviços. 
 %ok! 1.1.0
 
-Vários princípios de design regem a confecção dos serviços e de um inventório de serviços. \textit{Standard Service Contract} define que os mesmos possuam um contrato que siga padrões para definir suas funcionalidades e modelos de dados de forma a garantir a reusabilidade, a interoperabilidade e reduzir esforços de conversão de tipos de dados, além de melhorar a compreensão das capacidades dos serviços por seus gestores. O \textit{Service Loose Coupling} trata da dependência entre o contrato de um serviço, sua implementação e seus consumidores. 
+Vários princípios de design regem a confecção dos serviços e de seus inventários. 
+
 
 %definindo SOA 
-\section{Service Oriented Architecture}
+\subsection{Service Oriented Architecture}
 
 Os mesmos agentes responsáveis pela comercialização de SOA, também são responsáveis pela vulgarização do termo, ao ponto do mesmo ter se tornado ambíguo e com significados diversos. 
 %meso! falta desenvolver um pouco mais 1.1.0

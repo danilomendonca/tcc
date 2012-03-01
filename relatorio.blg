@@ -21,44 +21,44 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 140733193394032.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 9 entries,
+You've used 13 entries,
             6480 wiz_defined-function locations,
-            1239 strings with 11580 characters,
-and the built_in function-call counts, 8055 in all, are:
-= -- 800
-> -- 247
-< -- 10
-+ -- 141
-- -- 74
-* -- 567
-:= -- 1090
-add.period$ -- 47
-call.type$ -- 9
-change.case$ -- 100
-chr.to.int$ -- 15
-cite$ -- 9
-duplicate$ -- 373
-empty$ -- 582
-format.name$ -- 380
-if$ -- 1941
+            1274 strings with 12554 characters,
+and the built_in function-call counts, 11281 in all, are:
+= -- 1073
+> -- 353
+< -- 15
++ -- 181
+- -- 106
+* -- 804
+:= -- 1495
+add.period$ -- 67
+call.type$ -- 13
+change.case$ -- 143
+chr.to.int$ -- 22
+cite$ -- 13
+duplicate$ -- 539
+empty$ -- 834
+format.name$ -- 543
+if$ -- 2728
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 165
-newline$ -- 57
-num.names$ -- 36
-pop$ -- 247
+missing$ -- 239
+newline$ -- 78
+num.names$ -- 52
+pop$ -- 349
 preamble$ -- 1
-purify$ -- 37
+purify$ -- 53
 quote$ -- 0
-skip$ -- 419
+skip$ -- 585
 stack$ -- 1
-substring$ -- 304
-swap$ -- 190
-text.length$ -- 8
+substring$ -- 417
+swap$ -- 274
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 3
+type$ -- 4
 warning$ -- 0
-while$ -- 61
+while$ -- 86
 width$ -- 0
-write$ -- 141
+write$ -- 201
