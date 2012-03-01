@@ -153,24 +153,33 @@ Um dos maiores revezes dos SRs está no esforço considerável por ele requerido \c
 
 Um Mapping Study é designado para prover uma ampla visão de determinada área de pesquisa, para verificar se indícios de pesquisa existem em determinados tópicos e prover indicações quantitativas dessas evidências. \cite{Kitchenham_Charters_2007}. O MS segue um processo sistêmico que visa garantir um nível de qualidade adequado aos resultados obtidos. Algumas passos são diretamente herdados dos SRs, enquanto outros são adaptados para se garantir a viabilidade de seus objetivos. Cada passo do processo de mapeamento irá gerar um resultado, sendo o resultado final o mapeamento propriamente dito \cite{Petersen_Feldt_Mujtaba_Mattsson_2007}.
 
-\subsubsection{Escolha das Perguntas de Pesquisa}
 
-As \textit{research questions}, ou RQs, fundamentam a motivação para um  mapeamento de estudos. São elas que irão guiar todo o processo consequente. Em sua elaboração é preciso ter em mente as características de abertura do escopo e de profundidade de um MS, de modo que as perguntas devem ter como objetivo respostas passíveis de serem encontradas por meio do tipo de análise efetuada num MS. Assim, questões relacionadas à frequência, à identificação dos centros de pesquisa, à identificação dos tópicos existentes ou que vem sendo pesquisados ou ao tipo de pesquisa são mais comuns. Ou seja, o foco das questões é menos estreito e envolve um número maior de publicações.
 
-\subsubsection{Pesquisa primária}
-
-À partir das RQs é possível elaborar termos que serão aplicados em sistemas de busca de publicações. Para tanto, a frase de busca deverá estar estruturada visando englobar todos os tópicos de interesse numa área, restringindo-os se necessária a determinados aspectos. O uso de operadores lógicos é indispensável para que se obtenha resultados mais precisos e que não deixem escapar publicações devido à diferença usada no emprego de palavras chave, havendo pequenas variações nos padrões de uso para cada sistema de busca. Também é interessante realizar testes que observem de maneira preliminar os resultados obtidos nas buscas para se preciso realizar modificações na \textit{string} usada.
-
-Uma abordagem metódica para a construção da \textit{string} de busca consiste na definição de 
-
-%Figura com escopo da orientação a objetos e a serviços
+%Figura com processo para o MS
 \begin{figure}[hbtp]
 	\centering	\includegraphics[width=0.9\textwidth]{figs/danilo/Mapping_Process.eps}
 	\caption{Processo para o Systematic Mapping Study}	
 	\label{fig:Mapping_Process.eps}
 \end{figure}
 
+\subsection{Escolha das Perguntas de Pesquisa}
+
+As \textit{research questions}, ou RQs, fundamentam a motivação para um  mapeamento de estudos. São elas que irão guiar todo o processo consequente. Em sua elaboração é preciso ter em mente as características de abertura do escopo e de profundidade de um MS, de modo que as perguntas devem ter como objetivo respostas passíveis de serem encontradas por meio do tipo de análise efetuada num MS. Assim, questões relacionadas à frequência, à identificação dos centros de pesquisa, à identificação dos tópicos existentes ou que vem sendo pesquisados ou ao tipo de pesquisa são mais comuns. Ou seja, o foco das questões é menos estreito e envolve um número maior de publicações.
+
+\subsection{Pesquisa primária}
+
+À partir das RQs é possível elaborar termos que serão aplicados em sistemas de busca de publicações. Para tanto, a frase de busca deverá estar estruturada visando englobar todos os tópicos de interesse numa área, restringindo-os se necessária a determinados aspectos. O uso de operadores lógicos é indispensável para que se obtenha resultados mais precisos e que não deixem escapar publicações devido à diferença usada no emprego de palavras chave, havendo pequenas variações nos padrões de uso para cada sistema de busca. Também é interessante realizar testes que observem de maneira preliminar os resultados obtidos nas buscas para se preciso realizar modificações na \textit{string} usada.
+
+Uma abordagem metódica para a construção da \textit{string} de busca consiste na definição de termos categorizados em população, intervenção, comparação e resultados, visto que a medicina é uma das áreas onde as Systematic Reviews são mais usadas. No entanto esse modelo pode também servir para definir os termos de busca em qualquer outra área por meio da abstração desses conceitos.
+
+A população irá definir o objeto de interesse, ou seja, a área em que se deseja efetuar o mapeamento. Geralmente é necessária a inclusão de um ou mais termos que a representem na \textit{string} de busca. A intervenção representa metodologias, procedimentos, arquiteturas, modelos, ferramentas, etc, que atuam numa determinada população. Em geral são criados termos de busca que associam os termos de população aos termos de intervenção por meio de operadores lógicos \textit{E}, sendo sua variação ou composição com outras intervenções feitas com o operador lógico \textit{OU}. A comparação define intervenções com as quais as primeiras serão comparadas ou pela comparação com a ausência de uma intervenção, ou seja, pelo não uso ou aplicação de uma intervenção ao seu uso ou aplicação. Por fim, os resultados são estadosdistribuem as submissões de interesse para a população após serem submetidos a uma ou mais intervenções. Por exemplo, pode-se mesurar se certos níveis qualitativos ou quantitativos foram atingidos para determinados aspectos \cite{Kitchenham_Charters_2007}.
 
 
-Para o presente trabalho, definiu-se que o foco irá tratar de aspectos de qualidade na orientação a serviços, sobretudo no que se 
-refere aos resultados obtidos. Com essa decisão entende-se que o SOC já atingiu patamares elevados de funcionalidade por meio de padrões e especificações, arquiteturas e processos. Segundo \cite{Papazoglou:2007:SOA:1265289.1265298}, devido ao crescente acordo na implementação e gerência de aspectos funcionais de serviços, tal qual a adoção de WSDL para a descrição, SOAP para troca de mensagens, ou WS-BPEL para a composição, os interesses de pesquisadores estão se voltando aos aspectos não funcionais de aplicações orientadas a serviços. 
+\subsection{Inclusão e Exclusão de Publicações}
+
+Como resultado da etapa anterior, espera-se obter um número elevado de publicações, estando uma parcela das mesmas fora do escopo do mapeamento. Deve-se então realizar a análise rápida dos resumos ou \textit{abstracts} e dos demais metadados para embasar o processo de exclusão das publicações de acordo com critérios de inclusão e exclusão do MS.
+
+A definição dos critérios de inclusão e exclusão deve prezar pela praticidade de sua análise. É possível definir restrições quanto ao tipo de publicação, origem, quantidade mínima de páginas e principalmente verificando o comprometimento da pesquisa com o foco e escopo do mapeamento. Essa correspondência semântica pode ser checada entre as palavras chaves da publicação e no próprio resumo. Outra observação importante é para o fórum em que a publicação está disponível, uma vez que os sistemas de busca realizam distribuições por áreas e tópicos de pesquisa.
+
+\subsection{Definição das Classificações}
+
