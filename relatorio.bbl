@@ -11,6 +11,15 @@
 \emph{12th International Conference on Evaluation and Assessment in Software
   Engineering}, v.~17, n.~1, p. 1--10, 2007.}
 
+\bibitem{Papazoglou:2007:SOA:1265289.1265298}
+\abntrefinfo{Papazoglou e Heuvel}{PAPAZOGLOU; HEUVEL}{2007}
+{PAPAZOGLOU, M.~P.; HEUVEL, W.-J. Service oriented architectures: approaches,
+  technologies and research issues.
+\emph{The VLDB Journal}, Springer-Verlag New York, Inc., Secaucus, NJ, USA,
+  v.~16, p. 389--415, July 2007.
+ISSN 1066-8888.
+Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1007/s00778-007-0044-3$>$.}
+
 \bibitem{Erl:2007:SPS:1296147}
 \abntrefinfo{Erl}{ERL}{2007}
 {ERL, T. \emph{SOA Principles of Service Design (The Prentice Hall
@@ -101,13 +110,12 @@ ISBN 978-0-201-70482-2.}
   reviews in software engineering.
 \emph{Version}, v.~2, n. EBSE 2007-001, p. 2007?01, 2007.}
 
-\bibitem{Papazoglou:2007:SOA:1265289.1265298}
-\abntrefinfo{Papazoglou e Heuvel}{PAPAZOGLOU; HEUVEL}{2007}
-{PAPAZOGLOU, M.~P.; HEUVEL, W.-J. Service oriented architectures: approaches,
-  technologies and research issues.
-\emph{The VLDB Journal}, Springer-Verlag New York, Inc., Secaucus, NJ, USA,
-  v.~16, p. 389--415, July 2007.
-ISSN 1066-8888.
-Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1007/s00778-007-0044-3$>$.}
+\bibitem{springerlink:10.1007/s00766-005-0021-6}
+\abntrefinfo{Wieringa et al.}{WIERINGA et al.}{2006}
+{WIERINGA, R. et al. Requirements engineering paper classification and
+  evaluation criteria: a proposal and a discussion.
+\emph{Requirements Engineering}, Springer London, v.~11, p. 102--107, 2006.
+ISSN 0947-3602.
+10.1007/s00766-005-0021-6.}
 
 \end{thebibliography}
