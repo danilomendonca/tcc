@@ -5,14 +5,8 @@ A level-1 auxiliary file: resumos.aux
 A level-1 auxiliary file: simbolos.aux
 A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: embasamento.aux
-A level-1 auxiliary file: implementacao.aux
-A level-1 auxiliary file: resultados.aux
-A level-1 auxiliary file: conclusao.aux
+A level-1 auxiliary file: abordagem.aux
 The style file: abnt-num.bst
-A level-1 auxiliary file: anexos.aux
-A level-1 auxiliary file: anexo_esquematicos.aux
-A level-1 auxiliary file: anexo_cd.aux
-A level-1 auxiliary file: cd_projeto.aux
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: relatorio.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 140733193394032.
@@ -21,44 +15,44 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 140733193394032.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 15 entries,
+You've used 16 entries,
             6480 wiz_defined-function locations,
-            1290 strings with 13034 characters,
-and the built_in function-call counts, 13075 in all, are:
-= -- 1210
-> -- 415
-< -- 22
-+ -- 205
-- -- 124
-* -- 934
-:= -- 1713
-add.period$ -- 75
-call.type$ -- 15
-change.case$ -- 169
-chr.to.int$ -- 30
-cite$ -- 15
-duplicate$ -- 643
-empty$ -- 950
-format.name$ -- 639
-if$ -- 3159
+            1292 strings with 13184 characters,
+and the built_in function-call counts, 14003 in all, are:
+= -- 1290
+> -- 441
+< -- 23
++ -- 215
+- -- 132
+* -- 996
+:= -- 1822
+add.period$ -- 80
+call.type$ -- 16
+change.case$ -- 180
+chr.to.int$ -- 31
+cite$ -- 16
+duplicate$ -- 691
+empty$ -- 1030
+format.name$ -- 680
+if$ -- 3393
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 276
-newline$ -- 90
-num.names$ -- 60
-pop$ -- 394
+missing$ -- 294
+newline$ -- 94
+num.names$ -- 64
+pop$ -- 419
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 66
 quote$ -- 0
-skip$ -- 686
+skip$ -- 741
 stack$ -- 1
-substring$ -- 497
-swap$ -- 337
-text.length$ -- 17
+substring$ -- 547
+swap$ -- 364
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 5
 warning$ -- 0
-while$ -- 99
+while$ -- 106
 width$ -- 0
-write$ -- 233
+write$ -- 247

@@ -110,25 +110,30 @@ Um dos princípios da orientação a serviços está no alinhamento entre modelo de n
 O principal resultado da aplicação do design estabelecido pelo SOC está na criação de unidades lógicas denominadas serviços.  Assim, ao invés de aplicações isoladas que trazem consigo todas as funcionalidades, são criadas unidades coesas, granulares, abstratas e de baixo acoplamento e alta interoperabilidade cujo acesso é feito por uma interface que encapsula sua lógica e cujo funcionamento é bem descrito e garantido por um contrato. Com isso, é possível realizar uma composição ágil que irá servir uma ou, idealmente, várias aplicações por meio do reuso e da orquestração de serviços. 
 %ok! 1.1.0
 
-Vários princípios de design regem a confecção dos serviços e de seus inventários. 
+Vários princípios de design regem a confecção dos serviços e de seus inventários ... (CONTINUAR) 
 
 
 %definindo SOA 
 \subsection{Service Oriented Architecture}
 
-Os mesmos agentes responsáveis pela comercialização de SOA, também são responsáveis pela vulgarização do termo, ao ponto do mesmo ter se tornado ambíguo e com significados diversos. 
-%meso! falta desenvolver um pouco mais 1.1.0
 
-Com base nos princípios de SOC, criou-se uma arquitetura responsável por guiar o processo de adoção desse paradigma. O SOA, ou \textit{Service Oriented Architecture}, define uma série de processos, papéis, regras, modelos e camadas, entre outros componentes da arquitetura, propondo transformações importantes no modus operandi no setor de tecnologia da informação. Dada sua abrangência e complexidade de fundamentos, o SOA é protagonista no avanço do SOC, tendo seu conceito se difundido de forma mais ampla que o primeiro, haja vista que recebeu grande atenção do meio acadêmico, como ilustra nosso mapeamento de estudos, além de ter sido um produto de destaque para grandes vendedores da indústria de TI. Entre as prioridades do SOA apontada pelo \textit{SOA Manifesto} estão: o valor de negócio sobre a estratégia técnica adotada, os objetivos estratégicos sobre os benefícios específicos de projeto, a interoperabilidade intrínseca sobre as integrações customizadas, os serviços compartilhados sobre implementações com propósito específico, a flexibilidade sobre optimização e o refinamento evolutivo sobre a perfeição inicial \cite{soamanifesto}.
+Com base nos princípios de SOC, criou-se uma arquitetura responsável por guiar o processo de adoção desse paradigma. O SOA, ou \textit{Service Oriented Architecture}, define uma série de processos, papéis, regras, modelos e camadas, entre outros componentes da arquitetura, propondo transformações importantes no modus operandi no setor de tecnologia da informação. Dada sua abrangência e complexidade de fundamentos, o SOA é protagonista no avanço do SOC, tendo seu conceito se difundido de forma mais ampla que o primeiro, haja vista que recebeu grande atenção do meio acadêmico, como ilustra nosso mapeamento de estudos, além de ter sido um produto de destaque para grandes vendedores da indústria de TI. Entretanto, os mesmos agentes responsáveis pela comercialização de SOA, também contribuíram para a vulgarização do termo, ao ponto do mesmo ter se tornado ambíguo e com significados diversos. Um esforço foi feito visando estabelecer um significado único para a arquitetura, conhecido por \textit{SOA Manifesto}. Entre as prioridades do SOA apontada pelo manifesto estão: o valor de negócio sobre a estratégia técnica adotada, os objetivos estratégicos sobre os benefícios específicos de projeto, a interoperabilidade intrínseca sobre as integrações customizadas, os serviços compartilhados sobre implementações com propósito específico, a flexibilidade sobre optimização e o refinamento evolutivo sobre a perfeição inicial \cite{soamanifesto}.
 %ok! 1.1.0
 
 %definição de QOS
 
-
+\subsection{Qualidade de Serviços}
 
 Por qualidade de serviço ou QOS de um sistema entendem-se seus atributos ou requisitos não funcionais. Ou seja, são aspectos qualitativos de estado e não definições de funcionamento, podem ser citados a performance, a segurança, a disponibilidade, a modificabilidade, a escalabilidade, etc. Com o amadurecimento e evolução da engenharia de software, tais atributos tornaram-se cruciais para a gerência de riscos e também de custos das aplicações, participando ativamente na definição da arquitetura do sistema com peso maior que os próprios requisitos funcionais.
 
+
 %FIGURA COM TODAS OU PRINCIPAIS ATRIBUTOS DE QOS
+\begin{figure}[hbtp]
+	\centering	\includegraphics[width=0.8\textwidth]{figs/danilo/QoS_Model_Stakeholders.eps}
+	\caption{Principais atributos de qualidade de serviços na visão dos \textit{Stakeholders}. Adaptação de \cite{Balfagih:2009:10.1109}}	
+	\label{fig:QoS_Model_Stakeholders}
+\end{figure}
+
 
 A performance está diretamente relacionada ao tempo, seja pelo tempo de resposta, pela quantidade de requisições por unidade de tempo ou pela capacidade de atender à requisição numa quantidade de tempo determinada\cite{O'Brien:2007:QAS:1270235.1270300}. Nesse sentido, o uso de serviços distribuídos acarreta prejuízos à performance inerentes à rede utilizada, além de processamento extra devido ao tratamento e encaminhamento das mensagens entre serviços, especialmente quando trata-se de formatos baseados em texto, como o XML, que possuem tamanho maior que sua representação binária. Também irá prejudicar a performance o processo de descobrimento e alocação de serviços na situações em que esse processo não é pré-estabelecido. 
 
@@ -181,7 +186,7 @@ Como resultado da etapa anterior, espera-se obter um número elevado de publicaçõ
 
 A definição dos critérios de inclusão e exclusão deve prezar pela praticidade de sua análise. É possível definir restrições quanto ao tipo de publicação, origem, quantidade mínima de páginas e principalmente verificando o comprometimento da pesquisa com o foco e escopo do mapeamento. Essa correspondência semântica pode ser checada entre as palavras chaves da publicação e no próprio resumo. Outra observação importante é para o fórum em que a publicação está disponível, uma vez que os sistemas de busca realizam distribuições por áreas e tópicos de pesquisa.
 
-\subsection{Definição das Classificações e Extração de Dados}
+\subsection{Definição de Categorias e Extração de Dados}
 
 Tendo definido as questões de pesquisa, é necessário identificar um esquema que será usado na classificação das publicações. Existem inúmeras possibilidades para a definição de facetas, ou \textit{facets}. Dado o interesse comum em mapeamentos de estudo em obter dados sobre o estado das pesquisas, uma categorização que identifique o tipo ou tipos de pesquisa realizada em cada artigo, tal qual sugerido em \cite{springerlink:10.1007/s00766-005-0021-6}. Outra categorização possível e complementar está no tipo de contribuição dada, ou seja, identifica o foco da pesquisa em termos de modelo, processo, método, ferramenta ou métricas. 
 
@@ -196,8 +201,9 @@ Para a definição de facetas relacionadas ao contexto das pesquisas, é possível q
 
 Tal abordagem pode ser vista como dinâmica, uma vez que em paralelo à obtenção de palavras chaves, o próprio conteúdo da pesquisa estará sendo analisado por meio de seu resumo e demais metadados. Assim, a extração dos dados que posicionam cada publicação em determinadas categorias ocorre junto ao aperfeiçoamento na definição das mesmas. 
 
-Durante a abordagem de cada publicação, é importante tomar notas explicativas justificando a classificação realizada em cada categoria. Isso auxilia tanto o responsável pela classificação quanto aqueles que posteriormente também passarem pela classificação da mesma publicação ou que servirem de revisores para o mapeamento, reduzindo possíveis desvios. Para tanto, é indispensável o uso de ferramentas que organizem as informações colhidas e anotadas, de preferência com acesso gráfico e de boa usabilidade.
+Durante a abordagem de cada publicação, é importante tomar notas explicativas justificando a classificação realizada em cada categoria. Isso auxilia tanto o responsável pela classificação quanto aqueles que posteriormente também passarem pela classificação da mesma publicação ou que servirem de revisores, reduzindo possíveis desvios. Para tanto, é indispensável o uso de ferramentas que organizem as informações colhidas e anotadas, de preferência com acesso gráfico e de boa usabilidade.
 
 \subsection{Mapeamento Sistemático de Estudos}
 
-Após a classificação dos dados...
+Após obter os dados, o mapeamento prossegue com a apresentação dos mesmos por meio de gráficos. É preciso escolher um tipo de representação gráfica clara e que possa representar os dados nas dimensões necessárias. Caso seja objetivo cruzar informações em três dimensões, o uso de \textit{bubble plots} ou gráficos em bolhas permite diferenciar quantidades entre cada cruzamento das categorias definidas nos eixos x e y, ou seja, cada intersecção poderá ser dimensionada pelo tamanho da bolha que a representa. Dessa forma, esse tipo de gráfico serve bem ao propósito quantitativo do mapeamento de estudos que em geral relaciona frequência com dois ou mais categorias de classificação.
+

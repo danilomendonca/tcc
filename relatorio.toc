@@ -17,31 +17,13 @@
 \contentsline {subsection}{\numberline {2.1.6}Business Process Model}{10}
 \contentsline {subsection}{\numberline {2.1.7}Service Oriented Design}{12}
 \contentsline {subsection}{\numberline {2.1.8}Service Oriented Architecture}{12}
-\contentsline {section}{\numberline {2.2}Systematic Mapping Study}{14}
+\contentsline {subsection}{\numberline {2.1.9}Qualidade de Serviços}{12}
+\contentsline {section}{\numberline {2.2}Systematic Mapping Study}{15}
 \contentsline {subsection}{\numberline {2.2.1}Escolha das Perguntas de Pesquisa}{15}
-\contentsline {subsection}{\numberline {2.2.2}Pesquisa primária}{15}
-\contentsline {subsection}{\numberline {2.2.3}Inclusão e Exclusão de Publicações}{16}
-\contentsline {subsection}{\numberline {2.2.4}Definição das Classificações}{16}
-\contentsline {chapter}{\numberline {3}Implementação}{18}
-\contentsline {section}{\numberline {3.1}Descrição Geral da Implementação}{18}
-\contentsline {section}{\numberline {3.2}Tecnologias utilizadas}{18}
-\contentsline {subsection}{\numberline {3.2.1}Tecnologias do Facebook}{19}
-\contentsline {subsection}{\numberline {3.2.2}Tecnologias Gerais: Linguagens de Programação, Bibliotecas e IDEs}{19}
-\contentsline {subsection}{\numberline {3.2.3}Servidor de Hospedagem e de Domínio}{20}
-\contentsline {section}{\numberline {3.3}Regras de Negócio, Análise de Requisitos e Metologias}{20}
-\contentsline {subsection}{\numberline {3.3.1}Elaboração da Regra de Negócio e Análise de Requisitos}{21}
-\contentsline {subsection}{\numberline {3.3.2}Regras de Negócio: Coletar e Analisar o que?}{22}
-\contentsline {subsection}{\numberline {3.3.3}Principais Requisito para Coleta e Análise}{23}
-\contentsline {section}{\numberline {3.4}Mineração de Dados}{24}
-\contentsline {section}{\numberline {3.5}Metodologias, Padrões e Testes do Projeto}{25}
-\contentsline {section}{\numberline {3.6}Estratégias para atingir público alvo}{25}
-\contentsline {chapter}{\numberline {4}Estudo de Caso}{27}
-\contentsline {section}{\numberline {4.1}Discussão de Resultados}{27}
-\contentsline {chapter}{\numberline {5}Conclusão}{30}
-\contentsline {section}{\numberline {5.1}Sugestão de melhorias}{31}
-\contentsline {chapter}{REFERÊNCIAS}{32}
-\contentsline {chapter}{\numberline {6}Anexos}{34}
-\contentsline {section}{\numberline {6.1}Anexo I - Estrutura de Arquivos do Projeto Implementado}{34}
-\contentsline {section}{\numberline {6.2}Anexo II - Formas de Acesso e Configuração do Aplicativo no Facebook}{34}
-\contentsline {section}{\numberline {6.3}Anexo III - CD com arquivos do projeto implementado}{34}
-\contentsline {chapter}{{Anexos}}{35}
+\contentsline {subsection}{\numberline {2.2.2}Pesquisa primária}{16}
+\contentsline {subsection}{\numberline {2.2.3}Inclusão e Exclusão de Publicações}{17}
+\contentsline {subsection}{\numberline {2.2.4}Definição das Classificações e Extração de Dados}{17}
+\contentsline {subsection}{\numberline {2.2.5}Mapeamento Sistemático de Estudos}{18}
+\contentsline {chapter}{\numberline {3}Abordagem}{19}
+\contentsline {chapter}{REFERÊNCIAS}{20}
+\contentsline {chapter}{{Anexos}}{22}

@@ -5,6 +5,13 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.42.2.1 }
 
+\bibitem{Balfagih:2009:10.1109}
+\abntrefinfo{Balfagih e Hassan}{BALFAGIH; HASSAN}{2009}
+{BALFAGIH, Z.; HASSAN, M. Quality model for web services from
+  multi-stakeholders' perspective. In:  \emph{Information Management and
+  Engineering, 2009. ICIME '09. International Conference on}. [S.l.: s.n.],
+  2009. p. 287 --291.}
+
 \bibitem{Petersen_Feldt_Mujtaba_Mattsson_2007}
 \abntrefinfo{Petersen et al.}{PETERSEN et al.}{2007}
 {PETERSEN, K. et al. Systematic mapping studies in software engineering.
@@ -71,7 +78,7 @@ ISBN 9780750686563. Dispon{\'\i}vel em:
 
 \bibitem{bpm-accenture}
 \abntrefinfo{Possel}{POSSEL}{2011}
-{POSSEL, J. \emph{Accenture?s History: The beginnings in the early 1950?s}.
+{POSSEL, J. \emph{Accenture's History: The beginnings in the early 1950?s}.
   January 2011.
 [Online; accessed 29-February-2012].
 Dispon{\'\i}vel em:
