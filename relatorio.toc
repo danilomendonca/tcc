@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Pesquisa primária}{17}
 \contentsline {subsection}{\numberline {2.2.3}Inclusão e Exclusão de Publicações}{18}
 \contentsline {subsection}{\numberline {2.2.4}Definição de Categorias e Extração de Dados}{19}
-\contentsline {subsection}{\numberline {2.2.5}Mapeamento Sistemático de Estudos}{20}
+\contentsline {subsection}{\numberline {2.2.5}Mapeamento e Apresentação de Dados}{20}
 \contentsline {chapter}{\numberline {3}Abordagem}{21}
 \contentsline {chapter}{REFERÊNCIAS}{22}
 \contentsline {chapter}{{Anexos}}{24}
