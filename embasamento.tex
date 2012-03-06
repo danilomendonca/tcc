@@ -34,7 +34,7 @@ Historicamente, o paradigma de orientação a serviços tem como base diversos outr
 	\label{fig:Origins_SOC}
 \end{figure} 
 
-\subsection{Component Based Architecture} 
+\subsubsection{Component Based Architecture} 
 
 Entre as mais importantes influências está a arquitetura baseada em componentes. Com ela, a orientação a serviços compartilha visões, uma vez que ambas se sustentam sobre os conceitos de unidades lógicas auto-contidas, auto-descritas, modulares, encapsuladas, que fazem uso de interfaces, contratos e especificações com possibilidade de composição com outras unidades. 
 
@@ -54,7 +54,7 @@ A composição dos serviços é feita de forma dinâmica em tempo de execução, enquan
 Mesmo com modelos que definem a distribuição de componentes, i.e. J2EE e CORBA, os resultados obtidos são de naturezas distintas. O processo de integração remota previsto pela distribuição de componentes mantém o aspecto citado para a sua especificação, uma vez que irá, de forma refinada, distribuir modelos de objetos, seus estados e suas propriedades, enquanto os serviços estão num patamar menos elaborado de integração, fornecendo funcionalidades coesas em alto nível no padrão requisição e resposta. De fato, há casos em que um serviço irá fazer uso de componentes em sua implementação, que por conceito independe de sua descrição, desde que mantenha a funcionalidade por ela exposta. Portanto, componentes e serviços se situam em domínios diferentes, assim como as necessidades atendidas e os problemas por eles enfrentados \cite{soaworld-ws-components}. Em suma, os maiores ganhos dos serviços em relação aos componentes estão na maior interoperabilidade, na maior gama de possibilidades para composições, uma vez que permite integração com com serviços de terceiros e por fim no menor acoplamento entre provedor e consumidor.
 
 %falta melhorar a comparação entre os conceitos trazidos pela OO relacionados ao SO
-\subsection{Object Orientation}
+\subsubsection{Object Orientation}
 
 A orientação a objetos também teve grande influência na orientação a serviços. Muitos conceitos por ela reforçados tem precedência nesse paradigma, entre eles o alinhamento do modelo de negócio e da TI, visto que as classes são moldadas à partir de conceitos e objetos reais, muitas vezes representações do próprio negócio. O aumento da robustez, uma vez que a orientação a objetos mantém um forte processo de design da solução com uso de diagramas UML e possui um complexo modelo para exceções e rotinas de teste. O aumento da extensibilidade, haja vista a característica modular das classes e as diversas possibilidades de herança, polimorfismo e associações capazes de estender o escopo da solução. Da flexibilidade, dado o uso de encapsulamento e abstração, sendo possível a adaptação do funcionamento a novas realidades. Por fim, da reusabilidade e da produtividade, dada a existência de classes abstratas e de códigos genéricos e reutilizáveis \cite{Erl:2007:SPS:1296147}.
 
@@ -69,7 +69,7 @@ Uma notável diferença entre os dois paradigmas está no escopo onde atuam. A orie
 
 Outro importante modelo arquitetural influente no SOC é a o EAI ou Enterprise Application Integration. Esse conjunto de princípios arquiteturais foca na integração de soluções heterogêneas de uma empresa. Seu principal componente é denominado \textit{middleware}, ou aplicação intermediária, e tem a função de transportar mensagens entre as aplicações de maneira transparente e irrestrita. O motivo pelo qual essa arquitetura influenciou o surgimento da orientação a serviços está em seu caráter distribuído e integrador, possibilitando que unidades funcionais de lógica troquem mensagem e cooperem formando novas aplicações e dando vazão às demandas de negócios com maior agilidade. No entanto, é visível que mesmo havendo uma integração, as aplicações envolvidas ainda se situam num modelo de aplicações silos e com pouco potencial de reuso e de serem compostas de maneiras diversas e flexíveis. Assim, visionando as possibilidades trazidas por um inventário de soluções coesas, abstratas e de fácil composição, o SOC inovou com os princípios de design em que se baseia para criação e mantenimento de serviços, forma como passaram a ser denominadas as unidades lógicas disponíveis e integradas pela camada intermediária.
 
-\subsection{Web Services}
+\subsubsection{Web Services}
 
 Seria imprescindível, na tarefa de descrever as origens da computação orientada a serviços, deixar de citar a importante contribuição dos Web Services. Mais que uma influência, os Web Services estão na raiz do funcionamento da arquitetura SOA, mesmo sendo essa agnóstica à tecnologia usada na implementação de seus serviços. 
 
@@ -80,13 +80,13 @@ A segunda geração de Web Services trouxe avanços em segurança, transações entre 
 
 Atualmente o debate entre ambas tecnologias para implementação de Web Services aponta para a contextualização de seu uso: cenários mais simples e ad-hoc tendem a obter melhor eficiência com RESTFull Web Services. Em casos de maior complexidade acompanhadas de transações, segurança, garantias e outros aspectos de QoS oferecidos pelos WS-* com mantenimento da interoperabilidade, sobretudo em ambientes corporativos, o uso de Big Services mostra-se mais viável, especialmente a longo prazo \cite{Pautasso:2008:RWS:1367497.1367606}. 
 
-\subsection{Aspect Oriented Programming}
+\subsubsection{Aspect Oriented Programming}
 
 O AOP define como principal objetivo a separação de tópicos, ou \textit{separation of concerns}, de forma a identificar interesses comuns entre aplicações que poderão ser modularizados e reutilizados. Em geral a modularização é feita em tópicos que se espalham por diversas camadas de abstração, ou \textit{crosscutting concern}. 
 
 A principal correlação da AOP com a orientação a serviços está no princípio da reutilização de unidades lógicas que são abstratas e agnósticas à lógica de negócio e ao restante da aplicação, proposta que se encontra definida em princípios de design dos serviços. 
 
-\subsection{Business Process Model}
+\subsubsection{Business Process Model}
 
 Por BPM entende-se a disciplina composta por técnicas e métodos voltados ao design, gerenciamento, aperfeiçoamento e controle de processos de negócio, ou Business Process, com intuito de atingir os objetivos de uma organização \cite{jeston2008business}. Um BP é caracterizado pelo conjunto de práticas e atividades encarregadas de produzirem um produto ou serviço. É comum representa-los em gráficos com sequências de atividades, que se iniciam no objetivo e finalizam em seu cumprimento. O grande foco do BPM está na otimização dos resultados obtidos pelos BPs e no alinhamento da TI com os objetivos estratégicos da organização. É, em essência, uma extensão ou amadurecimento de práticas já conhecidas pela administração desde que surgiram os conceitos relacionados ao processo produtivo, mas o grande salto qualitativo se deu com o uso da TI para a automação da gestão de BPs, sendo a primeira experiência conhecida desenvolvida para General Electric em 1954 \cite{bpm-accenture}.
 
@@ -124,33 +124,53 @@ Com base nos princípios de SOC, criou-se uma arquitetura responsável por guiar o
 
 \subsection{Qualidade de Serviços}
 
-Por qualidade de serviço ou QOS de um sistema entendem-se seus atributos ou requisitos não funcionais. Ou seja, são aspectos qualitativos de estado e não definições de funcionamento, podem ser citados a performance, a segurança, a disponibilidade, a modificabilidade, a escalabilidade, etc. Com o amadurecimento e evolução da engenharia de software, tais atributos tornaram-se cruciais para a gerência de riscos e também de custos das aplicações, participando ativamente na definição da arquitetura do sistema com peso maior que os próprios requisitos funcionais.
+Por qualidade de serviços ou QoS de um sistema entende-se seus atributos ou requisitos não funcionais. Ou seja, são aspectos qualitativos de estado e não definições de funcionamento, sendo possível citar a performance, a segurança, a disponibilidade, a mantenabilidade, a escalabilidade, etc. Com o amadurecimento e evolução da engenharia de software, tais atributos tornaram-se cruciais para a gerência de riscos e também de custos das aplicações, participando ativamente na definição da arquitetura do sistema e finalmente com peso maior que os próprios requisitos funcionais ao passo que o sistemas aumentam sua ligação a processos de negócio.
 
+Diversos autores se dedicam a definir modelos e métricas para atributos de QoS. Em específico, os sistemas em concordância com o paradigma da orientação a serviços, existe um fator dificultante devido à configuração distribuída dos serviços, que se constituem de tecnologias diversas em sua implementação, o que resulta num ambiente heterogêneo de integração. Com isso, alguns modelos de QoS propostos não se adaptam bem à nova realidade e outros foram definidos focando o ambiente SOC. Alguns trabalhos apresentam uma categorização dos atributos de qualidade para uma melhor contextualização e abordagem dos mesmos. As categorias tem diferentes níveis de granularidade e representam perspectivas diversas, conforme listado em \cite{Balfagih:2009:10.1109}. Esse mesmo artigo propõe um novo modelo que leva em conta a característica segmentada das partes envolvidas e interessadas no provimento e consumo de serviços. Segundo esse modelo, três grandes atores formam as categorias dos atributos de qualidade. São eles os atributos de desenvolvedores, de consumidores e de provedores.
 
 %FIGURA COM TODAS OU PRINCIPAIS ATRIBUTOS DE QOS
 \begin{figure}[hbtp]
 	\centering	\includegraphics[width=0.8\textwidth]{figs/danilo/QoS_Model_Stakeholders.eps}
-	\caption{Principais atributos de qualidade de serviços na visão dos \textit{Stakeholders}. Adaptação de \cite{Balfagih:2009:10.1109}}	
+	\caption{Principais atributos de qualidade de serviços na visão de partes interessadas ou \textit{Stakeholders}. Adaptação de \cite{Balfagih:2009:10.1109}}	
 	\label{fig:QoS_Model_Stakeholders}
 \end{figure}
 
+\section{Atributos de QoS}
 
-A performance está diretamente relacionada ao tempo, seja pelo tempo de resposta, pela quantidade de requisições por unidade de tempo ou pela capacidade de atender à requisição numa quantidade de tempo determinada\cite{O'Brien:2007:QAS:1270235.1270300}. Nesse sentido, o uso de serviços distribuídos acarreta prejuízos à performance inerentes à rede utilizada, além de processamento extra devido ao tratamento e encaminhamento das mensagens entre serviços, especialmente quando trata-se de formatos baseados em texto, como o XML, que possuem tamanho maior que sua representação binária. Também irá prejudicar a performance o processo de descobrimento e alocação de serviços na situações em que esse processo não é pré-estabelecido. 
+\subsubsection{Performance}
 
-A interoperabilidade relaciona-se à capacidade dos componentes de compartilharem informação e operarem de forma acordada\cite{O'Brien:2007:QAS:1270235.1270300}.  Dado que o ambiente SOC pressupõe a criação de serviços e, especificamente em SOA, serviços implementados com diversas tecnologias sem prejuízo à intercomunicação, verifica-se que um dos principais benefícios trazidos por essa arquitetura é para a interoperabilidade.
+A performance é um atributo relacionado ao tempo. Encontra-se definida no tempo de resposta a uma requisição, na quantidade de requisições por unidade de tempo e na capacidade de atende-las num período determinado \cite{O'Brien:2007:QAS:1270235.1270300}. Nesse sentido, o uso de serviços distribuídos acarreta prejuízos à performance inerentes à rede utilizada, além de processamento extra devido ao tratamento e encaminhamento das mensagens entre serviços, especialmente quando trata-se de formatos baseados em texto, como o XML, que possuem tamanho maior que sua representação binária. Também irá prejudicar a performance o processo de descobrimento e alocação de serviços nas situações em que esse processo não é pré-estabelecido. 
 
-A segurança, como um atributo de QOS, possui alguns princípios. A autenticidade trata da capacidade do sistema em identificar a autoria da informação enviada.  A integridade irá resguardar a informação tal qual foi enviada, sem alterações. A confidencialidade garante que somente atores ou entidades autorizadas tenham acesso às informações. O paradigma SOC tem desafios nesses critérios de qualidade à medida em que os serviços são distribuídos em ambientes internos restritos ou na própria internet. É imediata a percepção de que a troca de informações entre as unidades lógicas do sistema pode acarretar sérios riscos à segurança, estando os esforços disponíveis para garanti-la limitados pela necessidade de se manter a interoperabilidade e a performance no ambiente SOC, já que requerem a adoção adicional de especificações, protocolos e consequentemente uma maior redundância de informação e processamento.
+\subsubsection{Interoperabilidade}
+A interoperabilidade é definida pela capacidade de componentes de um sistema compartilharem informação e operarem de forma acordada\cite{O'Brien:2007:QAS:1270235.1270300}. Assim, mede-se a comunicação e o processamento de informações de maneira independente à fonte dos dados. Visto que o ambiente SOC pressupõe a criação de serviços e, especificamente em SOA, serviços implementados com diversas tecnologias sem prejuízo à intercomunicação, verifica-se que um dos principais benefícios trazidos por essa arquitetura é para a interoperabilidade. Ademais, protocolos já existentes, tal qual o SOAP, realizam a função de troca de informação de maneira interoperável, uma vez que o fazem de forma transparente às aplicações envolvidas. Por fim, o uso de especificações representa um desafio entre avanços para a interoperabilidade, dado que promovem a padronização, mas o uso de especificações incompatíveis ou a sua adesão parcial causará conflitos, comprometendo tal atributo. 
 
-A disponibilidade define o tempo em que o sistema estará operacional e portanto respondendo a requisições. Tratando-se de serviços, cada um irá possuir uma disponibilidade que irá influenciar diretamente na disponibilidade dos sistemas que dependem desses serviços, portanto o ambiente SOC possui o desafio de manter-se operacional diante de suas unidades com particularidades próprias. Como possíveis estratégias para mitigar os problemas causados por serviços inoperantes estão a replicação e o balanceamento de carga, além da troca do provedor do serviço. Nesse sentido, o monitoramento, a gerência e a seleção de serviços são processos importantes em SOC e sua automação um dos maiores desafios.
+\subsubsection{Segurança}
+A segurança, como um atributo de qualidade de sistemas de informação, possui alguns princípios. 
 
-A confiabilidade é um atributo relacionado à disponibilidade e trata da capacidade do sistema em operar sem erros. Mais uma vez, no ambiente distribuído essa capacidade irá depender da confiabilidade dos serviços que compõe o sistema, mas também das mensagens enviadas e recebidas. Dessa forma, um sistema SOC confiável deverá utilizar especificações e protocolos que garantam a confiabilidade das mensagens ou fazer uso de ferramentas e implementações que cuidem desse processo. 
+\begin{itemize}
 
-A modificabilidade mesura a capacidade do sistema de sofrer modificações com menores custos e maior velocidade \cite{ClementsKazmanKlein01}. 
+\item A autenticidade trata da capacidade do sistema em identificar a autoria da informação enviada, ou da impossibilidade de que sua autoria seja negada, também conhecido por princípio da não repudiação. 
 
-O ambiente proposto pelas arquiteturas orientadas a serviço está sujeito a condições particulares diferentes daquelas já estudadas e conhecidas em outros paradigmas, havendo variáveis que elevam a complexidade da análise de parâmetros de qualidade, tanto na fase de planejamento quanto em fase de execução por meio do monitoramento e da gerência dos serviços, sendo esse um obstáculo sólido à adoção de arquiteturas como o SOA. Nesse sentido, o presente estudo visa mapear publicações cujo foco está na qualidade de serviços em SOC, contemplando cenários com ou sem o uso de SOA, proporcionando uma redução da incerteza quanto ao atual estado de desenvolvimento da ciência contribuinte ao tema abordado e quanto aos desafios e avanços já conquistados.
+\item A integridade irá resguardar a informação tal qual foi produzida, sem alterações, ou garantir que qualquer modificação feita seja detectável.
+
+\item A confidencialidade garante que somente atores ou entidades autorizadas tenham acesso às informações, mantendo-as em sigilo para os demais.
+
+\end{itemize}
+
+    É imediata a percepção de que a troca de informações entre as unidades lógicas do sistema pode acarretar sérios riscos à segurança, estando os esforços disponíveis para garanti-la limitados pela necessidade de se manter a interoperabilidade e a performance no ambiente SOC, já que requerem a adoção adicional de especificações, protocolos e consequentemente uma maior redundância de informação e processamento.
+
+\subsubsection{Disponibilidade ou \textit{Availability}}
+A disponibilidade define o tempo em que o sistema estará operacional enquanto requisitado, portanto respondendo com sucesso a requisições. Tratando-se de serviços, cada um irá possuir uma disponibilidade que irá influenciar diretamente ou indiretamente a disponibilidade dos sistemas que dependem desses serviços, portanto o ambiente SOC possui o desafio de manter-se operacional diante de suas unidades com particularidades próprias. Como possíveis estratégias para mitigar os problemas causados por serviços inoperantes estão a replicação e o balanceamento de carga, além da troca do provedor do serviço. Nesse sentido, o monitoramento, a gerência e a seleção de serviços são processos importantes em SOC e sua automação um dos maiores desafios.
+
+\subsubsection{Confiabilidade}
+A confiabilidade é um atributo relacionado à disponibilidade e trata da capacidade do sistema em operar sem erros. Dessa forma, irá mensurar a frequência de erros ocorridos enquanto o sistema estiver disponível num período de tempo. Mais uma vez, no ambiente distribuído essa capacidade irá depender da confiabilidade dos serviços em composição, mas também do transporte das informações. Portanto, um sistema SOC confiável deverá prezar pela confiabilidade 
+dos serviços e também do mecanismo para troca de mensagens.
+
+\subsubsection{Manutibilidade}
+Por manutibilidade entende-se o nível de esforço e custo necessário para realizar correções, modificações e evoluções num sistema. É um atributo diretamente ligado ao desenvolvimento das unidades lógicas e impacta indiretamente na disponibilidade dos serviços existentes e futuros, visto que o tempo de se efetuarem correções ou novas implementações será afetado \cite{ClementsKazmanKlein01}. É possível ainda encontrar referências a dois subtipos desse atributo, sendo esses a modificabilidade e a testabilidade. O primeiro segue a linha geral que define a manutibilidade, e o segundo define em específico a capacidade de se operar testes nas soluções, seja para avaliação de desempenhos diversos ou pela capacidade em encontrar erros por meio do \textit{debbuging}.
+
 
 \section{Systematic Mapping Study}
-
 
 O \textit{Systematic Mapping Study} propõem uma abordagem que preza pela amplitude em detrimento da profundidade de análise. Com isso, é possível incluir um número mais significativo de publicações e um escopo de estudos mais amplo que aquele obtido pelo \textit{Systematic Literature Review}, tendo esse último uma abordagem que difere-se pela maior precisão e riqueza de detalhes em sua classificação, podendo ser aplicado num possível trabalho futuro, cujo enfoque seriam subáreas de interesse identificadas pelo primeiro processo de mapeamento aqui apresentado. 
 
@@ -194,7 +214,7 @@ Para a definição de facetas relacionadas ao contexto das pesquisas, é possível q
 \ref{fig:Keywords_Search_Facets}. Esse procedimento cíclico também se aplica às demais categorias definidas para o mapeamento. 
 
 \begin{figure}[hbtp]
-	\centering	\includegraphics[width=0.9\textwidth]{figs/danilo/Keywords_Search_Facets.eps}
+	\centering	\includegraphics[width=0.7\textwidth]{figs/danilo/Keywords_Search_Facets.eps}
 	\caption{Busca iterativa de palavras chaves para categorização. Adaptação de \cite{Petersen_Feldt_Mujtaba_Mattsson_2007}}	
 	\label{fig:Keywords_Search_Facets}
 \end{figure}
@@ -205,5 +225,11 @@ Durante a abordagem de cada publicação, é importante tomar notas explicativas ju
 
 \subsection{Mapeamento Sistemático de Estudos}
 
-Após obter os dados, o mapeamento prossegue com a apresentação dos mesmos por meio de gráficos. É preciso escolher um tipo de representação gráfica clara e que possa representar os dados nas dimensões necessárias. Caso seja objetivo cruzar informações em três dimensões, o uso de \textit{bubble plots} ou gráficos em bolhas permite diferenciar quantidades entre cada cruzamento das categorias definidas nos eixos x e y, ou seja, cada intersecção poderá ser dimensionada pelo tamanho da bolha que a representa. Dessa forma, esse tipo de gráfico serve bem ao propósito quantitativo do mapeamento de estudos que em geral relaciona frequência com dois ou mais categorias de classificação.
+Após obter os dados, o mapeamento prossegue com a apresentação dos mesmos por meio de gráficos. É preciso escolher um tipo de representação clara e que possa ilustrar os dados nas dimensões necessárias. Caso seja objetivo cruzar informações em três dimensões, o uso de \textit{bubble plots} ou gráficos em bolhas permite diferenciar quantidades entre cada cruzamento das categorias definidas nos eixos x e y, ou seja, cada intersecção poderá ser dimensionada pelo tamanho da bolha que a representa. Dessa forma, esse tipo de gráfico serve bem ao propósito quantitativo do mapeamento de estudos que em geral relaciona frequência com duas ou mais categorias de classificação.
+
+\begin{figure}[hbtp]
+	\centering	\includegraphics[width=0.9\textwidth]{figs/danilo/Bubble_Plot.eps}
+	\caption{Exemplo de gráfico de \textit{bubble plot}. Adaptação de \cite{Petersen_Feldt_Mujtaba_Mattsson_2007}}	
+	\label{fig:Bubble_Plot}
+\end{figure}
 
