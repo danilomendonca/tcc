@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  6 MAR 2012 10:51
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  6 MAR 2012 11:59
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -546,15 +546,18 @@ File: figs/danilo/QoS_Model_Stakeholders.eps Graphic file (type eps)
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 162.
  [15]
-File: figs/danilo/Mapping_Process.eps Graphic file (type eps)
 
-<figs/danilo/Mapping_Process.eps> [16] [17]
+LaTeX Warning: Citation `ZimmPers2005' on page 16 undefined on input line 176.
+
+[16]
+File: figs/danilo/Mapping_Process.eps Graphic file (type eps)
+ <figs/danilo/Mapping_Process.eps> [17] [18]
 File: figs/danilo/Keywords_Search_Facets.eps Graphic file (type eps)
 
-<figs/danilo/Keywords_Search_Facets.eps> [18]
+<figs/danilo/Keywords_Search_Facets.eps> [19]
 File: figs/danilo/Bubble_Plot.eps Graphic file (type eps)
  <figs/danilo/Bubble_Plot.eps>)
-[19] [20]
+[20]
 \openout2 = `abordagem.aux'.
 
  (./abordagem.tex
@@ -604,18 +607,22 @@ Underfull \hbox (badness 7415) in paragraph at lines 95--98
  [24
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
-(./simbolos.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux)) )
+(./simbolos.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux))
+
+LaTeX Warning: There were undefined references.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5032 strings out of 494910
- 64490 string characters out of 1177227
+ 5033 strings out of 494910
+ 64504 string characters out of 1177227
  148881 words of memory out of 3000000
- 8046 multiletter control sequences out of 15000+50000
+ 8047 multiletter control sequences out of 15000+50000
  58130 words of font info for 69 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
  34i,15n,25p,1958b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (33 pages, 91636 bytes).
+Output written on relatorio.dvi (33 pages, 92996 bytes).

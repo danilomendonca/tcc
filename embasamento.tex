@@ -135,7 +135,7 @@ Diversos autores se dedicam a definir modelos e métricas para atributos de QoS. 
 	\label{fig:QoS_Model_Stakeholders}
 \end{figure}
 
-\section{Atributos de QoS}
+\subsection{Atributos de QoS}
 
 \subsubsection{Performance}
 
@@ -168,6 +168,12 @@ dos serviços e também do mecanismo para troca de mensagens.
 
 \subsubsection{Manutibilidade}
 Por manutibilidade entende-se o nível de esforço e custo necessário para realizar correções, modificações e evoluções num sistema. É um atributo diretamente ligado ao desenvolvimento das unidades lógicas e impacta indiretamente na disponibilidade dos serviços existentes e futuros, visto que o tempo de se efetuarem correções ou novas implementações será afetado \cite{ClementsKazmanKlein01}. É possível ainda encontrar referências a dois subtipos desse atributo, sendo esses a modificabilidade e a testabilidade. O primeiro segue a linha geral que define a manutibilidade, e o segundo define em específico a capacidade de se operar testes nas soluções, seja para avaliação de desempenhos diversos ou pela capacidade em encontrar erros por meio do \textit{debbuging}.
+
+\subsubsection{Escalabilidade}
+
+A escalabilidade diz respeito à capacidade do sistema de suportar escalas crescentes de uso ou modificações sem tornar-se indisponível ou degradar outros aspectos de qualidade. Assim, um sistema será escalável se possibilitar o agregamento de mais usuários, via a escalabilidade de uso, ou de novas funcionalidades via a escalabilidade das funções do sistema. 
+
+A orientação a serviços dispõe da composição de serviços com possibilidade de adesão dinâmica e do rearranjamento daqueles já existentes, privilegiando o modelo \textit{stateless} que evita problemas relacionados ao gerenciamento da sessão e à propagação de contexto \cite{O'Brien:2007:QAS:1270235.1270300}, com possível substituição ou melhoria de serviços por meio do escalonamento vertical e pela  replicação de serviços por meio do escalonamento horizontal, fatores que aumentam a vazão e diminuem o tempo de resposta \cite{ZimmPers2005}. Assim, nota-se que os princípios de design do SOC, sobretudo quando expostos a uma arquitetura orientada a serviços capaz de estruturar processos e recursos irão proporcionar um aumento da escalabilidade.
 
 
 \section{Systematic Mapping Study}
