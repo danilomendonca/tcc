@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  6 MAR 2012 15:17
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  6 MAR 2012 23:59
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -537,32 +537,36 @@ File: figs/danilo/Component_vs_Services.eps Graphic file (type eps)
  <figs/danilo/Component_vs_Services.eps> [6] [7]
 File: figs/danilo/Object_vs_Services.eps Graphic file (type eps)
 
-<figs/danilo/Object_vs_Services.eps> [8] [9] [10]
+<figs/danilo/Object_vs_Services.eps> [8]
+
+LaTeX Warning: Citation `ws-i-oasis' on page 9 undefined on input line 87.
+
+[9] [10] [11]
 File: figs/danilo/BPMN.eps Graphic file (type eps)
- <figs/danilo/BPMN.eps>
-[11] [12]
+ <figs/danilo/BPMN.eps> [12] [13]
 File: figs/danilo/QoS_Model_Stakeholders.eps Graphic file (type eps)
- <figs/danilo/QoS_Model_Stakeholders.eps> [13] [14]
+
+<figs/danilo/QoS_Model_Stakeholders.eps> [14] [15]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 162.
- [15]
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 186.
+ [16]
 
-LaTeX Warning: Citation `ZimmPers2005' on page 16 undefined on input line 176.
+LaTeX Warning: Citation `ZimmPers2005' on page 17 undefined on input line 200.
 
-[16]
+[17]
 File: figs/danilo/Mapping_Process.eps Graphic file (type eps)
- <figs/danilo/Mapping_Process.eps> [17] [18]
+ <figs/danilo/Mapping_Process.eps> [18] [19]
 File: figs/danilo/Keywords_Search_Facets.eps Graphic file (type eps)
 
-<figs/danilo/Keywords_Search_Facets.eps> [19]
+<figs/danilo/Keywords_Search_Facets.eps> [20]
 File: figs/danilo/Bubble_Plot.eps Graphic file (type eps)
  <figs/danilo/Bubble_Plot.eps>)
-[20]
+[21]
 \openout2 = `abordagem.aux'.
 
  (./abordagem.tex
 Cap\'{\i }tulo 3.
-) [21
+) [22
 
 
 
@@ -578,7 +582,7 @@ Underfull \hbox (badness 4832) in paragraph at lines 74--78
 inemann, 2008. ISBN 9780750686563. Dis-po-ní-vel em:
  []
 
-[22
+[23
 
 
 ]
@@ -599,12 +603,12 @@ Underfull \hbox (badness 7415) in paragraph at lines 95--98
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [23]
+) [24]
 \c@noAnexo=\count127
 \tf@thm=\write7
 \openout7 = `relatorio.thm'.
 
- [24
+ [25
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
 (./simbolos.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux))
@@ -617,12 +621,12 @@ LaTeX Warning: There were undefined references.
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5033 strings out of 494910
- 64504 string characters out of 1177227
+ 5034 strings out of 494910
+ 64516 string characters out of 1177227
  148881 words of memory out of 3000000
- 8047 multiletter control sequences out of 15000+50000
+ 8048 multiletter control sequences out of 15000+50000
  58130 words of font info for 69 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
- 34i,15n,25p,1958b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,25p,1711b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (33 pages, 93000 bytes).
+Output written on relatorio.dvi (34 pages, 95748 bytes).
