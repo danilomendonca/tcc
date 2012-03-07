@@ -92,8 +92,11 @@ A segunda geração de Web Services trouxe avanços em segurança, transações entre 
 
 \begin{itemize}
 
-\item WS-Security
-\item WS-ReliableMessaging
+\item WS-Security provê melhorias ao protocolo SOAP visando obter integridade e confidencialidade em sua troca de mensagens. Segundo a especificação 1.1, permite com que diversos modelos de segurança e de criptografia sejam utilizados. Também define um mecanismo para a associação de \textit{tokens} de segurança ao conteúdo das mensagens, sem restringir, no entanto, os tipos de \textit{token} a serem utilizados, entre outros mecanismo para a segurança de Web Services. Outras especificações de segurança podem e, em alguns casos, devem ser utilizadas em complemento ao WS-Security, ou mesmo como alternativa, o que ocorre com quando a segurança é obtida através da camada de transporte por meio de HTTPS. Entre as especificações complementares estão o WS-SecureConversation, o WS-Trust e o WS-Authorization.
+
+\item WS-ReliableMessaging age em termos da confiança da troca de mensagens. Dessa forma, irá garantir que o transporte da mensagem ocorra de maneira confiável mesmo em situações de falha por parte dos envolvidos, e com maior frequência, falhas de rede. Em seu funcionamento, o WS-ReliableMessaging irá informar, por meio de exceções, a ocorrência de mensagens não entregues ao destinatário, possibilitando o seu reenvio. 
+
+\item WS-Policy fornece um mecanismo com estrutura sintática em XML	 para a publicação das políticas de QoS de um Web Service em termos de requerimentos ou de capacidades. Trata-se de uma especificação que trabalha em conjunto a outras especificações e mecanismos para prover negociação de atributos de qualidade na escolha de Web Services.
 
 \end{itemize}
 
@@ -183,8 +186,8 @@ A segurança, como um atributo de qualidade de sistemas de informação, possui alg
 \subsubsection{Disponibilidade ou \textit{Availability}}
 A disponibilidade define o tempo em que o sistema estará operacional enquanto requisitado, portanto respondendo com sucesso a requisições. Tratando-se de serviços, cada um irá possuir uma disponibilidade que irá influenciar diretamente ou indiretamente a disponibilidade dos sistemas que dependem desses serviços, portanto o ambiente SOC possui o desafio de manter-se operacional diante de suas unidades com particularidades próprias. Como possíveis estratégias para mitigar os problemas causados por serviços inoperantes estão a replicação e o balanceamento de carga, além da troca do provedor do serviço. Nesse sentido, o monitoramento, a gerência e a seleção de serviços são processos importantes em SOC e sua automação um dos maiores desafios.
 
-\subsubsection{Confiabilidade}
-A confiabilidade é um atributo relacionado à disponibilidade e trata da capacidade do sistema em operar sem erros. Dessa forma, irá mensurar a frequência de erros ocorridos enquanto o sistema estiver disponível num período de tempo. Mais uma vez, no ambiente distribuído essa capacidade irá depender da confiabilidade dos serviços em composição, mas também do transporte das informações. Portanto, um sistema SOC confiável deverá prezar pela confiabilidade 
+\subsubsection{Confiança}
+A confiança é um atributo relacionado à disponibilidade e trata da capacidade do sistema em operar sem erros. Dessa forma, irá mensurar a frequência de erros ocorridos enquanto o sistema estiver disponível num período de tempo. Mais uma vez, no ambiente distribuído essa capacidade irá depender da confiança dos serviços em composição, mas também do transporte das informações. Portanto, um sistema SOC confiável deverá prezar pela confiança 
 dos serviços e também do mecanismo para troca de mensagens.
 
 \subsubsection{Manutibilidade}
