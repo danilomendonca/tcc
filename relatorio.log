@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  6 MAR 2012 23:59
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  8 MAR 2012 11:46
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -486,7 +486,10 @@ LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/sc' tried instead on input line 225.
 
-(./relatorio.toc)
+(./relatorio.toc
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 24.
+)
 \tf@toc=\write5
 \openout5 = `relatorio.toc'.
 
@@ -547,11 +550,13 @@ File: figs/danilo/BPMN.eps Graphic file (type eps)
 File: figs/danilo/QoS_Model_Stakeholders.eps Graphic file (type eps)
 
 <figs/danilo/QoS_Model_Stakeholders.eps> [14] [15]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 186.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 185.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 185.
  [16]
 
-LaTeX Warning: Citation `ZimmPers2005' on page 17 undefined on input line 200.
+LaTeX Warning: Citation `ZimmPers2005' on page 17 undefined on input line 199.
 
 [17]
 File: figs/danilo/Mapping_Process.eps Graphic file (type eps)
@@ -621,12 +626,12 @@ LaTeX Warning: There were undefined references.
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5034 strings out of 494910
- 64516 string characters out of 1177227
+ 5037 strings out of 494910
+ 64558 string characters out of 1177227
  148881 words of memory out of 3000000
- 8048 multiletter control sequences out of 15000+50000
- 58130 words of font info for 69 fonts, out of 3000000 for 9000
+ 8050 multiletter control sequences out of 15000+50000
+ 59826 words of font info for 70 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
  34i,15n,25p,1711b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (34 pages, 95748 bytes).
+Output written on relatorio.dvi (34 pages, 99764 bytes).

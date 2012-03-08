@@ -146,7 +146,7 @@ Com base nos princípios de SOC, criou-se uma arquitetura responsável por guiar o
 
 %definição de QOS
 
-\subsection{Qualidade de Serviços}
+\section{Qualidade de Serviços}
 
 Por qualidade de serviços ou QoS de um sistema entende-se seus atributos ou requisitos não funcionais. Ou seja, são aspectos qualitativos de estado e não definições de funcionamento, sendo possível citar a performance, a segurança, a disponibilidade, a mantenabilidade, a escalabilidade, etc. Com o amadurecimento e evolução da engenharia de software, tais atributos tornaram-se cruciais para a gerência de riscos e também de custos das aplicações, participando ativamente na definição da arquitetura do sistema e finalmente com peso maior que os próprios requisitos funcionais ao passo que o sistemas aumentam sua ligação a processos de negócio.
 
@@ -155,20 +155,19 @@ Diversos autores se dedicam a definir modelos e métricas para atributos de QoS. 
 %FIGURA COM TODAS OU PRINCIPAIS ATRIBUTOS DE QOS
 \begin{figure}[hbtp]
 	\centering	\includegraphics[width=0.8\textwidth]{figs/danilo/QoS_Model_Stakeholders.eps}
-	\caption{Principais atributos de qualidade de serviços na visão de partes interessadas ou \textit{Stakeholders}. Adaptação de \cite{Balfagih:2009:10.1109}}	
+	\caption{Principais atributos de QoS na visão de partes de \textit{Stakeholders}. Adaptado de \cite{Balfagih:2009:10.1109}.}	
 	\label{fig:QoS_Model_Stakeholders}
 \end{figure}
 
-\subsection{Atributos de QoS}
 
-\subsubsection{Performance}
+\subsection{Performance}
 
 A performance é um atributo relacionado ao tempo. Encontra-se definida no tempo de resposta a uma requisição, na quantidade de requisições por unidade de tempo e na capacidade de atende-las num período determinado \cite{O'Brien:2007:QAS:1270235.1270300}. Nesse sentido, o uso de serviços distribuídos acarreta prejuízos à performance inerentes à rede utilizada, além de processamento extra devido ao tratamento e encaminhamento das mensagens entre serviços, especialmente quando trata-se de formatos baseados em texto, como o XML, que possuem tamanho maior que sua representação binária. Também irá prejudicar a performance o processo de descobrimento e alocação de serviços nas situações em que esse processo não é pré-estabelecido. 
 
-\subsubsection{Interoperabilidade}
+\subsection{Interoperabilidade}
 A interoperabilidade é definida pela capacidade de componentes de um sistema compartilharem informação e operarem de forma acordada\cite{O'Brien:2007:QAS:1270235.1270300}. Assim, mede-se a comunicação e o processamento de informações de maneira independente à fonte dos dados. Visto que o ambiente SOC pressupõe a criação de serviços e, especificamente em SOA, serviços implementados com diversas tecnologias sem prejuízo à intercomunicação, verifica-se que um dos principais benefícios trazidos por essa arquitetura é para a interoperabilidade. Ademais, protocolos já existentes, tal qual o SOAP, realizam a função de troca de informação de maneira interoperável, uma vez que o fazem de forma transparente às aplicações envolvidas. Por fim, o uso de especificações representa um desafio entre avanços para a interoperabilidade, dado que promovem a padronização, mas o uso de especificações incompatíveis ou a sua adesão parcial causará conflitos, comprometendo tal atributo. 
 
-\subsubsection{Segurança}
+\subsection{Segurança}
 A segurança, como um atributo de qualidade de sistemas de informação, possui alguns princípios. 
 
 \begin{itemize}
@@ -183,17 +182,17 @@ A segurança, como um atributo de qualidade de sistemas de informação, possui alg
 
     É imediata a percepção de que a troca de informações entre as unidades lógicas do sistema pode acarretar sérios riscos à segurança, estando os esforços disponíveis para garanti-la limitados pela necessidade de se manter a interoperabilidade e a performance no ambiente SOC, já que requerem a adoção adicional de especificações, protocolos e consequentemente uma maior redundância de informação e processamento.
 
-\subsubsection{Disponibilidade ou \textit{Availability}}
+\subsection{Disponibilidade ou \textit{Availability}}
 A disponibilidade define o tempo em que o sistema estará operacional enquanto requisitado, portanto respondendo com sucesso a requisições. Tratando-se de serviços, cada um irá possuir uma disponibilidade que irá influenciar diretamente ou indiretamente a disponibilidade dos sistemas que dependem desses serviços, portanto o ambiente SOC possui o desafio de manter-se operacional diante de suas unidades com particularidades próprias. Como possíveis estratégias para mitigar os problemas causados por serviços inoperantes estão a replicação e o balanceamento de carga, além da troca do provedor do serviço. Nesse sentido, o monitoramento, a gerência e a seleção de serviços são processos importantes em SOC e sua automação um dos maiores desafios.
 
-\subsubsection{Confiança}
+\subsection{Confiança}
 A confiança é um atributo relacionado à disponibilidade e trata da capacidade do sistema em operar sem erros. Dessa forma, irá mensurar a frequência de erros ocorridos enquanto o sistema estiver disponível num período de tempo. Mais uma vez, no ambiente distribuído essa capacidade irá depender da confiança dos serviços em composição, mas também do transporte das informações. Portanto, um sistema SOC confiável deverá prezar pela confiança 
 dos serviços e também do mecanismo para troca de mensagens.
 
-\subsubsection{Manutibilidade}
+\subsection{Manutibilidade}
 Por manutibilidade entende-se o nível de esforço e custo necessário para realizar correções, modificações e evoluções num sistema. É um atributo diretamente ligado ao desenvolvimento das unidades lógicas e impacta indiretamente na disponibilidade dos serviços existentes e futuros, visto que o tempo de se efetuarem correções ou novas implementações será afetado \cite{ClementsKazmanKlein01}. É possível ainda encontrar referências a dois subtipos desse atributo, sendo esses a modificabilidade e a testabilidade. O primeiro segue a linha geral que define a manutibilidade, e o segundo define em específico a capacidade de se operar testes nas soluções, seja para avaliação de desempenhos diversos ou pela capacidade em encontrar erros por meio do \textit{debbuging}.
 
-\subsubsection{Escalabilidade}
+\subsection{Escalabilidade}
 
 A escalabilidade diz respeito à capacidade do sistema de suportar escalas crescentes de uso ou modificações sem tornar-se indisponível ou degradar outros aspectos de qualidade. Assim, um sistema será escalável se possibilitar o agregamento de mais usuários, via a escalabilidade de uso, ou de novas funcionalidades via a escalabilidade das funções do sistema. 
 
