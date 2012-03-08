@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  8 MAR 2012 11:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  8 MAR 2012 12:33
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -571,11 +571,11 @@ File: figs/danilo/Bubble_Plot.eps Graphic file (type eps)
 
  (./abordagem.tex
 Cap\'{\i }tulo 3.
-) [22
+[22
 
 
 
-] (./relatorio.bbl
+]) [23] (./relatorio.bbl
 Underfull \hbox (badness 3547) in paragraph at lines 74--78
 []\T1/ptm/m/n/10.95 JESTON, J.; NE-LIS, J. \T1/ptm/m/it/10.95 Bu-si-ness Pro-ce
 ss Ma-na-ge-ment: Prac-ti-cal Gui-de-li-nes to Suc-ces-
@@ -587,7 +587,7 @@ Underfull \hbox (badness 4832) in paragraph at lines 74--78
 inemann, 2008. ISBN 9780750686563. Dis-po-ní-vel em:
  []
 
-[23
+[24
 
 
 ]
@@ -608,12 +608,12 @@ Underfull \hbox (badness 7415) in paragraph at lines 95--98
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [24]
+) [25]
 \c@noAnexo=\count127
 \tf@thm=\write7
 \openout7 = `relatorio.thm'.
 
- [25
+ [26
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
 (./simbolos.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux))
@@ -628,10 +628,10 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  5037 strings out of 494910
  64558 string characters out of 1177227
- 148881 words of memory out of 3000000
+ 149881 words of memory out of 3000000
  8050 multiletter control sequences out of 15000+50000
  59826 words of font info for 70 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
  34i,15n,25p,1711b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (34 pages, 99764 bytes).
+Output written on relatorio.dvi (35 pages, 105700 bytes).

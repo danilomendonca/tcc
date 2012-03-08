@@ -32,6 +32,8 @@
 \contentsline {subsection}{\numberline {2.3.4}Definição de Categorias e Extração de Dados}{20}
 \contentsline {subsection}{\numberline {2.3.5}Mapeamento e Apresentação de Dados}{21}
 \contentsline {chapter}{\numberline {3}Abordagem}{22}
-\contentsline {section}{\numberline {3.1}Definição do Foco de Estudos}{22}
-\contentsline {chapter}{REFERÊNCIAS}{23}
-\contentsline {chapter}{{Anexos}}{25}
+\contentsline {section}{\numberline {3.1}Pesquisa Preliminar}{22}
+\contentsline {section}{\numberline {3.2}Systematic Mapping Study}{22}
+\contentsline {subsection}{\numberline {3.2.1}Protocolo}{22}
+\contentsline {chapter}{REFERÊNCIAS}{24}
+\contentsline {chapter}{{Anexos}}{26}
