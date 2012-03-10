@@ -111,13 +111,20 @@ ISBN 0-7695-2960-7. Dispon{\'\i}vel em:
   Methods and Case Studies}. [S.l.]: Addison-Wesley, 2001.
 ISBN 978-0-201-70482-2.}
 
+\bibitem{ZimmPers2005}
+\abntrefinfo{Zimmermann, Tomlinson e Peuser}{ZIMMERMANN; TOMLINSON;
+  PEUSER}{2005}
+{ZIMMERMANN, O.; TOMLINSON, M.; PEUSER, S. \emph{Perspectives on Web services}.
+  Berlin [u.a.]: Springer, 2005.
+ISBN 3-540-00914-0.}
+
 \bibitem{Kitchenham_Charters_2007}
 \abntrefinfo{Kitchenham e Charters}{KITCHENHAM; CHARTERS}{2007}
 {KITCHENHAM, B.; CHARTERS, S. Guidelines for performing systematic literature
   reviews in software engineering.
 \emph{Version}, v.~2, n. EBSE 2007-001, p. 2007?01, 2007.}
 
-\bibitem{springerlink:10.1007/s00766-005-0021-6}
+\bibitem{Wieringa:10.1007/s00766-005-0021-6}
 \abntrefinfo{Wieringa et al.}{WIERINGA et al.}{2006}
 {WIERINGA, R. et al. Requirements engineering paper classification and
   evaluation criteria: a proposal and a discussion.

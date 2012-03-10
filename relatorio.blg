@@ -9,50 +9,52 @@ A level-1 auxiliary file: abordagem.aux
 The style file: abnt-num.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: relatorio.bib
+Warning--I didn't find a database entry for "ws-i-oasis"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 140733193394032.
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-num.bst versão 1.42.2.1           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 16 entries,
+You've used 17 entries,
             6480 wiz_defined-function locations,
-            1292 strings with 13184 characters,
-and the built_in function-call counts, 14003 in all, are:
-= -- 1290
-> -- 441
+            1302 strings with 13369 characters,
+and the built_in function-call counts, 14869 in all, are:
+= -- 1356
+> -- 482
 < -- 23
-+ -- 215
-- -- 132
-* -- 996
-:= -- 1822
-add.period$ -- 80
-call.type$ -- 16
-change.case$ -- 180
-chr.to.int$ -- 31
-cite$ -- 16
-duplicate$ -- 691
-empty$ -- 1030
-format.name$ -- 680
-if$ -- 3393
++ -- 231
+- -- 144
+* -- 1063
+:= -- 1932
+add.period$ -- 84
+call.type$ -- 17
+change.case$ -- 194
+chr.to.int$ -- 32
+cite$ -- 17
+duplicate$ -- 733
+empty$ -- 1091
+format.name$ -- 741
+if$ -- 3600
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 294
-newline$ -- 94
-num.names$ -- 64
-pop$ -- 419
+missing$ -- 315
+newline$ -- 99
+num.names$ -- 68
+pop$ -- 451
 preamble$ -- 1
-purify$ -- 66
+purify$ -- 71
 quote$ -- 0
-skip$ -- 741
+skip$ -- 781
 stack$ -- 1
-substring$ -- 547
-swap$ -- 364
+substring$ -- 564
+swap$ -- 384
 text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 5
 warning$ -- 0
-while$ -- 106
+while$ -- 111
 width$ -- 0
-write$ -- 247
+write$ -- 260
+(There was 1 warning)

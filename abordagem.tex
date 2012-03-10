@@ -9,11 +9,12 @@ Dessa forma, a leitura de jornais, artigos e materiais de conferências precedeu 
 
 Tal procedimento se mostrou útil, uma vez que o SOC, como já citado no capítulo anterior, representa um vasto aglomerado de conceitos, modelos, arquiteturas, tecnologias, especificações e ferramentas, de forma que a discussão sobre os tópicos que a envolvem por meio de reuniões e troca de mensagens eletrônicas formou uma base mais sólida para o início do presente trabalho.
 
-\section{Systematic Mapping Study}
 
-\subsection{Protocolo}
+\section{Protocolo}
 
 Um protocolo determina, entre outros, um método processual para a realização de determinado estudo. Tratando-se de um mapeamento sistemático de estudos, o protocolo irá firmar definições a serem seguidas durante o processo de mapeamento. Esse é a primeira atividade desenvolvida e seu artefato poderá ser atualizado posteriormente conforme a experiência adquirida durante o processo venha a exigir modificações.
+
+\subsection{Questões de Pesquisa}
 
 A primeira definição feita num protocolo se refere às questões de pesquisa ou \textit{research questions}. Trata-se das questões que irão orientar o restante do mapeamento e estão diretamente relacionadas às motivações que levaram à sua execução. Além disso, dado que um MS visa principalmente prover uma visão panorâmica de uma área de pesquisa, associando dados quantitativos a categorias que determinam tipo e resultados obtidos \cite{Petersen_Feldt_Mujtaba_Mattsson_2007}, tais aspectos também afetam diretamente a forma e conteúdo das questões de pesquisa.
 
@@ -21,9 +22,13 @@ Atendendo tais considerações, as seguintes RQ foram definidas:
 
 \begin{itemize}
 
-\item RQ1: \textbf{Quais tópicos da Computação Orientada a Serviços foram mais abordados com maior frequência?}
+\item RQ1: \textbf{Quais tópicos da Computação Orientada a Serviços foram abordados com maior frequência?}
 
 \end{itemize}
+
+Esta primeira questão relaciona-se à necessidade de se conhecer quais temas receberam maior interesse científico, relacionando frequência de publicações com determinados temas, além de prover dados que poderão contribuir para a identificação de temas até então desconsiderados.
+
+Dessa forma, a RQ1 irá trabalhar com dados não pré-definidos, seguindo o trabalho iterativo de identificação de palavras-chaves, agrupamento e classificação dos artigos, conforme apresentado em \cite{Petersen_Feldt_Mujtaba_Mattsson_2007}. Tal procedimento dá característica orgânica ao mapeamento, uma vez que permite a reformulação dos temas assim como a adição de outros que, por motivos baseados na falta de uma visão completa sobre a área em questão, que até o momento encontra-se em constante processo de modificação e evolução, não foram anteriormente identificados.   
 
 
 \begin{itemize}
@@ -32,15 +37,26 @@ Atendendo tais considerações, as seguintes RQ foram definidas:
 
 \end{itemize}
 
+A segunda questão visa identificar quais modelos arquiteturais, de forma ampla e sem uma definição estrita daquilo que possa via a ser definido como um modelo arquitetural. Dessa forma dá-se a liberdade necessária para a definição espontânea de diversos casos que serão tratados durante a fase de análise dos dados obtidos.
+
+Como principais modelos arquiteturais, definiu-se aqueles estabelecidos pelo SOA, pelo uso direto de Web Services, pelo uso da arquitetura REST, ou por modelos relacionados ao Cloud Computing. Outros... (é preciso decidir pela inclusão de outros modelos arquiteturais).
+
 \begin{itemize}
 
 \item RQ3: \textbf{Quais os métodos de pesquisa e contextos de contribuição ocorreram com maior frequência?}
 
 \end{itemize}
 
-Essa primeira pergunta tem por objetivo esclarecer aspectos metodológicos das pesquisas e identificar em quais contextos tais contribuições mais ocorrem. Tal questão está diretamente relacionada com as categorias para classificação definidas ainda nesse capítulos, sendo elas o \textbf{Tipo de Pesquisa},  i.e. Validação, Avaliação, Solução, Opinião, Filosófico e Pessoal e o \textbf{Contexto de Contribuição}, i.e. Modelo, Métrica, Método, Processo e Ferramenta. 
+A última questão tem por objetivo esclarecer aspectos metodológicos das pesquisas e identificar em quais contextos tais contribuições são mais frequentes. Tal questão está diretamente relacionada às categorias para classificação, sendo elas o \textbf{Tipo de Pesquisa},  e.g. Validação, Avaliação, Solução, Opinião, Filosófico e Pessoal e o \textbf{Contexto de Contribuição}, e.g. Modelo, Métrica, Método, Processo e Ferramenta. 
+
+Por meio dessa questão será possível determinar como os trabalhos de pesquisa relacionados ao SOC são executados, ou seja, quais abordagens científicas, qual teor da pesquisas e quais aspectos são tratados por elas. Essa identificação permite relacionar as frequências encontradas em cada categoria com o estado da ciência que vem sendo feita, informação que terá utilidade em diferentes perspectivas, seja na visão do pesquisador que deseja orientar seu esforço, seja na visão das partes interessadas no uso e provimento de soluções orientadas a serviço. Em suma, esses dados possibilitam uma definição aproximada do atual estado e da direção a ser tomada nos próximos anos pela Computação Orientada a Serviços.
 
 
+\subsection{Frase de Busca}
 
+A escolha dos termos de busca seguem os conceitos apresentados no capítulo \ref{embasamento} de embasamento teórico. Assim, para a população do MS, definiu-se os termos, notavelmente na língua inglesa para contemplar os fóruns internacionais utilizados na busca: \textbf{Service Oriented Computing} e \textbf{SOC} representando tudo aquilo que engloba a orientação a serviços na computação, \textbf{Service Oriented Architecture} ou \textbf{SOA} para representar a arquitetura que melhor representa o paradigma, além do termo \textbf{Service Orientation} para incluir o próprio paradigma da orientação a serviços, com seu design e princípios.
 
+Como intervenção, escolheu-se os termos \textbf{Quality of Services} e \textbf{QoS}, haja vista que são termos unânimes e que representam com precisão o aspecto focado pelo atual mapeamento de estudos, isto é, a qualidade. O objetivo aqui é incluir qualquer publicação que realize, avalie, valide ou trate de outras formas das intervenções nesse importante tópico da orientação a serviços. Conforme será mencionado com os critérios de exclusão, não foram inclusos no mapeamento as publicações que, mesmo dentro do escopo, somente representam a opinião pessoal de seus autores, denominados de \textit{opinion papers} e definidos em \cite{Wieringa:10.1007/s00766-005-0021-6}.
+
+Em relação aos termos de comparação e resultados esperados, os mesmos não foram utilizados na frase de busca utilizada. Isso deve-se à própria abordagem e objetivo do Systematic Mapping Study que espera obter uma visão ampla e não específica das publicações, consequentemente não há intervenções a serem comparadas e nem determinados resultados para os estudos, o que restringiria demasiadamente a amostra de publicações analisadas e exigiria maior profundidade na leitura e extração de dados, caso esse apropriado e recorrente num trabalho de Systematic Literature Review, conforme já exposto no capítulo \ref{abordagem}.
 
