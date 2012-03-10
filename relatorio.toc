@@ -36,5 +36,5 @@
 \contentsline {section}{\numberline {3.2}Protocolo}{22}
 \contentsline {subsection}{\numberline {3.2.1}Questões de Pesquisa}{22}
 \contentsline {subsection}{\numberline {3.2.2}Frase de Busca}{24}
-\contentsline {chapter}{REFERÊNCIAS}{25}
-\contentsline {chapter}{{Anexos}}{27}
+\contentsline {chapter}{REFERÊNCIAS}{26}
+\contentsline {chapter}{{Anexos}}{28}
