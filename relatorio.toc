@@ -36,5 +36,10 @@
 \contentsline {section}{\numberline {3.2}Protocolo}{22}
 \contentsline {subsection}{\numberline {3.2.1}Questões de Pesquisa}{22}
 \contentsline {subsection}{\numberline {3.2.2}Frase de Busca}{24}
-\contentsline {chapter}{REFERÊNCIAS}{26}
-\contentsline {chapter}{{Anexos}}{28}
+\contentsline {subsection}{\numberline {3.2.3}Fóruns de Busca}{25}
+\contentsline {subsubsection}{\numberline {3.2.3.1}Fóruns Principais}{25}
+\contentsline {subsubsection}{\numberline {3.2.3.2}Mecanismos de Busca Adicionais}{26}
+\contentsline {subsection}{\numberline {3.2.4}Populamento da Dados com Web Crawler}{26}
+\contentsline {subsection}{\numberline {3.2.5}Definição dos Critérios de Inclusão e Exclusão}{27}
+\contentsline {chapter}{REFERÊNCIAS}{29}
+\contentsline {chapter}{{Anexos}}{31}

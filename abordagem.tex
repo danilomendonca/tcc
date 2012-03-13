@@ -72,3 +72,73 @@ Percebe-se que os parênteses separam o primeiro grupo de termos que definem a po
 
 É importante notar que especificou-se, para cada mecanismo utilizado, a delimitação da área buscada dentro das publicações a somente o resumo ou \textit{abstract} de cada publicação. Tal decisão visa aumentar a precisão da busca reduzindo os resultados indesejados, isto é, que não estão no escopo do mapeamento, uma vez que os termos de busca poderiam estar entre as seções internas que compõem o artigo, porém dificilmente seria empregada pelo resumo sem que o foco do artigo estivesse bem relacionado aos termos ali citados, dada a característica sintética desse espaço.
 
+\subsection{Fóruns de Busca}
+
+Para que a qualidade de uma MS seja alcançada e imprecisões nos resultados obtidos sejam evitados e permaneçam num patamar mínimo, é essencial que se utilize fóruns de pesquisa apropriados. Isso significa que uma avaliação dos principais meios de publicação de artigos deverá identificar quais são os mais adotados para o registro de pesquisas relacionadas ao tema em questão. 
+
+\subsubsection{Fóruns Principais}
+
+O IEEE, ou Institute of Electrical and Electronics Engineers é uma associação sem fins lucrativos que acolhe milhares de membros pelo mundo e \textit{produz} 30\% da literatura mundial nos campos da engenharia elétrica, eletrônica e em ciência da computação \cite{ieee_online}. Por esse motivo e pela disposição de um mecanismo de busca online, tal fórum foi imediatamente considerado e eleito como fonte de pesquisas.
+
+À partir da busca realizada, foram encontrados 597 resultados, os quais foram adicionados à nossa base de dados de publicações.
+
+Outro grande e conhecido fórum é o ACM ou \textit{Association for Computing Machinery}, considerada uma sociedade científica e educacional de computação de grande renome. Um número considerável de publicações são submetidas a esse fórum, que possui um mecanismo online próprio que permite a busca parametrizada. Assim, dada a convergência com a área de pesquisa mapeada e por se tratar de uma entidade de referência, o mesmo também foi eleito.
+
+Com a busca realizada, foram encontrados 
+
+\subsubsection{Mecanismos de Busca Adicionais}
+
+O Springer constitui uma companhia global de publicações. Apesar de ter o maior foco em livros, também inclui jornais e artigos científicos. Com base na busca preliminar com os termos definidos, encontrou-se um número relevante de resultados dos quais decidiu-se pela inclusão no mapeamento.
+
+Por último, um outro mecanismo de busca, denominado ScienceDirect, foi selecionado para testes. Este também dispõe de grande quantidade de publicações de jornais, livros e trabalhos de referência e pertence ao grupo Elsevier, também reconhecido mundialmente.  Uma pesquisa com os termos definidos para o mapeamento revelou quantidade significativa de resultados que foram também inclusos. 
+
+A seguir, uma lista dos endereços utilizados para acessar cada um dos mecanismos citados.
+
+\begin{itemize}
+
+\item{IEEE: http://ieeexplore.ieee.org}
+\item{ACM: http://dl.acm.org}
+\item{Springer: http://www.springerlink.com}
+\item{ScienceDirect: http://ieeexplore.ieee.org}
+
+\end{itemize}
+
+\subsection{Populamento da Dados com Web Crawler}
+
+Havendo encontrado um número em três dígitos de publicações a serem analisadas, demonstrou-se importante o uso de um mecanismo automatizado para compor a base de dados a ser analisada na fase seguinte do MS. Tendo como interface comum a todos mecanismos de busca sítios da internet acessíveis via HTTP, o uso de um \textit{web crawler} mostrou-se eficaz para a tarefa de copiar os metadados de cada publicação, incluindo os resumos, para a base de dados da ferramenta que servirá de suporte para o trabalho de mapeamento e cuja descrição encontra-se no apêndice 1.
+
+Um \textit{web crawler} opera efetuando requisições HTTP para um servidor web, analisando o conteúdo recebido e, tratando-se de um documento HTML, irá buscar por links que apontem a outros endereços, sendo o número de links desde o primeiro um parâmetro configurável. Uma implementação adequada desse mecanismo pode justamente atender à necessidade de se recuperar informações de publicações acessíveis via internet e cadastra-las num banco de dados, sendo a URL inicial aquela formada a partir do primeiro resultado de busca com os termos definidos. 
+
+O resultado desse procedimento foi a inclusão automatizada de todos os resultados obtidos com o uso dos termos de população e intervenção como frase de busca. Tal abordagem contribuiu para a velocidade e amplitude do presente mapeamento de estudos.
+
+\subsection{Definição dos Critérios de Inclusão e Exclusão}
+
+Para que a classificação obtida tenha a qualidade desejada, mantendo a coerência e reduzindo possíveis imprecisões, além de aumentar a eficiência do restante do processo como um todo, é importante que sejam definidos critérios para a inclusão de resultados, i.e., o mantenimento daqueles que já foram obtidos nos resultados de busca e restrições para a adição de qualquer publicação proveniente de outros meios, e para a exclusão, ou seja, a remoção de publicações que constam como resultado das buscas efetuadas, porém não atendem a exigências tais quais escopo semântico, tipo de pesquisa, número de páginas, entre outras. 
+
+Como critérios de inclusão, definiu-se que: 
+
+\begin{itemize}
+
+\item{Seriam mantidas ou aceitas novas publicações em que o tema da qualidade de serviços ou aspectos não funcionais da Computação Orientada a Serviços constasse explicitamente e de maneira objetiva no resumo dos mesmos, sem que esses termos somente o integrem de forma pontual e não relacionada a área central da pesquisa. A análise desse critério exige, em casos onde não há clareza somente por meio do resumo, a rápida checagem dos demais capítulos.}  
+
+\item{Seriam mantidas ou aceitas novas publicações que se caracterizassem como um artigo, relatório técnico ou \textit{gray literature}. Não foram inclusos livros. Nota-se que esta monografia utiliza o termo artigo como sinônimo de publicação, abrangendo, nesses casos, os demais tipos citados nesse critério de inclusão.}  
+
+\end{itemize}
+
+Para os critérios de exclusão, definiu-se que:
+
+
+\begin{itemize}
+
+\item{Seriam excluídas ou não aceitas as publicações fora do domínio da ciência da computação.}  
+
+\item{Seriam excluídos ou não aceitos os artigos que representem apenas opiniões sobre o tema por elas tratado, conforme definição em \cite{Wieringa:10.1007/s00766-005-0021-6}}.  
+
+\item{Seriam excluídas ou não aceitas as publicações com somente resultados preliminares, e.g. artigos curtos ou \textit{short paper}. Como regra prática e rápida para a verificação desse último requisito, foi usado o parâmetro o número de páginas, sendo excluídos aqueles artigos com cinco ou menos páginas.}  
+
+\end{itemize}
+
+Assim definidos, deu-se início à verificação dos mesmos em todos os registros existentes no banco de dados por meio da ferramenta de suporte, acessível de qualquer dispositivo com conexão à internet e embutido com navegador de páginas. Como tática para maior eficiência, dividiu-se a análise entre grupos de duas pessoas, ficando cada grupo responsável por uma quantidade igual de análises.
+
+As publicações excluídas permanecem na base de dados possibilitando com que outros participantes possam reavaliar e, caso necessário, confrontar a decisão feita. As demais, isto é, aquelas incluídas para o mapeamento, são destacadas. Casos que gerem dúvidas em algum dos critérios podem ser discutidos em grupo para um melhor resultado.
+
