@@ -84,7 +84,7 @@ Web Services surgiram anteriormente ao SOC, oferecendo uma integração transparen
 
 \item O SOAP, protocolo de troca de mensagens em formato XML e que possibilita o uso protocolos de transporte conhecidos da internet, i.e. HTTP, SMTP, ou outros independentes, passou a ser usado em Web Services mais simples e logo em Web Services descritos com WSDL e associados a repositórios UDDI, chamados de \textit{Big Web Services} \cite{Pautasso:2008:RWS:1367497.1367606}. Além de promover a integração de mensagens, o SOAP também possibilita a interoperabilidade de chamadas RPC por meio do encapsulamento dessas chamadas. 
 
-\item WS-I, que tem a função de definir referências e guiar a adoção de especificações de Web Services com intuito de manter a interoperabilidade por meio de perfis denominados WS-I Profiles. Os \textit{profiles} são diretrizes do tipo melhores práticas para um grupo selecionado de especificações, em versões estabelecidas, com objetivo de assistir à comunidade na criação e implantação de Web Services interoperáveis \cite{ws-i-oasis}.
+\item WS-I, que de acordo com sua especificação tem a função de definir referências e guiar a adoção de especificações de Web Services com intuito de manter a interoperabilidade por meio de perfis denominados WS-I Profiles. Os \textit{profiles} são diretrizes do tipo melhores práticas para um grupo selecionado de especificações, em versões estabelecidas, com objetivo de assistir à comunidade na criação e implantação de Web Services interoperáveis.
 
 \end{itemize}
 
@@ -135,15 +135,21 @@ O principal resultado da aplicação do design estabelecido pelo SOC está na criaç
 %ok! 1.1.0
 
 
-\subsection{Standardized Service Contract}
+\subsubsection{Standardized Service Contract}
 
 Este princípio advoca pela padronização dos artefatos que efetuam o contrato entre provedor e consumidor de serviços de forma técnica ou eletrônica, ou seja, que serão tratados programaticamente. Portanto, requerem considerações específicas em sua elaboração e design, levando em conta a natureza e quantidade do conteúdo neles presentes \cite{Erl:2007:SPS:1296147}.
 
-Um contrato de serviços tem a finalidade de intermediar a relação entre as partes, separando e desacoplando a descrição das funcionalidades da sua implementação. O objetivo de padronizar tais contratos está na premissa da reusabilidade, uma vez que as interfaces farão o papel de conectar um serviço a diferentes consumidores, reduzindo a necessidade de transformações de dados através do uso de suas representações unificadas. Tal medida também aumenta a interoperabilidade entre os serviços com contratos padronizados.
+Um contrato de serviços tem a finalidade de intermediar a relação entre as partes, separando e desacoplando a descrição das funcionalidades da sua implementação. O objetivo de padronizar tais contratos está na premissa da reusabilidade e da interoperabilidade dos serviços, uma vez que as interfaces farão o papel de conecta-los a diferentes consumidores.
 
-A composição dos contratos pode ser feita com um ou mais artefatos. Tratando-se de \textit{big web services} \cite{Pautasso:2008:RWS:1367497.1367606}, três documentos são utilizados. O WSDL descreve as funcionalidades do serviço, bem como a natureza e tipo dos dados envolvidos. Desta forma, sua padronização impacta diretamente no reuso de tais operações, evitando também sua duplicação em outros serviços. Dada sua estrutura em XML, é preciso haver esquemas que definam os modelos de dados utilizados pela descrição do serviço. Isto é possível com o uso de documentos \textit{XML schemas}. A padronização de tais esquemas possibilita a desejável redução na conversão de dados, uma vez que operações que retornem o tipo de dados poderão compartilhar um mesmo \textit{XML schema}. Por último, é preciso definir quais políticas serão utilizadas pelos serviços, função realizada pelos documentos de definição de políticas, ou \textit{WS-Policy}. 
+A composição dos contratos pode ser feita com um ou mais artefatos. Tratando-se de \textit{big web services} \cite{Pautasso:2008:RWS:1367497.1367606}, três documentos são utilizados. O WSDL descreve as funcionalidades do serviço, bem como a natureza e tipo dos dados envolvidos. Desta forma, sua padronização impacta diretamente no reuso de tais operações, evitando também sua duplicação em outros serviços. Dada sua estrutura em XML, é preciso haver esquemas que definam os modelos de dados utilizados pela descrição do serviço. Isto é possível com o uso de documentos \textit{XML schemas}. A padronização desses esquemas possibilita a desejável redução na conversão de dados, uma vez que operações que retornem um tipo semelhante de dados poderão compartilhar um mesmo \textit{XML schema}. Por último, é preciso definir quais políticas serão utilizadas pelos serviços, função realizada pelos documentos de definição de políticas, ou \textit{WS-Policy}. Mais uma vez, a padronização é importante para que categorias de políticas sejam definidas e reutilizadas, aumentando assim o reuso de serviços e sua interoperabilidade.
 
-A principal exigência do princípio em questão está na definição das funcionalidades desempenhadas pelo serviço, assim como a descrição de modelos e tipos de dados utilizados e possíveis políticas adotadas. 
+\begin{figure}[hbtp]
+	\centering	\includegraphics[width=0.7\textwidth]{figs/danilo/Services_Contract.eps}
+	\caption{Documentos de contrato de um \textit{big web service}. Adaptação de \cite{Erl:2007:SPS:1296147}}	
+	\label{fig:Services_Contract}
+\end{figure}
+
+\subsubsection{Service Loose Coupling}
 
 %definindo SOA 
 \subsection{Service Oriented Architecture}
@@ -164,7 +170,7 @@ Diversos autores se dedicam a definir modelos e métricas para atributos de QoS. 
 %FIGURA COM TODAS OU PRINCIPAIS ATRIBUTOS DE QOS
 \begin{figure}[hbtp]
 	\centering	\includegraphics[width=0.8\textwidth]{figs/danilo/QoS_Model_Stakeholders.eps}
-	\caption{Principais atributos de QoS na visão de partes de \textit{Stakeholders}. Adaptado de \cite{Balfagih:2009:10.1109}.}	
+	\caption{Principais atributos de QoS na visão de partes de \textit{Stakeholders}. Adaptação de \cite{Balfagih:2009:10.1109}.}	
 	\label{fig:QoS_Model_Stakeholders}
 \end{figure}
 
