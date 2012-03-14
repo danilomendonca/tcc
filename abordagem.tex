@@ -47,7 +47,7 @@ Como principais modelos arquiteturais, definiu-se aqueles estabelecidos pelo SOA
 
 \end{itemize}
 
-A última questão tem por objetivo esclarecer aspectos metodológicos das pesquisas e identificar em quais contextos tais contribuições são mais frequentes. Tal questão está diretamente relacionada às categorias para classificação, sendo elas o \textbf{Tipo de Pesquisa},  e.g. Validação, Avaliação, Solução, Opinião, Filosófico e Pessoal e o \textbf{Contexto de Contribuição}, e.g. Modelo, Métrica, Método, Processo e Ferramenta. 
+A última questão tem por objetivo esclarecer aspectos metodológicos das pesquisas e identificar em quais contextos tais contribuições são mais frequentes. Tal questão está diretamente relacionada a categorias utilizadas para a classificação, sendo elas o \textbf{Tipo de Pesquisa},  e.g. validação, avaliação e solução, o \textbf{Tipo de Contribuição}, e.g. modelo, método e ferramenta além do \textbf{Contexto}, e.g. SLA, performance, segurança, disponibilidade e confiança. Todas as categorias usadas serão apresentadas e descritas ainda neste capítulo.
 
 Por meio dessa questão será possível determinar como os trabalhos de pesquisa relacionados ao SOC são executados, ou seja, quais abordagens científicas, qual teor da pesquisas e quais aspectos são tratados por elas. Essa identificação permite relacionar as frequências encontradas em cada categoria com o estado da ciência que vem sendo feita, informação que terá utilidade em diferentes perspectivas, seja na visão do pesquisador que deseja orientar seu esforço, seja na visão das partes interessadas no uso e provimento de soluções orientadas a serviço. Em suma, esses dados possibilitam uma definição aproximada do atual estado e da direção a ser tomada nos próximos anos pela Computação Orientada a Serviços.
 
@@ -140,5 +140,83 @@ Para os critérios de exclusão, definiu-se que:
 
 Assim definidos, deu-se início à verificação dos mesmos em todos os registros existentes no banco de dados por meio da ferramenta de suporte, acessível de qualquer dispositivo com conexão à internet e embutido com navegador de páginas. Como tática para maior eficiência, dividiu-se a análise entre grupos de duas pessoas, ficando cada grupo responsável por uma quantidade igual de análises.
 
-As publicações excluídas permanecem na base de dados possibilitando com que outros participantes possam reavaliar e, caso necessário, confrontar a decisão feita. As demais, isto é, aquelas incluídas para o mapeamento, são destacadas. Casos que gerem dúvidas em algum dos critérios podem ser discutidos em grupo para um melhor resultado.
+As publicações excluídas permanecem na base de dados possibilitando com que outros participantes possam reavaliar e, caso necessário, confrontar a decisão feita. As demais, isto é, aquelas incluídas para o mapeamento, são destacadas. Casos que gerem dúvidas em algum dos critérios podem ser discutidos em grupo para um melhor resultado. No entanto, dado o número elevado de análises a serem feitas, a maioria das análises feitas no presente estudo não foi executada com redundância.
+
+\subsection{Categorias de Classificação}
+
+As categorias escolhidas para a classificação dos estudos estão relacionadas às questões de pesquisa do mapeamento, sobretudo à questão de número dois. Relativas a essa, temos as seguintes opções de classificação:
+
+\begin{itemize}
+
+\item \textbf{Tipos de Pesquisa}, conforme definidos em \cite{Wieringa:10.1007/s00766-005-0021-6}
+
+\begin{itemize}
+
+	\item Artigo de Solução, que consiste numa proposta ainda desconhecida ou na extensão de uma solução já existente incorporando novos aspectos. Demonstra-se o potencial da solução por meio de um ou mais experimentos ou por uma linha de argumentos consistente.
+
+	\item Artigo de Validação, que consiste na elaboração de experimentos formais e rigorosos para a validação de determinada solução antes proposta ou elaborada por terceiros e que ainda não tenham sido testadas na prática. 
+
+	\item Artigo de Avaliação, que se baseia na implementação de soluções já existentes para avaliar seu funcionamento na prática, trazendo informações sobre problemas e benefícios encontrados.
+	
+	\item Artigo Filosóficos, que tem a finalidade de estruturar uma área de conhecimentos em modelos taxonômicos ou conceituais.
+
+	\item Artigo de Experiência, que está baseado na experiência pessoal do pesquisador na prática com determinada solução.
+
+\end{itemize}
+
+\item \textbf{Tipos de Contribuição}
+
+	\begin{itemize}
+	
+		\item Modelo, o que implica a elaboração, construção, alteração, evolução ou qualquer intervenção num determinado modelo, que inclui modelos arquiteturais, de referência, de processo, e outros tipos que modelam aspectos abstratos ou da realidade relacionados ao tema do mapeamento. São itens reutilizáveis, práticas consagradas pela indústria por meio de especificações. 
+		
+		\item Métricas, que consistem em propriedades, atributos ou medidas para caracterizar determinado modelo em termos funcionais ou não funcionais. Em geral, as métricas são mensuráveis e servem para quantizar o estado de um sistema, porém há aquelas que não expressam quantidade, a menos que haja uma abstração por parte do modelo adotado que irá associar grandezas mensuráveis a determinados estados, por exemplo o atrelamento de parâmetros de segurança a níveis quantificados que poderiam determinar a segurança de um sistema por meio de números representativos.
+		
+		\item Método, que define de maneira mais abstrata uma técnica ou procedimento e que geralmente atravessam vários contextos, podendo seguir abordagens teóricas ou modelos.
+		
+		\item Processo, que possui característica mais concreta a formaliza de maneira sequencial a implementação ou implantação de um modelo, técnica, procedimento ou passos específicos através de etapas.
+			
+		\item Ferramenta, que tem o papel de auxiliar a execução e gerência de modelos, métodos e processos, entre outras atividades, podendo ou não automatiza-las.
+				
+	\end{itemize}
+	
+\item \textbf{Contextos}, conforme definidos no capítulo \ref{embasamento}
+
+	\begin{itemize}
+	
+		\item SLA
+		\item Segurança
+		\item Performance
+		\item Disponibilidade
+		\item Confiabilidade
+		\item Modificabilidade 
+		\item Testabilidade
+		\item Escalabilidade
+		\item Custo
+		\item Outros
+							
+	\end{itemize}
+
+\item \textbf{Modelos Arquiteturais}, estando esses relacionados à segunda questão de pesquisa do mapeamento. 
+
+	\begin{itemize}
+	
+		\item SOA, para publicações que se referem à Arquitetura Orientada a Serviços de forma direta ou por meio de tecnologias associadas.
+		
+		\item Cloud, para abranger pesquisas cujo foco está na arquitetura em nuvem, tópico mais recente e complementar ao SOA e bastante citado em publicações mais recentes.
+		
+		\item Web services, no que se refere ao uso de protocolos como o SOAP e especificações diversas WS-*. Este tipo está entre os mais citados, sobretudo aquele definido em \cite{Pautasso:2008:RWS:1367497.1367606}.
+		
+		\item REST, para a classificação de pesquisas que tratem especificamente ou conjuntamente dessa arquitetura para serviços.
+		
+		\item Outros, uma vez que diferentes modelos arquiteturais poderão ser identificados.
+	
+	\end{itemize}
+
+\end{itemize}
+
+
+\subsection{Extração de Dados}
+
+A passagem mais sensível de um mapeamento está na extração de dados que irão determinar a escolha de categorias para cada publicação analisada. Terminada a inclusão e exclusão dos registros, a mesma distribuição entre os participantes foi mantida com intuito de prover um reencontro entre analisador e publicação já avaliada na fase precedente, procedimento esse que irá aumentar a precisão da escolha pela inclusão feita e a eficiência da extração dos dados uma vez que o participante já passou pela mesma publicação anteriormente. Desta forma, seguiu-se a etapa com o uso da ferramenta de suporte que proporciona ubiquidade e sincronia ao trabalho de extração, sendo possível visualizar a classificação feita por outros participantes, o que aumenta a troca de informações e alinha os critérios e conceitos utilizados entre os envolvidos.
 

@@ -131,15 +131,24 @@ Um dos princípios da orientação a serviços está no alinhamento entre modelo de n
 
 
 %definição de serviços - importante
-O principal resultado da aplicação do design estabelecido pelo SOC está na criação de unidades lógicas denominadas serviços.  Assim, ao invés de aplicações isoladas que trazem consigo todas as funcionalidades, são criadas unidades coesas, granulares, abstratas e de baixo acoplamento e alta interoperabilidade, de operação preferencialmente \textit{stateless} e cujo acesso é feito por uma interface que encapsula sua lógica e seu funcionamento é bem descrito, sendo garantido por um contrato. Com isso, é possível realizar combinações ágeis que irão servir uma ou, idealmente, várias aplicações por meio do reuso e da composição orquestrada de serviços. 
+O principal resultado da aplicação do design estabelecido pelo SOC está na criação de unidades lógicas denominadas serviços.  Assim, ao invés de aplicações isoladas que trazem consigo todas as funcionalidades, são criadas unidades coesas, granulares, abstratas e de baixo acoplamento e alta interoperabilidade, de operação preferencialmente \textit{stateless} e cujo acesso é feito por uma interface que encapsula sua lógica e seu funcionamento é bem descrito e garantido por um contrato. Com isso, é possível realizar combinações ágeis que irão servir uma ou, idealmente, várias aplicações por meio do reuso e da composição orquestrada de serviços. 
 %ok! 1.1.0
 
-Os princípios adotados pelo service oriented design se confundem com aqueles adotados na arquitetura orientada a objetos. Dado o peso e complexidade dessa arquitetura, a aplicação escalonável desses princípios à realidade de cada organização se faz necessária de modo a evitar um colapso da estrutura já existente.
 
+\subsection{Standardized Service Contract}
+
+Este princípio advoca pela padronização dos artefatos que efetuam o contrato entre provedor e consumidor de serviços de forma técnica ou eletrônica, ou seja, que serão tratados programaticamente. Portanto, requerem considerações específicas em sua elaboração e design, levando em conta a natureza e quantidade do conteúdo neles presentes \cite{Erl:2007:SPS:1296147}.
+
+Um contrato de serviços tem a finalidade de intermediar a relação entre as partes, separando e desacoplando a descrição das funcionalidades da sua implementação. O objetivo de padronizar tais contratos está na premissa da reusabilidade, uma vez que as interfaces farão o papel de conectar um serviço a diferentes consumidores, reduzindo a necessidade de transformações de dados através do uso de suas representações unificadas. Tal medida também aumenta a interoperabilidade entre os serviços com contratos padronizados.
+
+A composição dos contratos pode ser feita com um ou mais artefatos. Tratando-se de \textit{big web services} \cite{Pautasso:2008:RWS:1367497.1367606}, três documentos são utilizados. O WSDL descreve as funcionalidades do serviço, bem como a natureza e tipo dos dados envolvidos. Desta forma, sua padronização impacta diretamente no reuso de tais operações, evitando também sua duplicação em outros serviços. Dada sua estrutura em XML, é preciso haver esquemas que definam os modelos de dados utilizados pela descrição do serviço. Isto é possível com o uso de documentos \textit{XML schemas}. A padronização de tais esquemas possibilita a desejável redução na conversão de dados, uma vez que operações que retornem o tipo de dados poderão compartilhar um mesmo \textit{XML schema}. Por último, é preciso definir quais políticas serão utilizadas pelos serviços, função realizada pelos documentos de definição de políticas, ou \textit{WS-Policy}. 
+
+A principal exigência do princípio em questão está na definição das funcionalidades desempenhadas pelo serviço, assim como a descrição de modelos e tipos de dados utilizados e possíveis políticas adotadas. 
 
 %definindo SOA 
 \subsection{Service Oriented Architecture}
 
+Os princípios adotados pelo service oriented design se confundem com aqueles adotados na arquitetura orientada a objetos. Dado o peso e complexidade dessa arquitetura, a aplicação escalonável desses princípios à realidade de cada organização se faz necessária de modo a evitar um colapso da estrutura existente e os altos custos envolvidos nas fases iniciais da adoção.
 
 Com base nos princípios de SOC, criou-se uma arquitetura responsável por guiar o processo de adoção desse paradigma. O SOA, ou \textit{Service Oriented Architecture}, define uma série de processos, papéis, regras, modelos e camadas, entre outros componentes da arquitetura, propondo transformações importantes no modus operandi no setor de tecnologia da informação. Dada sua abrangência e complexidade de fundamentos, o SOA é protagonista no avanço do SOC, tendo seu conceito se difundido de forma mais ampla que o primeiro, haja vista que recebeu grande atenção do meio acadêmico, como ilustra nosso mapeamento de estudos, além de ter sido um produto de destaque para grandes vendedores da indústria de TI. Entretanto, os mesmos agentes responsáveis pela comercialização de SOA, também contribuíram para a vulgarização do termo, ao ponto do mesmo ter se tornado ambíguo e com significados diversos. Um esforço foi feito visando estabelecer um significado único para a arquitetura, conhecido por \textit{SOA Manifesto}. Entre as prioridades do SOA apontada pelo manifesto estão: o valor de negócio sobre a estratégia técnica adotada, os objetivos estratégicos sobre os benefícios específicos de projeto, a interoperabilidade intrínseca sobre as integrações customizadas, os serviços compartilhados sobre implementações com propósito específico, a flexibilidade sobre optimização e o refinamento evolutivo sobre a perfeição inicial \cite{soamanifesto}.
 %ok! 1.1.0
@@ -180,13 +189,15 @@ A segurança, como um atributo de qualidade de sistemas de informação, possui alg
 
 \end{itemize}
 
+    Também considere-se a disponibilidade, atributo descrito a seguir, como um requisito de segurança, visto que a segurança de certas operações necessitam da continuidade dos serviços. 
+    
     É imediata a percepção de que a troca de informações entre as unidades lógicas do sistema pode acarretar sérios riscos à segurança, estando os esforços disponíveis para garanti-la limitados pela necessidade de se manter a interoperabilidade e a performance no ambiente SOC, já que requerem a adoção adicional de especificações, protocolos e consequentemente uma maior redundância de informação e processamento.
 
 \subsection{Disponibilidade ou \textit{Availability}}
 A disponibilidade define o tempo em que o sistema estará operacional enquanto requisitado, portanto respondendo com sucesso a requisições. Tratando-se de serviços, cada um irá possuir uma disponibilidade que irá influenciar diretamente ou indiretamente a disponibilidade dos sistemas que dependem desses serviços, portanto o ambiente SOC possui o desafio de manter-se operacional diante de suas unidades com particularidades próprias. Como possíveis estratégias para mitigar os problemas causados por serviços inoperantes estão a replicação e o balanceamento de carga, além da troca do provedor do serviço. Nesse sentido, o monitoramento, a gerência e a seleção de serviços são processos importantes em SOC e sua automação um dos maiores desafios.
 
-\subsection{Confiança}
-A confiança é um atributo relacionado à disponibilidade e trata da capacidade do sistema em operar sem erros. Dessa forma, irá mensurar a frequência de erros ocorridos enquanto o sistema estiver disponível num período de tempo. Mais uma vez, no ambiente distribuído essa capacidade irá depender da confiança dos serviços em composição, mas também do transporte das informações. Portanto, um sistema SOC confiável deverá prezar pela confiança 
+\subsection{Confiabilidade}
+A confiabilidade é um atributo relacionado à disponibilidade e trata da capacidade do sistema em operar sem erros. Dessa forma, irá mensurar a frequência de erros ocorridos enquanto o sistema estiver disponível num período de tempo. Mais uma vez, no ambiente distribuído essa capacidade irá depender da confiança dos serviços em composição, mas também do transporte das informações. Portanto, um sistema SOC confiável deverá prezar pela confiança 
 dos serviços e também do mecanismo para troca de mensagens.
 
 \subsection{Manutibilidade}
@@ -198,6 +209,9 @@ A escalabilidade diz respeito à capacidade do sistema de suportar escalas cresce
 
 A orientação a serviços dispõe da composição de serviços com possibilidade de adesão dinâmica e do rearranjamento daqueles já existentes, privilegiando o modelo \textit{stateless} que evita problemas relacionados ao gerenciamento da sessão e à propagação de contexto \cite{O'Brien:2007:QAS:1270235.1270300}, com possível substituição ou melhoria de serviços por meio do escalonamento vertical e pela  replicação de serviços por meio do escalonamento horizontal, fatores que aumentam a vazão e diminuem o tempo de resposta \cite{ZimmPers2005}. Assim, nota-se que os princípios de design do SOC, sobretudo quando expostos a uma arquitetura orientada a serviços capaz de estruturar processos e recursos irão proporcionar um aumento da escalabilidade.
 
+\subsection{Custo}
+
+Por custo entende-se de forma direta as despesas de ordem financeira associadas ao uso e consumo dos serviços. Tal atributo é importante para a análise da viabilidade de sistemas orientados a serviços cuja composição tem como opção serviços pagos de terceiros e pode influenciar diretamente na escolha dos demais atributos, uma vez que qualidade e custo são diretamente proporcionais.
 
 \section{Systematic Mapping Study}
 
