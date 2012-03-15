@@ -151,6 +151,12 @@ A composição dos contratos pode ser feita com um ou mais artefatos. Tratando-se 
 
 \subsubsection{Service Loose Coupling}
 
+Por acoplamento entende-se o grau de ligação ou dependência entre partes. Existem diferentes tipos de acoplamento que envolvem distintos atores e entidades de sistemas, porém o princípio de design em questão trata daqueles relacionados aos serviços e seus consumidores diretos \cite{Erl:2007:SPS:1296147}. Preza-se, portanto, pela construção de soluções lógicas capazes de manter o desacoplamento entre aquilo que definem seus contratos e como são implementados, entre a implementação e seus consumidores e entre diferentes serviços. Com isso, são criados contextos para cada serviço independentes do ambiente que os cerca, havendo liberdade para o uso de tecnologias diversas, ou \textit{vendor free}, e possibilitando a evolução e adaptação de serviços e de consumidores sem o comprometimento da ligação que os une, isto é, permite o uso prolongado de contratos sem que a inclusão de novas funcionalidades ou a alteração de sua implementação venham a quebrar a utilidade que proviam nem a mudança de um ou mais consumidores venham a exigir modificações por parte do serviço.
+
+Um ponto de discussão comum está no uso de ferramentas que automatizam a criação de contratos a partir de determinada lógica ou sua implementação numa linguagem. Isso contradiz o desacoplamento entre contrato e lógica ou entre contrato e implementação, uma vez que o contrato irá manter-se altamente relacionado a uma determinada lógica, esquivando-se de aspectos importantes para a maior qualidade e visão estratégica desejáveis em sua elaboração ou irá relacionar-se com detalhes técnicos da linguagem, por exemplo os tipos de dados utilizados. A visão oposta, ou o acoplamento da lógica ao contrato, em geral é possível por meio da abordagem \textit{top-down}, ou do contrato à implementação, que requer com que toda a lógica do serviço vise atender somente a seu contrato, delimitando com precisão seu escopo e evitando a disposição de serviços com pouco reuso ou com problemas de interoperabilidade.
+
+
+
 %definindo SOA 
 \subsection{Service Oriented Architecture}
 
