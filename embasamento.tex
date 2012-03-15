@@ -155,6 +155,29 @@ Por acoplamento entende-se o grau de ligação ou dependência entre partes. Existe
 
 Um ponto de discussão comum está no uso de ferramentas que automatizam a criação de contratos a partir de determinada lógica ou sua implementação numa linguagem. Isso contradiz o desacoplamento entre contrato e lógica ou entre contrato e implementação, uma vez que o contrato irá manter-se altamente relacionado a uma determinada lógica, esquivando-se de aspectos importantes para a maior qualidade e visão estratégica desejáveis em sua elaboração ou irá relacionar-se com detalhes técnicos da linguagem, por exemplo os tipos de dados utilizados. A visão oposta, ou o acoplamento da lógica ao contrato, em geral é possível por meio da abordagem \textit{top-down}, ou do contrato à implementação, que requer com que toda a lógica do serviço vise atender somente a seu contrato, delimitando com precisão seu escopo e evitando a disposição de serviços com pouco reuso ou com problemas de interoperabilidade.
 
+\subsubsection{Service Abstraction}
+
+A abstração pressupõe a não informação ou a redução da quantidade de informações visíveis. Para a orientação a serviços, trata-se de deixar público somente aquilo que melhor define a ligação entre o consumidor de um serviço e suas funcionalidades. Evita-se, portanto, quaisquer detalhes adicionais, sobretudo aqueles referentes à implementação e tecnologias nela utilizadas. Isto irá reduzir as chances de um acoplamento do tipo consumidor implementação, impactando diretamente o processo de design de serviços e alguns pontos de decisão em tempo de design \cite{Erl:2007:SPS:1296147}, além de garantir maior liberdade ao provedor para evoluir seu serviço e adapta-lo conforme já descrito no princípio de \textit{service loose coupling}. Todas as demais informações sobre o serviço estarão contidas dentro de seu ambiente de execução.
+
+Alguns tipos de abstração possíveis são a de tecnologia, relativas a detalhes técnicos de implementação relativos ao ambiente de execução e à linguagem, funcionais, que se referem à capacidade do serviço, programáticas, no que tange a detalhes específicos de como segue a execução das funcionalidades expostas, e de qualidade de serviços, relativas aos detalhes de requerimentos não funcionais dos serviços. Contudo, deve-se aplicar este princípio de maneira a equilibrar excesso de informação à falta, uma vez que serviços que não possuam descrição suficiente de suas capacidades poderão não ser propriamente descobertos e utilizados ou serão menos reutilizáveis, aumentando o surgimento de soluções lógicas redundantes. 
+
+\subsubsection{Service Reusability}
+
+O reuso de serviços está no núcleo da orientação a serviços. Sem a possibilidade do fornecimento de lógicas reutilizáveis por variados consumidores, sejam estes aplicações ou outros serviços, todo o paradigma ficaria reduzido aos demais benefícios de alinhamento entre negócios e TI e de interoperabilidade, sendo ambas já anteriormente endereçada por conceitos da orientação a objetos e tecnologias de BPM e de integração, e.g., ESB e EAI.
+
+Portanto, alguns dos objetivos mais ilustres do SOC, entre eles a redução do fardo da TI e do tempo de resposta, com aumento da agilidade e do retorno de investimento são consequências mais diretas da reusabilidade. Ademais, conforme pode ser visto nas definições de outros princípios de design, a reusabilidade é frequentemente um de seus objetivos. No entanto, a experiência prática de arquitetos, projetistas, desenvolvedores, administradores e demais responsáveis pela criação e mantenimento de soluções lógicas reutilizáveis atestam pela dificuldade em realiza-la, uma vez que não é visível quais serão todos os casos de uso atendidos, o que requer o uso de lógicas agnósticas,  genéricas e flexíveis a mais propósitos do que nos cenários em que o escopo e funcionalidades são bem definidas e previsíveis. Outras questão relativas à testabilidade e à modificabilidade dessas soluções são descritas em \cite{Erl:2007:SPS:1296147}. 
+
+Vale citar a questão do comprometimento das funcionalidades iniciais, de forma que mudanças nos serviços serão restritas e deverão respeitar as dependências adquiridas e que poderão ser pouco conhecidas devido ao desacoplamento entre consumidor e provedor, consequentemente criando uma situação de imprevisibilidade para os impactos de mudanças. Além disso, um serviço reutilizável deverá suportar variações de demanda, isto é, deverá adaptar-se ao uso de mais ou menos recursos de forma a manter parâmetros de qualidade como performance e disponibilidade.
+Por último, a reusabilidade confronta o princípio de abstração, uma vez que requer o uso de informações suficientes para que diferentes casos de consumo possam ser atendidos.
+
+\begin{figure}[hbtp]
+	\centering	\includegraphics[width=0.7\textwidth]{figs/danilo/Services_Reusability.eps}
+	\caption{Relação entre reusabilidade e outros princípios. Adaptação de \cite{Erl:2007:SPS:1296147}}	
+	\label{fig:Services_Reusability}
+\end{figure}
+
+\subsubsection{Service Autonomy}
+
 
 
 %definindo SOA 
