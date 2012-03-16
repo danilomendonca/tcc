@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  15 MAR 2012 10:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  16 MAR 2012 00:45
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -548,29 +548,29 @@ File: figs/danilo/Services_Contract.eps Graphic file (type eps)
  <figs/danilo/Services_Contract.eps> [14] [15]
 File: figs/danilo/Services_Reusability.eps Graphic file (type eps)
 
-<figs/danilo/Services_Reusability.eps> [16] [17]
+<figs/danilo/Services_Reusability.eps> [16] [17] [18]
 File: figs/danilo/QoS_Model_Stakeholders.eps Graphic file (type eps)
 
-<figs/danilo/QoS_Model_Stakeholders.eps> [18] [19]
+<figs/danilo/QoS_Model_Stakeholders.eps> [19] [20]
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 231.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 252.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 231.
- [20] [21]
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 252.
+ [21] [22]
 File: figs/danilo/Mapping_Process.eps Graphic file (type eps)
 
-<figs/danilo/Mapping_Process.eps> [22] [23]
+<figs/danilo/Mapping_Process.eps> [23] [24]
 File: figs/danilo/Keywords_Search_Facets.eps Graphic file (type eps)
 
-<figs/danilo/Keywords_Search_Facets.eps> [24]
+<figs/danilo/Keywords_Search_Facets.eps> [25]
 File: figs/danilo/Bubble_Plot.eps Graphic file (type eps)
  <figs/danilo/Bubble_Plot.eps>)
-[25]
+[26] [27]
 \openout2 = `abordagem.aux'.
 
  (./abordagem.tex
 Cap\'{\i }tulo 3.
-[26
+[28
 
 
 
@@ -580,7 +580,7 @@ Overfull \hbox (1.43768pt too wide) in paragraph at lines 25--26
 -en-tada a Ser-vi-ços fo-ram abor-da-dos com maior frequên-
  []
 
-[27] [28]
+[29] [30]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 66.
  (/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -597,9 +597,9 @@ Overfull \hbox (2.12025pt too wide) in paragraph at lines 68--68
  []
 
 
-LaTeX Warning: Citation `ieee_online' on page 29 undefined on input line 81.
+LaTeX Warning: Citation `ieee_online' on page 31 undefined on input line 81.
 
-[29] [30] [31] [32] [33]) [34] (./relatorio.bbl
+[31] [32] [33] [34] [35]) [36] (./relatorio.bbl
 Underfull \hbox (badness 3547) in paragraph at lines 74--78
 []\T1/ptm/m/n/10.95 JESTON, J.; NE-LIS, J. \T1/ptm/m/it/10.95 Bu-si-ness Pro-ce
 ss Ma-na-ge-ment: Prac-ti-cal Gui-de-li-nes to Suc-ces-
@@ -611,7 +611,7 @@ Underfull \hbox (badness 4832) in paragraph at lines 74--78
 inemann, 2008. ISBN 9780750686563. Dis-po-ní-vel em:
  []
 
-[35
+[37
 
 
 ]
@@ -632,17 +632,20 @@ Underfull \hbox (badness 7415) in paragraph at lines 95--98
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [36]
+) [38]
 \c@noAnexo=\count127
 \tf@thm=\write7
 \openout7 = `relatorio.thm'.
 
- [37
+ [39
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
 (./simbolos.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux))
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
 (\end occurred inside a group at level 1)
@@ -658,4 +661,4 @@ Here is how much of TeX's memory you used:
  68 hyphenation exceptions out of 8191
  34i,15n,25p,1711b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (46 pages, 147144 bytes).
+Output written on relatorio.dvi (48 pages, 152928 bytes).

@@ -178,6 +178,32 @@ Por último, a reusabilidade confronta o princípio de abstração, uma vez que requ
 
 \subsubsection{Service Autonomy}
 
+A autonomia de serviços está relacionada ao grau de independência dos mesmos em seu funcionamento e à capacidade de auto-governança e ausência de vínculos com atividades externas a seu ambiente, que deverá ser controlado e previsivelmente estável. Com isso, a autonomia determina a independência para a execução da lógica contida num serviço.
+
+Os dois maiores benefícios do princípio da autonomia estão no aumento da previsibilidade das situações enfrentadas e consequentemente no aumento da confiabilidade dos serviços. Desta forma, cenários antes frequentes de compartilhamento de recursos, entre eles de banco de dados, deverão ser evitados ou eliminados para fornecer o ambiente completo e autônomo para a execução desses serviços.
+
+Dois tipos de autonomia são identificados em \cite{Erl:2007:SPS:1296147}. Durante a fase de design, a autonomia relaciona-se à governança e aos princípios de baixo acoplamento e abstração, uma vez que permitem a evolução dos serviços independentemente, tratando-se da lógica implementada, de seus consumidores. Assim, é garantido o controle sobre o serviço. Durante o tempo de execução, este princípio trata do controle sobre recursos necessários, e.g., aqueles utilizados para processamento e memória, e qualquer outro associado à execução. Com isso, garanta-se o controle do serviço sobre seus recursos.
+
+Um revés associado às garantias de autonomia para serviços está no aumento da disposição de recursos de infraestrutura consequentes de seu isolamento e contimento em serviços de forma separada e independente. Isto é, haverá um aumento de uso desses recursos de modo a deixa-los disponíveis aos serviços autônomos, o que levará na maioria dos casos a um aumento de custos.
+
+\subsubsection{Service Statelessness}
+
+O armazenamento e gerenciamento de informações de estado em diferentes contextos e perspectivas de sistemas de informações são reconhecidos pelo uso extensivo de memória e processamento. Por informações de estado, entende-se qualquer dado ou conjunto de dados associados a um estado do sistema e que participam de sua composição ou definição. 
+
+Dado uma arquitetura que mantém parte considerável de sua lógica e logo suas informações de estado entre os clientes num sistema distribuído, o problema da gerência e armazenamento dessa informações é em grande parte dissolvido e portanto não representa desafios técnicos, exceto em casos específicos. No entanto, a evolução da conectividade e da performance do tráfego de dados via redes locais e via a internet possibilitou a concentração da lógica em maior parte no servidor de aplicações, deixando seus correspondentes com pequena parcela da lógica ou, de maneira mais extrema, somente com a interface a ser usada para apresentação e interação. Assim, são constituídos os \textit{clientes magros}. Tal tendência fundamenta-se nos benefícios alcançados por essa abordagem, como o aumento da audiência, visto que um cliente magro poderá ser utilizado em diversificados ambientes e plataformas, sobretudo com o uso de navegadores ou \textit{browsers}, além da possibilidade de uso imediato ou do carregamento preliminar de poucos dados sem a necessidade de artefatos para o armazenamento e transferência de arquivos para instalação, o gerenciamento centralizado decorrente da unificação da execução da lógica desempenhada num só local controlado e acessível e que permite, entre outros, um controle facilitado de versionamento, já que não seria preciso manter a continuidade de versões anteriores. 
+
+A orientação a serviços, além de unificar a lógica nos serviços, tem por objetivo o reuso dessas lógicas em situações múltiplas, o que implica a sua escalabilidade. Uma vez que há um custo elevado de recursos para a gerência e armazenamento de informações de estado, é notável que a performance desses serviços estará comprometida caso tais informações não sejam reduzidos ou deslocados para elementos externos, tais quais \textit{middlewares} capacitados na gerência de dados de estado ou no uso de bancos de dados para esta finalidade. Entre os riscos associados estão no aumento da dependência e a redução da performance devido ao processamento e conversão dos dados, portanto a situação ideal é aquela em que exista uma menor quantidade possível desses dados para as funcionalidades desempenhadas pelo serviço.
+
+\subsubsection{Service Discoverability}
+
+Segundo a orientação a serviços, um ponto de decisão importante está na escolha entre utilizar um serviço disponível ou construí-lo para atender determinada demanda. Para que as soluções já existentes possam ser encontradas e suas capacidades sejam corretamente compreendidas e comparadas às de necessidade, requer-se o uso adequado da publicação de meta dados sobre esses serviços e mecanismos eficientes para localiza-los. Trata-se, portanto, do foco do princípio de descobrimento de serviços. 
+
+Duas atividades centrais são endereçadas por esse princípio: o descobrimento e a interpretação das informações descobertas. A primeira é considerada uma das grandes mudanças trazidas pelo SOC, e antes mesmo do surgimento da arquitetura orientada a serviços, as primeiras versões de web services já operavam com a especificação de registro UDDI. A segunda pode envolver o caso da interpretação feita por humanos, responsáveis por analisar os meta dados e decidirem pela adoção ou não dos serviços descobertos, ou, naquilo que faz parte de uma ciência nova e expansão, a web semântica, a interpretação feita por máquinas, que permite a automação da seleção de serviços baseando-se em parâmetros formatados e inteligíveis a algorítimos, possibilidade essa que se cumprida despontará como um grande salto nas operações com serviços.
+
+
+
+
+\subsubsection{Service Composability}
 
 
 %definindo SOA 
