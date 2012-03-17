@@ -25,32 +25,33 @@
 \contentsline {subsubsection}{\numberline {2.1.2.7}Service Discoverability}{18}
 \contentsline {subsubsection}{\numberline {2.1.2.8}Service Composability}{19}
 \contentsline {subsection}{\numberline {2.1.3}Service Oriented Architecture}{19}
-\contentsline {section}{\numberline {2.2}Qualidade de Serviços}{20}
+\contentsline {section}{\numberline {2.2}Qualidade de Serviços}{21}
 \contentsline {subsection}{\numberline {2.2.1}Performance}{21}
-\contentsline {subsection}{\numberline {2.2.2}Interoperabilidade}{21}
+\contentsline {subsection}{\numberline {2.2.2}Interoperabilidade}{22}
 \contentsline {subsection}{\numberline {2.2.3}Segurança}{22}
-\contentsline {subsection}{\numberline {2.2.4}Disponibilidade ou \textit {Availability}}{22}
+\contentsline {subsection}{\numberline {2.2.4}Disponibilidade ou \textit {Availability}}{23}
 \contentsline {subsection}{\numberline {2.2.5}Confiabilidade}{23}
-\contentsline {subsection}{\numberline {2.2.6}Manutibilidade}{23}
-\contentsline {subsection}{\numberline {2.2.7}Escalabilidade}{23}
+\contentsline {subsection}{\numberline {2.2.6}Manutibilidade}{24}
+\contentsline {subsection}{\numberline {2.2.7}Escalabilidade}{24}
 \contentsline {subsection}{\numberline {2.2.8}Custo}{24}
-\contentsline {section}{\numberline {2.3}Systematic Mapping Study}{24}
+\contentsline {section}{\numberline {2.3}Systematic Mapping Study}{25}
 \contentsline {subsection}{\numberline {2.3.1}Escolha das Perguntas de Pesquisa}{25}
-\contentsline {subsection}{\numberline {2.3.2}Pesquisa primária}{25}
-\contentsline {subsection}{\numberline {2.3.3}Inclusão e Exclusão de Publicações}{26}
-\contentsline {subsection}{\numberline {2.3.4}Definição de Categorias e Extração de Dados}{26}
-\contentsline {subsection}{\numberline {2.3.5}Mapeamento e Apresentação de Dados}{27}
-\contentsline {chapter}{\numberline {3}Abordagem}{29}
-\contentsline {section}{\numberline {3.1}Pesquisa Preliminar}{29}
-\contentsline {section}{\numberline {3.2}Protocolo}{29}
-\contentsline {subsection}{\numberline {3.2.1}Questões de Pesquisa}{29}
-\contentsline {subsection}{\numberline {3.2.2}Frase de Busca}{31}
-\contentsline {subsection}{\numberline {3.2.3}Fóruns de Busca}{32}
-\contentsline {subsubsection}{\numberline {3.2.3.1}Fóruns Principais}{32}
-\contentsline {subsubsection}{\numberline {3.2.3.2}Mecanismos de Busca Adicionais}{33}
-\contentsline {subsection}{\numberline {3.2.4}Populamento da Dados com Web Crawler}{33}
-\contentsline {subsection}{\numberline {3.2.5}Definição dos Critérios de Inclusão e Exclusão}{34}
-\contentsline {subsection}{\numberline {3.2.6}Categorias de Classificação}{35}
-\contentsline {subsection}{\numberline {3.2.7}Extração de Dados}{37}
-\contentsline {chapter}{REFERÊNCIAS}{38}
-\contentsline {chapter}{{Anexos}}{40}
+\contentsline {subsection}{\numberline {2.3.2}Pesquisa primária}{26}
+\contentsline {subsection}{\numberline {2.3.3}Inclusão e Exclusão de Publicações}{27}
+\contentsline {subsection}{\numberline {2.3.4}Definição de Categorias e Extração de Dados}{27}
+\contentsline {subsection}{\numberline {2.3.5}Mapeamento e Apresentação de Dados}{28}
+\contentsline {chapter}{\numberline {3}Abordagem}{30}
+\contentsline {section}{\numberline {3.1}Pesquisa Preliminar}{30}
+\contentsline {section}{\numberline {3.2}Protocolo}{30}
+\contentsline {subsection}{\numberline {3.2.1}Questões de Pesquisa}{30}
+\contentsline {subsection}{\numberline {3.2.2}Frase de Busca}{32}
+\contentsline {subsection}{\numberline {3.2.3}Fóruns de Busca}{33}
+\contentsline {subsubsection}{\numberline {3.2.3.1}Fóruns Principais}{33}
+\contentsline {subsubsection}{\numberline {3.2.3.2}Mecanismos de Busca Adicionais}{34}
+\contentsline {subsection}{\numberline {3.2.4}Desenvolvendo Aplicação de Suporte}{34}
+\contentsline {subsection}{\numberline {3.2.5}Populamento da Dados com Web Crawler}{36}
+\contentsline {subsection}{\numberline {3.2.6}Definição dos Critérios de Inclusão e Exclusão}{36}
+\contentsline {subsection}{\numberline {3.2.7}Categorias de Classificação}{38}
+\contentsline {subsection}{\numberline {3.2.8}Extração de Dados}{40}
+\contentsline {chapter}{REFERÊNCIAS}{41}
+\contentsline {chapter}{{Anexos}}{43}
