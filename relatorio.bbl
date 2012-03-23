@@ -5,6 +5,13 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.42.2.1 }
 
+\bibitem{Erl:2007:SPS:1296147}
+\abntrefinfo{Erl}{ERL}{2007}
+{ERL, T. \emph{SOA Principles of Service Design (The Prentice Hall
+  Service-Oriented Computing Series from Thomas Erl)}. Upper Saddle River, NJ,
+  USA: Prentice Hall PTR, 2007.
+ISBN 0132344823.}
+
 \bibitem{Balfagih:2009:10.1109}
 \abntrefinfo{Balfagih e Hassan}{BALFAGIH; HASSAN}{2009}
 {BALFAGIH, Z.; HASSAN, M. Quality model for web services from
@@ -18,6 +25,12 @@
 \emph{12th International Conference on Evaluation and Assessment in Software
   Engineering}, v.~17, n.~1, p. 1--10, 2007.}
 
+\bibitem{Riad:2009:1000041}
+\abntrefinfo{AM Hassan~AE}{AM HASSAN~AE}{2009}
+{AM HASSAN~AE, H.~Q. R. Investigating performanceof xml web services in
+  real-time business systems.
+\emph{J ComputSci Syst Biol 2}, p. 266--271, 2009.}
+
 \bibitem{Papazoglou:2007:SOA:1265289.1265298}
 \abntrefinfo{Papazoglou e Heuvel}{PAPAZOGLOU; HEUVEL}{2007}
 {PAPAZOGLOU, M.~P.; HEUVEL, W.-J. Service oriented architectures: approaches,
@@ -26,13 +39,6 @@
   v.~16, p. 389--415, July 2007.
 ISSN 1066-8888.
 Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1007/s00778-007-0044-3$>$.}
-
-\bibitem{Erl:2007:SPS:1296147}
-\abntrefinfo{Erl}{ERL}{2007}
-{ERL, T. \emph{SOA Principles of Service Design (The Prentice Hall
-  Service-Oriented Computing Series from Thomas Erl)}. Upper Saddle River, NJ,
-  USA: Prentice Hall PTR, 2007.
-ISBN 0132344823.}
 
 \bibitem{Breivold:2007:CSS:1302497.1302990}
 \abntrefinfo{Breivold e Larsson}{BREIVOLD; LARSSON}{2007}

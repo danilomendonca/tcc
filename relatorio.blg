@@ -6,55 +6,56 @@ A level-1 auxiliary file: simbolos.aux
 A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: embasamento.aux
 A level-1 auxiliary file: abordagem.aux
+A level-1 auxiliary file: resultados.aux
 The style file: abnt-num.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: relatorio.bib
-Warning--I didn't find a database entry for "ws-i-oasis"
+Warning--I didn't find a database entry for "ieee_online"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 140733193394032.
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-num.bst versão 1.42.2.1           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 17 entries,
+You've used 18 entries,
             6480 wiz_defined-function locations,
-            1302 strings with 13369 characters,
-and the built_in function-call counts, 14869 in all, are:
-= -- 1356
-> -- 482
-< -- 23
-+ -- 231
-- -- 144
-* -- 1063
-:= -- 1932
-add.period$ -- 84
-call.type$ -- 17
-change.case$ -- 194
-chr.to.int$ -- 32
-cite$ -- 17
-duplicate$ -- 733
-empty$ -- 1091
-format.name$ -- 741
-if$ -- 3600
+            1309 strings with 13551 characters,
+and the built_in function-call counts, 15530 in all, are:
+= -- 1403
+> -- 494
+< -- 24
++ -- 235
+- -- 148
+* -- 1104
+:= -- 2018
+add.period$ -- 87
+call.type$ -- 18
+change.case$ -- 201
+chr.to.int$ -- 33
+cite$ -- 18
+duplicate$ -- 774
+empty$ -- 1149
+format.name$ -- 761
+if$ -- 3757
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 315
-newline$ -- 99
-num.names$ -- 68
-pop$ -- 451
+missing$ -- 332
+newline$ -- 104
+num.names$ -- 72
+pop$ -- 472
 preamble$ -- 1
-purify$ -- 71
+purify$ -- 74
 quote$ -- 0
-skip$ -- 781
+skip$ -- 822
 stack$ -- 1
-substring$ -- 564
-swap$ -- 384
-text.length$ -- 18
+substring$ -- 609
+swap$ -- 404
+text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 5
 warning$ -- 0
-while$ -- 111
+while$ -- 118
 width$ -- 0
-write$ -- 260
+write$ -- 273
 (There was 1 warning)

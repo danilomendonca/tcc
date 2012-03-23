@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  17 MAR 2012 11:23
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  23 MAR 2012 10:46
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -358,7 +358,11 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 
 Writing index file relatorio.idx
 (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux) (./simbolos.aux)
-(./introducao.aux) (./embasamento.aux) (./abordagem.aux))
+(./introducao.aux) (./embasamento.aux) (./abordagem.aux) (./resultados.aux
+
+LaTeX Warning: Label `fig:Context_Research' multiply defined.
+
+))
 \openout1 = `relatorio.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
@@ -374,8 +378,7 @@ LaTeX Font Info:    ... okay on input line 125.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
 LaTeX Font Info:    ... okay on input line 125.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 125.
-
-(/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
+ (/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry auto-detecting driver*
@@ -489,26 +492,26 @@ LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <17.28> not available
 (./relatorio.toc
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 32.
-)
-\tf@toc=\write5
-\openout5 = `relatorio.toc'.
-
  [2
 
 
-]
+])
+\tf@toc=\write5
+\openout5 = `relatorio.toc'.
+
+ [3]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 226.
  (./relatorio.lof)
 \tf@lof=\write6
 \openout6 = `relatorio.lof'.
 
- [3
+ [4
 
 ]
 \openout2 = `simbolos.aux'.
 
- (./simbolos.tex) [4
+ (./simbolos.tex) [5
 
 
 ]
@@ -604,50 +607,70 @@ File: figs/danilo/Support_Tool_01.eps Graphic file (type eps)
  <figs/danilo/Support_Tool_01.eps>
 File: figs/danilo/Support_Tool_02.eps Graphic file (type eps)
  <figs/danilo/Support_Tool_02.eps>
-[35] [36] [37] [38] [39]) [40] (./relatorio.bbl
-Underfull \hbox (badness 3547) in paragraph at lines 74--78
-[]\T1/ptm/m/n/10.95 JESTON, J.; NE-LIS, J. \T1/ptm/m/it/10.95 Bu-si-ness Pro-ce
-ss Ma-na-ge-ment: Prac-ti-cal Gui-de-li-nes to Suc-ces-
- []
+[35] [36] [37] [38] [39]) [40]
+\openout2 = `resultados.aux'.
 
-
-Underfull \hbox (badness 4832) in paragraph at lines 74--78
-\T1/ptm/m/it/10.95 s-ful Im-ple-men-ta-ti-ons\T1/ptm/m/n/10.95 . Butterworth-He
-inemann, 2008. ISBN 9780750686563. Dis-po-ní-vel em:
- []
-
+ (./resultados.tex
+Cap\'{\i }tulo 4.
 [41
 
 
+
 ]
-Underfull \hbox (badness 1112) in paragraph at lines 81--87
+File: figs/danilo/Context_Research.eps Graphic file (type eps)
+ <figs/danilo/Context_Research.eps> [42] [43]
+File: figs/danilo/Binary_XML.eps Graphic file (type eps)
+ <figs/danilo/Binary_XML.eps>
+File: figs/danilo/Context_Research.eps Graphic file (type eps)
+
+<figs/danilo/Context_Research.eps>) [44] [45] (./relatorio.bbl
+Underfull \hbox (badness 5217) in paragraph at lines 80--84
+[]\T1/ptm/m/n/10.95 JESTON, J.; NE-LIS, J. \T1/ptm/m/it/10.95 Bu-si-ness Pro-ce
+ss Ma-na-ge-ment: Prac-ti-cal Gui-de-li-nes to Suc-
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 80--84
+\T1/ptm/m/it/10.95 ces-s-ful Im-ple-men-ta-ti-ons\T1/ptm/m/n/10.95 . Butterwort
+h-Heinemann, 2008. ISBN 9780750686563. Dis-po-ní-vel em:
+ []
+
+[46
+
+
+]
+Underfull \hbox (badness 1112) in paragraph at lines 87--93
 []\T1/ptm/m/n/10.95 POSSEL, J. \T1/ptm/m/it/10.95 Ac-cen-ture's His-tory: The b
 e-gin-nings in the early 1950?s\T1/ptm/m/n/10.95 . Ja-nu-ary 2011. [On-
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 81--87
+Underfull \hbox (badness 1769) in paragraph at lines 87--93
 \T1/ptm/m/n/10.95 line; ac-ces-sed 29-February-2012]. Dis-po-ní-vel em: $\OML/c
 mm/m/it/10.95 <$\T1/ptm/m/n/10.95 http://www.accenture-blogpodium.nl/about-
  []
 
 
-Underfull \hbox (badness 7415) in paragraph at lines 95--98
+Underfull \hbox (badness 7415) in paragraph at lines 101--104
 []\T1/ptm/m/n/10.95 VARIOS. \T1/ptm/m/it/10.95 Soa Ma-ni-festo\T1/ptm/m/n/10.95
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [42]
+) [47]
 \c@noAnexo=\count127
 \tf@thm=\write7
 \openout7 = `relatorio.thm'.
 
- [43
+ [48
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
-(./simbolos.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux))
+(./simbolos.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux)
+(./resultados.aux))
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred inside a group at level 1)
@@ -655,12 +678,12 @@ LaTeX Warning: There were undefined references.
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5080 strings out of 494910
- 65286 string characters out of 1177227
- 150933 words of memory out of 3000000
- 8085 multiletter control sequences out of 15000+50000
+ 5097 strings out of 494910
+ 65568 string characters out of 1177227
+ 152733 words of memory out of 3000000
+ 8093 multiletter control sequences out of 15000+50000
  60148 words of font info for 71 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
- 34i,15n,25p,1711b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,25p,2041b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (52 pages, 164632 bytes).
+Output written on relatorio.dvi (58 pages, 180052 bytes).
