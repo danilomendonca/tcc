@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  23 MAR 2012 10:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  24 MAR 2012 01:35
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -358,7 +358,8 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 
 Writing index file relatorio.idx
 (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux) (./simbolos.aux)
-(./introducao.aux) (./embasamento.aux) (./abordagem.aux) (./resultados.aux
+(./dados.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux)
+(./resultados.aux
 
 LaTeX Warning: Label `fig:Context_Research' multiply defined.
 
@@ -515,12 +516,17 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 
 
 ]
+\openout2 = `dados.aux'.
+
+
+(./dados.tex)
 \openout2 = `introducao.aux'.
 
-
-(./introducao.tex
+ (./introducao.tex
 Cap\'{\i }tulo 1.
 [1
+
+
 
 
 
@@ -578,29 +584,29 @@ Cap\'{\i }tulo 3.
 
 
 ]
-Overfull \hbox (1.43768pt too wide) in paragraph at lines 25--26
+Overfull \hbox (1.43768pt too wide) in paragraph at lines 26--27
 []\T1/ptm/m/n/10.95 RQ1: \T1/ptm/b/n/10.95 Quais tó-pi-cos da Com-pu-ta-ção Ori
 -en-tada a Ser-vi-ços fo-ram abor-da-dos com maior frequên-
  []
 
 [31] [32]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 66.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 67.
  (/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (15.26024pt too wide) in paragraph at lines 68--68
+Overfull \hbox (15.26024pt too wide) in paragraph at lines 69--69
 []\T1/pcr/m/n/10.95 ("Service Oriented Computing" OR "SOC" OR "Service Oriented
  Architecture"
  []
 
 
-Overfull \hbox (2.12025pt too wide) in paragraph at lines 68--68
+Overfull \hbox (2.12025pt too wide) in paragraph at lines 69--69
 \T1/pcr/m/n/10.95 OR "SOA" OR "Service orientation") AND ("Quality of Services"
  OR "QoS")[] 
  []
 
 
-LaTeX Warning: Citation `ieee_online' on page 33 undefined on input line 81.
+LaTeX Warning: Citation `ieee_online' on page 33 undefined on input line 82.
 
 [33] [34]
 File: figs/danilo/Support_Tool_01.eps Graphic file (type eps)
@@ -621,9 +627,9 @@ File: figs/danilo/Context_Research.eps Graphic file (type eps)
  <figs/danilo/Context_Research.eps> [42] [43]
 File: figs/danilo/Binary_XML.eps Graphic file (type eps)
  <figs/danilo/Binary_XML.eps>
+[44] [45]
 File: figs/danilo/Context_Research.eps Graphic file (type eps)
-
-<figs/danilo/Context_Research.eps>) [44] [45] (./relatorio.bbl
+ <figs/danilo/Context_Research.eps>) [46] (./relatorio.bbl
 Underfull \hbox (badness 5217) in paragraph at lines 80--84
 []\T1/ptm/m/n/10.95 JESTON, J.; NE-LIS, J. \T1/ptm/m/it/10.95 Bu-si-ness Pro-ce
 ss Ma-na-ge-ment: Prac-ti-cal Gui-de-li-nes to Suc-
@@ -635,7 +641,7 @@ Underfull \hbox (badness 1502) in paragraph at lines 80--84
 h-Heinemann, 2008. ISBN 9780750686563. Dis-po-ní-vel em:
  []
 
-[46
+[47
 
 
 ]
@@ -656,16 +662,16 @@ Underfull \hbox (badness 7415) in paragraph at lines 101--104
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [47]
+) [48]
 \c@noAnexo=\count127
 \tf@thm=\write7
 \openout7 = `relatorio.thm'.
 
- [48
+ [49
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
-(./simbolos.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux)
-(./resultados.aux))
+(./simbolos.aux) (./dados.aux) (./introducao.aux) (./embasamento.aux)
+(./abordagem.aux) (./resultados.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -678,12 +684,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5097 strings out of 494910
- 65568 string characters out of 1177227
- 152733 words of memory out of 3000000
- 8093 multiletter control sequences out of 15000+50000
+ 5113 strings out of 494910
+ 65753 string characters out of 1177227
+ 153457 words of memory out of 3000000
+ 8102 multiletter control sequences out of 15000+50000
  60148 words of font info for 71 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
- 34i,15n,25p,2041b,356s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,25p,2044b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (58 pages, 180052 bytes).
+Output written on relatorio.dvi (59 pages, 186040 bytes).
