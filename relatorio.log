@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  24 MAR 2012 16:17
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  24 MAR 2012 22:28
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -359,11 +359,7 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 Writing index file relatorio.idx
 (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux) (./simbolos.aux)
 (./dados.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux)
-(./resultados.aux
-
-LaTeX Warning: Label `fig:Context_Research' multiply defined.
-
-))
+(./resultados.aux))
 \openout1 = `relatorio.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
@@ -627,9 +623,13 @@ File: figs/danilo/Context_Research.eps Graphic file (type eps)
  <figs/danilo/Context_Research.eps> [42] [43]
 File: figs/danilo/Binary_XML.eps Graphic file (type eps)
  <figs/danilo/Binary_XML.eps>
-[44] [45]
-File: figs/danilo/Context_Research.eps Graphic file (type eps)
- <figs/danilo/Context_Research.eps>) [46] [47] (./relatorio.bbl
+[44] [45] [46]
+File: figs/danilo/Context_Contribution.eps Graphic file (type eps)
+ <figs/danilo/Context_Contribution.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [47] [48] (./relatorio.bbl
 Underfull \hbox (badness 5217) in paragraph at lines 80--84
 []\T1/ptm/m/n/10.95 JESTON, J.; NE-LIS, J. \T1/ptm/m/it/10.95 Bu-si-ness Pro-ce
 ss Ma-na-ge-ment: Prac-ti-cal Gui-de-li-nes to Suc-
@@ -641,7 +641,7 @@ Underfull \hbox (badness 1502) in paragraph at lines 80--84
 h-Heinemann, 2008. ISBN 9780750686563. Dis-po-ní-vel em:
  []
 
-[48
+[49
 
 
 ]
@@ -662,12 +662,12 @@ Underfull \hbox (badness 7415) in paragraph at lines 101--104
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [49]
+) [50]
 \c@noAnexo=\count127
 \tf@thm=\write7
 \openout7 = `relatorio.thm'.
 
- [50
+ [51
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
 (./simbolos.aux) (./dados.aux) (./introducao.aux) (./embasamento.aux)
@@ -675,21 +675,18 @@ Underfull \hbox (badness 7415) in paragraph at lines 101--104
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5115 strings out of 494910
- 65771 string characters out of 1177227
- 153457 words of memory out of 3000000
- 8104 multiletter control sequences out of 15000+50000
+ 5123 strings out of 494910
+ 65905 string characters out of 1177227
+ 153429 words of memory out of 3000000
+ 8111 multiletter control sequences out of 15000+50000
  60148 words of font info for 71 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
- 34i,15n,25p,2230b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,25p,2230b,375s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (60 pages, 188912 bytes).
+Output written on relatorio.dvi (61 pages, 192144 bytes).

@@ -56,6 +56,6 @@
 \contentsline {chapter}{\numberline {4}Resultados}{41}
 \contentsline {section}{\numberline {4.1}Apresentação dos Gráficos}{41}
 \contentsline {subsection}{\numberline {4.1.1}Contextos vs Tipos de Pesquisa}{41}
-\contentsline {subsection}{\numberline {4.1.2}Contextos vs Tipos de Pesquisa}{46}
-\contentsline {chapter}{REFERÊNCIAS}{48}
-\contentsline {chapter}{{Anexos}}{50}
+\contentsline {subsection}{\numberline {4.1.2}Contextos vs Tipos de Pesquisa}{47}
+\contentsline {chapter}{REFERÊNCIAS}{49}
+\contentsline {chapter}{{Anexos}}{51}
