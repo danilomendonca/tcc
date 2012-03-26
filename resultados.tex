@@ -1,17 +1,38 @@
 %TCIDATA{LaTeXparent=0,0,relatorio.tex}
 \chapter{Resultados}\label{resultados}
 
-Havendo constituído uma base de registros significativa, com exatas 346 publicações analisadas à partir de critérios de inclusão e exclusão, o que resultou num total de 210 aceitas e classificadas. Tais números se referem àqueles atendidos por somente um grupo entre os participantes, sendo importante ressaltar o algoritmo adotado na divisão feita, que distribuiu sequencialmente e por ordem alfabética do título uma publicação para cada grupo até que todas as 1034 estivessem associadas a um dos três grupos cadastrados.
+
+
+Havendo constituído uma base de registros significativa, com exatas \RGOnePubs \hspace{1pt} publicações analisadas à partir de critérios de inclusão e exclusão, o que resultou num total de \RGOneAPubs \hspace{1pt} aceitas e classificadas. Tais números se referem àqueles atendidos por somente um grupo entre os participantes, sendo importante ressaltar o algoritmo adotado na divisão feita, que distribuiu sequencialmente e por ordem alfabética do título uma publicação para cada grupo até que todas as \RAllPubs \hspace{1pt} estivessem associadas a um dos três grupos cadastrados.
 
 Assim, os seguintes resultados representam uma parte, mais precisamente um terço da amostra total. O tipo de distribuição feita permite com que dentro de cada subamostra pertencente aos grupos haja publicações em praticamente todos os tópicos, com uma desprezível variação dada a relação entre tópico abordado e título e a grande quantidade de publicações contempladas.
 
 A intenção de todos os envolvidos no trabalho é de que haja a continuidade de análises até que o total da amostra principal aceito pelos critérios de inclusão tenha sido classificado, o que dará mais importância e robustez aos resultados obtidos pelo mapeamento de estudos.
 
-\section{Apresentação dos Gráficos}
-
 Conforme descrito e justificado nos capítulos \ref{embasamento} e  \ref{abordagem}, os resultados estão dispostos em gráficos bolhas ou \textit{bubble plots}. Para cada par de categorias de classificação, foi possível efetuar um cruzamento e apresentar a quantidade de publicações que se enquadram em ambas as categorias por meio de círculos de tamanhos proporcionais. A seguir, os gráficos obtidos são apresentados.
 
-\subsection{Contextos vs Tipos de Pesquisa} 
+\section{Contextos de Pesquisa}
+
+\begin{figure}[htbp]
+	\includegraphics[width=0.8\textwidth]{figs/danilo/Context_Research.eps}
+	\caption{Contexto vs Tipos de Pesquisa}	
+	\label{fig:Context_Research}
+\end{figure} 
+
+\begin{figure}[h]
+	\centering \includegraphics[width=0.8\textwidth]{figs/danilo/Context_Contribution.eps}
+	\caption{Contexto vs Tipos de Contribuição}	
+	\label{fig:Context_Contribution}
+\end{figure} 
+
+
+\begin{figure}[h]
+	\centering \includegraphics[width=0.8\textwidth]{figs/danilo/Contribution_Research.eps}
+	\caption{Tipos de Contribuição vs Tipos de Pesquisa}	
+	\label{fig:Contribution_Research}
+\end{figure} 
+
+\subsection{Modelos arquiteturais} 
 
 Uma classificação dos tipos de pesquisa visa enquadrar o estado geral da ciência praticada numa determinada área. Isso é possível através da relação entre tipos de pesquisas com os níveis de amadurecimento da área pesquisada ou com a fase em que a mesma se encontra.
 
@@ -60,12 +81,22 @@ O segundo cruzamento de dados visa relacionar os tipos de contribuição aos atrib
 
 Assim definido e dado o amplo campo representado pelo SOC, espera-se a identificação de publicações em todos esses tipos. Segundo os resultados obtidos, uma maioria de publicações oferece intervenções classificadas como modelo ou método, somando \RCntModel \hspace{1pt} e \RCntMethod , respectivamente. Um método representa qualquer tipo de abordagem, procedimento, denotando um meio de se alcançar um estado ou objetivo sobre o objeto de estudo. Para o tema classificado, é visível a tendência para pesquisas que intervenham na garantia de aspectos não funcionais. Assim, tais contribuições são feitas pela proposta de novos métodos para monitoramento de atributos, para seleção e composição de serviços de acordo com esses atributos, para o cálculo dos mesmos em \textit{workflows} ou como visão global de um sistema com soluções orientadas a serviço. Ademais, o próprio objeto é fonte de constante discussão e recebe, por meio da elaboração de modelos taxonômicos que definem os atributos de qualidade por diversos pontos de vista e segundo variadas estruturas de conceitos, o foco de um número considerável de artigos. A isto ainda se somam as contribuições de modelos arquiteturais, de modelos de melhor garantia dos atributos de qualidade, ou mesmo para a reconfiguração do sistema uma vez identificada a violação dessas garantias, entre diversos outros modelos propostos e apresentados. Tais considerações refletem os resultados obtidos, que demonstram a predominância desses dois atributos.
 
-Os demais tipos, ferramentas, métricas e processos, obtiveram na sequência as frequências de \RCntTool , \RCntProcess e \RCntMetric . Desses, as publicações que propõem novas ferramentas ou que as avaliam tem ainda moderada relevância de ocorrências. Uma possível hipótese está, mais uma vez, no nível de maturidade da área classificada, dado que uma ferramenta terá maior utilidade se incorporar entre suas funcionalidades métodos e modelos bem definidos, testados e aceitos. Ou seja, as ferramentas estariam mais presentes em fases posteriores àquelas em que soluções e avaliações estão concentradas sobre modelos e métodos. A respeito das métricas, sugere-se um problema na classificação proposta, uma vez que o tema abordado deveria, por natureza, apresentar uma quantidade relevante de pesquisas cujas contribuições estivessem relacionadas às métricas para a mesuração dos atributos de qualidade. Uma rápida vistoria dos artigos classificados que, segundo seus metadados, definem modelos de QoS, poderiam de fato ser classificados no tipo métricas, sem deixar, contudo, de serem modelos propriamente ditos. Cabe, nesse caso, uma discussão acerca dos resultados, do procedimento adotado, e da necessidade de uma reavaliação das publicações classificadas nesses dois tipos. Por outro lado, essa não deve ser a única visão disposta sobre essa questão. Sabe-se que a avaliação da qualidade em diversos campos existe há tempo suficiente para que o uso de métricas já estabelecidas se repita dentro do ambiente orientado a serviços. Esse fato não é igualmente verdadeiro para o caso de modelos taxonômicos e conceituais de QoS, uma vez que as características peculiares do cenário em que opera traz a necessidade evidente da definição de novos atributos, por exemplo a reputação de serviços externos. Outro fator está na amplitude abrangida pelo conceito modelo, que vai além dos modelos de QoS.
+Os tipos ferramentas e métricas obtiveram as frequências de \RCntTool e \RCntMetric . As publicações que propõem novas ferramentas ou que as avaliam tem ainda moderada relevância de ocorrências. Uma possível hipótese está, mais uma vez, no nível de maturidade da área classificada, dado que uma ferramenta terá maior utilidade se incorporar entre suas funcionalidades métodos e modelos bem definidos, testados e aceitos. Ou seja, as ferramentas estariam mais presentes em fases posteriores àquelas em que soluções e avaliações estão concentradas sobre modelos e métodos. A respeito das métricas, sugere-se um possível problema na classificação proposta, uma vez que o tema abordado deveria, por natureza, apresentar uma quantidade relevante de pesquisas cujas contribuições estivessem relacionadas às métricas para a mesuração dos atributos de qualidade. Uma rápida vistoria dos artigos classificados que, segundo seus metadados, definem modelos de QoS, poderia de fato reclassificados no tipo métricas, sem deixar, contudo, de serem modelos propriamente ditos. Cabe, nesse caso, uma discussão acerca dos resultados, do procedimento adotado, e da necessidade de uma reavaliação das publicações classificadas nesses dois tipos. Em contrapartida, essa não deve ser a única visão disposta sobre essa questão. Sabe-se que a avaliação da qualidade em diversos campos existe há tempo suficiente para que o uso de métricas já estabelecidas se repita dentro do ambiente orientado a serviços. É perfeitamente factível a existência de publicações em que um modelo de atributos de QoS é proposto sem que haja contribuição para as métricas por ele utilizadas, que podem ter sido importadas de outros estudos ou definições. Esse fato não é igualmente verdadeiro para o caso de modelos taxonômicos e ontológicos de QoS, uma vez que as características peculiares do cenário em que opera traz a necessidade evidente da definição de novos tipos, segundo diferentes dimensões e perspectivas, por exemplo a reputação de serviços externos, que pode ou não ser baseada na experiência de usuários.
 
-Por último, 
+Por último, a baixa frequência de \RCntProcess das contribuições do tipo processo está associada ao conceito por ele empregado, uma vez que se refere à descrição detalhada de passos concretos para se realizar um procedimento. Esse tipo de pesquisa depende, assim como as ferramentas, da consolidação da arquitetura e das tecnologias associadas ao tema classificado. Tal estágio, como já mencionado, não teria sido atingido na questão de QoS em SOC, e processos não estariam disponíveis em maior quantidade, ou não representam conteúdo de maior interesse que aqueles representado por métodos e modelos.
 
 \begin{figure}[h]
 	\centering \includegraphics[width=0.8\textwidth]{figs/danilo/Context_Contribution.eps}
 	\caption{Contexto vs Tipos de Contribuição}	
 	\label{fig:Context_Contribution}
+\end{figure} 
+
+O cruzamento entre tipos de intervenção e contexto tem o potencial de revelar onde, isto é, em quais atributos ocorrem quais tipos de intervenção. O que se observa pelo gráfico é a mesma predominância de alguns atributos observada no cruzamento com os tipos de pesquisa, sem alterações significativas de linearidade. Um terceiro gráfico, que cruza tipos de contribuição aos tipos de pesquisa, ilustra tal relação diretamente. Nele está evidente que a maior frequência de pesquisas possuem a forma de soluções em métodos, modelos e ferramentas, seguidos das avaliações desses três tipos de intervenção. É precioso reforçar que essas categorias não são mutualmente excludentes, isto é, um mesmo artigo pode estar classificado em vários tipos de pesquisa e vários tipos de intervenção, assim como ocorre nos tipos de contexto. 
+
+Compreensões a inferências mais detalhadas dos resultados obtidos poderão ser feita caso a caso, de acordo com a visão e necessidade de quem os interpreta. Um mapeamento de estudos é amplo o suficiente para servir de fonte para interessados mais leigos, para pesquisadores iniciantes na área ou mesmo experientes e também para técnicos e administradores de organizações que desejem investir ou que venham investindo em soluções orientadas a serviço.
+
+\begin{figure}[h]
+	\centering \includegraphics[width=0.8\textwidth]{figs/danilo/Contribution_Research.eps}
+	\caption{Tipos de Contribuição vs Tipos de Pesquisa}	
+	\label{fig:Contribution_Research}
 \end{figure} 
