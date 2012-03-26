@@ -1,0 +1,20 @@
+One of the core aspects of SOA is the increased level
+of abstraction. As opposed to object-orientation (OO), SOA
+is considered to provide a more business-oriented view.
+Whereas an object in OO characterizes what something is,
+a service in SOA characterizes how something is supposed
+to be used [8].
+
+
+#Predictable types
+Reuse / Composition 		| reuse reusability composition compose composed
+Discovery								| discovery 
+Remote Functionality
+Abstraction / Business	| BPM business process business model BPEL
+Standards								| specification standard
+Tools Gap 							| tool 
+Methodology Change x		| method	approach 
+Dynamics / Runtime / Monitoring x		| dynamically dynamic runtime real-time
+
+#Non predictable types
+Automation xx
