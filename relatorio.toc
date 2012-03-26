@@ -26,20 +26,20 @@
 \contentsline {subsubsection}{\numberline {2.1.2.8}Service Composability}{20}
 \contentsline {subsection}{\numberline {2.1.3}Service Oriented Architecture}{20}
 \contentsline {section}{\numberline {2.2}Qualidade de Serviços}{22}
-\contentsline {subsection}{\numberline {2.2.1}Performance}{22}
+\contentsline {subsection}{\numberline {2.2.1}Performance}{23}
 \contentsline {subsection}{\numberline {2.2.2}Interoperabilidade}{23}
-\contentsline {subsection}{\numberline {2.2.3}Segurança}{23}
-\contentsline {subsection}{\numberline {2.2.4}Disponibilidade ou \textit {Availability}}{24}
-\contentsline {subsection}{\numberline {2.2.5}Confiabilidade}{24}
+\contentsline {subsection}{\numberline {2.2.3}Segurança}{24}
+\contentsline {subsection}{\numberline {2.2.4}Disponibilidade ou \textit {Availability}}{25}
+\contentsline {subsection}{\numberline {2.2.5}Confiabilidade}{25}
 \contentsline {subsection}{\numberline {2.2.6}Manutibilidade}{25}
-\contentsline {subsection}{\numberline {2.2.7}Escalabilidade}{25}
-\contentsline {subsection}{\numberline {2.2.8}Custo}{25}
+\contentsline {subsection}{\numberline {2.2.7}Escalabilidade}{26}
+\contentsline {subsection}{\numberline {2.2.8}Custo}{26}
 \contentsline {section}{\numberline {2.3}Systematic Mapping Study}{26}
-\contentsline {subsection}{\numberline {2.3.1}Escolha das Perguntas de Pesquisa}{26}
-\contentsline {subsection}{\numberline {2.3.2}Pesquisa primária}{27}
+\contentsline {subsection}{\numberline {2.3.1}Escolha das Perguntas de Pesquisa}{27}
+\contentsline {subsection}{\numberline {2.3.2}Pesquisa primária}{28}
 \contentsline {subsection}{\numberline {2.3.3}Inclusão e Exclusão de Publicações}{28}
-\contentsline {subsection}{\numberline {2.3.4}Definição de Categorias e Extração de Dados}{28}
-\contentsline {subsection}{\numberline {2.3.5}Mapeamento e Apresentação de Dados}{29}
+\contentsline {subsection}{\numberline {2.3.4}Definição de Categorias e Extração de Dados}{29}
+\contentsline {subsection}{\numberline {2.3.5}Mapeamento e Apresentação de Dados}{30}
 \contentsline {chapter}{\numberline {3}Abordagem}{31}
 \contentsline {section}{\numberline {3.1}Pesquisa Preliminar}{31}
 \contentsline {section}{\numberline {3.2}Protocolo}{31}
@@ -57,5 +57,5 @@
 \contentsline {section}{\numberline {4.1}Contextos de Pesquisa}{42}
 \contentsline {subsection}{\numberline {4.1.1}Modelos arquiteturais}{42}
 \contentsline {subsection}{\numberline {4.1.2}Contextos vs Tipos de Pesquisa}{50}
-\contentsline {chapter}{REFERÊNCIAS}{54}
-\contentsline {chapter}{{Anexos}}{56}
+\contentsline {chapter}{REFERÊNCIAS}{53}
+\contentsline {chapter}{{Anexos}}{55}

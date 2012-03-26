@@ -12,6 +12,21 @@
   USA: Prentice Hall PTR, 2007.
 ISBN 0132344823.}
 
+\bibitem{Breivold:2007:CSS:1302497.1302990}
+\abntrefinfo{Breivold e Larsson}{BREIVOLD; LARSSON}{2007}
+{BREIVOLD, H.~P.; LARSSON, M. Component-based and service-oriented software
+  engineering: Key concepts and principles. In:  \emph{Proceedings of the 33rd
+  EUROMICRO Conference on Software Engineering and Advanced Applications}.
+  Washington, DC, USA: IEEE Computer Society, 2007. p. 13--20.
+ISBN 0-7695-2977-1. Dispon{\'\i}vel em:
+  $<$http://dl.acm.org/citation.cfm?id=1302497.1302990$>$.}
+
+\bibitem{pernici}
+\abntrefinfo{Benbernou Ivona~Brandic}{BENBERNOU IVONA~BRANDIC}{2008}
+{BENBERNOU IVONA~BRANDIC, M.~C. S. Survey of quality related aspects relevant
+  for service-based applications.
+S-Cube, 2008.}
+
 \bibitem{Balfagih:2009:10.1109}
 \abntrefinfo{Balfagih e Hassan}{BALFAGIH; HASSAN}{2009}
 {BALFAGIH, Z.; HASSAN, M. Quality model for web services from
@@ -19,17 +34,17 @@ ISBN 0132344823.}
   Engineering, 2009. ICIME '09. International Conference on}. [S.l.: s.n.],
   2009. p. 287 --291.}
 
-\bibitem{Petersen_Feldt_Mujtaba_Mattsson_2007}
-\abntrefinfo{Petersen et al.}{PETERSEN et al.}{2007}
-{PETERSEN, K. et al. Systematic mapping studies in software engineering.
-\emph{12th International Conference on Evaluation and Assessment in Software
-  Engineering}, v.~17, n.~1, p. 1--10, 2007.}
-
 \bibitem{Riad:2009:1000041}
 \abntrefinfo{AM Hassan~AE}{AM HASSAN~AE}{2009}
 {AM HASSAN~AE, H.~Q. R. Investigating performanceof xml web services in
   real-time business systems.
 \emph{J ComputSci Syst Biol 2}, p. 266--271, 2009.}
+
+\bibitem{Petersen_Feldt_Mujtaba_Mattsson_2007}
+\abntrefinfo{Petersen et al.}{PETERSEN et al.}{2007}
+{PETERSEN, K. et al. Systematic mapping studies in software engineering.
+\emph{12th International Conference on Evaluation and Assessment in Software
+  Engineering}, v.~17, n.~1, p. 1--10, 2007.}
 
 \bibitem{Papazoglou:2007:SOA:1265289.1265298}
 \abntrefinfo{Papazoglou e Heuvel}{PAPAZOGLOU; HEUVEL}{2007}
@@ -39,15 +54,6 @@ ISBN 0132344823.}
   v.~16, p. 389--415, July 2007.
 ISSN 1066-8888.
 Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1007/s00778-007-0044-3$>$.}
-
-\bibitem{Breivold:2007:CSS:1302497.1302990}
-\abntrefinfo{Breivold e Larsson}{BREIVOLD; LARSSON}{2007}
-{BREIVOLD, H.~P.; LARSSON, M. Component-based and service-oriented software
-  engineering: Key concepts and principles. In:  \emph{Proceedings of the 33rd
-  EUROMICRO Conference on Software Engineering and Advanced Applications}.
-  Washington, DC, USA: IEEE Computer Society, 2007. p. 13--20.
-ISBN 0-7695-2977-1. Dispon{\'\i}vel em:
-  $<$http://dl.acm.org/citation.cfm?id=1302497.1302990$>$.}
 
 \bibitem{Crnkovic:2006:CDP:1193212.1193814}
 \abntrefinfo{Crnkovic, Chaudron e Larsson}{CRNKOVIC; CHAUDRON; LARSSON}{2006}

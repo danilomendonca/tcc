@@ -5,32 +5,32 @@
 %definindo SOC
 \section{Service Oriented Computing}
 
-A tecnologia da informação já se consolidou como ferramenta essencial para as instituições, afetando rotinas, ações, estruturas e modelos de negócios. Os alto custos associados ao consumo e provimento de recursos de TI e a necessidade de uma maior agilidade para responder às mudanças casam-se às propostas da computação orientada a serviços, ou SOC, cujo paradigma de design é composto por princípios que, quando absorvidos, criam condições para o cumprimento dos objetivos e benefícios almejados pela orientação a serviços, entre eles o aumento do retorno de investimento, da agilidade, da reusabilidade e da interoperabilidade, assim como um maior alinhamento entre TI e modelo de negócios. 
+A tecnologia da informação já se consolidou como ferramenta essencial para as instituições, afetando rotinas, ações, estruturas e modelos de negócios. Os alto custos associados ao consumo e provimento de recursos de TI e a necessidade de uma maior agilidade para responder às mudanças casam-se às propostas da computação orientada a serviços, ou SOC, cujo paradigma de design é composto por princípios que, quando absorvidos, criam condições para o alcançar os objetivos e benefícios almejados pela orientação a serviços, entre eles o aumento do retorno de investimento, da agilidade, da reusabilidade e da interoperabilidade, assim como um maior alinhamento entre TI e modelo de negócios. 
 %OK 1.1.2!
 
 %figura(s) com obrigações e benefícios do SOC (4 obrigações e 3 benefícios) 
 %!!substituir figura por uma em português
 \begin{figure}[htbp]
 	\centering	\includegraphics[width=0.80\textwidth]{figs/danilo/SOC_strategic_goals.eps}
-	\caption{Princípios relacionados ao SOA e seus benefícios}	
+	\caption{Princípios relacionados ao SOA e seus benefícios. Adaptação de \cite{Erl:2007:SPS:1296147}}	
 	\label{fig:SOC_strategic_goals}
 \end{figure} 
 
-O paradigma de design da orientação a serviços norteia a configuração do suprimento e consumo dos recursos de TI, em especial as soluções lógicas ou softwares. Apesar do sucesso de outros paradigmas na computação, por exemplo a orientação a objetos, nota-se que problemas distintos, ou seja, da eficiência, agilidade e retorno de investimento na composição de aplicações, ainda deveriam ser atacados. Assim, as aplicações silos com pouca interoperabilidade e sem reuso passaram a ser vistas como um modelo ineficiente, visto que aumentam o custo de desenvolvimento de novas aplicações a longo prazo  e reduzem drasticamente a agilidade ou tempo de resposta às novas demandas, sobretudo quando os modelos de negócio exigem maior flexibilidade. Dessa forma, os benefícios idealizados pelo SOC fizeram desse paradigma um foco de estudos em diversos centros acadêmicos, sobretudo à partir do surgimento da arquitetura orientada a serviços, ou SOA. Também é notável a adesão de grandes vendedores da indústria de TI a essa tecnologia, fomentando tanto pesquisa quanto sua adoção em instituições públicas e privadas.
+O paradigma de design da orientação a serviços norteia a configuração do suprimento e consumo dos recursos de TI, em especial as soluções lógicas ou softwares. Apesar do sucesso de outros paradigmas na computação, por exemplo a orientação a objetos, nota-se que problemas distintos, ou seja, da eficiência, agilidade e retorno de investimento na composição de aplicações, ainda deveriam ser atacados. Assim, as aplicações silos com pouca interoperabilidade e sem reuso passaram a ser vistas como um modelo ineficiente, visto que aumentam o custo de desenvolvimento de novas aplicações a longo prazo reduzem drasticamente a agilidade ou tempo de resposta às novas demandas, sobretudo quando os modelos de negócio exigem maior flexibilidade. Dessa forma, os benefícios idealizados pelo SOC fizeram desse paradigma um foco de estudos em diversos centros acadêmicos, sobretudo à partir do surgimento da arquitetura orientada a serviços, ou SOA. Mesmo antes dessa, um consistente cenário já vinha sendo palco de pesquisas e mesmo implementações reais com o uso de Web services, que fizeram sugir um conjunto de tecnologias e especificações para dar-lhes suporte, inclusive para questões de qualidade. É possível dar a estes grande responsabilidade pelo estabelecimento da Computação Orientada a Serviços.
 
-O termo SOC representa um aglomerado de conceitos relacionados à orientação a serviços \cite{Erl:2007:SPS:1296147}. Além de um paradigma de design, engloba princípios, padrões, governança e arquitetura, notavelmente o SOA. Nesse trabalho, o termo SOC poderá ser usado para se referir de forma genérica à orientação a objetos como um todo.
 
 
 %história
 \subsection{Service Orientation History}
 
-Historicamente, o paradigma de orientação a serviços tem como base diversos outros paradigmas e arquitetura. Por meio da adaptação e amadurecimento de conceitos já experimentados em TI e dada a conjectura de que alguns objetivos poderiam ser melhor conquistados, formou-se o que hoje define a orientação a serviços em termos de princípios de design, arquitetura e tecnologias capazes de implementa-los.
+Historicamente, o paradigma de orientação a serviços tem como base diversos outros paradigmas e arquitetura. Por meio da adaptação e amadurecimento de conceitos já experimentados em TI e dada a conjectura de que alguns objetivos poderiam ser melhor conquistados, formou-se o que hoje define a orientação a serviços em termos de princípios de design, tecnologias, padrões, governança e arquitetura, notavelmente o SOA. O termo SOC representa todo este aglomerado de conceitos. Nesse trabalho, esse termo poderá ser usado para se referir de forma genérica à orientação a serviços como um todo.
+
 
 %figura com origens do SO
 %!!substituir figura por uma em português
 \begin{figure}[htbp]
 	\centering	\includegraphics[width=0.9\textwidth]{figs/danilo/Origins_SOC.eps}
-	\caption{Origens da Orientação a Serviço}	
+	\caption{Origens da Orientação a Serviço. Adaptação de \cite{Erl:2007:SPS:1296147}.}	
 	\label{fig:Origins_SOC}
 \end{figure} 
 
@@ -45,7 +45,7 @@ No entanto, serviços diferenciam-se fundamentalmente de componentes. Enquanto co
 %Figura com atividades de componentes e serviços
 \begin{figure}[hbtp]
 	\centering	\includegraphics[width=1.0\textwidth]{figs/danilo/Component_vs_Services.eps}
-	\caption{Comparação entre atividades típicas de componentes e serviços}	
+	\caption{Comparação entre atividades típicas de componentes e serviços. Adaptação de \cite{Breivold:2007:CSS:1302497.1302990}}	
 	\label{fig:Component_vs_Services}
 \end{figure} 
 
@@ -63,7 +63,7 @@ Uma notável diferença entre os dois paradigmas está no escopo onde atuam. A orie
 %Figura com escopo da orientação a objetos e a serviços
 \begin{figure}[hbtp]
 	\centering	\includegraphics[width=0.7\textwidth]{figs/danilo/Object_vs_Services.eps}
-	\caption{Comparação entre escopos da Orientação a Objetos a da Orientação a Serviços}	
+	\caption{Comparação entre escopos da Orientação a Objetos a da Orientação a Serviços. }	
 	\label{fig:Object_vs_Services.eps}
 \end{figure}
 
@@ -238,9 +238,20 @@ Uma organização que venha a adotar o SOA estará, de antemão, adotando em determi
 
 \section{Qualidade de Serviços}
 
-Por qualidade de serviços ou QoS de um sistema entende-se seus atributos ou requisitos não funcionais. Ou seja, são aspectos qualitativos de estado e não definições de funcionamento, sendo possível citar a performance, a segurança, a disponibilidade, a mantenabilidade, a escalabilidade, etc. Com o amadurecimento e evolução da engenharia de software, tais atributos tornaram-se cruciais para a gerência de riscos e também de custos das aplicações, participando ativamente na definição da arquitetura do sistema e finalmente com peso maior que os próprios requisitos funcionais ao passo que o sistemas aumentam sua ligação a processos de negócio.
+Por qualidade de serviços ou QoS de um sistema entende-se seus atributos ou requisitos não funcionais. Ou seja, são aspectos que descrevem qualitativamente a maneira como funcionam, e não definições de como devem funcionar e que operações executar. É possível citar atributos comuns, tais quais a performance, a segurança, a disponibilidade, a mantenabilidade e a escalabilidade. Com o amadurecimento e evolução da engenharia de software, tais aspectos de qualidade tornaram-se cruciais para a gerência de riscos e também de custos das aplicações, participando ativamente na definição da arquitetura dos sistemas e finalmente com peso comparável aos próprios requisitos funcionais ao passo que esses sistemas aumentam sua ligação com os processos de negócio.
 
-Diversos autores se dedicam a definir modelos e métricas para atributos de QoS. Em específico, os sistemas em concordância com o paradigma da orientação a serviços, existe um fator dificultante devido à configuração distribuída dos serviços, que se constituem de tecnologias diversas em sua implementação, o que resulta num ambiente heterogêneo de integração. Com isso, alguns modelos de QoS propostos não se adaptam bem à nova realidade e outros foram definidos focando o ambiente SOC. Alguns trabalhos apresentam uma categorização dos atributos de qualidade para uma melhor contextualização e abordagem dos mesmos. As categorias tem diferentes níveis de granularidade e representam perspectivas diversas, conforme listado em \cite{Balfagih:2009:10.1109}. Esse mesmo artigo propõe um novo modelo que leva em conta a característica segmentada das partes envolvidas e interessadas no provimento e consumo de serviços. Segundo esse modelo, três grandes atores formam as categorias dos atributos de qualidade. São eles os atributos de desenvolvedores, de consumidores e de provedores.
+
+%FIGURA COM TODAS OU PRINCIPAIS ATRIBUTOS DE QOS
+\begin{figure}[hbtp]
+	\centering	\includegraphics[width=0.8\textwidth]{figs/danilo/QoS_Aspects.eps}
+	\caption{Aspectos importantes de QoS. Adaptação de \cite{pernici}}	
+	\label{fig:QoS_Aspects}
+\end{figure}
+
+
+Diversos autores se dedicam a definir modelos taxonômicos e métricas para atributos de QoS. Em específico, nos sistemas embasados no paradigma da orientação a serviços, existe um fator dificultante devido à configuração distribuída de seus componentes principais, os serviços, que se constituem de tecnologias diversas em sua implementação, o que resulta num ambiente heterogêneo a ser integrado respeitando tais premissas de qualidade. Com isso, alguns modelos de QoS propostos não se adaptam bem à nova realidade e outros foram definidos focando o ambiente especialmente o modelo SOC. 
+
+Alguns trabalhos apresentam uma categorização dos atributos de qualidade para uma melhor contextualização e abordagem dos mesmos. As categorias tem diferentes níveis de granularidade e representam perspectivas diversas, conforme listado em \cite{Balfagih:2009:10.1109}. Esse mesmo artigo propõe um novo modelo que leva em conta a característica segmentada das partes envolvidas e interessadas no provimento e consumo de serviços. Segundo esse modelo, três grandes atores formam as categorias dos atributos de qualidade. São eles os atributos de desenvolvedores, de consumidores e de provedores.
 
 %FIGURA COM TODAS OU PRINCIPAIS ATRIBUTOS DE QOS
 \begin{figure}[hbtp]
@@ -253,6 +264,12 @@ Diversos autores se dedicam a definir modelos e métricas para atributos de QoS. 
 \subsection{Performance}
 
 A performance é um atributo relacionado ao tempo. Encontra-se definida no tempo de resposta a uma requisição, na quantidade de requisições por unidade de tempo e na capacidade de atende-las num período determinado \cite{O'Brien:2007:QAS:1270235.1270300}. Nesse sentido, o uso de serviços distribuídos acarreta prejuízos à performance inerentes à rede utilizada, além de processamento extra devido ao tratamento e encaminhamento das mensagens entre serviços, especialmente quando trata-se de formatos baseados em texto, como o XML, que possuem tamanho maior que sua representação binária. Também irá prejudicar a performance o processo de descobrimento e alocação de serviços nas situações em que esse processo não é pré-estabelecido. 
+
+\begin{figure}[h]
+	\centering \includegraphics[width=0.8\textwidth]{figs/danilo/Binary_XML.eps}
+	\caption{Serialização Binária vs. Serialização XML. Adaptação de \cite{Riad:2009:1000041}}
+	\label{fig:Binary_XML}
+\end{figure} 
 
 \subsection{Interoperabilidade}
 A interoperabilidade é definida pela capacidade de componentes de um sistema compartilharem informação e operarem de forma acordada\cite{O'Brien:2007:QAS:1270235.1270300}. Assim, mede-se a comunicação e o processamento de informações de maneira independente à fonte dos dados. Visto que o ambiente SOC pressupõe a criação de serviços e, especificamente em SOA, serviços implementados com diversas tecnologias sem prejuízo à intercomunicação, verifica-se que um dos principais benefícios trazidos por essa arquitetura é para a interoperabilidade. Ademais, protocolos já existentes, tal qual o SOAP, realizam a função de troca de informação de maneira interoperável, uma vez que o fazem de forma transparente às aplicações envolvidas. Por fim, o uso de especificações representa um desafio entre avanços para a interoperabilidade, dado que promovem a padronização, mas o uso de especificações incompatíveis ou a sua adesão parcial causará conflitos, comprometendo tal atributo. 

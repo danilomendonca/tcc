@@ -3,6 +3,7 @@ The top-level auxiliary file: relatorio.aux
 A level-1 auxiliary file: folha_catalografica.aux
 A level-1 auxiliary file: resumos.aux
 A level-1 auxiliary file: simbolos.aux
+A level-1 auxiliary file: dados.aux
 A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: embasamento.aux
 A level-1 auxiliary file: abordagem.aux
@@ -17,45 +18,45 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 140733193394032.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 18 entries,
+You've used 19 entries,
             6480 wiz_defined-function locations,
-            1309 strings with 13551 characters,
-and the built_in function-call counts, 15530 in all, are:
-= -- 1403
-> -- 494
+            1314 strings with 13691 characters,
+and the built_in function-call counts, 16010 in all, are:
+= -- 1429
+> -- 506
 < -- 24
-+ -- 235
-- -- 148
-* -- 1104
-:= -- 2018
-add.period$ -- 87
-call.type$ -- 18
-change.case$ -- 201
-chr.to.int$ -- 33
-cite$ -- 18
-duplicate$ -- 774
-empty$ -- 1149
-format.name$ -- 761
-if$ -- 3757
++ -- 239
+- -- 152
+* -- 1132
+:= -- 2089
+add.period$ -- 90
+call.type$ -- 19
+change.case$ -- 208
+chr.to.int$ -- 34
+cite$ -- 19
+duplicate$ -- 804
+empty$ -- 1193
+format.name$ -- 781
+if$ -- 3865
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 332
-newline$ -- 104
-num.names$ -- 72
-pop$ -- 472
+missing$ -- 348
+newline$ -- 109
+num.names$ -- 76
+pop$ -- 493
 preamble$ -- 1
-purify$ -- 74
+purify$ -- 77
 quote$ -- 0
-skip$ -- 822
+skip$ -- 851
 stack$ -- 1
-substring$ -- 609
-swap$ -- 404
+substring$ -- 626
+swap$ -- 412
 text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 5
 warning$ -- 0
-while$ -- 118
+while$ -- 123
 width$ -- 0
-write$ -- 273
+write$ -- 285
 (There was 1 warning)
