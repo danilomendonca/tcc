@@ -11,6 +11,7 @@
 
 \newcommand{\fsc}[1]{\scshape#1}
 \usepackage[T1]{fontenc}
+\usepackage[section]{placeins}
 %\usepackage[brazilian]{babel}
 \usepackage[brazilian,portuges]{babel}
 \usepackage{epsfig}
@@ -146,14 +147,14 @@
 % Os nomes dos autores são definidos pelos comandos \autori (autor 1) e \autorii (autor 2).
 % Para trabalhos com apenas um autor, deve-se usar \autorii{} para que não apareça
 % um nome para segundo autor.
-\autori{Danilo Filgueira Mendonça}
-\autorii{} % descomente esta linha se não houver segundo autor.
+\autori{}
+\autorii{Danilo Filgueira Mendonça} % descomente esta linha se não houver segundo autor.
 
 % Para página catalográfica - título em letras minúsculas e nome dos autores em maiúsculo, com último sobrenome primeiro
 \titulominusculoi{A Systematic Mapping Study: }
 \titulominusculoii{QOS em Computação Orientada a Serviços}
-\refautori{MENDONCA, D. F.}
-\refautorii{}
+\refautori{}
+\refautorii{MENDONCA, D. F.}
 \numpaginastexto{52p}
 \numpaginaspreliminares{v}
 
@@ -194,7 +195,7 @@
 
 % Texto de dedicatória do segundo autor. Caso não tenha um segundo autor, este texto não
 % será mostrado
-%\dedicatoriaautorii{Dedico este trabalho aos meus pais que sempre me deram apoio e acreditaram no meu esforço para que eu concluísse meu curso de graduação}
+\dedicatoriaautorii{}
 
 % Comando para criar a página de dedicatória
 \dedicatoria
@@ -207,8 +208,7 @@
 
 % Texto de agradecimentos do segundo autor. Caso não tenha um segundo autor, este texto não
 % será mostrado
-%\agradecimentosautorii{Agradeço a todos meus amigos que entraram comigo no curso em especial ao Roberto Braga que comigo fez este trabalho de conclusão de curso. A todos com quem trabalhei no TCU, principal ao Geraldo Magela, que me deu a oportunidade de estagiar no SIRED e ao Alfram Albuquerque que propôs este projeto e foi de fundamental importância para o andamento e conclusão do projeto.
-%Ao meu orientador, Rafael Timóteo, por aceitar o tema do projeto e acreditar na conclusão deste trabalho. }
+\agradecimentosautorii{}
 
 % Comando para criar a página de agradecimentos
 \agradecimentos
@@ -266,7 +266,7 @@
 
 \include{resultados}
 
-%\include{conclusao}
+\include{discussao}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

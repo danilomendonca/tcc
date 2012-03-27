@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  26 MAR 2012 00:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  27 MAR 2012 11:30
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -32,6 +32,9 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
+(/usr/share/texmf-texlive/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
 (/var/lib/texmf/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
@@ -359,32 +362,26 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 Writing index file relatorio.idx
 (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux) (./simbolos.aux)
 (./dados.aux) (./introducao.aux) (./embasamento.aux) (./abordagem.aux)
-(./resultados.aux
-
-LaTeX Warning: Label `fig:Context_Research' multiply defined.
-
-
-LaTeX Warning: Label `fig:Context_Contribution' multiply defined.
-
+(./resultados.aux) (./discussao.aux
 
 LaTeX Warning: Label `fig:Contribution_Research' multiply defined.
 
 ))
 \openout1 = `relatorio.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 125.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 126.
  (/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -430,32 +427,32 @@ driver: dvips
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 181.
+LaTeX Font Info:    Try loading font information for U+msa on input line 182.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 181.
+LaTeX Font Info:    Try loading font information for U+msb on input line 182.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 181.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 182.
 
 (/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for T1+phv on input line 181.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 182.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 181.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 182.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 181.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 182.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 181.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 182.
 File: figs/capa_fundo2.eps Graphic file (type eps)
  <figs/capa_fundo2.eps>
 [1
@@ -463,9 +460,9 @@ File: figs/capa_fundo2.eps Graphic file (type eps)
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 182.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 183.
 
-Underfull \hbox (badness 1057) in paragraph at lines 182--182
+Underfull \hbox (badness 1057) in paragraph at lines 183--183
 []|\T1/phv/m/n/10 Profa. Dra. Ge-naína Nu-nes Ro-dri-gues ,
  []
 
@@ -632,15 +629,8 @@ File: figs/danilo/Support_Tool_02.eps Graphic file (type eps)
 
  (./resultados.tex
 Cap\'{\i }tulo 4.
-File: figs/danilo/Context_Research.eps Graphic file (type eps)
-<figs/danilo/Context_Research.eps>
-File: figs/danilo/Context_Contribution.eps Graphic file (type eps)
- <figs/danilo/Context_Contribution.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: figs/danilo/Contribution_Research.eps Graphic file (type eps)
-<figs/danilo/Contribution_Research.eps>
+File: figs/danilo/Topic_Architecture_Context.eps Graphic file (type eps)
+<figs/danilo/Topic_Architecture_Context.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -648,21 +638,32 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-] [43]
-File: figs/danilo/Context_Research.eps Graphic file (type eps)
- <figs/danilo/Context_Research.eps> [44] [45] [46] [47] [48] [49]
-[50]
-File: figs/danilo/Context_Contribution.eps Graphic file (type eps)
- <figs/danilo/Context_Contribution.eps>
+]
+File: figs/danilo/Topics.eps Graphic file (type eps)
+ <figs/danilo/Topics.eps>
+File: figs/danilo/Architectures.eps Graphic file (type eps)
+ <figs/danilo/Architectures.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: figs/danilo/Contribution_Research.eps Graphic file (type eps)
-<figs/danilo/Contribution_Research.eps>
+[43]
+File: figs/danilo/Context_Research_Contribution.eps Graphic file (type eps)
+ <figs/danilo/Context_Research_Contribution.eps>
+File: figs/danilo/Contexts.eps Graphic file (type eps)
+
+<figs/danilo/Contexts.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [51] [52] (./relatorio.bbl [53
+[44]
+File: figs/danilo/Research.eps Graphic file (type eps)
+ <figs/danilo/Research.eps>
+File: figs/danilo/Contributions.eps Graphic file (type eps)
+ <figs/danilo/Contributions.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45]) [46] (./relatorio.bbl [47
 
 
 ]
@@ -695,12 +696,12 @@ Underfull \hbox (badness 7415) in paragraph at lines 107--110
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [54]
+) [48]
 \c@noAnexo=\count127
 \tf@thm=\write7
 \openout7 = `relatorio.thm'.
 
- [55
+ [49
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
 (./simbolos.aux) (./dados.aux) (./introducao.aux) (./embasamento.aux)
@@ -717,12 +718,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5133 strings out of 494910
- 66089 string characters out of 1177227
- 153497 words of memory out of 3000000
- 8119 multiletter control sequences out of 15000+50000
+ 5171 strings out of 494910
+ 66782 string characters out of 1177227
+ 154426 words of memory out of 3000000
+ 8146 multiletter control sequences out of 15000+50000
  60148 words of font info for 71 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
- 34i,15n,25p,2230b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,25p,1711b,381s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (65 pages, 209948 bytes).
+Output written on relatorio.dvi (59 pages, 195552 bytes).

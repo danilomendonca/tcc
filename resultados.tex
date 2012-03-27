@@ -1,96 +1,80 @@
 %TCIDATA{LaTeXparent=0,0,relatorio.tex}
 \chapter{Resultados}\label{resultados}
 
-
 Havendo constituído uma base de registros significativa, com exatas \RGOnePubs \hspace{1pt} publicações analisadas à partir de critérios de inclusão e exclusão, o que resultou num total de \RGOneAPubs \hspace{1pt} aceitas e classificadas. Tais números se referem àqueles atendidos por somente um grupo entre os participantes, sendo importante ressaltar o algoritmo adotado na divisão feita, que distribuiu sequencialmente e por ordem alfabética do título uma publicação para cada grupo até que todas as \RAllPubs \hspace{1pt} estivessem associadas a um dos três grupos cadastrados.
 
-Assim, os seguintes resultados representam uma parte, mais precisamente um terço da amostra total. O tipo de distribuição feita permite com que dentro de cada subamostra pertencente aos grupos haja publicações em praticamente todos os tópicos, com uma desprezível variação dada a relação entre tópico abordado e título e a grande quantidade de publicações contempladas.
+Assim, os seguintes resultados representam uma parte, mais precisamente um terço da amostra total. O tipo de distribuição feita permite com que dentro de cada subamostra pertencente aos grupos haja publicações em praticamente todos os tópicos, com uma desprezível variação dada a relação entre tópico abordado e título, além da grande quantidade de publicações contempladas. A intenção é de que haja a continuidade de análises até que o total da amostra principal aceito pelos critérios de inclusão tenha sido classificado, o que dará mais importância e robustez aos resultados obtidos pelo mapeamento de estudos.
 
-A intenção de todos os envolvidos no trabalho é de que haja a continuidade de análises até que o total da amostra principal aceito pelos critérios de inclusão tenha sido classificado, o que dará mais importância e robustez aos resultados obtidos pelo mapeamento de estudos.
+Conforme descrito e justificado nos capítulos \ref{embasamento} e  \ref{abordagem}, os resultados estão dispostos em gráficos bolhas ou \textit{bubble plots}. Para cada par de categorias de classificação, foi possível efetuar cruzamentos e apresentar a quantidade de publicações que se enquadram em ambas as categorias cruzadas por meio de círculos de tamanhos proporcionais às frequências obtidas. A seguir, esses gráficos são apresentados seguindo a ordem das questões de pesquisa contempladas.
 
-Conforme descrito e justificado nos capítulos \ref{embasamento} e  \ref{abordagem}, os resultados estão dispostos em gráficos bolhas ou \textit{bubble plots}. Para cada par de categorias de classificação, foi possível efetuar um cruzamento e apresentar a quantidade de publicações que se enquadram em ambas as categorias por meio de círculos de tamanhos proporcionais. A seguir, os gráficos obtidos são apresentados.
+\section{Tópicos de Pesquisa e Modelos Arquiteturais}
 
-\section{Contextos de Pesquisa}
-
-\begin{figure}[htbp]
-	\includegraphics[width=0.8\textwidth]{figs/danilo/Context_Research.eps}
-	\caption{Contexto vs Tipos de Pesquisa}	
-	\label{fig:Context_Research}
-\end{figure} 
+\subsection{Primeiro gráfico: frequências conjuntas de tópicos de pesquisa, modelos arquiteturais e contextos.}
 
 \begin{figure}[h]
-	\centering \includegraphics[width=0.8\textwidth]{figs/danilo/Context_Contribution.eps}
-	\caption{Contexto vs Tipos de Contribuição}	
-	\label{fig:Context_Contribution}
-\end{figure} 
-
-
-\begin{figure}[h]
-	\centering \includegraphics[width=0.8\textwidth]{figs/danilo/Contribution_Research.eps}
-	\caption{Tipos de Contribuição vs Tipos de Pesquisa}	
+	\centering \includegraphics[width=1\textwidth]{figs/danilo/Topic_Architecture_Context.eps}
+	\caption{Tópicos de Pesquisa vs. Modelos Arquiteturais e Tópicos de Pesquisa vs. Contextos QoS e SLA}	
 	\label{fig:Contribution_Research}
 \end{figure} 
+\FloatBarrier
 
-\subsection{Modelos arquiteturais} 
-
-Uma classificação dos tipos de pesquisa visa enquadrar o estado geral da ciência praticada numa determinada área. Isso é possível através da relação entre tipos de pesquisas com os níveis de amadurecimento da área pesquisada ou com a fase em que a mesma se encontra.
-
-Num cenário que concentra um grande número de publicações cuja contribuição é visto com maior grau de novidade, como soluções para questões ainda não exploradas ou cujas alternativas não foram bem aceitas, possuem limitações ou tem desvantagens de complexidade e custo, presume-se que essa área abordada não possui maturidade ou que ainda passa por modificações importantes nos tópicos a ela relacionados. Tal fato acentua-se quando o número dessas publicações é consideravelmente maior que aquelas destinadas à avaliação ou validação de soluções já propostas, assim como aquelas destinadas a relatos de experiências adquiridas na prática. Em nosso mapeamento de estudos com foco na Computação Orientada a Serviços e seus aspectos não funcionais, encontramos um cenário semelhante após o a classificação sistemática das publicações em tipos definidos de pesquisa. Apesar de um dos critérios de exclusão utilizados nesse mapeamento impedem que pesquisas do tipo opinião fossem inclusos para classificação, tal categoria está representada no gráfico para reforçar o conceito do grupo de opções como um todo.
-
-\begin{figure}[htbp]
-	\includegraphics[width=0.8\textwidth]{figs/danilo/Context_Research.eps}
-	\caption{Contexto vs Tipos de Pesquisa}	
-	\label{fig:Context_Research}
-\end{figure} 
-
-Conforme está bem indicado pelo gráfico da figura acima, a maioria das publicações classificadas encontram-se entre os tipos solução e 	avaliação. Tal correlação entre os dois tipos ocorre pela frequência em que a viabilidade de uma solução proposta é avaliada com um exemplo simples de implementação ou experimento. Além disso, a superioridade desses dois tipos em detrimento dos demais vai ao encontro daquilo já dissertado, e justifica-se pelo fato de que o escopo da classificação engloba o paradigma da orientação a serviços,  que notavelmente ainda tem pela frente grandes desafios e cuja maturidade ainda é baixa. Em específico, o escopo é restrito às intervenções feitas nos quesitos não funcionais ou de qualidade de serviços em SOC. Por uma ordem lógica da evolução de qualquer tecnologia, pode-se prever que as definições de padrões, arquiteturas, modelos e abordagens para o cumprimento dos requisitos funcionais dos sistemas tiveram precedência aos requisitos não funcionais, uma vez que é impossível avaliar a qualidade de algo que ainda não pode operar. Assim, uma vez assentadas as questões funcionais das tecnologias envolvidas, o interesse de pesquisa voltou-se à resolução e melhoria dos aspectos de qualidade. Não seria tarefa fácil ou precisa delimitar uma divisão de águas entre os enfoques funcionais e não funcionais para as pesquisas voltadas ao SOC. O que o presente mapeamento revela é que os problemas relacionados à garantia de qualidade nas operações dos serviços e nos resultados alcançados pelos negócios que os consomem ainda são abordados frequentemente com pesquisas que trabalham com soluções e pequenas avaliações, evidenciando uma certa imaturidade de modelos e métodos para alcançarem patamares de QoS estáveis e de acordo com os requisitos reais de da prática e de consumidores reais	.
-
-\begin{large}
-Cruzamento de Categorias
-\end{large}
-
-Neste gráfico foram cruzadas categorias de tipo de pesquisa com aquelas de contexto. Por contexto, conforme definido como conceito de intervenção no protocolo desse estudo, estão identificadas categorias de QoS, levando em conta aquelas mais citadas entre os artigos e de maior ênfase nas pesquisas.
-
-A interpretação dos resultados apresentados pelo gráfico pode ser feita com base na natureza dos atributos. É nítida a predominância das publicações que abordam performance e disponibilidade, além de confiabilidade. Tais atributos estão associados diretamente à dimensão temporal e representam fluxos ou taxas de eventos e podem ser mensurados por meio de fórmulas simples que utilizam valores de quantidade de dados, de requisições atendidas, de interrupções nas operações dos serviços e finalmente de erros por unidade de tempo, identificando, respectivamente, performance, disponibilidade e confiabilidade, todos atributos que também se aplicam a qualquer outro paradigma e sistema de software e que já possui ampla herança em estudos de aspectos não funcionais. Mais uma razão para sua relevância no resultado obtido está na relação direta entre esses atributos e a parte envolvida de maior interesse, isto é, os consumidores de serviços. Mesmo sendo atributos cujo mal desempenho poderia afetar a reputação, o rendimento e consequentemente a viabilidade de um serviço, são atributos que refletem diretamente e com maior ímpeto na qualidade observada pelos consumidores, sendo a latência das requisições, a inoperância do serviço e a ocorrência de erros situações que podem desestabilizar ou comprometer por completo um \textit{workflow} em execução. Sabe-se que, no ambiente distribuído, problemas de performance, de transação não confiável e de quebra de conectividade podem devido a problemas da própria camada de transporte, ou seja, da rede utilizada. No mais, as tecnologias de troca de mensagens, entre elas o SOAP é a mais utilizada em Web services, tem conhecidos problemas de performance devido ao \textit{overhead} incorporado às mensagens e sobretudo devido ao formato textual relativo ao padrão XML adotado para a serialização dos dados e que supera o tamanho da representação binária correspondente numa proporção elevada, conforme descrito em \cite{Riad:2009:1000041}.
-
-
-Assim, não há até o momento unanimidade no que diz respeito ao uso de tecnologias que garantam um maior desempenho de sistemas distribuídos e que mantenham-se interoperáveis, a despeito da maturidade das tecnologias e padrões existentes e do surgimento de alternativas ao formato XML. A predominância das publicações que abordam tais temas ratifica essa hipótese.
-
-Outro ponto de vista que pode ser tomado como justifica para os resultados está no quesito dependabilidade, ou \textit{dependability}, termo já conhecido na computação e que veio a ganhar maior complexidade no ambiente distribuído proposto pelo SOC. A dependabilidade é um conceito sustentado principalmente ao tripé confiabilidade, disponibilidade e segurança, que por si só é composta de vários outros atributos. Tal visão preza pelo funcionamento constante, previsível, correto e seguro das funcionalidades servidas. Também nesse conjunto de requisitos a Computação Orientada a Serviços sofre com questões ainda em aberto. Por exemplo, há muito a ser discutido no aspecto segurança, visto que os dados trafegam em redes internas ou na própria internet, o que pode ameaçar a integridade e o sigilo dos dados. Além disso, a possibilidade de contratar terceiros para o provimento de serviços contribui para o potencial do paradigma, mas acarreta problemas do tipo autenticação e identificação das partes envolvidas, entre outros. Assim, a predominância desses atributos é justificada e possuem a seguinte ordem percentual de frequências: performance com \RCxtPerformance , disponibilidade com \RCxtAvailability , confiabilidade com \RCxtPerformance \hspace{1pt} e segurança com \RCxtSecurity. O cruzamento recorrente com os tipos de pesquisa de solução e avaliação demonstra um esforço elevado visando a melhoria desses atributos através da criação ou aperfeiçoamento das tecnologias e abordagens utilizadas na adoção e implementação de soluções orientadas a serviço.
-
-É importante notar que o atributo SLA não se refere a um atributo de qualidade per si, porém sim ao uso de contratos que definem, entre outros, os níveis de qualidade exigidos e as consequências para seu descumprimento. Em relação a esse atributo, os resultados demonstram um número considerável, com um total de \RCxtSla \hspace{1pt} das publicações classificadas nesse atributo, significando que o foco de suas pesquisas fazia referência direta ao uso desses contratos na negociação de aspectos não funcionais de serviços, o que inclui atividades de descoberta, seleção, composição, monitoramento e reconfiguração a situações de quebra de contrato, entre outras.
-
-A escalabilidade, que representa a viabilidade e complexidade de um sistema em aumentar a vazão de funcionalidades atendidas, seja pelo aumento da oferta disponível a um ou mais usuários ou pelo aumento do número de usuários em si, ou mesmo pelo incorporamento de mais funcionalidades ao sistema. Tal aspecto está mais associado ao provedor, que detém a responsabilidade sobre a implementação do serviço, porém é também um atributo de grande interesse aos consumidores, haja vista a necessidade de se comportar alterações sazonais de demanda aos negócios atendidos pelos serviços ou crescimentos futuros planejados ou mesmo inesperados. Esse aspecto de qualidade foi referenciado por \RCxtScalability \hspace{1pt} dos trabalhos classificados, atestando sua importância nesse paradigma, uma vez que a escalabilidade é uma das premissas de maior valor agregada ao uso de serviços.
-
-A modificabilidade e a testabilidade, ambos conceitos subentendidos ao atributo de manutibilidade, conforme o modelo proposto por \cite{Balfagih:2009:10.1109}, são considerados atributos diretamente ligados ao desenvolvimento de serviços. O primeiro, sobretudo se associado aos princípios de design da orientação a serviços, é naturalmente beneficiado pelo desacoplamento entre usuário e interface da implementação, o que possibilita a modificação dessa última sem a quebra da ligação entre serviço e seus usuários, além de outros benefícios já citados no capítulo \ref{embasamento}. Portanto, a modificabilidade recebeu pouco enfoque entre as pesquisas analisadas, com apenas \RCxtModifiability . Em contraste, conforme anunciado em \cite{O'Brien:2007:QAS:1270235.1270300}, a testabilidade dos sistemas dispostos em arquiteturas orientadas a serviço sofrem de problema consequentes ao ambiente distribuído e heterogêneo, onde o controle sobre o fluxo de execução é difícil de ser realizado e o acesso aos detalhes dos erros pode ser restrito, fatores esses consequentes ao modelo \textit{black box} utilizado pelo design de serviços. Dessa forma, o modesto percentual desse atributo nos resultados, em torno de \RCxtTestability , parece ser consequência do alto grau de dificuldade em abordar os desafios nele encontrados e, conforme a linha de raciocínio já seguida nesse trabalho, trata-se de um aspecto que dificilmente seria atendido com maior ênfase antes daqueles associados diretamente à percepção do consumidor de qualidade de serviço, ou dito de outra forma, há mais sentido em se atacar os entraves que inviabilizam o uso de serviços, como os problemas de performance e segurança, que garantir um ambiente ágil de desenvolvimento e correção de erros, por mais significativo que esses últimos possam ser para os resultados finais e até mesmo para a garantia de outros atributos, entre eles a melhoria da confiabilidade e sobretudo da disponibilidade. Não se trata, contudo, de uma conformidade à situação, mas sim um dado relevante que indica a carência de estudos direcionados a resolver e evoluir a testabilidade em sistemas que fazem uso de SOC.
-
-O custo, que foi abordado por \RCxtCost \hspace{1pt} das publicações, tem forte relação com o uso de serviços externos ou serviços de terceiros, cujo custo é estipulado de diversas formas e entra como fator de cálculo para a escolha de serviços. Portanto, dada a quantidade significativa de publicações que focam a seleção e composição de serviços levando em conta os atributos não funcionais, muitas dessas adicionam o custo como limitante à escolha dos melhores serviços, o que justifica o percentual alcançado. Ademais, outras pesquisas abordam o fator custo sob perspectivas diversas, tal qual a análise de custos na composição, na garantia mínima de disponibilidade, 
-etc. O viés econômico é próprio da natureza dos serviços em qualquer esfera, dentro ou fora da computação, fato que esclarece a consideração dada a este atributo e que o eleva a fator determinante para a decisão de uso de unidades lógicas providas por terceiros ou por soluções adquiridas ou desenvolvidas internamente pelas organizações. Mais que diminuir os custos da TI por meio do reuso de serviços próprios, o sucesso de um modelo de negócios que permita a venda desses serviços segundo o que se conhece hoje como \textit{Software as a Service} pode ser a chave para a disseminação da Computação Orientada a Serviços e o consequente aumento de esforços e investimentos para a sua pesquisa e aperfeiçoamento.
-
-Por fim, uma opção adicional de classificação foi disposta para contemplar demais atributos de QoS. Entre esses, a interoperabilidade, a usabilidade e sobretudo a reputação dos serviços são abordados por pesquisas. Ao todo, um percentual de \RCxtOthers \hspace{1pt} de publicações foram identificadas com essa opção. 
-
-\subsection{Contextos vs Tipos de Pesquisa} 
-
-O segundo cruzamento de dados visa relacionar os tipos de contribuição aos atributos de QoS. Ao classificar uma pesquisa pela contribuição dada, o objetivo principal é obter informações acerca da intervenção realizada pelo trabalho. De acordo com as descrições dadas no capítulo \ref{embasamento}, espera-se reconhecer intervenções do tipo modelo, método, métricas, ferramenta ou processo. 
-
-Assim definido e dado o amplo campo representado pelo SOC, espera-se a identificação de publicações em todos esses tipos. Segundo os resultados obtidos, uma maioria de publicações oferece intervenções classificadas como modelo ou método, somando \RCntModel \hspace{1pt} e \RCntMethod , respectivamente. Um método representa qualquer tipo de abordagem, procedimento, denotando um meio de se alcançar um estado ou objetivo sobre o objeto de estudo. Para o tema classificado, é visível a tendência para pesquisas que intervenham na garantia de aspectos não funcionais. Assim, tais contribuições são feitas pela proposta de novos métodos para monitoramento de atributos, para seleção e composição de serviços de acordo com esses atributos, para o cálculo dos mesmos em \textit{workflows} ou como visão global de um sistema com soluções orientadas a serviço. Ademais, o próprio objeto é fonte de constante discussão e recebe, por meio da elaboração de modelos taxonômicos que definem os atributos de qualidade por diversos pontos de vista e segundo variadas estruturas de conceitos, o foco de um número considerável de artigos. A isto ainda se somam as contribuições de modelos arquiteturais, de modelos de melhor garantia dos atributos de qualidade, ou mesmo para a reconfiguração do sistema uma vez identificada a violação dessas garantias, entre diversos outros modelos propostos e apresentados. Tais considerações refletem os resultados obtidos, que demonstram a predominância desses dois atributos.
-
-Os tipos ferramentas e métricas obtiveram as frequências de \RCntTool e \RCntMetric . As publicações que propõem novas ferramentas ou que as avaliam tem ainda moderada relevância de ocorrências. Uma possível hipótese está, mais uma vez, no nível de maturidade da área classificada, dado que uma ferramenta terá maior utilidade se incorporar entre suas funcionalidades métodos e modelos bem definidos, testados e aceitos. Ou seja, as ferramentas estariam mais presentes em fases posteriores àquelas em que soluções e avaliações estão concentradas sobre modelos e métodos. A respeito das métricas, sugere-se um possível problema na classificação proposta, uma vez que o tema abordado deveria, por natureza, apresentar uma quantidade relevante de pesquisas cujas contribuições estivessem relacionadas às métricas para a mesuração dos atributos de qualidade. Uma rápida vistoria dos artigos classificados que, segundo seus metadados, definem modelos de QoS, poderia de fato reclassificados no tipo métricas, sem deixar, contudo, de serem modelos propriamente ditos. Cabe, nesse caso, uma discussão acerca dos resultados, do procedimento adotado, e da necessidade de uma reavaliação das publicações classificadas nesses dois tipos. Em contrapartida, essa não deve ser a única visão disposta sobre essa questão. Sabe-se que a avaliação da qualidade em diversos campos existe há tempo suficiente para que o uso de métricas já estabelecidas se repita dentro do ambiente orientado a serviços. É perfeitamente factível a existência de publicações em que um modelo de atributos de QoS é proposto sem que haja contribuição para as métricas por ele utilizadas, que podem ter sido importadas de outros estudos ou definições. Esse fato não é igualmente verdadeiro para o caso de modelos taxonômicos e ontológicos de QoS, uma vez que as características peculiares do cenário em que opera traz a necessidade evidente da definição de novos tipos, segundo diferentes dimensões e perspectivas, por exemplo a reputação de serviços externos, que pode ou não ser baseada na experiência de usuários.
-
-Por último, a baixa frequência de \RCntProcess das contribuições do tipo processo está associada ao conceito por ele empregado, uma vez que se refere à descrição detalhada de passos concretos para se realizar um procedimento. Esse tipo de pesquisa depende, assim como as ferramentas, da consolidação da arquitetura e das tecnologias associadas ao tema classificado. Tal estágio, como já mencionado, não teria sido atingido na questão de QoS em SOC, e processos não estariam disponíveis em maior quantidade, ou não representam conteúdo de maior interesse que aqueles representado por métodos e modelos.
+\subsection{Segundo gráfico: frequências simples de tópicos de pesquisa.}
 
 \begin{figure}[h]
-	\centering \includegraphics[width=0.8\textwidth]{figs/danilo/Context_Contribution.eps}
-	\caption{Contexto vs Tipos de Contribuição}	
-	\label{fig:Context_Contribution}
+	\centering \includegraphics[width=0.9\textwidth]{figs/danilo/Topics.eps}
+	\caption{Tópicos de Pesquisa}	
+	\label{fig:Topics}
 \end{figure} 
+\FloatBarrier
 
-O cruzamento entre tipos de intervenção e contexto tem o potencial de revelar onde, isto é, em quais atributos ocorrem quais tipos de intervenção. O que se observa pelo gráfico é a mesma predominância de alguns atributos observada no cruzamento com os tipos de pesquisa, sem alterações significativas de linearidade. Um terceiro gráfico, que cruza tipos de contribuição aos tipos de pesquisa, ilustra tal relação diretamente. Nele está evidente que a maior frequência de pesquisas possuem a forma de soluções em métodos, modelos e ferramentas, seguidos das avaliações desses três tipos de intervenção. É precioso reforçar que essas categorias não são mutualmente excludentes, isto é, um mesmo artigo pode estar classificado em vários tipos de pesquisa e vários tipos de intervenção, assim como ocorre nos tipos de contexto. 
-
-Compreensões a inferências mais detalhadas dos resultados obtidos poderão ser feita caso a caso, de acordo com a visão e necessidade de quem os interpreta. Um mapeamento de estudos é amplo o suficiente para servir de fonte para leigos, pesquisadores iniciantes ou já experientes, ou também técnicos e administradores de organizações que desejem investir ou que venham investindo em soluções orientadas a serviço.
+\subsection{Terceiro gráfico: frequências simples de modelos arquiteturais.}
 
 \begin{figure}[h]
-	\centering \includegraphics[width=0.8\textwidth]{figs/danilo/Contribution_Research.eps}
-	\caption{Tipos de Contribuição vs Tipos de Pesquisa}	
-	\label{fig:Contribution_Research}
+	\centering \includegraphics[width=0.6\textwidth]{figs/danilo/Architectures.eps}
+	\caption{Modelos Arquiteturais}	
+	\label{fig:Architectures}
 \end{figure} 
+\FloatBarrier
+
+
+\section{Contextos de qualidade de serviços e SLA}
+
+\subsection{Primeiro gráfico: frequências conjuntas de contextos, tipos de pesquisa e tipos de contribuições.}
+
+\begin{figure}[h]
+	\centering \includegraphics[width=1\textwidth]{figs/danilo/Context_Research_Contribution.eps}
+	\caption{Contextos QoS e SLA vs. Tipos de Pesquisa e Contextos QoS e SLA vs. Tipos de Contribuição}	
+	\label{fig:Context_Research_Contribution}
+\end{figure} 
+\FloatBarrier
+
+\subsection{Segundo gráfico: frequências simples de contextos.}
+
+\begin{figure}[h]
+	\centering \includegraphics[width=0.9\textwidth]{figs/danilo/Contexts.eps}
+	\caption{Atributos QoS e SLA}	
+	\label{fig:Contexts}
+\end{figure} 
+\FloatBarrier
+
+\subsection{Terceiro gráfico: frequências simples de tipos de pesquisa.}
+
+\begin{figure}[h]
+	\centering \includegraphics[width=0.6\textwidth]{figs/danilo/Research.eps}
+	\caption{Tipos de Pesquisa}	
+	\label{fig:Research}
+\end{figure} 
+\FloatBarrier
+
+\subsection{Quarto gráfico: frequências simples de tipos de contribuição ou intervenção.}
+
+\begin{figure}[h]
+	\centering \includegraphics[width=0.6\textwidth]{figs/danilo/Contributions.eps}
+	\caption{Tipos de Contribuição}	
+	\label{fig:Contributions}
+\end{figure} 
+\FloatBarrier
+
+
+
+
