@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  27 MAR 2012 11:30
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  27 MAR 2012 12:30
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -663,7 +663,34 @@ File: figs/danilo/Contributions.eps Graphic file (type eps)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[45]) [46] (./relatorio.bbl [47
+[45]) [46]
+\openout2 = `discussao.aux'.
+
+ (./discussao.tex
+Cap\'{\i }tulo 5.
+
+Overfull \hbox (1.43768pt too wide) in paragraph at lines 7--8
+[]\T1/ptm/m/n/10.95 RQ1: \T1/ptm/b/n/10.95 Quais tó-pi-cos da Com-pu-ta-ção Ori
+-en-tada a Ser-vi-ços fo-ram abor-da-dos com maior frequên-
+ []
+
+[47
+
+
+
+] [48] [49] [50] [51] [52] [53] [54]
+File: figs/danilo/Context_Contribution.eps Graphic file (type eps)
+ <figs/danilo/Context_Contribution.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[55]
+File: figs/danilo/Contribution_Research.eps Graphic file (type eps)
+ <figs/danilo/Contribution_Research.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [56] [57] (./relatorio.bbl [58
 
 
 ]
@@ -696,16 +723,16 @@ Underfull \hbox (badness 7415) in paragraph at lines 107--110
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [48]
+) [59]
 \c@noAnexo=\count127
 \tf@thm=\write7
 \openout7 = `relatorio.thm'.
 
- [49
+ [60
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
 (./simbolos.aux) (./dados.aux) (./introducao.aux) (./embasamento.aux)
-(./abordagem.aux) (./resultados.aux))
+(./abordagem.aux) (./resultados.aux) (./discussao.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -718,12 +745,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5171 strings out of 494910
- 66782 string characters out of 1177227
+ 5184 strings out of 494910
+ 67007 string characters out of 1177227
  154426 words of memory out of 3000000
- 8146 multiletter control sequences out of 15000+50000
+ 8153 multiletter control sequences out of 15000+50000
  60148 words of font info for 71 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
- 34i,15n,25p,1711b,381s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,25p,2496b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (59 pages, 195552 bytes).
+Output written on relatorio.dvi (70 pages, 232256 bytes).

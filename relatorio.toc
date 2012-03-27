@@ -63,5 +63,10 @@
 \contentsline {subsection}{\numberline {4.2.2}Segundo gráfico: frequências simples de contextos.}{44}
 \contentsline {subsection}{\numberline {4.2.3}Terceiro gráfico: frequências simples de tipos de pesquisa.}{45}
 \contentsline {subsection}{\numberline {4.2.4}Quarto gráfico: frequências simples de tipos de contribuição ou intervenção.}{45}
-\contentsline {chapter}{REFERÊNCIAS}{47}
-\contentsline {chapter}{{Anexos}}{49}
+\contentsline {chapter}{\numberline {5}Discussão dos Resultados}{47}
+\contentsline {section}{\numberline {5.1}Tópicos de Pesquisa, Questão de Pesquisa Nº1}{47}
+\contentsline {section}{\numberline {5.2}Modelos Arquiteturais, Questão de Pesquisa Nº2}{49}
+\contentsline {section}{\numberline {5.3}Tipos de Pesquisa}{50}
+\contentsline {subsection}{\numberline {5.3.1}Contextos vs Tipos de Pesquisa}{54}
+\contentsline {chapter}{REFERÊNCIAS}{58}
+\contentsline {chapter}{{Anexos}}{60}
