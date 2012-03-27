@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  27 MAR 2012 12:30
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  27 MAR 2012 13:22
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -678,19 +678,13 @@ Overfull \hbox (1.43768pt too wide) in paragraph at lines 7--8
 
 
 
-] [48] [49] [50] [51] [52] [53] [54]
+] [48] [49] [50] [51] [52] [53] [54] [55] [56]
 File: figs/danilo/Context_Contribution.eps Graphic file (type eps)
- <figs/danilo/Context_Contribution.eps>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[55]
+<figs/danilo/Context_Contribution.eps> [57]
 File: figs/danilo/Contribution_Research.eps Graphic file (type eps)
- <figs/danilo/Contribution_Research.eps>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [56] [57] (./relatorio.bbl [58
+<figs/danilo/Contribution_Research.eps>) [58] (./relatorio.bbl [59
 
 
 ]
@@ -723,12 +717,12 @@ Underfull \hbox (badness 7415) in paragraph at lines 107--110
  . 2012. [On-line; ac-ces-sed 12-December-2011]. Dis-po-ní-vel em:
  []
 
-) [59]
+) [60]
 \c@noAnexo=\count127
 \tf@thm=\write7
 \openout7 = `relatorio.thm'.
 
- [60
+ [61
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
 (./simbolos.aux) (./dados.aux) (./introducao.aux) (./embasamento.aux)
@@ -753,4 +747,4 @@ Here is how much of TeX's memory you used:
  68 hyphenation exceptions out of 8191
  34i,15n,25p,2496b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (70 pages, 232256 bytes).
+Output written on relatorio.dvi (71 pages, 236428 bytes).
