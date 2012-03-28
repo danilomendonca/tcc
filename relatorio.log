@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  27 MAR 2012 13:22
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.12.2)  27 MAR 2012 22:40
 entering extended mode
  %&-line parsing enabled.
 **relatorio.tex
@@ -678,13 +678,16 @@ Overfull \hbox (1.43768pt too wide) in paragraph at lines 7--8
 
 
 
-] [48] [49] [50] [51] [52] [53] [54] [55] [56]
-File: figs/danilo/Context_Contribution.eps Graphic file (type eps)
+] [48] [49] [50] [51] [52] [53] [54] [55] [56]) [57]
+\openout2 = `conclusao.aux'.
 
-<figs/danilo/Context_Contribution.eps> [57]
-File: figs/danilo/Contribution_Research.eps Graphic file (type eps)
+ (./conclusao.tex
+Cap\'{\i }tulo 6.
+) [58
 
-<figs/danilo/Contribution_Research.eps>) [58] (./relatorio.bbl [59
+
+
+] (./relatorio.bbl [59
 
 
 ]
@@ -726,7 +729,7 @@ Underfull \hbox (badness 7415) in paragraph at lines 107--110
 
 ] (./relatorio.aux (./folha_catalografica.aux) (./resumos.aux)
 (./simbolos.aux) (./dados.aux) (./introducao.aux) (./embasamento.aux)
-(./abordagem.aux) (./resultados.aux) (./discussao.aux))
+(./abordagem.aux) (./resultados.aux) (./discussao.aux) (./conclusao.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -739,12 +742,12 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 248 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5184 strings out of 494910
- 67007 string characters out of 1177227
+ 5186 strings out of 494910
+ 66961 string characters out of 1177227
  154426 words of memory out of 3000000
- 8153 multiletter control sequences out of 15000+50000
+ 8152 multiletter control sequences out of 15000+50000
  60148 words of font info for 71 fonts, out of 3000000 for 9000
  68 hyphenation exceptions out of 8191
- 34i,15n,25p,2496b,388s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,15n,25p,2532b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on relatorio.dvi (71 pages, 236428 bytes).
+Output written on relatorio.dvi (71 pages, 237784 bytes).
