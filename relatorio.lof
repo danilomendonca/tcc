@@ -2,29 +2,29 @@
 \addvspace {10\p@ }
 \select@language {brazilian}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Princípios relacionados ao SOA e seus benefícios. Adaptação de \cite {Erl:2007:SPS:1296147}}}{5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Origens da Orientação a Serviço. Adaptação de \cite {Erl:2007:SPS:1296147}.}}{6}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparação entre atividades típicas de componentes e serviços. Adaptação de \cite {Breivold:2007:CSS:1302497.1302990}}}{7}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Comparação entre escopos da Orientação a Objetos a da Orientação a Serviços. }}{9}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Modelagem de um BP por meio de um diagrama BPMN}}{13}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Documentos de contrato de um \textit {big web service}. Adaptação de \cite {Erl:2007:SPS:1296147}}}{15}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Relação entre reusabilidade e outros princípios. Adaptação de \cite {Erl:2007:SPS:1296147}}}{17}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Aspectos importantes de QoS. Adaptação de \cite {pernici}}}{22}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Principais atributos de QoS na visão de partes de \textit {Stakeholders}. Adaptação de \cite {Balfagih:2009:10.1109}.}}{23}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Serialização Binária vs. Serialização XML. Adaptação de \cite {Riad:2009:1000041}}}{24}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Processo para o Systematic Mapping Study. Adaptação de \cite {Petersen_Feldt_Mujtaba_Mattsson_2007}}}{27}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Busca iterativa de palavras chaves para categorização. Adaptação de \cite {Petersen_Feldt_Mujtaba_Mattsson_2007}}}{29}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemplo de gráfico de \textit {bubble plot}. Adaptação de \cite {Petersen_Feldt_Mujtaba_Mattsson_2007}}}{30}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Princípios relacionados ao SOA e seus benefícios. Adaptação de \cite {Erl:2007:SPS:1296147}}}{6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Origens da Orientação a Serviço. Adaptação de \cite {Erl:2007:SPS:1296147}.}}{7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparação entre atividades típicas de componentes e serviços. Adaptação de \cite {Breivold:2007:CSS:1302497.1302990}}}{8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Comparação entre escopos da Orientação a Objetos a da Orientação a Serviços. }}{10}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Modelagem de um processo de negócio por meio de um diagrama BPMN}}{14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Documentos de contrato de um \textit {Big Web Services}. Adaptação de \cite {Erl:2007:SPS:1296147}}}{16}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Relação entre reusabilidade e outros princípios. Adaptação de \cite {Erl:2007:SPS:1296147}}}{18}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Aspectos importantes de QoS. Adaptação de \cite {pernici}}}{23}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Principais atributos de QoS na visão de partes de \textit {Stakeholders}. Adaptação de \cite {Balfagih:2009:10.1109}.}}{24}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Serialização Binária vs. Serialização XML. Adaptação de \cite {Riad:2009:1000041}}}{25}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Processo para o mapeamento sistemático de estudos. Adaptação de \cite {Petersen_Feldt_Mujtaba_Mattsson_2007}}}{28}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Busca iterativa de palavras chaves para categorização. Adaptação de \cite {Petersen_Feldt_Mujtaba_Mattsson_2007}}}{30}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemplo de gráfico de \textit {bubble plot}. Adaptação de \cite {Petersen_Feldt_Mujtaba_Mattsson_2007}}}{31}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Interface principal da ferramenta de suporte.}}{36}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Parte da interface de edição e classificação de publicações.}}{36}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Interface principal da ferramenta de suporte.}}{38}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Parte da interface de edição e classificação de publicações.}}{39}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Tópicos de Pesquisa vs. Modelos Arquiteturais e Tópicos de Pesquisa vs. Contextos QoS e SLA}}{43}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Tópicos de Pesquisa}}{43}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Modelos Arquiteturais}}{44}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Contextos QoS e SLA vs. Tipos de Pesquisa e Contextos QoS e SLA vs. Tipos de Contribuição}}{44}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Atributos QoS e SLA}}{45}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Tipos de Pesquisa}}{45}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Tipos de Contribuição}}{46}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Tópicos de Pesquisa vs. Modelos Arquiteturais e Tópicos de Pesquisa vs. Contextos QoS e SLA}}{44}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Tópicos de Pesquisa}}{44}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Modelos Arquiteturais}}{45}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Contextos QoS e SLA vs. Tipos de Pesquisa e Contextos QoS e SLA vs. Tipos de Contribuição}}{45}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Atributos QoS e SLA}}{46}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Tipos de Pesquisa}}{46}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Tipos de Contribuição}}{47}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

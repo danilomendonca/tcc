@@ -4,75 +4,77 @@
 \contentsline {section}{\numberline {1.2}Objetivos}{2}
 \contentsline {subsection}{\numberline {1.2.1}Objetivos Gerais}{2}
 \contentsline {subsection}{\numberline {1.2.2}Objetivos Específicos}{3}
-\contentsline {section}{\numberline {1.3}Trabalhos Relacionados}{3}
-\contentsline {section}{\numberline {1.4}Organização do trabalho}{4}
+\contentsline {section}{\numberline {1.3}Trabalhos Relacionados}{4}
+\contentsline {section}{\numberline {1.4}Organização do trabalho}{5}
 \select@language {brazilian}
-\contentsline {chapter}{\numberline {2}Embasamento Teórico}{5}
-\contentsline {section}{\numberline {2.1}Service Oriented Computing}{5}
-\contentsline {subsection}{\numberline {2.1.1}Service Orientation History}{6}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Component Based Architecture}{6}
-\contentsline {subsubsection}{\numberline {2.1.1.2}Object Orientation}{8}
-\contentsline {subsubsection}{\numberline {2.1.1.3}Web Services}{10}
-\contentsline {subsubsection}{\numberline {2.1.1.4}Aspect Oriented Programming}{12}
-\contentsline {subsubsection}{\numberline {2.1.1.5}Business Process Model}{12}
-\contentsline {subsection}{\numberline {2.1.2}Service Oriented Design}{14}
-\contentsline {subsubsection}{\numberline {2.1.2.1}Standardized Service Contract}{14}
-\contentsline {subsubsection}{\numberline {2.1.2.2}Service Loose Coupling}{15}
-\contentsline {subsubsection}{\numberline {2.1.2.3}Service Abstraction}{16}
-\contentsline {subsubsection}{\numberline {2.1.2.4}Service Reusability}{16}
-\contentsline {subsubsection}{\numberline {2.1.2.5}Service Autonomy}{17}
-\contentsline {subsubsection}{\numberline {2.1.2.6}Service Statelessness}{18}
-\contentsline {subsubsection}{\numberline {2.1.2.7}Service Discoverability}{19}
-\contentsline {subsubsection}{\numberline {2.1.2.8}Service Composability}{20}
-\contentsline {subsection}{\numberline {2.1.3}Service Oriented Architecture}{20}
-\contentsline {section}{\numberline {2.2}Qualidade de Serviços}{22}
-\contentsline {subsection}{\numberline {2.2.1}Performance}{23}
-\contentsline {subsection}{\numberline {2.2.2}Interoperabilidade}{23}
-\contentsline {subsection}{\numberline {2.2.3}Segurança}{24}
-\contentsline {subsection}{\numberline {2.2.4}Disponibilidade ou \textit {Availability}}{25}
-\contentsline {subsection}{\numberline {2.2.5}Confiabilidade}{25}
-\contentsline {subsection}{\numberline {2.2.6}Manutibilidade}{25}
-\contentsline {subsection}{\numberline {2.2.7}Escalabilidade}{26}
-\contentsline {subsection}{\numberline {2.2.8}Custo}{26}
-\contentsline {section}{\numberline {2.3}Systematic Mapping Study}{26}
-\contentsline {subsection}{\numberline {2.3.1}Escolha das Perguntas de Pesquisa}{27}
-\contentsline {subsection}{\numberline {2.3.2}Pesquisa primária}{28}
-\contentsline {subsection}{\numberline {2.3.3}Inclusão e Exclusão de Publicações}{28}
-\contentsline {subsection}{\numberline {2.3.4}Definição de Categorias e Extração de Dados}{29}
-\contentsline {subsection}{\numberline {2.3.5}Mapeamento e Apresentação de Dados}{30}
-\contentsline {chapter}{\numberline {3}Abordagem}{31}
-\contentsline {section}{\numberline {3.1}Pesquisa Preliminar}{31}
-\contentsline {section}{\numberline {3.2}Protocolo}{31}
-\contentsline {subsection}{\numberline {3.2.1}Questões de Pesquisa}{31}
-\contentsline {subsection}{\numberline {3.2.2}Frase de Busca}{33}
-\contentsline {subsection}{\numberline {3.2.3}Fóruns de Busca}{34}
-\contentsline {subsubsection}{\numberline {3.2.3.1}Fóruns Principais}{34}
-\contentsline {subsubsection}{\numberline {3.2.3.2}Mecanismos de Busca Adicionais}{35}
-\contentsline {subsection}{\numberline {3.2.4}Desenvolvendo Aplicação de Suporte}{35}
-\contentsline {subsection}{\numberline {3.2.5}Populamento de Dados com Web Crawler}{37}
-\contentsline {subsection}{\numberline {3.2.6}Definição dos Critérios de Inclusão e Exclusão}{37}
-\contentsline {subsection}{\numberline {3.2.7}Categorias de Classificação}{39}
-\contentsline {subsection}{\numberline {3.2.8}Extração de Dados}{41}
-\contentsline {chapter}{\numberline {4}Resultados}{42}
-\contentsline {section}{\numberline {4.1}Tópicos de Pesquisa e Modelos Arquiteturais}{42}
-\contentsline {subsection}{\numberline {4.1.1}Primeiro gráfico: frequências conjuntas de tópicos de pesquisa, modelos arquiteturais e contextos.}{42}
-\contentsline {subsection}{\numberline {4.1.2}Segundo gráfico: frequências simples de tópicos de pesquisa.}{43}
-\contentsline {subsection}{\numberline {4.1.3}Terceiro gráfico: frequências simples de modelos arquiteturais.}{43}
-\contentsline {section}{\numberline {4.2}Contextos de qualidade de serviços e SLA}{44}
-\contentsline {subsection}{\numberline {4.2.1}Primeiro gráfico: frequências conjuntas de contextos, tipos de pesquisa e tipos de contribuições.}{44}
-\contentsline {subsection}{\numberline {4.2.2}Segundo gráfico: frequências simples de contextos.}{44}
-\contentsline {subsection}{\numberline {4.2.3}Terceiro gráfico: frequências simples de tipos de pesquisa.}{45}
-\contentsline {subsection}{\numberline {4.2.4}Quarto gráfico: frequências simples de tipos de contribuição ou intervenção.}{45}
-\contentsline {chapter}{\numberline {5}Discussão dos Resultados}{47}
-\contentsline {section}{\numberline {5.1}Tópicos de Pesquisa, Questão de Pesquisa RQ1}{47}
-\contentsline {section}{\numberline {5.2}Modelos Arquiteturais, Questão de Pesquisa RQ2}{49}
-\contentsline {section}{\numberline {5.3}Métodos de Pesquisa e Tipos de Contribuição, Questão de Pesquisa RQ3}{51}
-\contentsline {subsection}{\numberline {5.3.1}Métodos de Pesquisa}{51}
-\contentsline {subsection}{\numberline {5.3.2}Tipos de Contribuição}{53}
-\contentsline {subsection}{\numberline {5.3.3}Contextos QOS e SLA}{54}
-\contentsline {section}{\numberline {5.4}Bubble Plots}{57}
-\contentsline {subsection}{\numberline {5.4.1}Tópicos, Tipos de Pesquisa e Contextos}{57}
-\contentsline {subsection}{\numberline {5.4.2}Contextos, Tipos de Pesquisa e Tipos de Contribuição}{59}
-\contentsline {chapter}{\numberline {6}Conclusão}{61}
-\contentsline {chapter}{REFERÊNCIAS}{62}
-\contentsline {chapter}{{Anexos}}{64}
+\contentsline {chapter}{\numberline {2}Referencial Teórico}{6}
+\contentsline {section}{\numberline {2.1}Computação Orientada a Serviços}{6}
+\contentsline {subsection}{\numberline {2.1.1}História da Orientação a Serviços}{7}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Arquitetura Baseada em Componentes}{7}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Object Orientation}{9}
+\contentsline {subsubsection}{\numberline {2.1.1.3}Web Services}{11}
+\contentsline {subsubsection}{\numberline {2.1.1.4}Programação Orientada a Aspectos}{13}
+\contentsline {subsubsection}{\numberline {2.1.1.5}Modelo de Processos de Negócio}{13}
+\contentsline {subsection}{\numberline {2.1.2}Projeto de Orientação a Serviços}{15}
+\contentsline {subsubsection}{\numberline {2.1.2.1}Standardized Service Contract}{15}
+\contentsline {subsubsection}{\numberline {2.1.2.2}Service Loose Coupling}{16}
+\contentsline {subsubsection}{\numberline {2.1.2.3}Service Abstraction}{17}
+\contentsline {subsubsection}{\numberline {2.1.2.4}Service Reusability}{17}
+\contentsline {subsubsection}{\numberline {2.1.2.5}Service Autonomy}{18}
+\contentsline {subsubsection}{\numberline {2.1.2.6}Service Statelessness}{19}
+\contentsline {subsubsection}{\numberline {2.1.2.7}Service Discoverability}{20}
+\contentsline {subsubsection}{\numberline {2.1.2.8}Service Composability}{21}
+\contentsline {subsection}{\numberline {2.1.3}Service Oriented Architecture}{21}
+\contentsline {section}{\numberline {2.2}Qualidade de Serviços}{23}
+\contentsline {subsection}{\numberline {2.2.1}Desempenho}{24}
+\contentsline {subsection}{\numberline {2.2.2}Interoperabilidade}{24}
+\contentsline {subsection}{\numberline {2.2.3}Segurança}{25}
+\contentsline {subsection}{\numberline {2.2.4}Disponibilidade ou \textit {Availability}}{26}
+\contentsline {subsection}{\numberline {2.2.5}Confiabilidade}{26}
+\contentsline {subsection}{\numberline {2.2.6}Manutibilidade}{26}
+\contentsline {subsection}{\numberline {2.2.7}Escalabilidade}{27}
+\contentsline {subsection}{\numberline {2.2.8}Custo}{27}
+\contentsline {section}{\numberline {2.3}Mapeamento Sistemático de Estudos}{27}
+\contentsline {subsection}{\numberline {2.3.1}Escolha das Perguntas de Pesquisa}{28}
+\contentsline {subsection}{\numberline {2.3.2}Pesquisa primária}{29}
+\contentsline {subsection}{\numberline {2.3.3}Inclusão e Exclusão de Publicações}{29}
+\contentsline {subsection}{\numberline {2.3.4}Definição de Categorias e Extração de Dados}{30}
+\contentsline {subsection}{\numberline {2.3.5}Mapeamento e Apresentação de Dados}{31}
+\contentsline {chapter}{\numberline {3}Abordagem}{32}
+\contentsline {section}{\numberline {3.1}Pesquisa Preliminar}{32}
+\contentsline {section}{\numberline {3.2}Protocolo}{32}
+\contentsline {subsection}{\numberline {3.2.1}Questões de Pesquisa}{32}
+\contentsline {subsection}{\numberline {3.2.2}Frase de Busca}{34}
+\contentsline {subsection}{\numberline {3.2.3}Definição dos Critérios de Inclusão e Exclusão}{35}
+\contentsline {subsection}{\numberline {3.2.4}Fóruns de Busca}{36}
+\contentsline {subsubsection}{\numberline {3.2.4.1}Fóruns Principais}{37}
+\contentsline {subsubsection}{\numberline {3.2.4.2}Mecanismos de Busca Adicionais}{37}
+\contentsline {subsection}{\numberline {3.2.5}Desenvolvendo Aplicação de Suporte}{38}
+\contentsline {subsection}{\numberline {3.2.6}Populamento de Dados com Web Crawler}{39}
+\contentsline {subsection}{\numberline {3.2.7}Categorias de Classificação}{40}
+\contentsline {subsection}{\numberline {3.2.8}Extração de Dados}{42}
+\contentsline {chapter}{\numberline {4}Resultados}{43}
+\contentsline {section}{\numberline {4.1}Tópicos de Pesquisa e Modelos Arquiteturais}{43}
+\contentsline {subsection}{\numberline {4.1.1}Primeiro gráfico: frequências conjuntas de tópicos de pesquisa, modelos arquiteturais e contextos.}{43}
+\contentsline {subsection}{\numberline {4.1.2}Segundo gráfico: frequências simples de tópicos de pesquisa.}{44}
+\contentsline {subsection}{\numberline {4.1.3}Terceiro gráfico: frequências simples de modelos arquiteturais.}{44}
+\contentsline {section}{\numberline {4.2}Contextos de qualidade de serviços e SLA}{45}
+\contentsline {subsection}{\numberline {4.2.1}Primeiro gráfico: frequências conjuntas de contextos, tipos de pesquisa e tipos de contribuições.}{45}
+\contentsline {subsection}{\numberline {4.2.2}Segundo gráfico: frequências simples de contextos.}{45}
+\contentsline {subsection}{\numberline {4.2.3}Terceiro gráfico: frequências simples de tipos de pesquisa.}{46}
+\contentsline {subsection}{\numberline {4.2.4}Quarto gráfico: frequências simples de tipos de contribuição ou intervenção.}{46}
+\contentsline {chapter}{\numberline {5}Discussão dos Resultados}{48}
+\contentsline {section}{\numberline {5.1}Tópicos de Pesquisa, Questão de Pesquisa RQ1}{48}
+\contentsline {section}{\numberline {5.2}Modelos Arquiteturais, Questão de Pesquisa RQ2}{50}
+\contentsline {section}{\numberline {5.3}Métodos de Pesquisa e Tipos de Contribuição, Questão de Pesquisa RQ3}{52}
+\contentsline {subsection}{\numberline {5.3.1}Métodos de Pesquisa}{52}
+\contentsline {subsection}{\numberline {5.3.2}Tipos de Contribuição}{54}
+\contentsline {subsection}{\numberline {5.3.3}Contextos QOS e SLA}{55}
+\contentsline {section}{\numberline {5.4}Bubble Plots}{58}
+\contentsline {subsection}{\numberline {5.4.1}Tópicos, Tipos de Pesquisa e Contextos}{58}
+\contentsline {subsection}{\numberline {5.4.2}Contextos, Tipos de Pesquisa e Tipos de Contribuição}{60}
+\contentsline {chapter}{\numberline {6}Conclusão}{62}
+\contentsline {section}{\numberline {6.1}Conclusão}{62}
+\contentsline {section}{\numberline {6.2}Trabalhos Futuros}{63}
+\contentsline {chapter}{REFERÊNCIAS}{65}
+\contentsline {chapter}{{Anexos}}{67}
