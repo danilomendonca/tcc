@@ -7,9 +7,8 @@
 
 \bibitem{Erl:2007:SPS:1296147}
 \abntrefinfo{Erl}{ERL}{2007}
-{ERL, T. \emph{SOA Principles of Service Design (The Prentice Hall
-  Service-Oriented Computing Series from Thomas Erl)}. Upper Saddle River, NJ,
-  USA: Prentice Hall PTR, 2007.
+{ERL, T. \emph{SOA Principles of Service Design}. Upper Saddle River, NJ, USA:
+  Prentice Hall PTR, 2007.
 ISBN 0132344823.}
 
 \bibitem{Breivold:2007:CSS:1302497.1302990}
@@ -18,8 +17,7 @@ ISBN 0132344823.}
   engineering: Key concepts and principles. In:  \emph{Proceedings of the 33rd
   EUROMICRO Conference on Software Engineering and Advanced Applications}.
   Washington, DC, USA: IEEE Computer Society, 2007. p. 13--20.
-ISBN 0-7695-2977-1. Dispon{\'\i}vel em:
-  $<$http://dl.acm.org/citation.cfm?id=1302497.1302990$>$.}
+ISBN 0-7695-2977-1.}
 
 \bibitem{pernici}
 \abntrefinfo{Benbernou Ivona~Brandic}{BENBERNOU IVONA~BRANDIC}{2008}
@@ -52,8 +50,7 @@ S-Cube, 2008.}
   technologies and research issues.
 \emph{The VLDB Journal}, Springer-Verlag New York, Inc., Secaucus, NJ, USA,
   v.~16, p. 389--415, July 2007.
-ISSN 1066-8888.
-Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1007/s00778-007-0044-3$>$.}
+ISSN 1066-8888.}
 
 \bibitem{Crnkovic:2006:CDP:1193212.1193814}
 \abntrefinfo{Crnkovic, Chaudron e Larsson}{CRNKOVIC; CHAUDRON; LARSSON}{2006}
@@ -61,8 +58,7 @@ Dispon{\'\i}vel em: $<$http://dx.doi.org/10.1007/s00778-007-0044-3$>$.}
   and component lifecycle. In:  \emph{Proceedings of the International
   Conference on Software Engineering Advances}. Washington, DC, USA: IEEE
   Computer Society, 2006. p.~44--.
-ISBN 0-7695-2703-5. Dispon{\'\i}vel em:
-  $<$http://dl.acm.org/citation.cfm?id=1193212.1193814$>$.}
+ISBN 0-7695-2703-5.}
 
 \bibitem{soaworld-ws-components}
 \abntrefinfo{PATIL}{PATIL}{2003}
@@ -78,15 +74,13 @@ Dispon{\'\i}vel em: $<$http://soa.sys-con.com/node/39754$>$.}
   services: making the right architectural decision. In:  \emph{Proceedings of
   the 17th international conference on World Wide Web}. New York, NY, USA: ACM,
   2008.  (WWW '08), p. 805--814.
-ISBN 978-1-60558-085-2. Dispon{\'\i}vel em:
-  $<$http://doi.acm.org/10.1145/1367497.1367606$>$.}
+ISBN 978-1-60558-085-2.}
 
 \bibitem{jeston2008business}
 \abntrefinfo{Jeston e Nelis}{JESTON; NELIS}{2008}
 {JESTON, J.; NELIS, J. \emph{Business Process Management: Practical Guidelines
-  to Successful Implementations}. Butterworth-Heinemann, 2008.
-ISBN 9780750686563. Dispon{\'\i}vel em:
-  $<$http://books.google.com.br/books?id=QI9aaKRIPIsC$>$.}
+  to Successful Implementations}. [S.l.]: Butterworth-Heinemann, 2008.
+ISBN 9780750686563.}
 
 \bibitem{bpm-accenture}
 \abntrefinfo{Possel}{POSSEL}{2011}
@@ -114,8 +108,7 @@ Dispon{\'\i}vel em: $<$http://www.soa-manifesto.org/$>$.}
   architectures. In:  \emph{Proceedings of the International Workshop on
   Systems Development in SOA Environments}. Washington, DC, USA: IEEE Computer
   Society, 2007.  (SDSOA '07), p.~3--.
-ISBN 0-7695-2960-7. Dispon{\'\i}vel em:
-  $<$http://dx.doi.org/10.1109/SDSOA.2007.10$>$.}
+ISBN 0-7695-2960-7.}
 
 \bibitem{ClementsKazmanKlein01}
 \abntrefinfo{Clements, Kazman e Klein}{CLEMENTS; KAZMAN; KLEIN}{2001}
@@ -143,5 +136,11 @@ ISBN 3-540-00914-0.}
 \emph{Requirements Engineering}, Springer London, v.~11, p. 102--107, 2006.
 ISSN 0947-3602.
 10.1007/s00766-005-0021-6.}
+
+\bibitem{ieee_online}
+\abntrefinfo{IEEE\ldots}{IEEE\ldots}{}
+{IEEE - About IEEE.
+[Online; accessed 20-February-2012].
+Dispon{\'\i}vel em: $<$http://www.ieee.org/about/index.html$>$.}
 
 \end{thebibliography}

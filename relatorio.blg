@@ -9,55 +9,54 @@ A level-1 auxiliary file: embasamento.aux
 A level-1 auxiliary file: abordagem.aux
 A level-1 auxiliary file: resultados.aux
 A level-1 auxiliary file: discussao.aux
+A level-1 auxiliary file: conclusao.aux
 The style file: abnt-num.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: relatorio.bib
-Warning--I didn't find a database entry for "ieee_online"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 140733193394032.
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-num.bst versão 1.42.2.1           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 19 entries,
+You've used 20 entries,
             6480 wiz_defined-function locations,
-            1315 strings with 13704 characters,
-and the built_in function-call counts, 16010 in all, are:
-= -- 1429
+            1312 strings with 13430 characters,
+and the built_in function-call counts, 16442 in all, are:
+= -- 1458
 > -- 506
 < -- 24
-+ -- 239
++ -- 249
 - -- 152
-* -- 1132
-:= -- 2089
-add.period$ -- 90
-call.type$ -- 19
-change.case$ -- 208
-chr.to.int$ -- 34
-cite$ -- 19
-duplicate$ -- 804
-empty$ -- 1193
+* -- 1136
+:= -- 2133
+add.period$ -- 87
+call.type$ -- 20
+change.case$ -- 214
+chr.to.int$ -- 35
+cite$ -- 20
+duplicate$ -- 822
+empty$ -- 1244
 format.name$ -- 781
-if$ -- 3865
+if$ -- 3981
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 348
-newline$ -- 109
+missing$ -- 363
+newline$ -- 114
 num.names$ -- 76
-pop$ -- 493
+pop$ -- 512
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 80
 quote$ -- 0
-skip$ -- 851
+skip$ -- 931
 stack$ -- 1
-substring$ -- 626
-swap$ -- 412
+substring$ -- 639
+swap$ -- 419
 text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 5
+type$ -- 10
 warning$ -- 0
-while$ -- 123
+while$ -- 125
 width$ -- 0
-write$ -- 285
-(There was 1 warning)
+write$ -- 290

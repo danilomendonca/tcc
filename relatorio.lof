@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Comparação entre atividades típicas de componentes e serviços. Adaptação de \cite {Breivold:2007:CSS:1302497.1302990}}}{8}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Comparação entre escopos da Orientação a Objetos a da Orientação a Serviços. }}{10}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Modelagem de um processo de negócio por meio de um diagrama BPMN}}{14}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Documentos de contrato de um \textit {Big Web Services}. Adaptação de \cite {Erl:2007:SPS:1296147}}}{16}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Documentos de contrato de um Web service complexo. Adaptação de \cite {Erl:2007:SPS:1296147}}}{16}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Relação entre reusabilidade e outros princípios. Adaptação de \cite {Erl:2007:SPS:1296147}}}{18}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Aspectos importantes de QoS. Adaptação de \cite {pernici}}}{23}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Principais atributos de QoS na visão de partes de \textit {Stakeholders}. Adaptação de \cite {Balfagih:2009:10.1109}.}}{24}
@@ -19,12 +19,14 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Interface principal da ferramenta de suporte.}}{38}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Parte da interface de edição e classificação de publicações.}}{39}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Tópicos de Pesquisa vs. Modelos Arquiteturais e Tópicos de Pesquisa vs. Contextos QoS e SLA}}{44}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Tópicos de Pesquisa}}{44}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Modelos Arquiteturais}}{45}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Contextos QoS e SLA vs. Tipos de Pesquisa e Contextos QoS e SLA vs. Tipos de Contribuição}}{45}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Atributos QoS e SLA}}{46}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Tipos de Pesquisa}}{46}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Tipos de Contribuição}}{47}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Tópicos de Pesquisa vs. Modelos Arquiteturais}}{44}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Tópicos de Pesquisa vs. Contextos QoS e SLA}}{45}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Tópicos de Pesquisa}}{46}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Modelos Arquiteturais}}{46}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Contextos QoS e SLA vs. Tipos de Pesquisa}}{47}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Contextos QoS e SLA vs. Tipos de Contribuição}}{48}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Atributos QoS e SLA}}{49}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Tipos de Pesquisa}}{49}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Tipos de Contribuição}}{50}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
